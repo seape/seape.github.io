@@ -10,8 +10,8 @@ span {
 }
 
 .big-box {
-    width: 650px;
-    height: 400px;
+    width: 325px;
+    height: 200px;
     background-color: #999;
     margin: 100px auto;
     position: relative;
@@ -33,8 +33,8 @@ span {
 
 .show-box img {
     float: left;
-    min-width: 650px;
-    min-height: 400px;
+    height: 100%;
+    width: 100%;
 }
 
 
