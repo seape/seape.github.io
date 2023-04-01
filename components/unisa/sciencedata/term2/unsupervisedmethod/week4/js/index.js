@@ -28,20 +28,24 @@ new Vue({
             this.translateX++
             this.tsion = true
             if (this.translateX > this.src.length - 1) {
-                setTimeout(() => {
-                    this.tsion = false
-                    this.translateX = 0
-                }, 500)
+                this.tsion = false
+                this.translateX = 0
+                // setTimeout(() => {
+                //     this.tsion = false
+                //     this.translateX = 0
+                // }, 500)
             }
+            console.log(this.translateX)
+            console.log(this.src[this.translateX])
         },
         swiper(i){
             this.translateX = i
         }
     },
     mounted() {
-        setInterval(()=>{
-            this.next()
-        },3000)
+        //setInterval(()=>{
+        //    this.next()
+        //},3000)
     },
     computed: {
         translate() {

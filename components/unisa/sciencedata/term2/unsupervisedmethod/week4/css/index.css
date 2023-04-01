@@ -10,8 +10,9 @@ span {
 }
 
 .big-box {
-    width: 325px;
-    height: 200px;
+    width: 650px;
+    height: 400px;
+
     background-color: #999;
     margin: 100px auto;
     position: relative;
@@ -19,13 +20,16 @@ span {
 }
 
 .img-box {
+    display: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
 .show-box {
-    display: flex;
+    /* display: flex; */
+    display: absolute;
+    left: 0px;
     height: 100%;
     width: 100%;
     transition: all 0.5s;
@@ -52,11 +56,13 @@ span {
     width: 60px;
     height: 60px;
     border-radius: 50px;
-    background:url('../images/last.png') no-repeat;
+    text-align:center;
+    line-height: 60px;
+    /*background:url('../img/left.png') no-repeat;*/
     background-color: rgba(0, 0, 0, 0.4);
     background-position: 6px 14px;
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .arrowhead-box span:nth-child(2) {
@@ -83,7 +89,10 @@ span {
     float: left;
     width: 12px;
     height: 12px;
-    background-color: white;
+    background-color: green;
+    opacity: 0.3;
+    border-color: red;
+    border-width: 1px;
     border-radius: 50px;
     margin-left: 10px;
     cursor: pointer;
@@ -92,4 +101,10 @@ span {
 
 .swiper-box span:nth-child(1) {
     width: 100px;
+}
+.clearfix::before,
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
 }
