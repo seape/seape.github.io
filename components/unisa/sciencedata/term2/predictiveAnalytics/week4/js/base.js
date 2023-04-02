@@ -1,11 +1,7 @@
 baseSlide = {
     el: '#app',
     data: {
-        src: ['./img/幻灯片7.jpg', './img/幻灯片8.jpg', './img/幻灯片9.jpg', './img/幻灯片10.jpg',
-              './img/幻灯片11.jpg','./img/幻灯片12.jpg','./img/幻灯片13.jpg','./img/幻灯片14.jpg',
-              './img/幻灯片15.jpg','./img/幻灯片16.jpg','./img/幻灯片17.jpg','./img/幻灯片18.jpg',
-              './img/幻灯片19.jpg','./img/幻灯片20.jpg','./img/幻灯片21.jpg'
-        ],
+        src: [],
         translateX: 0,
         tsion: true
     },
