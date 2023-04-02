@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-means</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="../../../../../../js/common/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../../../../css/fonts/css/all.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="big-box">
+            <div class="img-box">
+                <!-- <div class="show-box" :style="{'transform':'translateX('+translate+'px)','transition':tsion?'all 0.1s':'none'}"> -->
+                <div class="show-box">
+                    <img v-for='(item,index) in src' :src="item" :alt="item" v-show="index==translateX"></img>
+                    <!-- <img class="clearfix" :src="src[translateX]" :alt="item"> -->
+                </div>
+            </div>
+            <div class="arrowhead-box">
+                <span @click='last'><i class="fa-solid fa-chevron-left"></i></span>
+                <span @click='next'><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+            <div class="swiper-box" ref="swiper">
+                <span v-for='(item,index) in src' @click='swiper(index)'></span>
+            </div>
+        </div>
+    </div>
+    <script src="./js/base.js"></script>
+    <script src="./js/Post-Pruning.js"></script>
+</body>
+
+</html>
