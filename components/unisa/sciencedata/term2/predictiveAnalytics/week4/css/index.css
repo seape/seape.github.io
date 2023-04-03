@@ -69,7 +69,7 @@ span {
 
 .arrowhead-box span:nth-child(2) {
     float: right;
-    transform:rotate(180deg);
+    /* transform:rotate(180deg); */
 }
 
 .arrowhead-box span:hover {

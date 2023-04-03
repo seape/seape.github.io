@@ -16,7 +16,7 @@ span {
     height: 60vw;
 
     background-color: #999;
-    margin: 0px auto;
+    margin: auto auto;
     position: relative;
     box-shadow: 0 0 3pc rgba(0, 0, 0, 0.4);
 }

@@ -16,7 +16,7 @@ span {
     height: 73vw;
 
     background-color: #999;
-    margin: 0px auto;
+    margin: auto auto;
     position: relative;
     box-shadow: 0 0 3pc rgba(0, 0, 0, 0.4);
 }
@@ -69,7 +69,7 @@ span {
 
 .arrowhead-box span:nth-child(2) {
     float: right;
-    transform:rotate(180deg);
+    /* transform:rotate(180deg); */
 }
 
 .arrowhead-box span:hover {
