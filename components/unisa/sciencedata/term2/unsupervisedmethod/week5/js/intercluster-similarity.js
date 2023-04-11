@@ -8,7 +8,8 @@ new Vue({
             './img/INFS5102-M3-ClusterAnalysis(2B)-MethodsB-2023- - 14.jpg',
             './img/INFS5102-M3-ClusterAnalysis(2B)-MethodsB-2023- - 15.jpg',
             './img/INFS5102-M3-ClusterAnalysis(2B)-MethodsB-2023- - 16.jpg',
-            './img/INFS5102-M3-ClusterAnalysis(2B)-MethodsB-2023- - 17.jpg'
+            './img/INFS5102-M3-ClusterAnalysis(2B)-MethodsB-2023- - 17.jpg',
+            './img/INFS5102-M3-ClusterAnalysis(2B)-MethodsB-2023- - 18.jpg'
             ],
         translateX: 0,
         tsion: true
