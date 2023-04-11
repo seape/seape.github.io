@@ -4,6 +4,7 @@ new Vue({
     el: '#app',
     data: {
         src: [
+            './img/INFS5102-M3-ClusterAnalysis(2B)-MethodsB-2023- - 08.jpg',
             './img/INFS5102-M3-ClusterAnalysis(2B)-MethodsB-2023- - 09.jpg',
             './img/INFS5102-M3-ClusterAnalysis(2B)-MethodsB-2023- - 10.jpg',
             './img/INFS5102-M3-ClusterAnalysis(2B)-MethodsB-2023- - 11.jpg',
