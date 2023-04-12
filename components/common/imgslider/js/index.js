@@ -1,4 +1,4 @@
-Vue.config.productionTip = false
+//Vue.config.productionTip = false
 
 img_slider = {
    el: '#app',
