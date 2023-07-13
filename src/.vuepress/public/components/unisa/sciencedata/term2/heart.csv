@@ -1,0 +1,1026 @@
+id,age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,major_vessels,restwm,target
+1,52,male,typical angina,125,212,FALSE,ST-T wave abnormality,168,FALSE,1,downsloping,2,akinesis or dyskmem,no disease
+2,53,male,typical angina,140,203,TRUE,normal,155,TRUE,3.1,upsloping,0,akinesis or dyskmem,no disease
+3,70,male,typical angina,145,174,FALSE,ST-T wave abnormality,125,TRUE,2.6,upsloping,0,akinesis or dyskmem,no disease
+4,61,male,typical angina,148,203,FALSE,ST-T wave abnormality,161,FALSE,0,downsloping,1,akinesis or dyskmem,no disease
+5,62,female,typical angina,138,294,TRUE,ST-T wave abnormality,106,FALSE,1.9,flat,3,moderate or severe,no disease
+6,58,female,typical angina,100,248,FALSE,normal,122,FALSE,1,flat,0,moderate or severe,disease
+7,58,male,typical angina,114,318,FALSE,probable or definite left ventricular hypertrophy,140,FALSE,4.4,upsloping,3,mild or moderate,no disease
+8,55,male,typical angina,160,289,FALSE,normal,145,TRUE,0.8,flat,1,akinesis or dyskmem,no disease
+9,46,male,typical angina,120,249,FALSE,normal,144,FALSE,0.8,downsloping,0,akinesis or dyskmem,no disease
+10,54,male,typical angina,122,286,FALSE,normal,116,TRUE,3.2,flat,2,moderate or severe,no disease
+11,71,female,typical angina,112,149,FALSE,ST-T wave abnormality,125,FALSE,1.6,flat,0,moderate or severe,disease
+12,43,female,typical angina,132,341,TRUE,normal,136,TRUE,3,flat,0,akinesis or dyskmem,no disease
+13,34,female,atypical angina,118,210,FALSE,ST-T wave abnormality,192,FALSE,0.7,downsloping,0,moderate or severe,disease
+14,51,male,typical angina,140,298,FALSE,ST-T wave abnormality,122,TRUE,4.2,flat,3,akinesis or dyskmem,no disease
+15,52,male,typical angina,128,204,TRUE,ST-T wave abnormality,156,TRUE,1,flat,0,none,no disease
+16,34,female,atypical angina,118,210,FALSE,ST-T wave abnormality,192,FALSE,0.7,downsloping,0,moderate or severe,disease
+17,51,female,non-anginal pain,140,308,FALSE,normal,142,FALSE,1.5,downsloping,1,moderate or severe,disease
+18,54,male,typical angina,124,266,FALSE,normal,109,TRUE,2.2,flat,1,akinesis or dyskmem,no disease
+19,50,female,atypical angina,120,244,FALSE,ST-T wave abnormality,162,FALSE,1.1,downsloping,0,moderate or severe,disease
+20,58,male,non-anginal pain,140,211,TRUE,normal,165,FALSE,0,downsloping,0,moderate or severe,disease
+21,60,male,non-anginal pain,140,185,FALSE,normal,155,FALSE,3,flat,0,moderate or severe,no disease
+22,67,female,typical angina,106,223,FALSE,ST-T wave abnormality,142,FALSE,0.3,downsloping,2,moderate or severe,disease
+23,45,male,typical angina,104,208,FALSE,normal,148,TRUE,3,flat,0,moderate or severe,disease
+24,63,female,non-anginal pain,135,252,FALSE,normal,172,FALSE,0,downsloping,0,moderate or severe,disease
+25,42,female,non-anginal pain,120,209,FALSE,ST-T wave abnormality,173,FALSE,0,flat,0,moderate or severe,disease
+26,61,female,typical angina,145,307,FALSE,normal,146,TRUE,1,flat,0,akinesis or dyskmem,no disease
+27,44,male,non-anginal pain,130,233,FALSE,ST-T wave abnormality,179,TRUE,0.4,downsloping,0,moderate or severe,disease
+28,58,female,atypical angina,136,319,TRUE,normal,152,FALSE,0,downsloping,2,moderate or severe,no disease
+29,56,male,non-anginal pain,130,256,TRUE,normal,142,TRUE,0.6,flat,1,mild or moderate,no disease
+30,55,female,typical angina,180,327,FALSE,probable or definite left ventricular hypertrophy,117,TRUE,3.4,flat,0,moderate or severe,no disease
+31,44,male,typical angina,120,169,FALSE,ST-T wave abnormality,144,TRUE,2.8,upsloping,0,mild or moderate,no disease
+32,50,female,atypical angina,120,244,FALSE,ST-T wave abnormality,162,FALSE,1.1,downsloping,0,moderate or severe,disease
+33,57,male,typical angina,130,131,FALSE,ST-T wave abnormality,115,TRUE,1.2,flat,1,akinesis or dyskmem,no disease
+34,70,male,non-anginal pain,160,269,FALSE,ST-T wave abnormality,112,TRUE,2.9,flat,1,akinesis or dyskmem,no disease
+35,50,male,non-anginal pain,129,196,FALSE,ST-T wave abnormality,163,FALSE,0,downsloping,0,moderate or severe,disease
+36,46,male,non-anginal pain,150,231,FALSE,ST-T wave abnormality,147,FALSE,3.6,flat,0,moderate or severe,no disease
+37,51,male,asymptomatic,125,213,FALSE,normal,125,TRUE,1.4,downsloping,1,moderate or severe,disease
+38,59,male,typical angina,138,271,FALSE,normal,182,FALSE,0,downsloping,0,moderate or severe,disease
+39,64,male,typical angina,128,263,FALSE,ST-T wave abnormality,105,TRUE,0.2,flat,1,akinesis or dyskmem,disease
+40,57,male,non-anginal pain,128,229,FALSE,normal,150,FALSE,0.4,flat,1,akinesis or dyskmem,no disease
+41,65,female,non-anginal pain,160,360,FALSE,normal,151,FALSE,0.8,downsloping,0,moderate or severe,disease
+42,54,male,non-anginal pain,120,258,FALSE,normal,147,FALSE,0.4,flat,0,akinesis or dyskmem,disease
+43,61,female,typical angina,130,330,FALSE,normal,169,FALSE,0,downsloping,0,moderate or severe,no disease
+44,46,male,typical angina,120,249,FALSE,normal,144,FALSE,0.8,downsloping,0,akinesis or dyskmem,no disease
+45,55,female,atypical angina,132,342,FALSE,ST-T wave abnormality,166,FALSE,1.2,downsloping,0,moderate or severe,disease
+46,42,male,typical angina,140,226,FALSE,ST-T wave abnormality,178,FALSE,0,downsloping,0,moderate or severe,disease
+47,41,male,atypical angina,135,203,FALSE,ST-T wave abnormality,132,FALSE,0,flat,0,mild or moderate,disease
+48,66,female,typical angina,178,228,TRUE,ST-T wave abnormality,165,TRUE,1,flat,2,akinesis or dyskmem,no disease
+49,66,female,non-anginal pain,146,278,FALSE,normal,152,FALSE,0,flat,1,moderate or severe,disease
+50,60,male,typical angina,117,230,TRUE,ST-T wave abnormality,160,TRUE,1.4,downsloping,2,akinesis or dyskmem,no disease
+51,58,female,asymptomatic,150,283,TRUE,normal,162,FALSE,1,downsloping,0,moderate or severe,disease
+52,57,female,typical angina,140,241,FALSE,ST-T wave abnormality,123,TRUE,0.2,flat,0,akinesis or dyskmem,no disease
+53,38,male,non-anginal pain,138,175,FALSE,ST-T wave abnormality,173,FALSE,0,downsloping,4,moderate or severe,disease
+54,49,male,non-anginal pain,120,188,FALSE,ST-T wave abnormality,139,FALSE,2,flat,3,akinesis or dyskmem,no disease
+55,55,male,typical angina,140,217,FALSE,ST-T wave abnormality,111,TRUE,5.6,upsloping,0,akinesis or dyskmem,no disease
+56,55,male,typical angina,140,217,FALSE,ST-T wave abnormality,111,TRUE,5.6,upsloping,0,akinesis or dyskmem,no disease
+57,56,male,asymptomatic,120,193,FALSE,normal,162,FALSE,1.9,flat,0,akinesis or dyskmem,disease
+58,48,male,atypical angina,130,245,FALSE,normal,180,FALSE,0.2,flat,0,moderate or severe,disease
+59,67,male,non-anginal pain,152,212,FALSE,normal,150,FALSE,0.8,flat,0,akinesis or dyskmem,no disease
+60,57,male,atypical angina,154,232,FALSE,normal,164,FALSE,0,downsloping,1,moderate or severe,no disease
+61,29,male,atypical angina,130,204,FALSE,normal,202,FALSE,0,downsloping,0,moderate or severe,disease
+62,66,female,non-anginal pain,146,278,FALSE,normal,152,FALSE,0,flat,1,moderate or severe,disease
+63,67,male,typical angina,100,299,FALSE,normal,125,TRUE,0.9,flat,2,moderate or severe,no disease
+64,59,male,non-anginal pain,150,212,TRUE,ST-T wave abnormality,157,FALSE,1.6,downsloping,0,moderate or severe,disease
+65,29,male,atypical angina,130,204,FALSE,normal,202,FALSE,0,downsloping,0,moderate or severe,disease
+66,59,male,asymptomatic,170,288,FALSE,normal,159,FALSE,0.2,flat,0,akinesis or dyskmem,no disease
+67,53,male,non-anginal pain,130,197,TRUE,normal,152,FALSE,1.2,upsloping,0,moderate or severe,disease
+68,42,male,typical angina,136,315,FALSE,ST-T wave abnormality,125,TRUE,1.8,flat,0,mild or moderate,no disease
+69,37,female,non-anginal pain,120,215,FALSE,ST-T wave abnormality,170,FALSE,0,downsloping,0,moderate or severe,disease
+70,62,female,typical angina,160,164,FALSE,normal,145,FALSE,6.2,upsloping,3,akinesis or dyskmem,no disease
+71,59,male,typical angina,170,326,FALSE,normal,140,TRUE,3.4,upsloping,0,akinesis or dyskmem,no disease
+72,61,male,typical angina,140,207,FALSE,normal,138,TRUE,1.9,downsloping,1,akinesis or dyskmem,no disease
+73,56,male,typical angina,125,249,TRUE,normal,144,TRUE,1.2,flat,1,moderate or severe,no disease
+74,59,male,typical angina,140,177,FALSE,ST-T wave abnormality,162,TRUE,0,downsloping,1,akinesis or dyskmem,no disease
+75,48,male,typical angina,130,256,TRUE,normal,150,TRUE,0,downsloping,2,akinesis or dyskmem,no disease
+76,47,male,non-anginal pain,138,257,FALSE,normal,156,FALSE,0,downsloping,0,moderate or severe,disease
+77,48,male,non-anginal pain,124,255,TRUE,ST-T wave abnormality,175,FALSE,0,downsloping,2,moderate or severe,disease
+78,63,male,typical angina,140,187,FALSE,normal,144,TRUE,4,downsloping,2,akinesis or dyskmem,no disease
+79,52,male,atypical angina,134,201,FALSE,ST-T wave abnormality,158,FALSE,0.8,downsloping,1,moderate or severe,disease
+80,52,male,atypical angina,134,201,FALSE,ST-T wave abnormality,158,FALSE,0.8,downsloping,1,moderate or severe,disease
+81,50,male,non-anginal pain,140,233,FALSE,ST-T wave abnormality,163,FALSE,0.6,flat,1,akinesis or dyskmem,no disease
+82,49,male,non-anginal pain,118,149,FALSE,normal,126,FALSE,0.8,downsloping,3,moderate or severe,no disease
+83,46,male,non-anginal pain,150,231,FALSE,ST-T wave abnormality,147,FALSE,3.6,flat,0,moderate or severe,no disease
+84,38,male,non-anginal pain,138,175,FALSE,ST-T wave abnormality,173,FALSE,0,downsloping,4,moderate or severe,disease
+85,37,female,non-anginal pain,120,215,FALSE,ST-T wave abnormality,170,FALSE,0,downsloping,0,moderate or severe,disease
+86,44,male,atypical angina,120,220,FALSE,ST-T wave abnormality,170,FALSE,0,downsloping,0,moderate or severe,disease
+87,58,male,non-anginal pain,140,211,TRUE,normal,165,FALSE,0,downsloping,0,moderate or severe,disease
+88,59,female,typical angina,174,249,FALSE,ST-T wave abnormality,143,TRUE,0,flat,0,moderate or severe,no disease
+89,62,female,typical angina,140,268,FALSE,normal,160,FALSE,3.6,upsloping,2,moderate or severe,no disease
+90,68,male,typical angina,144,193,TRUE,ST-T wave abnormality,141,FALSE,3.4,flat,2,akinesis or dyskmem,no disease
+91,54,female,non-anginal pain,108,267,FALSE,normal,167,FALSE,0,downsloping,0,moderate or severe,disease
+92,62,female,typical angina,124,209,FALSE,ST-T wave abnormality,163,FALSE,0,downsloping,0,moderate or severe,disease
+93,63,male,typical angina,140,187,FALSE,normal,144,TRUE,4,downsloping,2,akinesis or dyskmem,no disease
+94,44,male,typical angina,120,169,FALSE,ST-T wave abnormality,144,TRUE,2.8,upsloping,0,mild or moderate,no disease
+95,62,male,atypical angina,128,208,TRUE,normal,140,FALSE,0,downsloping,0,moderate or severe,disease
+96,45,female,typical angina,138,236,FALSE,normal,152,TRUE,0.2,flat,0,moderate or severe,disease
+97,57,female,typical angina,128,303,FALSE,normal,159,FALSE,0,downsloping,1,moderate or severe,disease
+98,53,male,typical angina,123,282,FALSE,ST-T wave abnormality,95,TRUE,2,flat,2,akinesis or dyskmem,no disease
+99,65,male,typical angina,110,248,FALSE,normal,158,FALSE,0.6,downsloping,2,mild or moderate,no disease
+100,76,female,non-anginal pain,140,197,FALSE,probable or definite left ventricular hypertrophy,116,FALSE,1.1,flat,0,moderate or severe,disease
+101,43,female,non-anginal pain,122,213,FALSE,ST-T wave abnormality,165,FALSE,0.2,flat,0,moderate or severe,disease
+102,57,male,non-anginal pain,150,126,TRUE,ST-T wave abnormality,173,FALSE,0.2,downsloping,1,akinesis or dyskmem,disease
+103,54,male,atypical angina,108,309,FALSE,ST-T wave abnormality,156,FALSE,0,downsloping,0,akinesis or dyskmem,disease
+104,47,male,non-anginal pain,138,257,FALSE,normal,156,FALSE,0,downsloping,0,moderate or severe,disease
+105,52,male,asymptomatic,118,186,FALSE,normal,190,FALSE,0,flat,0,mild or moderate,disease
+106,47,male,typical angina,110,275,FALSE,normal,118,TRUE,1,flat,1,moderate or severe,no disease
+107,51,male,typical angina,140,299,FALSE,ST-T wave abnormality,173,TRUE,1.6,downsloping,0,akinesis or dyskmem,no disease
+108,62,male,atypical angina,120,281,FALSE,normal,103,FALSE,1.4,flat,1,akinesis or dyskmem,no disease
+109,40,male,typical angina,152,223,FALSE,ST-T wave abnormality,181,FALSE,0,downsloping,0,akinesis or dyskmem,no disease
+110,54,male,typical angina,110,206,FALSE,normal,108,TRUE,0,flat,1,moderate or severe,no disease
+111,44,male,typical angina,110,197,FALSE,normal,177,FALSE,0,downsloping,1,moderate or severe,no disease
+112,53,male,typical angina,142,226,FALSE,normal,111,TRUE,0,downsloping,0,akinesis or dyskmem,disease
+113,48,male,typical angina,130,256,TRUE,normal,150,TRUE,0,downsloping,2,akinesis or dyskmem,no disease
+114,57,male,typical angina,110,335,FALSE,ST-T wave abnormality,143,TRUE,3,flat,1,akinesis or dyskmem,no disease
+115,59,male,non-anginal pain,126,218,TRUE,ST-T wave abnormality,134,FALSE,2.2,flat,1,mild or moderate,no disease
+116,61,female,typical angina,145,307,FALSE,normal,146,TRUE,1,flat,0,akinesis or dyskmem,no disease
+117,63,male,typical angina,130,254,FALSE,normal,147,FALSE,1.4,flat,1,akinesis or dyskmem,no disease
+118,43,male,typical angina,120,177,FALSE,normal,120,TRUE,2.5,flat,0,akinesis or dyskmem,no disease
+119,29,male,atypical angina,130,204,FALSE,normal,202,FALSE,0,downsloping,0,moderate or severe,disease
+120,42,male,atypical angina,120,295,FALSE,ST-T wave abnormality,162,FALSE,0,downsloping,0,moderate or severe,disease
+121,54,male,atypical angina,108,309,FALSE,ST-T wave abnormality,156,FALSE,0,downsloping,0,akinesis or dyskmem,disease
+122,44,male,typical angina,120,169,FALSE,ST-T wave abnormality,144,TRUE,2.8,upsloping,0,mild or moderate,no disease
+123,60,male,typical angina,145,282,FALSE,normal,142,TRUE,2.8,flat,2,akinesis or dyskmem,no disease
+124,65,female,non-anginal pain,140,417,TRUE,normal,157,FALSE,0.8,downsloping,1,moderate or severe,disease
+125,61,male,typical angina,120,260,FALSE,ST-T wave abnormality,140,TRUE,3.6,flat,1,akinesis or dyskmem,no disease
+126,60,female,asymptomatic,150,240,FALSE,ST-T wave abnormality,171,FALSE,0.9,downsloping,0,moderate or severe,disease
+127,66,male,typical angina,120,302,FALSE,normal,151,FALSE,0.4,flat,0,moderate or severe,disease
+128,53,male,non-anginal pain,130,197,TRUE,normal,152,FALSE,1.2,upsloping,0,moderate or severe,disease
+129,52,male,non-anginal pain,138,223,FALSE,ST-T wave abnormality,169,FALSE,0,downsloping,4,moderate or severe,disease
+130,57,male,typical angina,140,192,FALSE,ST-T wave abnormality,148,FALSE,0.4,flat,0,mild or moderate,disease
+131,60,female,asymptomatic,150,240,FALSE,ST-T wave abnormality,171,FALSE,0.9,downsloping,0,moderate or severe,disease
+132,51,female,non-anginal pain,130,256,FALSE,normal,149,FALSE,0.5,downsloping,0,moderate or severe,disease
+133,41,male,atypical angina,135,203,FALSE,ST-T wave abnormality,132,FALSE,0,flat,0,mild or moderate,disease
+134,50,male,non-anginal pain,129,196,FALSE,ST-T wave abnormality,163,FALSE,0,downsloping,0,moderate or severe,disease
+135,54,male,atypical angina,108,309,FALSE,ST-T wave abnormality,156,FALSE,0,downsloping,0,akinesis or dyskmem,disease
+136,58,female,typical angina,170,225,TRUE,normal,146,TRUE,2.8,flat,2,mild or moderate,no disease
+137,55,female,atypical angina,132,342,FALSE,ST-T wave abnormality,166,FALSE,1.2,downsloping,0,moderate or severe,disease
+138,64,female,typical angina,180,325,FALSE,ST-T wave abnormality,154,TRUE,0,downsloping,0,moderate or severe,disease
+139,47,male,non-anginal pain,138,257,FALSE,normal,156,FALSE,0,downsloping,0,moderate or severe,disease
+140,41,male,atypical angina,110,235,FALSE,ST-T wave abnormality,153,FALSE,0,downsloping,0,moderate or severe,disease
+141,57,male,typical angina,152,274,FALSE,ST-T wave abnormality,88,TRUE,1.2,flat,1,akinesis or dyskmem,no disease
+142,63,female,typical angina,124,197,FALSE,ST-T wave abnormality,136,TRUE,0,flat,0,moderate or severe,no disease
+143,61,male,asymptomatic,134,234,FALSE,ST-T wave abnormality,145,FALSE,2.6,flat,2,moderate or severe,no disease
+144,34,male,asymptomatic,118,182,FALSE,normal,174,FALSE,0,downsloping,0,moderate or severe,disease
+145,47,male,typical angina,112,204,FALSE,ST-T wave abnormality,143,FALSE,0.1,downsloping,0,moderate or severe,disease
+146,40,male,typical angina,110,167,FALSE,normal,114,TRUE,2,flat,0,akinesis or dyskmem,no disease
+147,51,female,non-anginal pain,120,295,FALSE,normal,157,FALSE,0.6,downsloping,0,moderate or severe,disease
+148,41,male,typical angina,110,172,FALSE,normal,158,FALSE,0,downsloping,0,akinesis or dyskmem,no disease
+149,52,male,asymptomatic,152,298,TRUE,ST-T wave abnormality,178,FALSE,1.2,flat,0,akinesis or dyskmem,disease
+150,39,male,non-anginal pain,140,321,FALSE,normal,182,FALSE,0,downsloping,0,moderate or severe,disease
+151,58,male,typical angina,114,318,FALSE,probable or definite left ventricular hypertrophy,140,FALSE,4.4,upsloping,3,mild or moderate,no disease
+152,54,male,atypical angina,192,283,FALSE,normal,195,FALSE,0,downsloping,1,akinesis or dyskmem,no disease
+153,58,male,typical angina,125,300,FALSE,normal,171,FALSE,0,downsloping,2,akinesis or dyskmem,no disease
+154,54,male,non-anginal pain,120,258,FALSE,normal,147,FALSE,0.4,flat,0,akinesis or dyskmem,disease
+155,63,male,typical angina,130,330,TRUE,normal,132,TRUE,1.8,downsloping,3,akinesis or dyskmem,no disease
+156,54,male,atypical angina,108,309,FALSE,ST-T wave abnormality,156,FALSE,0,downsloping,0,akinesis or dyskmem,disease
+157,40,male,asymptomatic,140,199,FALSE,ST-T wave abnormality,178,TRUE,1.4,downsloping,0,akinesis or dyskmem,disease
+158,54,male,non-anginal pain,120,258,FALSE,normal,147,FALSE,0.4,flat,0,akinesis or dyskmem,disease
+159,67,female,non-anginal pain,115,564,FALSE,normal,160,FALSE,1.6,flat,0,akinesis or dyskmem,disease
+160,41,male,atypical angina,120,157,FALSE,ST-T wave abnormality,182,FALSE,0,downsloping,0,moderate or severe,disease
+161,77,male,typical angina,125,304,FALSE,normal,162,TRUE,0,downsloping,3,moderate or severe,no disease
+162,51,male,non-anginal pain,100,222,FALSE,ST-T wave abnormality,143,TRUE,1.2,flat,0,moderate or severe,disease
+163,77,male,typical angina,125,304,FALSE,normal,162,TRUE,0,downsloping,3,moderate or severe,no disease
+164,48,male,typical angina,124,274,FALSE,normal,166,FALSE,0.5,flat,0,akinesis or dyskmem,no disease
+165,56,male,typical angina,125,249,TRUE,normal,144,TRUE,1.2,flat,1,moderate or severe,no disease
+166,59,male,typical angina,170,326,FALSE,normal,140,TRUE,3.4,upsloping,0,akinesis or dyskmem,no disease
+167,56,male,typical angina,132,184,FALSE,normal,105,TRUE,2.1,flat,1,mild or moderate,no disease
+168,57,female,typical angina,120,354,FALSE,ST-T wave abnormality,163,TRUE,0.6,downsloping,0,moderate or severe,disease
+169,43,male,non-anginal pain,130,315,FALSE,ST-T wave abnormality,162,FALSE,1.9,downsloping,1,moderate or severe,disease
+170,45,female,atypical angina,112,160,FALSE,ST-T wave abnormality,138,FALSE,0,flat,0,moderate or severe,disease
+171,43,male,typical angina,150,247,FALSE,ST-T wave abnormality,171,FALSE,1.5,downsloping,0,moderate or severe,disease
+172,56,male,typical angina,130,283,TRUE,normal,103,TRUE,1.6,upsloping,0,akinesis or dyskmem,no disease
+173,56,male,atypical angina,120,240,FALSE,ST-T wave abnormality,169,FALSE,0,upsloping,0,moderate or severe,disease
+174,39,female,non-anginal pain,94,199,FALSE,ST-T wave abnormality,179,FALSE,0,downsloping,0,moderate or severe,disease
+175,54,male,typical angina,110,239,FALSE,ST-T wave abnormality,126,TRUE,2.8,flat,1,akinesis or dyskmem,no disease
+176,56,female,typical angina,200,288,TRUE,normal,133,TRUE,4,upsloping,2,akinesis or dyskmem,no disease
+177,56,male,typical angina,130,283,TRUE,normal,103,TRUE,1.6,upsloping,0,akinesis or dyskmem,no disease
+178,64,male,typical angina,120,246,FALSE,normal,96,TRUE,2.2,upsloping,1,moderate or severe,no disease
+179,44,male,typical angina,110,197,FALSE,normal,177,FALSE,0,downsloping,1,moderate or severe,no disease
+180,56,female,typical angina,134,409,FALSE,normal,150,TRUE,1.9,flat,2,akinesis or dyskmem,no disease
+181,63,male,typical angina,140,187,FALSE,normal,144,TRUE,4,downsloping,2,akinesis or dyskmem,no disease
+182,64,male,asymptomatic,110,211,FALSE,normal,144,TRUE,1.8,flat,0,moderate or severe,disease
+183,60,male,typical angina,140,293,FALSE,normal,170,FALSE,1.2,flat,2,akinesis or dyskmem,no disease
+184,42,male,non-anginal pain,130,180,FALSE,ST-T wave abnormality,150,FALSE,0,downsloping,0,moderate or severe,disease
+185,45,male,atypical angina,128,308,FALSE,normal,170,FALSE,0,downsloping,0,moderate or severe,disease
+186,57,male,typical angina,165,289,TRUE,normal,124,FALSE,1,flat,3,akinesis or dyskmem,no disease
+187,40,male,typical angina,110,167,FALSE,normal,114,TRUE,2,flat,0,akinesis or dyskmem,no disease
+188,56,male,typical angina,125,249,TRUE,normal,144,TRUE,1.2,flat,1,moderate or severe,no disease
+189,63,male,typical angina,130,254,FALSE,normal,147,FALSE,1.4,flat,1,akinesis or dyskmem,no disease
+190,64,male,non-anginal pain,125,309,FALSE,ST-T wave abnormality,131,TRUE,1.8,flat,0,akinesis or dyskmem,no disease
+191,41,male,non-anginal pain,112,250,FALSE,ST-T wave abnormality,179,FALSE,0,downsloping,0,moderate or severe,disease
+192,56,male,atypical angina,130,221,FALSE,normal,163,FALSE,0,downsloping,0,akinesis or dyskmem,disease
+193,67,female,non-anginal pain,115,564,FALSE,normal,160,FALSE,1.6,flat,0,akinesis or dyskmem,disease
+194,69,male,asymptomatic,160,234,TRUE,normal,131,FALSE,0.1,flat,1,moderate or severe,disease
+195,67,male,typical angina,160,286,FALSE,normal,108,TRUE,1.5,flat,3,moderate or severe,no disease
+196,59,male,non-anginal pain,150,212,TRUE,ST-T wave abnormality,157,FALSE,1.6,downsloping,0,moderate or severe,disease
+197,58,male,typical angina,100,234,FALSE,ST-T wave abnormality,156,FALSE,0.1,downsloping,1,akinesis or dyskmem,no disease
+198,45,male,typical angina,115,260,FALSE,normal,185,FALSE,0,downsloping,0,moderate or severe,disease
+199,60,female,non-anginal pain,102,318,FALSE,ST-T wave abnormality,160,FALSE,0,downsloping,1,moderate or severe,disease
+200,50,male,typical angina,144,200,FALSE,normal,126,TRUE,0.9,flat,0,akinesis or dyskmem,no disease
+201,62,female,typical angina,124,209,FALSE,ST-T wave abnormality,163,FALSE,0,downsloping,0,moderate or severe,disease
+202,34,male,asymptomatic,118,182,FALSE,normal,174,FALSE,0,downsloping,0,moderate or severe,disease
+203,52,male,asymptomatic,152,298,TRUE,ST-T wave abnormality,178,FALSE,1.2,flat,0,akinesis or dyskmem,disease
+204,64,male,asymptomatic,170,227,FALSE,normal,155,FALSE,0.6,flat,0,akinesis or dyskmem,disease
+205,66,female,non-anginal pain,146,278,FALSE,normal,152,FALSE,0,flat,1,moderate or severe,disease
+206,42,male,asymptomatic,148,244,FALSE,normal,178,FALSE,0.8,downsloping,2,moderate or severe,disease
+207,59,male,non-anginal pain,126,218,TRUE,ST-T wave abnormality,134,FALSE,2.2,flat,1,mild or moderate,no disease
+208,41,male,non-anginal pain,112,250,FALSE,ST-T wave abnormality,179,FALSE,0,downsloping,0,moderate or severe,disease
+209,38,male,non-anginal pain,138,175,FALSE,ST-T wave abnormality,173,FALSE,0,downsloping,4,moderate or severe,disease
+210,62,male,atypical angina,120,281,FALSE,normal,103,FALSE,1.4,flat,1,akinesis or dyskmem,no disease
+211,42,male,non-anginal pain,120,240,TRUE,ST-T wave abnormality,194,FALSE,0.8,upsloping,0,akinesis or dyskmem,disease
+212,67,male,typical angina,100,299,FALSE,normal,125,TRUE,0.9,flat,2,moderate or severe,no disease
+213,50,male,typical angina,150,243,FALSE,normal,128,FALSE,2.6,flat,0,akinesis or dyskmem,no disease
+214,43,male,non-anginal pain,130,315,FALSE,ST-T wave abnormality,162,FALSE,1.9,downsloping,1,moderate or severe,disease
+215,45,male,atypical angina,128,308,FALSE,normal,170,FALSE,0,downsloping,0,moderate or severe,disease
+216,49,male,atypical angina,130,266,FALSE,ST-T wave abnormality,171,FALSE,0.6,downsloping,0,moderate or severe,disease
+217,65,male,typical angina,135,254,FALSE,normal,127,FALSE,2.8,flat,1,akinesis or dyskmem,no disease
+218,41,male,atypical angina,120,157,FALSE,ST-T wave abnormality,182,FALSE,0,downsloping,0,moderate or severe,disease
+219,46,male,typical angina,140,311,FALSE,ST-T wave abnormality,120,TRUE,1.8,flat,2,akinesis or dyskmem,no disease
+220,54,male,typical angina,122,286,FALSE,normal,116,TRUE,3.2,flat,2,moderate or severe,no disease
+221,57,female,atypical angina,130,236,FALSE,normal,174,FALSE,0,flat,1,moderate or severe,no disease
+222,63,male,typical angina,130,254,FALSE,normal,147,FALSE,1.4,flat,1,akinesis or dyskmem,no disease
+223,64,male,asymptomatic,110,211,FALSE,normal,144,TRUE,1.8,flat,0,moderate or severe,disease
+224,39,female,non-anginal pain,94,199,FALSE,ST-T wave abnormality,179,FALSE,0,downsloping,0,moderate or severe,disease
+225,51,male,typical angina,140,261,FALSE,normal,186,TRUE,0,downsloping,0,moderate or severe,disease
+226,54,male,non-anginal pain,150,232,FALSE,normal,165,FALSE,1.6,downsloping,0,akinesis or dyskmem,disease
+227,49,male,non-anginal pain,118,149,FALSE,normal,126,FALSE,0.8,downsloping,3,moderate or severe,no disease
+228,44,female,non-anginal pain,118,242,FALSE,ST-T wave abnormality,149,FALSE,0.3,flat,1,moderate or severe,disease
+229,52,male,atypical angina,128,205,TRUE,ST-T wave abnormality,184,FALSE,0,downsloping,0,moderate or severe,disease
+230,66,female,typical angina,178,228,TRUE,ST-T wave abnormality,165,TRUE,1,flat,2,akinesis or dyskmem,no disease
+231,58,male,typical angina,125,300,FALSE,normal,171,FALSE,0,downsloping,2,akinesis or dyskmem,no disease
+232,56,male,atypical angina,120,236,FALSE,ST-T wave abnormality,178,FALSE,0.8,downsloping,0,moderate or severe,disease
+233,60,male,typical angina,125,258,FALSE,normal,141,TRUE,2.8,flat,1,akinesis or dyskmem,no disease
+234,41,female,atypical angina,126,306,FALSE,ST-T wave abnormality,163,FALSE,0,downsloping,0,moderate or severe,disease
+235,49,female,typical angina,130,269,FALSE,ST-T wave abnormality,163,FALSE,0,downsloping,0,moderate or severe,disease
+236,64,male,asymptomatic,170,227,FALSE,normal,155,FALSE,0.6,flat,0,akinesis or dyskmem,disease
+237,49,male,non-anginal pain,118,149,FALSE,normal,126,FALSE,0.8,downsloping,3,moderate or severe,no disease
+238,57,male,atypical angina,124,261,FALSE,ST-T wave abnormality,141,FALSE,0.3,downsloping,0,akinesis or dyskmem,no disease
+239,60,male,typical angina,117,230,TRUE,ST-T wave abnormality,160,TRUE,1.4,downsloping,2,akinesis or dyskmem,no disease
+240,62,female,typical angina,150,244,FALSE,ST-T wave abnormality,154,TRUE,1.4,flat,0,moderate or severe,no disease
+241,54,female,atypical angina,132,288,TRUE,normal,159,TRUE,0,downsloping,1,moderate or severe,disease
+242,67,male,non-anginal pain,152,212,FALSE,normal,150,FALSE,0.8,flat,0,akinesis or dyskmem,no disease
+243,38,male,non-anginal pain,138,175,FALSE,ST-T wave abnormality,173,FALSE,0,downsloping,4,moderate or severe,disease
+244,60,male,non-anginal pain,140,185,FALSE,normal,155,FALSE,3,flat,0,moderate or severe,no disease
+245,51,male,non-anginal pain,125,245,TRUE,normal,166,FALSE,2.4,flat,0,moderate or severe,disease
+246,44,male,atypical angina,130,219,FALSE,normal,188,FALSE,0,downsloping,0,moderate or severe,disease
+247,54,male,atypical angina,192,283,FALSE,normal,195,FALSE,0,downsloping,1,akinesis or dyskmem,no disease
+248,46,male,typical angina,140,311,FALSE,ST-T wave abnormality,120,TRUE,1.8,flat,2,akinesis or dyskmem,no disease
+249,39,female,non-anginal pain,138,220,FALSE,ST-T wave abnormality,152,FALSE,0,flat,0,moderate or severe,disease
+250,42,male,non-anginal pain,130,180,FALSE,ST-T wave abnormality,150,FALSE,0,downsloping,0,moderate or severe,disease
+251,47,male,typical angina,110,275,FALSE,normal,118,TRUE,1,flat,1,moderate or severe,no disease
+252,45,female,atypical angina,112,160,FALSE,ST-T wave abnormality,138,FALSE,0,flat,0,moderate or severe,disease
+253,55,male,typical angina,132,353,FALSE,ST-T wave abnormality,132,TRUE,1.2,flat,1,akinesis or dyskmem,no disease
+254,57,male,typical angina,165,289,TRUE,normal,124,FALSE,1,flat,3,akinesis or dyskmem,no disease
+255,35,male,typical angina,120,198,FALSE,ST-T wave abnormality,130,TRUE,1.6,flat,0,akinesis or dyskmem,no disease
+256,62,female,typical angina,140,394,FALSE,normal,157,FALSE,1.2,flat,0,moderate or severe,disease
+257,35,female,typical angina,138,183,FALSE,ST-T wave abnormality,182,FALSE,1.4,downsloping,0,moderate or severe,disease
+258,64,female,typical angina,180,325,FALSE,ST-T wave abnormality,154,TRUE,0,downsloping,0,moderate or severe,disease
+259,38,male,asymptomatic,120,231,FALSE,ST-T wave abnormality,182,TRUE,3.8,flat,0,akinesis or dyskmem,no disease
+260,66,male,typical angina,120,302,FALSE,normal,151,FALSE,0.4,flat,0,moderate or severe,disease
+261,44,male,non-anginal pain,120,226,FALSE,ST-T wave abnormality,169,FALSE,0,downsloping,0,moderate or severe,disease
+262,54,male,non-anginal pain,150,232,FALSE,normal,165,FALSE,1.6,downsloping,0,akinesis or dyskmem,disease
+263,48,male,typical angina,122,222,FALSE,normal,186,FALSE,0,downsloping,0,moderate or severe,disease
+264,55,female,atypical angina,132,342,FALSE,ST-T wave abnormality,166,FALSE,1.2,downsloping,0,moderate or severe,disease
+265,58,female,typical angina,170,225,TRUE,normal,146,TRUE,2.8,flat,2,mild or moderate,no disease
+266,45,male,typical angina,104,208,FALSE,normal,148,TRUE,3,flat,0,moderate or severe,disease
+267,53,male,typical angina,123,282,FALSE,ST-T wave abnormality,95,TRUE,2,flat,2,akinesis or dyskmem,no disease
+268,67,male,typical angina,120,237,FALSE,ST-T wave abnormality,71,FALSE,1,flat,0,moderate or severe,no disease
+269,58,male,non-anginal pain,132,224,FALSE,normal,173,FALSE,3.2,downsloping,2,akinesis or dyskmem,no disease
+270,71,female,non-anginal pain,110,265,TRUE,normal,130,FALSE,0,downsloping,1,moderate or severe,disease
+271,43,male,typical angina,110,211,FALSE,ST-T wave abnormality,161,FALSE,0,downsloping,0,akinesis or dyskmem,disease
+272,44,male,atypical angina,120,263,FALSE,ST-T wave abnormality,173,FALSE,0,downsloping,0,akinesis or dyskmem,disease
+273,39,female,non-anginal pain,138,220,FALSE,ST-T wave abnormality,152,FALSE,0,flat,0,moderate or severe,disease
+274,54,male,typical angina,110,206,FALSE,normal,108,TRUE,0,flat,1,moderate or severe,no disease
+275,66,male,typical angina,160,228,FALSE,normal,138,FALSE,2.3,downsloping,0,mild or moderate,disease
+276,56,male,typical angina,130,283,TRUE,normal,103,TRUE,1.6,upsloping,0,akinesis or dyskmem,no disease
+277,57,male,typical angina,132,207,FALSE,ST-T wave abnormality,168,TRUE,0,downsloping,0,akinesis or dyskmem,disease
+278,44,male,atypical angina,130,219,FALSE,normal,188,FALSE,0,downsloping,0,moderate or severe,disease
+279,55,male,typical angina,160,289,FALSE,normal,145,TRUE,0.8,flat,1,akinesis or dyskmem,no disease
+280,41,female,atypical angina,105,198,FALSE,ST-T wave abnormality,168,FALSE,0,downsloping,1,moderate or severe,disease
+281,45,female,atypical angina,130,234,FALSE,normal,175,FALSE,0.6,flat,0,moderate or severe,disease
+282,35,male,atypical angina,122,192,FALSE,ST-T wave abnormality,174,FALSE,0,downsloping,0,moderate or severe,disease
+283,41,female,atypical angina,130,204,FALSE,normal,172,FALSE,1.4,downsloping,0,moderate or severe,disease
+284,64,male,asymptomatic,110,211,FALSE,normal,144,TRUE,1.8,flat,0,moderate or severe,disease
+285,58,male,non-anginal pain,132,224,FALSE,normal,173,FALSE,3.2,downsloping,2,akinesis or dyskmem,no disease
+286,71,female,non-anginal pain,110,265,TRUE,normal,130,FALSE,0,downsloping,1,moderate or severe,disease
+287,64,female,non-anginal pain,140,313,FALSE,ST-T wave abnormality,133,FALSE,0.2,downsloping,0,akinesis or dyskmem,disease
+288,71,female,atypical angina,160,302,FALSE,ST-T wave abnormality,162,FALSE,0.4,downsloping,2,moderate or severe,disease
+289,58,female,non-anginal pain,120,340,FALSE,ST-T wave abnormality,172,FALSE,0,downsloping,0,moderate or severe,disease
+290,40,male,typical angina,152,223,FALSE,ST-T wave abnormality,181,FALSE,0,downsloping,0,akinesis or dyskmem,no disease
+291,52,male,non-anginal pain,138,223,FALSE,ST-T wave abnormality,169,FALSE,0,downsloping,4,moderate or severe,disease
+292,58,male,typical angina,128,259,FALSE,normal,130,TRUE,3,flat,2,akinesis or dyskmem,no disease
+293,61,male,non-anginal pain,150,243,TRUE,ST-T wave abnormality,137,TRUE,1,flat,0,moderate or severe,disease
+294,59,male,non-anginal pain,150,212,TRUE,ST-T wave abnormality,157,FALSE,1.6,downsloping,0,moderate or severe,disease
+295,56,female,typical angina,200,288,TRUE,normal,133,TRUE,4,upsloping,2,akinesis or dyskmem,no disease
+296,67,male,typical angina,100,299,FALSE,normal,125,TRUE,0.9,flat,2,moderate or severe,no disease
+297,67,male,typical angina,120,237,FALSE,ST-T wave abnormality,71,FALSE,1,flat,0,moderate or severe,no disease
+298,58,male,typical angina,150,270,FALSE,normal,111,TRUE,0.8,downsloping,0,akinesis or dyskmem,no disease
+299,35,male,atypical angina,122,192,FALSE,ST-T wave abnormality,174,FALSE,0,downsloping,0,moderate or severe,disease
+300,52,male,atypical angina,120,325,FALSE,ST-T wave abnormality,172,FALSE,0.2,downsloping,0,moderate or severe,disease
+301,46,female,atypical angina,105,204,FALSE,ST-T wave abnormality,172,FALSE,0,downsloping,0,moderate or severe,disease
+302,51,male,non-anginal pain,94,227,FALSE,ST-T wave abnormality,154,TRUE,0,downsloping,1,akinesis or dyskmem,disease
+303,55,female,atypical angina,132,342,FALSE,ST-T wave abnormality,166,FALSE,1.2,downsloping,0,moderate or severe,disease
+304,60,male,typical angina,145,282,FALSE,normal,142,TRUE,2.8,flat,2,akinesis or dyskmem,no disease
+305,52,female,non-anginal pain,136,196,FALSE,normal,169,FALSE,0.1,flat,0,moderate or severe,disease
+306,62,male,typical angina,120,267,FALSE,ST-T wave abnormality,99,TRUE,1.8,flat,2,akinesis or dyskmem,no disease
+307,44,female,non-anginal pain,118,242,FALSE,ST-T wave abnormality,149,FALSE,0.3,flat,1,moderate or severe,disease
+308,44,male,atypical angina,120,220,FALSE,ST-T wave abnormality,170,FALSE,0,downsloping,0,moderate or severe,disease
+309,59,male,non-anginal pain,126,218,TRUE,ST-T wave abnormality,134,FALSE,2.2,flat,1,mild or moderate,no disease
+310,56,female,atypical angina,140,294,FALSE,normal,153,FALSE,1.3,flat,0,moderate or severe,disease
+311,61,male,typical angina,120,260,FALSE,ST-T wave abnormality,140,TRUE,3.6,flat,1,akinesis or dyskmem,no disease
+312,48,male,typical angina,130,256,TRUE,normal,150,TRUE,0,downsloping,2,akinesis or dyskmem,no disease
+313,70,male,non-anginal pain,160,269,FALSE,ST-T wave abnormality,112,TRUE,2.9,flat,1,akinesis or dyskmem,no disease
+314,74,female,atypical angina,120,269,FALSE,normal,121,TRUE,0.2,downsloping,1,moderate or severe,disease
+315,40,male,asymptomatic,140,199,FALSE,ST-T wave abnormality,178,TRUE,1.4,downsloping,0,akinesis or dyskmem,disease
+316,42,male,asymptomatic,148,244,FALSE,normal,178,FALSE,0.8,downsloping,2,moderate or severe,disease
+317,64,female,non-anginal pain,140,313,FALSE,ST-T wave abnormality,133,FALSE,0.2,downsloping,0,akinesis or dyskmem,disease
+318,63,female,non-anginal pain,135,252,FALSE,normal,172,FALSE,0,downsloping,0,moderate or severe,disease
+319,59,male,typical angina,140,177,FALSE,ST-T wave abnormality,162,TRUE,0,downsloping,1,akinesis or dyskmem,no disease
+320,53,female,non-anginal pain,128,216,FALSE,normal,115,FALSE,0,downsloping,0,none,disease
+321,53,female,typical angina,130,264,FALSE,normal,143,FALSE,0.4,flat,0,moderate or severe,disease
+322,48,female,non-anginal pain,130,275,FALSE,ST-T wave abnormality,139,FALSE,0.2,downsloping,0,moderate or severe,disease
+323,45,male,typical angina,142,309,FALSE,normal,147,TRUE,0,flat,3,akinesis or dyskmem,no disease
+324,66,male,atypical angina,160,246,FALSE,ST-T wave abnormality,120,TRUE,0,flat,3,mild or moderate,no disease
+325,48,male,atypical angina,130,245,FALSE,normal,180,FALSE,0.2,flat,0,moderate or severe,disease
+326,56,female,atypical angina,140,294,FALSE,normal,153,FALSE,1.3,flat,0,moderate or severe,disease
+327,54,male,atypical angina,192,283,FALSE,normal,195,FALSE,0,downsloping,1,akinesis or dyskmem,no disease
+328,57,male,typical angina,150,276,FALSE,normal,112,TRUE,0.6,flat,1,mild or moderate,no disease
+329,70,male,typical angina,130,322,FALSE,normal,109,FALSE,2.4,flat,3,moderate or severe,no disease
+330,53,female,non-anginal pain,128,216,FALSE,normal,115,FALSE,0,downsloping,0,none,disease
+331,37,female,non-anginal pain,120,215,FALSE,ST-T wave abnormality,170,FALSE,0,downsloping,0,moderate or severe,disease
+332,63,female,typical angina,108,269,FALSE,ST-T wave abnormality,169,TRUE,1.8,flat,2,moderate or severe,no disease
+333,37,male,non-anginal pain,130,250,FALSE,ST-T wave abnormality,187,FALSE,3.5,upsloping,0,moderate or severe,disease
+334,54,female,non-anginal pain,110,214,FALSE,ST-T wave abnormality,158,FALSE,1.6,flat,0,moderate or severe,disease
+335,60,male,typical angina,130,206,FALSE,normal,132,TRUE,2.4,flat,2,akinesis or dyskmem,no disease
+336,58,male,typical angina,150,270,FALSE,normal,111,TRUE,0.8,downsloping,0,akinesis or dyskmem,no disease
+337,57,male,non-anginal pain,150,126,TRUE,ST-T wave abnormality,173,FALSE,0.2,downsloping,1,akinesis or dyskmem,disease
+338,54,male,non-anginal pain,125,273,FALSE,normal,152,FALSE,0.5,upsloping,1,moderate or severe,disease
+339,56,male,non-anginal pain,130,256,TRUE,normal,142,TRUE,0.6,flat,1,mild or moderate,no disease
+340,60,male,typical angina,130,253,FALSE,ST-T wave abnormality,144,TRUE,1.4,downsloping,1,akinesis or dyskmem,no disease
+341,38,male,non-anginal pain,138,175,FALSE,ST-T wave abnormality,173,FALSE,0,downsloping,4,moderate or severe,disease
+342,44,male,non-anginal pain,120,226,FALSE,ST-T wave abnormality,169,FALSE,0,downsloping,0,moderate or severe,disease
+343,65,female,non-anginal pain,155,269,FALSE,ST-T wave abnormality,148,FALSE,0.8,downsloping,0,moderate or severe,disease
+344,52,male,non-anginal pain,172,199,TRUE,ST-T wave abnormality,162,FALSE,0.5,downsloping,0,akinesis or dyskmem,disease
+345,41,male,atypical angina,120,157,FALSE,ST-T wave abnormality,182,FALSE,0,downsloping,0,moderate or severe,disease
+346,66,male,atypical angina,160,246,FALSE,ST-T wave abnormality,120,TRUE,0,flat,3,mild or moderate,no disease
+347,50,male,typical angina,150,243,FALSE,normal,128,FALSE,2.6,flat,0,akinesis or dyskmem,no disease
+348,54,female,non-anginal pain,108,267,FALSE,normal,167,FALSE,0,downsloping,0,moderate or severe,disease
+349,43,male,typical angina,132,247,TRUE,normal,143,TRUE,0.1,flat,4,akinesis or dyskmem,no disease
+350,62,female,non-anginal pain,130,263,FALSE,ST-T wave abnormality,97,FALSE,1.2,flat,1,akinesis or dyskmem,no disease
+351,66,male,typical angina,120,302,FALSE,normal,151,FALSE,0.4,flat,0,moderate or severe,disease
+352,50,male,typical angina,144,200,FALSE,normal,126,TRUE,0.9,flat,0,akinesis or dyskmem,no disease
+353,57,male,typical angina,110,335,FALSE,ST-T wave abnormality,143,TRUE,3,flat,1,akinesis or dyskmem,no disease
+354,57,male,typical angina,110,201,FALSE,ST-T wave abnormality,126,TRUE,1.5,flat,0,mild or moderate,disease
+355,57,male,atypical angina,124,261,FALSE,ST-T wave abnormality,141,FALSE,0.3,downsloping,0,akinesis or dyskmem,no disease
+356,46,female,typical angina,138,243,FALSE,normal,152,TRUE,0,flat,0,moderate or severe,disease
+357,59,male,typical angina,164,176,TRUE,normal,90,FALSE,1,flat,2,mild or moderate,no disease
+358,67,male,typical angina,160,286,FALSE,normal,108,TRUE,1.5,flat,3,moderate or severe,no disease
+359,59,male,asymptomatic,134,204,FALSE,ST-T wave abnormality,162,FALSE,0.8,downsloping,2,moderate or severe,no disease
+360,53,female,non-anginal pain,128,216,FALSE,normal,115,FALSE,0,downsloping,0,none,disease
+361,48,male,typical angina,122,222,FALSE,normal,186,FALSE,0,downsloping,0,moderate or severe,disease
+362,62,male,non-anginal pain,130,231,FALSE,ST-T wave abnormality,146,FALSE,1.8,flat,3,akinesis or dyskmem,disease
+363,43,female,non-anginal pain,122,213,FALSE,ST-T wave abnormality,165,FALSE,0.2,flat,0,moderate or severe,disease
+364,53,male,non-anginal pain,130,246,TRUE,normal,173,FALSE,0,downsloping,3,moderate or severe,disease
+365,57,female,atypical angina,130,236,FALSE,normal,174,FALSE,0,flat,1,moderate or severe,no disease
+366,53,male,non-anginal pain,130,246,TRUE,normal,173,FALSE,0,downsloping,3,moderate or severe,disease
+367,58,male,non-anginal pain,112,230,FALSE,normal,165,FALSE,2.5,flat,1,akinesis or dyskmem,no disease
+368,48,male,atypical angina,110,229,FALSE,ST-T wave abnormality,168,FALSE,1,upsloping,0,akinesis or dyskmem,no disease
+369,58,male,non-anginal pain,105,240,FALSE,normal,154,TRUE,0.6,flat,0,akinesis or dyskmem,disease
+370,51,male,non-anginal pain,110,175,FALSE,ST-T wave abnormality,123,FALSE,0.6,downsloping,0,moderate or severe,disease
+371,43,female,typical angina,132,341,TRUE,normal,136,TRUE,3,flat,0,akinesis or dyskmem,no disease
+372,55,male,typical angina,132,353,FALSE,ST-T wave abnormality,132,TRUE,1.2,flat,1,akinesis or dyskmem,no disease
+373,54,female,non-anginal pain,110,214,FALSE,ST-T wave abnormality,158,FALSE,1.6,flat,0,moderate or severe,disease
+374,58,male,atypical angina,120,284,FALSE,normal,160,FALSE,1.8,flat,0,moderate or severe,no disease
+375,46,female,non-anginal pain,142,177,FALSE,normal,160,TRUE,1.4,upsloping,0,moderate or severe,disease
+376,66,male,typical angina,160,228,FALSE,normal,138,FALSE,2.3,downsloping,0,mild or moderate,disease
+377,59,male,atypical angina,140,221,FALSE,ST-T wave abnormality,164,TRUE,0,downsloping,0,moderate or severe,disease
+378,64,female,typical angina,130,303,FALSE,ST-T wave abnormality,122,FALSE,2,flat,2,moderate or severe,disease
+379,67,male,typical angina,120,237,FALSE,ST-T wave abnormality,71,FALSE,1,flat,0,moderate or severe,no disease
+380,52,male,asymptomatic,118,186,FALSE,normal,190,FALSE,0,flat,0,mild or moderate,disease
+381,58,male,typical angina,146,218,FALSE,ST-T wave abnormality,105,FALSE,2,flat,1,akinesis or dyskmem,no disease
+382,58,male,non-anginal pain,132,224,FALSE,normal,173,FALSE,3.2,downsloping,2,akinesis or dyskmem,no disease
+383,59,male,typical angina,110,239,FALSE,normal,142,TRUE,1.2,flat,1,akinesis or dyskmem,no disease
+384,58,male,typical angina,150,270,FALSE,normal,111,TRUE,0.8,downsloping,0,akinesis or dyskmem,no disease
+385,35,male,typical angina,126,282,FALSE,normal,156,TRUE,0,downsloping,0,akinesis or dyskmem,no disease
+386,51,male,non-anginal pain,110,175,FALSE,ST-T wave abnormality,123,FALSE,0.6,downsloping,0,moderate or severe,disease
+387,42,female,non-anginal pain,120,209,FALSE,ST-T wave abnormality,173,FALSE,0,flat,0,moderate or severe,disease
+388,77,male,typical angina,125,304,FALSE,normal,162,TRUE,0,downsloping,3,moderate or severe,no disease
+389,64,male,typical angina,120,246,FALSE,normal,96,TRUE,2.2,upsloping,1,moderate or severe,no disease
+390,63,male,asymptomatic,145,233,TRUE,normal,150,FALSE,2.3,upsloping,0,mild or moderate,disease
+391,58,female,atypical angina,136,319,TRUE,normal,152,FALSE,0,downsloping,2,moderate or severe,no disease
+392,45,male,asymptomatic,110,264,FALSE,ST-T wave abnormality,132,FALSE,1.2,flat,0,akinesis or dyskmem,no disease
+393,51,male,non-anginal pain,110,175,FALSE,ST-T wave abnormality,123,FALSE,0.6,downsloping,0,moderate or severe,disease
+394,62,female,typical angina,160,164,FALSE,normal,145,FALSE,6.2,upsloping,3,akinesis or dyskmem,no disease
+395,63,male,typical angina,130,330,TRUE,normal,132,TRUE,1.8,downsloping,3,akinesis or dyskmem,no disease
+396,66,female,non-anginal pain,146,278,FALSE,normal,152,FALSE,0,flat,1,moderate or severe,disease
+397,68,male,non-anginal pain,180,274,TRUE,normal,150,TRUE,1.6,flat,0,akinesis or dyskmem,no disease
+398,40,male,typical angina,110,167,FALSE,normal,114,TRUE,2,flat,0,akinesis or dyskmem,no disease
+399,66,male,typical angina,160,228,FALSE,normal,138,FALSE,2.3,downsloping,0,mild or moderate,disease
+400,63,male,asymptomatic,145,233,TRUE,normal,150,FALSE,2.3,upsloping,0,mild or moderate,disease
+401,49,male,non-anginal pain,120,188,FALSE,ST-T wave abnormality,139,FALSE,2,flat,3,akinesis or dyskmem,no disease
+402,71,female,typical angina,112,149,FALSE,ST-T wave abnormality,125,FALSE,1.6,flat,0,moderate or severe,disease
+403,70,male,atypical angina,156,245,FALSE,normal,143,FALSE,0,downsloping,0,moderate or severe,disease
+404,46,female,atypical angina,105,204,FALSE,ST-T wave abnormality,172,FALSE,0,downsloping,0,moderate or severe,disease
+405,61,male,typical angina,140,207,FALSE,normal,138,TRUE,1.9,downsloping,1,akinesis or dyskmem,no disease
+406,56,male,non-anginal pain,130,256,TRUE,normal,142,TRUE,0.6,flat,1,mild or moderate,no disease
+407,58,male,non-anginal pain,140,211,TRUE,normal,165,FALSE,0,downsloping,0,moderate or severe,disease
+408,58,male,typical angina,100,234,FALSE,ST-T wave abnormality,156,FALSE,0.1,downsloping,1,akinesis or dyskmem,no disease
+409,46,female,typical angina,138,243,FALSE,normal,152,TRUE,0,flat,0,moderate or severe,disease
+410,46,male,non-anginal pain,150,231,FALSE,ST-T wave abnormality,147,FALSE,3.6,flat,0,moderate or severe,no disease
+411,41,female,atypical angina,105,198,FALSE,ST-T wave abnormality,168,FALSE,0,downsloping,1,moderate or severe,disease
+412,56,male,typical angina,125,249,TRUE,normal,144,TRUE,1.2,flat,1,moderate or severe,no disease
+413,57,male,typical angina,150,276,FALSE,normal,112,TRUE,0.6,flat,1,mild or moderate,no disease
+414,70,male,typical angina,130,322,FALSE,normal,109,FALSE,2.4,flat,3,moderate or severe,no disease
+415,59,male,asymptomatic,170,288,FALSE,normal,159,FALSE,0.2,flat,0,akinesis or dyskmem,no disease
+416,41,female,atypical angina,130,204,FALSE,normal,172,FALSE,1.4,downsloping,0,moderate or severe,disease
+417,54,male,non-anginal pain,125,273,FALSE,normal,152,FALSE,0.5,upsloping,1,moderate or severe,disease
+418,52,male,non-anginal pain,138,223,FALSE,ST-T wave abnormality,169,FALSE,0,downsloping,4,moderate or severe,disease
+419,62,female,typical angina,124,209,FALSE,ST-T wave abnormality,163,FALSE,0,downsloping,0,moderate or severe,disease
+420,65,female,non-anginal pain,160,360,FALSE,normal,151,FALSE,0.8,downsloping,0,moderate or severe,disease
+421,57,female,typical angina,128,303,FALSE,normal,159,FALSE,0,downsloping,1,moderate or severe,disease
+422,42,female,typical angina,102,265,FALSE,normal,122,FALSE,0.6,flat,0,moderate or severe,disease
+423,57,female,typical angina,120,354,FALSE,ST-T wave abnormality,163,TRUE,0.6,downsloping,0,moderate or severe,disease
+424,58,female,atypical angina,136,319,TRUE,normal,152,FALSE,0,downsloping,2,moderate or severe,no disease
+425,45,male,typical angina,142,309,FALSE,normal,147,TRUE,0,flat,3,akinesis or dyskmem,no disease
+426,51,female,typical angina,130,305,FALSE,ST-T wave abnormality,142,TRUE,1.2,flat,0,akinesis or dyskmem,no disease
+427,54,female,non-anginal pain,160,201,FALSE,ST-T wave abnormality,163,FALSE,0,downsloping,1,moderate or severe,disease
+428,57,male,non-anginal pain,150,168,FALSE,ST-T wave abnormality,174,FALSE,1.6,downsloping,0,moderate or severe,disease
+429,43,male,typical angina,132,247,TRUE,normal,143,TRUE,0.1,flat,4,akinesis or dyskmem,no disease
+430,47,male,non-anginal pain,108,243,FALSE,ST-T wave abnormality,152,FALSE,0,downsloping,0,moderate or severe,no disease
+431,67,male,non-anginal pain,152,212,FALSE,normal,150,FALSE,0.8,flat,0,akinesis or dyskmem,no disease
+432,65,female,typical angina,150,225,FALSE,normal,114,FALSE,1,flat,3,akinesis or dyskmem,no disease
+433,60,female,non-anginal pain,102,318,FALSE,ST-T wave abnormality,160,FALSE,0,downsloping,1,moderate or severe,disease
+434,37,male,non-anginal pain,130,250,FALSE,ST-T wave abnormality,187,FALSE,3.5,upsloping,0,moderate or severe,disease
+435,41,female,non-anginal pain,112,268,FALSE,normal,172,TRUE,0,downsloping,0,moderate or severe,disease
+436,57,female,typical angina,120,354,FALSE,ST-T wave abnormality,163,TRUE,0.6,downsloping,0,moderate or severe,disease
+437,59,female,typical angina,174,249,FALSE,ST-T wave abnormality,143,TRUE,0,flat,0,moderate or severe,no disease
+438,67,male,typical angina,120,229,FALSE,normal,129,TRUE,2.6,flat,2,akinesis or dyskmem,no disease
+439,47,male,non-anginal pain,130,253,FALSE,ST-T wave abnormality,179,FALSE,0,downsloping,0,moderate or severe,disease
+440,58,male,atypical angina,120,284,FALSE,normal,160,FALSE,1.8,flat,0,moderate or severe,no disease
+441,62,female,typical angina,150,244,FALSE,ST-T wave abnormality,154,TRUE,1.4,flat,0,moderate or severe,no disease
+442,60,male,typical angina,140,293,FALSE,normal,170,FALSE,1.2,flat,2,akinesis or dyskmem,no disease
+443,57,male,typical angina,152,274,FALSE,ST-T wave abnormality,88,TRUE,1.2,flat,1,akinesis or dyskmem,no disease
+444,57,male,non-anginal pain,150,168,FALSE,ST-T wave abnormality,174,FALSE,1.6,downsloping,0,moderate or severe,disease
+445,47,male,non-anginal pain,130,253,FALSE,ST-T wave abnormality,179,FALSE,0,downsloping,0,moderate or severe,disease
+446,52,male,atypical angina,128,205,TRUE,ST-T wave abnormality,184,FALSE,0,downsloping,0,moderate or severe,disease
+447,53,male,non-anginal pain,130,246,TRUE,normal,173,FALSE,0,downsloping,3,moderate or severe,disease
+448,55,male,typical angina,160,289,FALSE,normal,145,TRUE,0.8,flat,1,akinesis or dyskmem,no disease
+449,51,female,non-anginal pain,120,295,FALSE,normal,157,FALSE,0.6,downsloping,0,moderate or severe,disease
+450,52,male,typical angina,112,230,FALSE,ST-T wave abnormality,160,FALSE,0,downsloping,1,moderate or severe,no disease
+451,63,female,typical angina,150,407,FALSE,normal,154,FALSE,4,flat,3,akinesis or dyskmem,no disease
+452,49,female,atypical angina,134,271,FALSE,ST-T wave abnormality,162,FALSE,0,flat,0,moderate or severe,disease
+453,66,female,typical angina,178,228,TRUE,ST-T wave abnormality,165,TRUE,1,flat,2,akinesis or dyskmem,no disease
+454,49,female,atypical angina,134,271,FALSE,ST-T wave abnormality,162,FALSE,0,flat,0,moderate or severe,disease
+455,65,female,typical angina,150,225,FALSE,normal,114,FALSE,1,flat,3,akinesis or dyskmem,no disease
+456,69,male,asymptomatic,160,234,TRUE,normal,131,FALSE,0.1,flat,1,moderate or severe,disease
+457,47,male,non-anginal pain,108,243,FALSE,ST-T wave abnormality,152,FALSE,0,downsloping,0,moderate or severe,no disease
+458,39,female,non-anginal pain,138,220,FALSE,ST-T wave abnormality,152,FALSE,0,flat,0,moderate or severe,disease
+459,43,male,typical angina,150,247,FALSE,ST-T wave abnormality,171,FALSE,1.5,downsloping,0,moderate or severe,disease
+460,51,male,typical angina,140,261,FALSE,normal,186,TRUE,0,downsloping,0,moderate or severe,disease
+461,69,male,non-anginal pain,140,254,FALSE,normal,146,FALSE,2,flat,3,akinesis or dyskmem,no disease
+462,48,male,non-anginal pain,124,255,TRUE,ST-T wave abnormality,175,FALSE,0,downsloping,2,moderate or severe,disease
+463,52,male,asymptomatic,118,186,FALSE,normal,190,FALSE,0,flat,0,mild or moderate,disease
+464,43,male,typical angina,110,211,FALSE,ST-T wave abnormality,161,FALSE,0,downsloping,0,akinesis or dyskmem,disease
+465,67,female,non-anginal pain,115,564,FALSE,normal,160,FALSE,1.6,flat,0,akinesis or dyskmem,disease
+466,38,male,non-anginal pain,138,175,FALSE,ST-T wave abnormality,173,FALSE,0,downsloping,4,moderate or severe,disease
+467,44,male,atypical angina,130,219,FALSE,normal,188,FALSE,0,downsloping,0,moderate or severe,disease
+468,47,male,typical angina,110,275,FALSE,normal,118,TRUE,1,flat,1,moderate or severe,no disease
+469,61,male,non-anginal pain,150,243,TRUE,ST-T wave abnormality,137,TRUE,1,flat,0,moderate or severe,disease
+470,67,male,typical angina,160,286,FALSE,normal,108,TRUE,1.5,flat,3,moderate or severe,no disease
+471,60,female,asymptomatic,150,240,FALSE,ST-T wave abnormality,171,FALSE,0.9,downsloping,0,moderate or severe,disease
+472,64,female,non-anginal pain,140,313,FALSE,ST-T wave abnormality,133,FALSE,0.2,downsloping,0,akinesis or dyskmem,disease
+473,58,female,typical angina,130,197,FALSE,ST-T wave abnormality,131,FALSE,0.6,flat,0,moderate or severe,disease
+474,41,male,non-anginal pain,130,214,FALSE,normal,168,FALSE,2,flat,0,moderate or severe,disease
+475,48,male,atypical angina,110,229,FALSE,ST-T wave abnormality,168,FALSE,1,upsloping,0,akinesis or dyskmem,no disease
+476,57,male,non-anginal pain,150,126,TRUE,ST-T wave abnormality,173,FALSE,0.2,downsloping,1,akinesis or dyskmem,disease
+477,57,male,typical angina,165,289,TRUE,normal,124,FALSE,1,flat,3,akinesis or dyskmem,no disease
+478,57,male,non-anginal pain,128,229,FALSE,normal,150,FALSE,0.4,flat,1,akinesis or dyskmem,no disease
+479,39,male,non-anginal pain,140,321,FALSE,normal,182,FALSE,0,downsloping,0,moderate or severe,disease
+480,58,male,typical angina,128,216,FALSE,normal,131,TRUE,2.2,flat,3,akinesis or dyskmem,no disease
+481,51,female,typical angina,130,305,FALSE,ST-T wave abnormality,142,TRUE,1.2,flat,0,akinesis or dyskmem,no disease
+482,63,female,typical angina,150,407,FALSE,normal,154,FALSE,4,flat,3,akinesis or dyskmem,no disease
+483,51,male,typical angina,140,298,FALSE,ST-T wave abnormality,122,TRUE,4.2,flat,3,akinesis or dyskmem,no disease
+484,35,male,atypical angina,122,192,FALSE,ST-T wave abnormality,174,FALSE,0,downsloping,0,moderate or severe,disease
+485,65,male,typical angina,110,248,FALSE,normal,158,FALSE,0.6,downsloping,2,mild or moderate,no disease
+486,62,male,atypical angina,120,281,FALSE,normal,103,FALSE,1.4,flat,1,akinesis or dyskmem,no disease
+487,41,male,typical angina,110,172,FALSE,normal,158,FALSE,0,downsloping,0,akinesis or dyskmem,no disease
+488,65,male,typical angina,135,254,FALSE,normal,127,FALSE,2.8,flat,1,akinesis or dyskmem,no disease
+489,54,female,atypical angina,132,288,TRUE,normal,159,TRUE,0,downsloping,1,moderate or severe,disease
+490,61,male,non-anginal pain,150,243,TRUE,ST-T wave abnormality,137,TRUE,1,flat,0,moderate or severe,disease
+491,57,female,typical angina,128,303,FALSE,normal,159,FALSE,0,downsloping,1,moderate or severe,disease
+492,57,male,non-anginal pain,150,168,FALSE,ST-T wave abnormality,174,FALSE,1.6,downsloping,0,moderate or severe,disease
+493,64,male,non-anginal pain,125,309,FALSE,ST-T wave abnormality,131,TRUE,1.8,flat,0,akinesis or dyskmem,no disease
+494,55,male,typical angina,132,353,FALSE,ST-T wave abnormality,132,TRUE,1.2,flat,1,akinesis or dyskmem,no disease
+495,51,male,non-anginal pain,125,245,TRUE,normal,166,FALSE,2.4,flat,0,moderate or severe,disease
+496,59,male,typical angina,135,234,FALSE,ST-T wave abnormality,161,FALSE,0.5,flat,0,akinesis or dyskmem,disease
+497,68,male,non-anginal pain,180,274,TRUE,normal,150,TRUE,1.6,flat,0,akinesis or dyskmem,no disease
+498,57,male,atypical angina,154,232,FALSE,normal,164,FALSE,0,downsloping,1,moderate or severe,no disease
+499,54,male,typical angina,140,239,FALSE,ST-T wave abnormality,160,FALSE,1.2,downsloping,0,moderate or severe,disease
+500,46,female,non-anginal pain,142,177,FALSE,normal,160,TRUE,1.4,upsloping,0,moderate or severe,disease
+501,71,female,typical angina,112,149,FALSE,ST-T wave abnormality,125,FALSE,1.6,flat,0,moderate or severe,disease
+502,35,female,typical angina,138,183,FALSE,ST-T wave abnormality,182,FALSE,1.4,downsloping,0,moderate or severe,disease
+503,46,female,non-anginal pain,142,177,FALSE,normal,160,TRUE,1.4,upsloping,0,moderate or severe,disease
+504,45,female,atypical angina,130,234,FALSE,normal,175,FALSE,0.6,flat,0,moderate or severe,disease
+505,47,male,non-anginal pain,108,243,FALSE,ST-T wave abnormality,152,FALSE,0,downsloping,0,moderate or severe,no disease
+506,44,female,non-anginal pain,118,242,FALSE,ST-T wave abnormality,149,FALSE,0.3,flat,1,moderate or severe,disease
+507,61,male,typical angina,120,260,FALSE,ST-T wave abnormality,140,TRUE,3.6,flat,1,akinesis or dyskmem,no disease
+508,41,female,atypical angina,130,204,FALSE,normal,172,FALSE,1.4,downsloping,0,moderate or severe,disease
+509,56,female,typical angina,200,288,TRUE,normal,133,TRUE,4,upsloping,2,akinesis or dyskmem,no disease
+510,55,female,typical angina,180,327,FALSE,probable or definite left ventricular hypertrophy,117,TRUE,3.4,flat,0,moderate or severe,no disease
+511,54,female,atypical angina,132,288,TRUE,normal,159,TRUE,0,downsloping,1,moderate or severe,disease
+512,43,male,typical angina,120,177,FALSE,normal,120,TRUE,2.5,flat,0,akinesis or dyskmem,no disease
+513,44,male,typical angina,112,290,FALSE,normal,153,FALSE,0,downsloping,1,moderate or severe,no disease
+514,54,male,typical angina,110,206,FALSE,normal,108,TRUE,0,flat,1,moderate or severe,no disease
+515,44,male,atypical angina,120,220,FALSE,ST-T wave abnormality,170,FALSE,0,downsloping,0,moderate or severe,disease
+516,49,male,non-anginal pain,120,188,FALSE,ST-T wave abnormality,139,FALSE,2,flat,3,akinesis or dyskmem,no disease
+517,60,male,typical angina,130,206,FALSE,normal,132,TRUE,2.4,flat,2,akinesis or dyskmem,no disease
+518,41,female,atypical angina,105,198,FALSE,ST-T wave abnormality,168,FALSE,0,downsloping,1,moderate or severe,disease
+519,49,male,non-anginal pain,120,188,FALSE,ST-T wave abnormality,139,FALSE,2,flat,3,akinesis or dyskmem,no disease
+520,61,male,typical angina,148,203,FALSE,ST-T wave abnormality,161,FALSE,0,downsloping,1,akinesis or dyskmem,no disease
+521,59,male,typical angina,140,177,FALSE,ST-T wave abnormality,162,TRUE,0,downsloping,1,akinesis or dyskmem,no disease
+522,58,male,atypical angina,125,220,FALSE,ST-T wave abnormality,144,FALSE,0.4,flat,4,akinesis or dyskmem,disease
+523,67,female,non-anginal pain,152,277,FALSE,ST-T wave abnormality,172,FALSE,0,downsloping,1,moderate or severe,disease
+524,61,male,typical angina,148,203,FALSE,ST-T wave abnormality,161,FALSE,0,downsloping,1,akinesis or dyskmem,no disease
+525,58,male,non-anginal pain,112,230,FALSE,normal,165,FALSE,2.5,flat,1,akinesis or dyskmem,no disease
+526,51,female,non-anginal pain,130,256,FALSE,normal,149,FALSE,0.5,downsloping,0,moderate or severe,disease
+527,62,female,typical angina,160,164,FALSE,normal,145,FALSE,6.2,upsloping,3,akinesis or dyskmem,no disease
+528,62,female,typical angina,124,209,FALSE,ST-T wave abnormality,163,FALSE,0,downsloping,0,moderate or severe,disease
+529,59,male,asymptomatic,178,270,FALSE,normal,145,FALSE,4.2,upsloping,0,akinesis or dyskmem,disease
+530,69,male,asymptomatic,160,234,TRUE,normal,131,FALSE,0.1,flat,1,moderate or severe,disease
+531,60,female,typical angina,150,258,FALSE,normal,157,FALSE,2.6,flat,2,akinesis or dyskmem,no disease
+532,65,female,non-anginal pain,155,269,FALSE,ST-T wave abnormality,148,FALSE,0.8,downsloping,0,moderate or severe,disease
+533,63,female,typical angina,124,197,FALSE,ST-T wave abnormality,136,TRUE,0,flat,0,moderate or severe,no disease
+534,53,female,typical angina,138,234,FALSE,normal,160,FALSE,0,downsloping,0,moderate or severe,disease
+535,54,female,non-anginal pain,108,267,FALSE,normal,167,FALSE,0,downsloping,0,moderate or severe,disease
+536,76,female,non-anginal pain,140,197,FALSE,probable or definite left ventricular hypertrophy,116,FALSE,1.1,flat,0,moderate or severe,disease
+537,50,female,non-anginal pain,120,219,FALSE,ST-T wave abnormality,158,FALSE,1.6,flat,0,moderate or severe,disease
+538,52,male,atypical angina,120,325,FALSE,ST-T wave abnormality,172,FALSE,0.2,downsloping,0,moderate or severe,disease
+539,46,male,typical angina,120,249,FALSE,normal,144,FALSE,0.8,downsloping,0,akinesis or dyskmem,no disease
+540,64,male,asymptomatic,170,227,FALSE,normal,155,FALSE,0.6,flat,0,akinesis or dyskmem,disease
+541,58,male,typical angina,128,259,FALSE,normal,130,TRUE,3,flat,2,akinesis or dyskmem,no disease
+542,44,male,non-anginal pain,140,235,FALSE,normal,180,FALSE,0,downsloping,0,moderate or severe,disease
+543,62,female,typical angina,140,394,FALSE,normal,157,FALSE,1.2,flat,0,moderate or severe,disease
+544,59,male,asymptomatic,134,204,FALSE,ST-T wave abnormality,162,FALSE,0.8,downsloping,2,moderate or severe,no disease
+545,54,male,non-anginal pain,125,273,FALSE,normal,152,FALSE,0.5,upsloping,1,moderate or severe,disease
+546,48,male,atypical angina,110,229,FALSE,ST-T wave abnormality,168,FALSE,1,upsloping,0,akinesis or dyskmem,no disease
+547,70,male,typical angina,130,322,FALSE,normal,109,FALSE,2.4,flat,3,moderate or severe,no disease
+548,67,female,typical angina,106,223,FALSE,ST-T wave abnormality,142,FALSE,0.3,downsloping,2,moderate or severe,disease
+549,51,female,non-anginal pain,120,295,FALSE,normal,157,FALSE,0.6,downsloping,0,moderate or severe,disease
+550,68,male,non-anginal pain,118,277,FALSE,ST-T wave abnormality,151,FALSE,1,downsloping,1,akinesis or dyskmem,disease
+551,69,male,non-anginal pain,140,254,FALSE,normal,146,FALSE,2,flat,3,akinesis or dyskmem,no disease
+552,54,male,typical angina,122,286,FALSE,normal,116,TRUE,3.2,flat,2,moderate or severe,no disease
+553,43,female,typical angina,132,341,TRUE,normal,136,TRUE,3,flat,0,akinesis or dyskmem,no disease
+554,53,male,non-anginal pain,130,197,TRUE,normal,152,FALSE,1.2,upsloping,0,moderate or severe,disease
+555,58,male,typical angina,100,234,FALSE,ST-T wave abnormality,156,FALSE,0.1,downsloping,1,akinesis or dyskmem,no disease
+556,67,male,typical angina,125,254,TRUE,ST-T wave abnormality,163,FALSE,0.2,flat,2,akinesis or dyskmem,no disease
+557,59,male,typical angina,140,177,FALSE,ST-T wave abnormality,162,TRUE,0,downsloping,1,akinesis or dyskmem,no disease
+558,48,male,typical angina,122,222,FALSE,normal,186,FALSE,0,downsloping,0,moderate or severe,disease
+559,39,female,non-anginal pain,94,199,FALSE,ST-T wave abnormality,179,FALSE,0,downsloping,0,moderate or severe,disease
+560,67,male,typical angina,120,237,FALSE,ST-T wave abnormality,71,FALSE,1,flat,0,moderate or severe,no disease
+561,58,female,typical angina,130,197,FALSE,ST-T wave abnormality,131,FALSE,0.6,flat,0,moderate or severe,disease
+562,65,female,non-anginal pain,155,269,FALSE,ST-T wave abnormality,148,FALSE,0.8,downsloping,0,moderate or severe,disease
+563,42,female,non-anginal pain,120,209,FALSE,ST-T wave abnormality,173,FALSE,0,flat,0,moderate or severe,disease
+564,44,male,typical angina,112,290,FALSE,normal,153,FALSE,0,downsloping,1,moderate or severe,no disease
+565,56,male,typical angina,132,184,FALSE,normal,105,TRUE,2.1,flat,1,mild or moderate,no disease
+566,53,female,typical angina,138,234,FALSE,normal,160,FALSE,0,downsloping,0,moderate or severe,disease
+567,50,female,typical angina,110,254,FALSE,normal,159,FALSE,0,downsloping,0,moderate or severe,disease
+568,41,male,non-anginal pain,130,214,FALSE,normal,168,FALSE,2,flat,0,moderate or severe,disease
+569,54,female,non-anginal pain,160,201,FALSE,ST-T wave abnormality,163,FALSE,0,downsloping,1,moderate or severe,disease
+570,42,male,non-anginal pain,120,240,TRUE,ST-T wave abnormality,194,FALSE,0.8,upsloping,0,akinesis or dyskmem,disease
+571,54,female,non-anginal pain,135,304,TRUE,ST-T wave abnormality,170,FALSE,0,downsloping,0,moderate or severe,disease
+572,60,male,typical angina,145,282,FALSE,normal,142,TRUE,2.8,flat,2,akinesis or dyskmem,no disease
+573,34,male,asymptomatic,118,182,FALSE,normal,174,FALSE,0,downsloping,0,moderate or severe,disease
+574,44,male,typical angina,112,290,FALSE,normal,153,FALSE,0,downsloping,1,moderate or severe,no disease
+575,60,male,typical angina,125,258,FALSE,normal,141,TRUE,2.8,flat,1,akinesis or dyskmem,no disease
+576,43,male,typical angina,150,247,FALSE,ST-T wave abnormality,171,FALSE,1.5,downsloping,0,moderate or severe,disease
+577,52,male,asymptomatic,152,298,TRUE,ST-T wave abnormality,178,FALSE,1.2,flat,0,akinesis or dyskmem,disease
+578,70,male,typical angina,130,322,FALSE,normal,109,FALSE,2.4,flat,3,moderate or severe,no disease
+579,62,female,typical angina,140,394,FALSE,normal,157,FALSE,1.2,flat,0,moderate or severe,disease
+580,58,male,typical angina,146,218,FALSE,ST-T wave abnormality,105,FALSE,2,flat,1,akinesis or dyskmem,no disease
+581,46,male,atypical angina,101,197,TRUE,ST-T wave abnormality,156,FALSE,0,downsloping,0,akinesis or dyskmem,disease
+582,44,male,non-anginal pain,140,235,FALSE,normal,180,FALSE,0,downsloping,0,moderate or severe,disease
+583,55,male,atypical angina,130,262,FALSE,ST-T wave abnormality,155,FALSE,0,downsloping,0,moderate or severe,disease
+584,43,male,typical angina,120,177,FALSE,normal,120,TRUE,2.5,flat,0,akinesis or dyskmem,no disease
+585,55,male,typical angina,132,353,FALSE,ST-T wave abnormality,132,TRUE,1.2,flat,1,akinesis or dyskmem,no disease
+586,40,male,asymptomatic,140,199,FALSE,ST-T wave abnormality,178,TRUE,1.4,downsloping,0,akinesis or dyskmem,disease
+587,64,male,non-anginal pain,125,309,FALSE,ST-T wave abnormality,131,TRUE,1.8,flat,0,akinesis or dyskmem,no disease
+588,59,male,typical angina,164,176,TRUE,normal,90,FALSE,1,flat,2,mild or moderate,no disease
+589,61,female,typical angina,145,307,FALSE,normal,146,TRUE,1,flat,0,akinesis or dyskmem,no disease
+590,54,male,typical angina,122,286,FALSE,normal,116,TRUE,3.2,flat,2,moderate or severe,no disease
+591,74,female,atypical angina,120,269,FALSE,normal,121,TRUE,0.2,downsloping,1,moderate or severe,disease
+592,63,female,typical angina,108,269,FALSE,ST-T wave abnormality,169,TRUE,1.8,flat,2,moderate or severe,no disease
+593,70,male,non-anginal pain,160,269,FALSE,ST-T wave abnormality,112,TRUE,2.9,flat,1,akinesis or dyskmem,no disease
+594,63,female,typical angina,108,269,FALSE,ST-T wave abnormality,169,TRUE,1.8,flat,2,moderate or severe,no disease
+595,64,male,typical angina,145,212,FALSE,normal,132,FALSE,2,flat,2,mild or moderate,no disease
+596,61,male,typical angina,148,203,FALSE,ST-T wave abnormality,161,FALSE,0,downsloping,1,akinesis or dyskmem,no disease
+597,59,male,atypical angina,140,221,FALSE,ST-T wave abnormality,164,TRUE,0,downsloping,0,moderate or severe,disease
+598,38,male,non-anginal pain,138,175,FALSE,ST-T wave abnormality,173,FALSE,0,downsloping,4,moderate or severe,disease
+599,58,male,atypical angina,120,284,FALSE,normal,160,FALSE,1.8,flat,0,moderate or severe,no disease
+600,63,female,atypical angina,140,195,FALSE,ST-T wave abnormality,179,FALSE,0,downsloping,2,moderate or severe,disease
+601,62,female,non-anginal pain,130,263,FALSE,ST-T wave abnormality,97,FALSE,1.2,flat,1,akinesis or dyskmem,no disease
+602,46,male,typical angina,140,311,FALSE,ST-T wave abnormality,120,TRUE,1.8,flat,2,akinesis or dyskmem,no disease
+603,58,female,non-anginal pain,120,340,FALSE,ST-T wave abnormality,172,FALSE,0,downsloping,0,moderate or severe,disease
+604,63,female,atypical angina,140,195,FALSE,ST-T wave abnormality,179,FALSE,0,downsloping,2,moderate or severe,disease
+605,47,male,non-anginal pain,130,253,FALSE,ST-T wave abnormality,179,FALSE,0,downsloping,0,moderate or severe,disease
+606,71,female,non-anginal pain,110,265,TRUE,normal,130,FALSE,0,downsloping,1,moderate or severe,disease
+607,66,male,typical angina,112,212,FALSE,normal,132,TRUE,0.1,downsloping,1,moderate or severe,no disease
+608,42,male,typical angina,136,315,FALSE,ST-T wave abnormality,125,TRUE,1.8,flat,0,mild or moderate,no disease
+609,64,male,typical angina,145,212,FALSE,normal,132,FALSE,2,flat,2,mild or moderate,no disease
+610,55,female,typical angina,180,327,FALSE,probable or definite left ventricular hypertrophy,117,TRUE,3.4,flat,0,moderate or severe,no disease
+611,43,female,typical angina,132,341,TRUE,normal,136,TRUE,3,flat,0,akinesis or dyskmem,no disease
+612,55,female,typical angina,128,205,FALSE,probable or definite left ventricular hypertrophy,130,TRUE,2,flat,1,akinesis or dyskmem,no disease
+613,58,female,typical angina,170,225,TRUE,normal,146,TRUE,2.8,flat,2,mild or moderate,no disease
+614,55,male,typical angina,140,217,FALSE,ST-T wave abnormality,111,TRUE,5.6,upsloping,0,akinesis or dyskmem,no disease
+615,51,female,typical angina,130,305,FALSE,ST-T wave abnormality,142,TRUE,1.2,flat,0,akinesis or dyskmem,no disease
+616,50,female,non-anginal pain,120,219,FALSE,ST-T wave abnormality,158,FALSE,1.6,flat,0,moderate or severe,disease
+617,43,male,typical angina,115,303,FALSE,ST-T wave abnormality,181,FALSE,1.2,flat,0,moderate or severe,disease
+618,41,female,atypical angina,126,306,FALSE,ST-T wave abnormality,163,FALSE,0,downsloping,0,moderate or severe,disease
+619,49,male,atypical angina,130,266,FALSE,ST-T wave abnormality,171,FALSE,0.6,downsloping,0,moderate or severe,disease
+620,65,male,typical angina,110,248,FALSE,normal,158,FALSE,0.6,downsloping,2,mild or moderate,no disease
+621,57,male,typical angina,152,274,FALSE,ST-T wave abnormality,88,TRUE,1.2,flat,1,akinesis or dyskmem,no disease
+622,48,male,typical angina,130,256,TRUE,normal,150,TRUE,0,downsloping,2,akinesis or dyskmem,no disease
+623,62,female,typical angina,138,294,TRUE,ST-T wave abnormality,106,FALSE,1.9,flat,3,moderate or severe,no disease
+624,61,male,asymptomatic,134,234,FALSE,ST-T wave abnormality,145,FALSE,2.6,flat,2,moderate or severe,no disease
+625,59,male,asymptomatic,178,270,FALSE,normal,145,FALSE,4.2,upsloping,0,akinesis or dyskmem,disease
+626,69,male,non-anginal pain,140,254,FALSE,normal,146,FALSE,2,flat,3,akinesis or dyskmem,no disease
+627,58,male,non-anginal pain,132,224,FALSE,normal,173,FALSE,3.2,downsloping,2,akinesis or dyskmem,no disease
+628,38,male,asymptomatic,120,231,FALSE,ST-T wave abnormality,182,TRUE,3.8,flat,0,akinesis or dyskmem,no disease
+629,69,female,asymptomatic,140,239,FALSE,ST-T wave abnormality,151,FALSE,1.8,downsloping,2,moderate or severe,disease
+630,65,male,asymptomatic,138,282,TRUE,normal,174,FALSE,1.4,flat,1,moderate or severe,no disease
+631,45,male,asymptomatic,110,264,FALSE,ST-T wave abnormality,132,FALSE,1.2,flat,0,akinesis or dyskmem,no disease
+632,49,male,atypical angina,130,266,FALSE,ST-T wave abnormality,171,FALSE,0.6,downsloping,0,moderate or severe,disease
+633,45,female,atypical angina,130,234,FALSE,normal,175,FALSE,0.6,flat,0,moderate or severe,disease
+634,61,male,typical angina,138,166,FALSE,normal,125,TRUE,3.6,flat,1,moderate or severe,no disease
+635,52,male,typical angina,125,212,FALSE,ST-T wave abnormality,168,FALSE,1,downsloping,2,akinesis or dyskmem,no disease
+636,53,female,typical angina,130,264,FALSE,normal,143,FALSE,0.4,flat,0,moderate or severe,disease
+637,59,female,typical angina,174,249,FALSE,ST-T wave abnormality,143,TRUE,0,flat,0,moderate or severe,no disease
+638,58,female,non-anginal pain,120,340,FALSE,ST-T wave abnormality,172,FALSE,0,downsloping,0,moderate or severe,disease
+639,65,male,asymptomatic,138,282,TRUE,normal,174,FALSE,1.4,flat,1,moderate or severe,no disease
+640,58,female,typical angina,130,197,FALSE,ST-T wave abnormality,131,FALSE,0.6,flat,0,moderate or severe,disease
+641,46,female,typical angina,138,243,FALSE,normal,152,TRUE,0,flat,0,moderate or severe,disease
+642,56,female,typical angina,134,409,FALSE,normal,150,TRUE,1.9,flat,2,akinesis or dyskmem,no disease
+643,64,male,typical angina,128,263,FALSE,ST-T wave abnormality,105,TRUE,0.2,flat,1,akinesis or dyskmem,disease
+644,65,male,typical angina,120,177,FALSE,ST-T wave abnormality,140,FALSE,0.4,downsloping,0,akinesis or dyskmem,disease
+645,44,male,non-anginal pain,120,226,FALSE,ST-T wave abnormality,169,FALSE,0,downsloping,0,moderate or severe,disease
+646,50,male,typical angina,150,243,FALSE,normal,128,FALSE,2.6,flat,0,akinesis or dyskmem,no disease
+647,47,male,non-anginal pain,108,243,FALSE,ST-T wave abnormality,152,FALSE,0,downsloping,0,moderate or severe,no disease
+648,64,female,typical angina,130,303,FALSE,ST-T wave abnormality,122,FALSE,2,flat,2,moderate or severe,disease
+649,71,female,typical angina,112,149,FALSE,ST-T wave abnormality,125,FALSE,1.6,flat,0,moderate or severe,disease
+650,45,female,atypical angina,130,234,FALSE,normal,175,FALSE,0.6,flat,0,moderate or severe,disease
+651,62,male,typical angina,120,267,FALSE,ST-T wave abnormality,99,TRUE,1.8,flat,2,akinesis or dyskmem,no disease
+652,41,male,atypical angina,120,157,FALSE,ST-T wave abnormality,182,FALSE,0,downsloping,0,moderate or severe,disease
+653,66,female,asymptomatic,150,226,FALSE,ST-T wave abnormality,114,FALSE,2.6,upsloping,0,moderate or severe,disease
+654,56,male,typical angina,130,283,TRUE,normal,103,TRUE,1.6,upsloping,0,akinesis or dyskmem,no disease
+655,41,female,atypical angina,126,306,FALSE,ST-T wave abnormality,163,FALSE,0,downsloping,0,moderate or severe,disease
+656,41,male,atypical angina,110,235,FALSE,ST-T wave abnormality,153,FALSE,0,downsloping,0,moderate or severe,disease
+657,57,female,atypical angina,130,236,FALSE,normal,174,FALSE,0,flat,1,moderate or severe,no disease
+658,39,female,non-anginal pain,138,220,FALSE,ST-T wave abnormality,152,FALSE,0,flat,0,moderate or severe,disease
+659,64,male,non-anginal pain,125,309,FALSE,ST-T wave abnormality,131,TRUE,1.8,flat,0,akinesis or dyskmem,no disease
+660,59,male,typical angina,138,271,FALSE,normal,182,FALSE,0,downsloping,0,moderate or severe,disease
+661,61,male,typical angina,138,166,FALSE,normal,125,TRUE,3.6,flat,1,moderate or severe,no disease
+662,58,male,typical angina,114,318,FALSE,probable or definite left ventricular hypertrophy,140,FALSE,4.4,upsloping,3,mild or moderate,no disease
+663,47,male,typical angina,112,204,FALSE,ST-T wave abnormality,143,FALSE,0.1,downsloping,0,moderate or severe,disease
+664,58,female,typical angina,100,248,FALSE,normal,122,FALSE,1,flat,0,moderate or severe,disease
+665,66,female,asymptomatic,150,226,FALSE,ST-T wave abnormality,114,FALSE,2.6,upsloping,0,moderate or severe,disease
+666,65,female,non-anginal pain,140,417,TRUE,normal,157,FALSE,0.8,downsloping,1,moderate or severe,disease
+667,35,male,atypical angina,122,192,FALSE,ST-T wave abnormality,174,FALSE,0,downsloping,0,moderate or severe,disease
+668,57,male,atypical angina,124,261,FALSE,ST-T wave abnormality,141,FALSE,0.3,downsloping,0,akinesis or dyskmem,no disease
+669,29,male,atypical angina,130,204,FALSE,normal,202,FALSE,0,downsloping,0,moderate or severe,disease
+670,66,male,atypical angina,160,246,FALSE,ST-T wave abnormality,120,TRUE,0,flat,3,mild or moderate,no disease
+671,61,female,typical angina,130,330,FALSE,normal,169,FALSE,0,downsloping,0,moderate or severe,no disease
+672,52,male,typical angina,125,212,FALSE,ST-T wave abnormality,168,FALSE,1,downsloping,2,akinesis or dyskmem,no disease
+673,68,male,non-anginal pain,118,277,FALSE,ST-T wave abnormality,151,FALSE,1,downsloping,1,akinesis or dyskmem,disease
+674,54,male,non-anginal pain,120,258,FALSE,normal,147,FALSE,0.4,flat,0,akinesis or dyskmem,disease
+675,63,male,typical angina,130,330,TRUE,normal,132,TRUE,1.8,downsloping,3,akinesis or dyskmem,no disease
+676,58,male,typical angina,100,234,FALSE,ST-T wave abnormality,156,FALSE,0.1,downsloping,1,akinesis or dyskmem,no disease
+677,60,male,typical angina,130,253,FALSE,ST-T wave abnormality,144,TRUE,1.4,downsloping,1,akinesis or dyskmem,no disease
+678,63,male,typical angina,130,254,FALSE,normal,147,FALSE,1.4,flat,1,akinesis or dyskmem,no disease
+679,41,female,non-anginal pain,112,268,FALSE,normal,172,TRUE,0,downsloping,0,moderate or severe,disease
+680,68,male,non-anginal pain,180,274,TRUE,normal,150,TRUE,1.6,flat,0,akinesis or dyskmem,no disease
+681,42,male,atypical angina,120,295,FALSE,ST-T wave abnormality,162,FALSE,0,downsloping,0,moderate or severe,disease
+682,59,male,typical angina,170,326,FALSE,normal,140,TRUE,3.4,upsloping,0,akinesis or dyskmem,no disease
+683,59,male,typical angina,164,176,TRUE,normal,90,FALSE,1,flat,2,mild or moderate,no disease
+684,43,male,typical angina,120,177,FALSE,normal,120,TRUE,2.5,flat,0,akinesis or dyskmem,no disease
+685,60,male,non-anginal pain,140,185,FALSE,normal,155,FALSE,3,flat,0,moderate or severe,no disease
+686,63,female,typical angina,150,407,FALSE,normal,154,FALSE,4,flat,3,akinesis or dyskmem,no disease
+687,52,male,typical angina,128,204,TRUE,ST-T wave abnormality,156,TRUE,1,flat,0,none,no disease
+688,58,male,typical angina,125,300,FALSE,normal,171,FALSE,0,downsloping,2,akinesis or dyskmem,no disease
+689,56,female,typical angina,200,288,TRUE,normal,133,TRUE,4,upsloping,2,akinesis or dyskmem,no disease
+690,54,female,non-anginal pain,135,304,TRUE,ST-T wave abnormality,170,FALSE,0,downsloping,0,moderate or severe,disease
+691,58,male,non-anginal pain,105,240,FALSE,normal,154,TRUE,0.6,flat,0,akinesis or dyskmem,disease
+692,55,female,atypical angina,135,250,FALSE,normal,161,FALSE,1.4,flat,0,moderate or severe,disease
+693,53,male,typical angina,140,203,TRUE,normal,155,TRUE,3.1,upsloping,0,akinesis or dyskmem,no disease
+694,63,female,atypical angina,140,195,FALSE,ST-T wave abnormality,179,FALSE,0,downsloping,2,moderate or severe,disease
+695,39,male,typical angina,118,219,FALSE,ST-T wave abnormality,140,FALSE,1.2,flat,0,akinesis or dyskmem,no disease
+696,35,male,typical angina,126,282,FALSE,normal,156,TRUE,0,downsloping,0,akinesis or dyskmem,no disease
+697,50,female,non-anginal pain,120,219,FALSE,ST-T wave abnormality,158,FALSE,1.6,flat,0,moderate or severe,disease
+698,67,male,non-anginal pain,152,212,FALSE,normal,150,FALSE,0.8,flat,0,akinesis or dyskmem,no disease
+699,66,male,typical angina,112,212,FALSE,normal,132,TRUE,0.1,downsloping,1,moderate or severe,no disease
+700,35,male,typical angina,126,282,FALSE,normal,156,TRUE,0,downsloping,0,akinesis or dyskmem,no disease
+701,41,male,non-anginal pain,130,214,FALSE,normal,168,FALSE,2,flat,0,moderate or severe,disease
+702,35,male,typical angina,120,198,FALSE,ST-T wave abnormality,130,TRUE,1.6,flat,0,akinesis or dyskmem,no disease
+703,71,female,atypical angina,160,302,FALSE,ST-T wave abnormality,162,FALSE,0.4,downsloping,2,moderate or severe,disease
+704,57,male,typical angina,110,201,FALSE,ST-T wave abnormality,126,TRUE,1.5,flat,0,mild or moderate,disease
+705,51,male,non-anginal pain,94,227,FALSE,ST-T wave abnormality,154,TRUE,0,downsloping,1,akinesis or dyskmem,disease
+706,58,male,typical angina,128,216,FALSE,normal,131,TRUE,2.2,flat,3,akinesis or dyskmem,no disease
+707,57,male,non-anginal pain,128,229,FALSE,normal,150,FALSE,0.4,flat,1,akinesis or dyskmem,no disease
+708,56,female,atypical angina,140,294,FALSE,normal,153,FALSE,1.3,flat,0,moderate or severe,disease
+709,60,female,non-anginal pain,120,178,TRUE,ST-T wave abnormality,96,FALSE,0,downsloping,0,moderate or severe,disease
+710,45,male,asymptomatic,110,264,FALSE,ST-T wave abnormality,132,FALSE,1.2,flat,0,akinesis or dyskmem,no disease
+711,56,male,atypical angina,130,221,FALSE,normal,163,FALSE,0,downsloping,0,akinesis or dyskmem,disease
+712,35,male,typical angina,120,198,FALSE,ST-T wave abnormality,130,TRUE,1.6,flat,0,akinesis or dyskmem,no disease
+713,45,female,atypical angina,112,160,FALSE,ST-T wave abnormality,138,FALSE,0,flat,0,moderate or severe,disease
+714,66,female,asymptomatic,150,226,FALSE,ST-T wave abnormality,114,FALSE,2.6,upsloping,0,moderate or severe,disease
+715,51,male,asymptomatic,125,213,FALSE,normal,125,TRUE,1.4,downsloping,1,moderate or severe,disease
+716,70,male,atypical angina,156,245,FALSE,normal,143,FALSE,0,downsloping,0,moderate or severe,disease
+717,55,female,typical angina,128,205,FALSE,probable or definite left ventricular hypertrophy,130,TRUE,2,flat,1,akinesis or dyskmem,no disease
+718,56,male,non-anginal pain,130,256,TRUE,normal,142,TRUE,0.6,flat,1,mild or moderate,no disease
+719,55,female,atypical angina,135,250,FALSE,normal,161,FALSE,1.4,flat,0,moderate or severe,disease
+720,52,male,typical angina,108,233,TRUE,ST-T wave abnormality,147,FALSE,0.1,downsloping,3,akinesis or dyskmem,disease
+721,64,male,non-anginal pain,140,335,FALSE,ST-T wave abnormality,158,FALSE,0,downsloping,0,moderate or severe,no disease
+722,45,male,typical angina,115,260,FALSE,normal,185,FALSE,0,downsloping,0,moderate or severe,disease
+723,67,female,non-anginal pain,152,277,FALSE,ST-T wave abnormality,172,FALSE,0,downsloping,1,moderate or severe,disease
+724,68,female,non-anginal pain,120,211,FALSE,normal,115,FALSE,1.5,flat,0,moderate or severe,disease
+725,74,female,atypical angina,120,269,FALSE,normal,121,TRUE,0.2,downsloping,1,moderate or severe,disease
+726,60,female,typical angina,150,258,FALSE,normal,157,FALSE,2.6,flat,2,akinesis or dyskmem,no disease
+727,48,male,typical angina,124,274,FALSE,normal,166,FALSE,0.5,flat,0,akinesis or dyskmem,no disease
+728,56,male,atypical angina,130,221,FALSE,normal,163,FALSE,0,downsloping,0,akinesis or dyskmem,disease
+729,46,male,typical angina,140,311,FALSE,ST-T wave abnormality,120,TRUE,1.8,flat,2,akinesis or dyskmem,no disease
+730,55,female,atypical angina,135,250,FALSE,normal,161,FALSE,1.4,flat,0,moderate or severe,disease
+731,44,male,atypical angina,120,220,FALSE,ST-T wave abnormality,170,FALSE,0,downsloping,0,moderate or severe,disease
+732,52,male,typical angina,112,230,FALSE,ST-T wave abnormality,160,FALSE,0,downsloping,1,moderate or severe,no disease
+733,51,male,non-anginal pain,94,227,FALSE,ST-T wave abnormality,154,TRUE,0,downsloping,1,akinesis or dyskmem,disease
+734,44,female,non-anginal pain,108,141,FALSE,ST-T wave abnormality,175,FALSE,0.6,flat,0,moderate or severe,disease
+735,52,male,typical angina,128,204,TRUE,ST-T wave abnormality,156,TRUE,1,flat,0,none,no disease
+736,50,male,non-anginal pain,129,196,FALSE,ST-T wave abnormality,163,FALSE,0,downsloping,0,moderate or severe,disease
+737,59,male,typical angina,110,239,FALSE,normal,142,TRUE,1.2,flat,1,akinesis or dyskmem,no disease
+738,67,male,typical angina,120,229,FALSE,normal,129,TRUE,2.6,flat,2,akinesis or dyskmem,no disease
+739,58,male,typical angina,125,300,FALSE,normal,171,FALSE,0,downsloping,2,akinesis or dyskmem,no disease
+740,52,male,typical angina,128,255,FALSE,ST-T wave abnormality,161,TRUE,0,downsloping,1,akinesis or dyskmem,no disease
+741,44,male,non-anginal pain,140,235,FALSE,normal,180,FALSE,0,downsloping,0,moderate or severe,disease
+742,41,female,non-anginal pain,112,268,FALSE,normal,172,TRUE,0,downsloping,0,moderate or severe,disease
+743,63,male,typical angina,130,330,TRUE,normal,132,TRUE,1.8,downsloping,3,akinesis or dyskmem,no disease
+744,58,male,atypical angina,125,220,FALSE,ST-T wave abnormality,144,FALSE,0.4,flat,4,akinesis or dyskmem,disease
+745,60,female,non-anginal pain,102,318,FALSE,ST-T wave abnormality,160,FALSE,0,downsloping,1,moderate or severe,disease
+746,51,male,non-anginal pain,100,222,FALSE,ST-T wave abnormality,143,TRUE,1.2,flat,0,moderate or severe,disease
+747,64,male,non-anginal pain,140,335,FALSE,ST-T wave abnormality,158,FALSE,0,downsloping,0,moderate or severe,no disease
+748,60,male,typical angina,117,230,TRUE,ST-T wave abnormality,160,TRUE,1.4,downsloping,2,akinesis or dyskmem,no disease
+749,44,male,non-anginal pain,120,226,FALSE,ST-T wave abnormality,169,FALSE,0,downsloping,0,moderate or severe,disease
+750,58,male,atypical angina,125,220,FALSE,ST-T wave abnormality,144,FALSE,0.4,flat,4,akinesis or dyskmem,disease
+751,55,male,atypical angina,130,262,FALSE,ST-T wave abnormality,155,FALSE,0,downsloping,0,moderate or severe,disease
+752,65,female,non-anginal pain,160,360,FALSE,normal,151,FALSE,0.8,downsloping,0,moderate or severe,disease
+753,48,male,atypical angina,130,245,FALSE,normal,180,FALSE,0.2,flat,0,moderate or severe,disease
+754,65,male,typical angina,120,177,FALSE,ST-T wave abnormality,140,FALSE,0.4,downsloping,0,akinesis or dyskmem,disease
+755,51,female,non-anginal pain,130,256,FALSE,normal,149,FALSE,0.5,downsloping,0,moderate or severe,disease
+756,48,male,non-anginal pain,124,255,TRUE,ST-T wave abnormality,175,FALSE,0,downsloping,2,moderate or severe,disease
+757,64,male,typical angina,120,246,FALSE,normal,96,TRUE,2.2,upsloping,1,moderate or severe,no disease
+758,66,male,typical angina,160,228,FALSE,normal,138,FALSE,2.3,downsloping,0,mild or moderate,disease
+759,46,female,atypical angina,105,204,FALSE,ST-T wave abnormality,172,FALSE,0,downsloping,0,moderate or severe,disease
+760,61,female,typical angina,130,330,FALSE,normal,169,FALSE,0,downsloping,0,moderate or severe,no disease
+761,57,male,typical angina,150,276,FALSE,normal,112,TRUE,0.6,flat,1,mild or moderate,no disease
+762,49,female,typical angina,130,269,FALSE,ST-T wave abnormality,163,FALSE,0,downsloping,0,moderate or severe,disease
+763,56,male,atypical angina,130,221,FALSE,normal,163,FALSE,0,downsloping,0,akinesis or dyskmem,disease
+764,58,female,asymptomatic,150,283,TRUE,normal,162,FALSE,1,downsloping,0,moderate or severe,disease
+765,63,male,typical angina,140,187,FALSE,normal,144,TRUE,4,downsloping,2,akinesis or dyskmem,no disease
+766,57,male,typical angina,110,335,FALSE,ST-T wave abnormality,143,TRUE,3,flat,1,akinesis or dyskmem,no disease
+767,57,male,typical angina,110,335,FALSE,ST-T wave abnormality,143,TRUE,3,flat,1,akinesis or dyskmem,no disease
+768,68,male,typical angina,144,193,TRUE,ST-T wave abnormality,141,FALSE,3.4,flat,2,akinesis or dyskmem,no disease
+769,46,male,atypical angina,101,197,TRUE,ST-T wave abnormality,156,FALSE,0,downsloping,0,akinesis or dyskmem,disease
+770,71,female,non-anginal pain,110,265,TRUE,normal,130,FALSE,0,downsloping,1,moderate or severe,disease
+771,41,male,atypical angina,135,203,FALSE,ST-T wave abnormality,132,FALSE,0,flat,0,mild or moderate,disease
+772,45,female,typical angina,138,236,FALSE,normal,152,TRUE,0.2,flat,0,moderate or severe,disease
+773,62,female,typical angina,150,244,FALSE,ST-T wave abnormality,154,TRUE,1.4,flat,0,moderate or severe,no disease
+774,65,female,typical angina,150,225,FALSE,normal,114,FALSE,1,flat,3,akinesis or dyskmem,no disease
+775,48,female,non-anginal pain,130,275,FALSE,ST-T wave abnormality,139,FALSE,0.2,downsloping,0,moderate or severe,disease
+776,51,male,non-anginal pain,100,222,FALSE,ST-T wave abnormality,143,TRUE,1.2,flat,0,moderate or severe,disease
+777,61,female,typical angina,145,307,FALSE,normal,146,TRUE,1,flat,0,akinesis or dyskmem,no disease
+778,53,male,typical angina,123,282,FALSE,ST-T wave abnormality,95,TRUE,2,flat,2,akinesis or dyskmem,no disease
+779,59,male,asymptomatic,134,204,FALSE,ST-T wave abnormality,162,FALSE,0.8,downsloping,2,moderate or severe,no disease
+780,34,female,atypical angina,118,210,FALSE,ST-T wave abnormality,192,FALSE,0.7,downsloping,0,moderate or severe,disease
+781,44,male,typical angina,120,169,FALSE,ST-T wave abnormality,144,TRUE,2.8,upsloping,0,mild or moderate,no disease
+782,58,male,typical angina,146,218,FALSE,ST-T wave abnormality,105,FALSE,2,flat,1,akinesis or dyskmem,no disease
+783,64,female,typical angina,130,303,FALSE,ST-T wave abnormality,122,FALSE,2,flat,2,moderate or severe,disease
+784,56,male,atypical angina,120,240,FALSE,ST-T wave abnormality,169,FALSE,0,upsloping,0,moderate or severe,disease
+785,54,male,non-anginal pain,150,232,FALSE,normal,165,FALSE,1.6,downsloping,0,akinesis or dyskmem,disease
+786,55,male,typical angina,160,289,FALSE,normal,145,TRUE,0.8,flat,1,akinesis or dyskmem,no disease
+787,67,male,typical angina,125,254,TRUE,ST-T wave abnormality,163,FALSE,0.2,flat,2,akinesis or dyskmem,no disease
+788,51,male,typical angina,140,298,FALSE,ST-T wave abnormality,122,TRUE,4.2,flat,3,akinesis or dyskmem,no disease
+789,62,female,typical angina,138,294,TRUE,ST-T wave abnormality,106,FALSE,1.9,flat,3,moderate or severe,no disease
+790,62,male,atypical angina,120,281,FALSE,normal,103,FALSE,1.4,flat,1,akinesis or dyskmem,no disease
+791,54,male,typical angina,110,239,FALSE,ST-T wave abnormality,126,TRUE,2.8,flat,1,akinesis or dyskmem,no disease
+792,54,male,typical angina,110,239,FALSE,ST-T wave abnormality,126,TRUE,2.8,flat,1,akinesis or dyskmem,no disease
+793,68,male,typical angina,144,193,TRUE,ST-T wave abnormality,141,FALSE,3.4,flat,2,akinesis or dyskmem,no disease
+794,60,female,non-anginal pain,120,178,TRUE,ST-T wave abnormality,96,FALSE,0,downsloping,0,moderate or severe,disease
+795,61,male,asymptomatic,134,234,FALSE,ST-T wave abnormality,145,FALSE,2.6,flat,2,moderate or severe,no disease
+796,62,male,atypical angina,128,208,TRUE,normal,140,FALSE,0,downsloping,0,moderate or severe,disease
+797,41,male,atypical angina,135,203,FALSE,ST-T wave abnormality,132,FALSE,0,flat,0,mild or moderate,disease
+798,65,female,typical angina,150,225,FALSE,normal,114,FALSE,1,flat,3,akinesis or dyskmem,no disease
+799,59,male,asymptomatic,170,288,FALSE,normal,159,FALSE,0.2,flat,0,akinesis or dyskmem,no disease
+800,43,male,typical angina,115,303,FALSE,ST-T wave abnormality,181,FALSE,1.2,flat,0,moderate or severe,disease
+801,67,male,typical angina,120,229,FALSE,normal,129,TRUE,2.6,flat,2,akinesis or dyskmem,no disease
+802,63,male,asymptomatic,145,233,TRUE,normal,150,FALSE,2.3,upsloping,0,mild or moderate,disease
+803,63,female,typical angina,124,197,FALSE,ST-T wave abnormality,136,TRUE,0,flat,0,moderate or severe,no disease
+804,52,male,typical angina,112,230,FALSE,ST-T wave abnormality,160,FALSE,0,downsloping,1,moderate or severe,no disease
+805,58,female,typical angina,130,197,FALSE,ST-T wave abnormality,131,FALSE,0.6,flat,0,moderate or severe,disease
+806,53,male,typical angina,142,226,FALSE,normal,111,TRUE,0,downsloping,0,akinesis or dyskmem,disease
+807,57,male,typical angina,150,276,FALSE,normal,112,TRUE,0.6,flat,1,mild or moderate,no disease
+808,44,male,non-anginal pain,130,233,FALSE,ST-T wave abnormality,179,TRUE,0.4,downsloping,0,moderate or severe,disease
+809,51,male,non-anginal pain,94,227,FALSE,ST-T wave abnormality,154,TRUE,0,downsloping,1,akinesis or dyskmem,disease
+810,54,female,non-anginal pain,110,214,FALSE,ST-T wave abnormality,158,FALSE,1.6,flat,0,moderate or severe,disease
+811,40,male,typical angina,110,167,FALSE,normal,114,TRUE,2,flat,0,akinesis or dyskmem,no disease
+812,57,male,atypical angina,124,261,FALSE,ST-T wave abnormality,141,FALSE,0.3,downsloping,0,akinesis or dyskmem,no disease
+813,62,female,typical angina,140,268,FALSE,normal,160,FALSE,3.6,upsloping,2,moderate or severe,no disease
+814,53,male,typical angina,140,203,TRUE,normal,155,TRUE,3.1,upsloping,0,akinesis or dyskmem,no disease
+815,62,male,atypical angina,128,208,TRUE,normal,140,FALSE,0,downsloping,0,moderate or severe,disease
+816,58,male,non-anginal pain,105,240,FALSE,normal,154,TRUE,0.6,flat,0,akinesis or dyskmem,disease
+817,70,male,atypical angina,156,245,FALSE,normal,143,FALSE,0,downsloping,0,moderate or severe,disease
+818,45,male,typical angina,115,260,FALSE,normal,185,FALSE,0,downsloping,0,moderate or severe,disease
+819,42,male,asymptomatic,148,244,FALSE,normal,178,FALSE,0.8,downsloping,2,moderate or severe,disease
+820,58,female,typical angina,170,225,TRUE,normal,146,TRUE,2.8,flat,2,mild or moderate,no disease
+821,61,male,typical angina,140,207,FALSE,normal,138,TRUE,1.9,downsloping,1,akinesis or dyskmem,no disease
+822,62,female,typical angina,140,268,FALSE,normal,160,FALSE,3.6,upsloping,2,moderate or severe,no disease
+823,60,male,typical angina,130,253,FALSE,ST-T wave abnormality,144,TRUE,1.4,downsloping,1,akinesis or dyskmem,no disease
+824,54,male,typical angina,140,239,FALSE,ST-T wave abnormality,160,FALSE,1.2,downsloping,0,moderate or severe,disease
+825,61,male,typical angina,138,166,FALSE,normal,125,TRUE,3.6,flat,1,moderate or severe,no disease
+826,63,female,non-anginal pain,135,252,FALSE,normal,172,FALSE,0,downsloping,0,moderate or severe,disease
+827,42,male,non-anginal pain,130,180,FALSE,ST-T wave abnormality,150,FALSE,0,downsloping,0,moderate or severe,disease
+828,57,male,non-anginal pain,128,229,FALSE,normal,150,FALSE,0.4,flat,1,akinesis or dyskmem,no disease
+829,44,male,non-anginal pain,130,233,FALSE,ST-T wave abnormality,179,TRUE,0.4,downsloping,0,moderate or severe,disease
+830,54,male,typical angina,124,266,FALSE,normal,109,TRUE,2.2,flat,1,akinesis or dyskmem,no disease
+831,51,male,non-anginal pain,100,222,FALSE,ST-T wave abnormality,143,TRUE,1.2,flat,0,moderate or severe,disease
+832,58,male,atypical angina,125,220,FALSE,ST-T wave abnormality,144,FALSE,0.4,flat,4,akinesis or dyskmem,disease
+833,68,male,non-anginal pain,118,277,FALSE,ST-T wave abnormality,151,FALSE,1,downsloping,1,akinesis or dyskmem,disease
+834,55,male,typical angina,140,217,FALSE,ST-T wave abnormality,111,TRUE,5.6,upsloping,0,akinesis or dyskmem,no disease
+835,42,male,typical angina,136,315,FALSE,ST-T wave abnormality,125,TRUE,1.8,flat,0,mild or moderate,no disease
+836,49,male,non-anginal pain,118,149,FALSE,normal,126,FALSE,0.8,downsloping,3,moderate or severe,no disease
+837,53,female,typical angina,138,234,FALSE,normal,160,FALSE,0,downsloping,0,moderate or severe,disease
+838,52,male,non-anginal pain,172,199,TRUE,ST-T wave abnormality,162,FALSE,0.5,downsloping,0,akinesis or dyskmem,disease
+839,51,male,asymptomatic,125,213,FALSE,normal,125,TRUE,1.4,downsloping,1,moderate or severe,disease
+840,51,male,typical angina,140,261,FALSE,normal,186,TRUE,0,downsloping,0,moderate or severe,disease
+841,70,male,typical angina,145,174,FALSE,ST-T wave abnormality,125,TRUE,2.6,upsloping,0,akinesis or dyskmem,no disease
+842,35,female,typical angina,138,183,FALSE,ST-T wave abnormality,182,FALSE,1.4,downsloping,0,moderate or severe,disease
+843,58,male,non-anginal pain,112,230,FALSE,normal,165,FALSE,2.5,flat,1,akinesis or dyskmem,no disease
+844,59,male,asymptomatic,160,273,FALSE,normal,125,FALSE,0,downsloping,0,moderate or severe,no disease
+845,60,male,typical angina,140,293,FALSE,normal,170,FALSE,1.2,flat,2,akinesis or dyskmem,no disease
+846,56,male,typical angina,132,184,FALSE,normal,105,TRUE,2.1,flat,1,mild or moderate,no disease
+847,35,female,typical angina,138,183,FALSE,ST-T wave abnormality,182,FALSE,1.4,downsloping,0,moderate or severe,disease
+848,61,male,typical angina,138,166,FALSE,normal,125,TRUE,3.6,flat,1,moderate or severe,no disease
+849,58,female,asymptomatic,150,283,TRUE,normal,162,FALSE,1,downsloping,0,moderate or severe,disease
+850,52,male,typical angina,128,255,FALSE,ST-T wave abnormality,161,TRUE,0,downsloping,1,akinesis or dyskmem,no disease
+851,58,male,atypical angina,120,284,FALSE,normal,160,FALSE,1.8,flat,0,moderate or severe,no disease
+852,37,male,non-anginal pain,130,250,FALSE,ST-T wave abnormality,187,FALSE,3.5,upsloping,0,moderate or severe,disease
+853,52,male,typical angina,128,255,FALSE,ST-T wave abnormality,161,TRUE,0,downsloping,1,akinesis or dyskmem,no disease
+854,67,male,typical angina,120,229,FALSE,normal,129,TRUE,2.6,flat,2,akinesis or dyskmem,no disease
+855,65,male,asymptomatic,138,282,TRUE,normal,174,FALSE,1.4,flat,1,moderate or severe,no disease
+856,46,male,atypical angina,101,197,TRUE,ST-T wave abnormality,156,FALSE,0,downsloping,0,akinesis or dyskmem,disease
+857,68,female,non-anginal pain,120,211,FALSE,normal,115,FALSE,1.5,flat,0,moderate or severe,disease
+858,43,male,typical angina,115,303,FALSE,ST-T wave abnormality,181,FALSE,1.2,flat,0,moderate or severe,disease
+859,68,female,non-anginal pain,120,211,FALSE,normal,115,FALSE,1.5,flat,0,moderate or severe,disease
+860,51,male,typical angina,140,299,FALSE,ST-T wave abnormality,173,TRUE,1.6,downsloping,0,akinesis or dyskmem,no disease
+861,52,male,typical angina,112,230,FALSE,ST-T wave abnormality,160,FALSE,0,downsloping,1,moderate or severe,no disease
+862,64,male,non-anginal pain,140,335,FALSE,ST-T wave abnormality,158,FALSE,0,downsloping,0,moderate or severe,no disease
+863,59,male,asymptomatic,170,288,FALSE,normal,159,FALSE,0.2,flat,0,akinesis or dyskmem,no disease
+864,52,male,typical angina,125,212,FALSE,ST-T wave abnormality,168,FALSE,1,downsloping,2,akinesis or dyskmem,no disease
+865,59,male,asymptomatic,160,273,FALSE,normal,125,FALSE,0,downsloping,0,moderate or severe,no disease
+866,60,female,asymptomatic,150,240,FALSE,ST-T wave abnormality,171,FALSE,0.9,downsloping,0,moderate or severe,disease
+867,41,male,non-anginal pain,112,250,FALSE,ST-T wave abnormality,179,FALSE,0,downsloping,0,moderate or severe,disease
+868,41,male,atypical angina,110,235,FALSE,ST-T wave abnormality,153,FALSE,0,downsloping,0,moderate or severe,disease
+869,56,male,atypical angina,120,240,FALSE,ST-T wave abnormality,169,FALSE,0,upsloping,0,moderate or severe,disease
+870,56,male,atypical angina,120,236,FALSE,ST-T wave abnormality,178,FALSE,0.8,downsloping,0,moderate or severe,disease
+871,48,female,non-anginal pain,130,275,FALSE,ST-T wave abnormality,139,FALSE,0.2,downsloping,0,moderate or severe,disease
+872,39,male,non-anginal pain,140,321,FALSE,normal,182,FALSE,0,downsloping,0,moderate or severe,disease
+873,64,male,asymptomatic,170,227,FALSE,normal,155,FALSE,0.6,flat,0,akinesis or dyskmem,disease
+874,57,male,typical angina,140,192,FALSE,ST-T wave abnormality,148,FALSE,0.4,flat,0,mild or moderate,disease
+875,59,male,asymptomatic,160,273,FALSE,normal,125,FALSE,0,downsloping,0,moderate or severe,no disease
+876,60,male,typical angina,130,206,FALSE,normal,132,TRUE,2.4,flat,2,akinesis or dyskmem,no disease
+877,61,male,typical angina,140,207,FALSE,normal,138,TRUE,1.9,downsloping,1,akinesis or dyskmem,no disease
+878,43,female,non-anginal pain,122,213,FALSE,ST-T wave abnormality,165,FALSE,0.2,flat,0,moderate or severe,disease
+879,54,male,typical angina,120,188,FALSE,ST-T wave abnormality,113,FALSE,1.4,flat,1,akinesis or dyskmem,no disease
+880,59,male,typical angina,138,271,FALSE,normal,182,FALSE,0,downsloping,0,moderate or severe,disease
+881,57,male,typical angina,132,207,FALSE,ST-T wave abnormality,168,TRUE,0,downsloping,0,akinesis or dyskmem,disease
+882,57,male,atypical angina,154,232,FALSE,normal,164,FALSE,0,downsloping,1,moderate or severe,no disease
+883,57,male,typical angina,130,131,FALSE,ST-T wave abnormality,115,TRUE,1.2,flat,1,akinesis or dyskmem,no disease
+884,48,male,typical angina,124,274,FALSE,normal,166,FALSE,0.5,flat,0,akinesis or dyskmem,no disease
+885,70,male,typical angina,145,174,FALSE,ST-T wave abnormality,125,TRUE,2.6,upsloping,0,akinesis or dyskmem,no disease
+886,57,male,typical angina,165,289,TRUE,normal,124,FALSE,1,flat,3,akinesis or dyskmem,no disease
+887,61,male,typical angina,120,260,FALSE,ST-T wave abnormality,140,TRUE,3.6,flat,1,akinesis or dyskmem,no disease
+888,57,male,typical angina,110,201,FALSE,ST-T wave abnormality,126,TRUE,1.5,flat,0,mild or moderate,disease
+889,60,female,typical angina,150,258,FALSE,normal,157,FALSE,2.6,flat,2,akinesis or dyskmem,no disease
+890,63,female,typical angina,150,407,FALSE,normal,154,FALSE,4,flat,3,akinesis or dyskmem,no disease
+891,55,female,typical angina,128,205,FALSE,probable or definite left ventricular hypertrophy,130,TRUE,2,flat,1,akinesis or dyskmem,no disease
+892,64,female,typical angina,180,325,FALSE,ST-T wave abnormality,154,TRUE,0,downsloping,0,moderate or severe,disease
+893,54,male,typical angina,110,239,FALSE,ST-T wave abnormality,126,TRUE,2.8,flat,1,akinesis or dyskmem,no disease
+894,52,male,typical angina,128,204,TRUE,ST-T wave abnormality,156,TRUE,1,flat,0,none,no disease
+895,51,male,typical angina,140,299,FALSE,ST-T wave abnormality,173,TRUE,1.6,downsloping,0,akinesis or dyskmem,no disease
+896,62,female,non-anginal pain,130,263,FALSE,ST-T wave abnormality,97,FALSE,1.2,flat,1,akinesis or dyskmem,no disease
+897,59,male,asymptomatic,178,270,FALSE,normal,145,FALSE,4.2,upsloping,0,akinesis or dyskmem,disease
+898,52,male,atypical angina,134,201,FALSE,ST-T wave abnormality,158,FALSE,0.8,downsloping,1,moderate or severe,disease
+899,42,female,typical angina,102,265,FALSE,normal,122,FALSE,0.6,flat,0,moderate or severe,disease
+900,59,male,typical angina,135,234,FALSE,ST-T wave abnormality,161,FALSE,0.5,flat,0,akinesis or dyskmem,disease
+901,61,male,asymptomatic,134,234,FALSE,ST-T wave abnormality,145,FALSE,2.6,flat,2,moderate or severe,no disease
+902,42,female,typical angina,102,265,FALSE,normal,122,FALSE,0.6,flat,0,moderate or severe,disease
+903,62,female,typical angina,140,268,FALSE,normal,160,FALSE,3.6,upsloping,2,moderate or severe,no disease
+904,59,male,non-anginal pain,126,218,TRUE,ST-T wave abnormality,134,FALSE,2.2,flat,1,mild or moderate,no disease
+905,55,male,atypical angina,130,262,FALSE,ST-T wave abnormality,155,FALSE,0,downsloping,0,moderate or severe,disease
+906,64,male,typical angina,120,246,FALSE,normal,96,TRUE,2.2,upsloping,1,moderate or severe,no disease
+907,42,male,typical angina,140,226,FALSE,ST-T wave abnormality,178,FALSE,0,downsloping,0,moderate or severe,disease
+908,50,female,atypical angina,120,244,FALSE,ST-T wave abnormality,162,FALSE,1.1,downsloping,0,moderate or severe,disease
+909,62,male,typical angina,120,267,FALSE,ST-T wave abnormality,99,TRUE,1.8,flat,2,akinesis or dyskmem,no disease
+910,50,male,typical angina,144,200,FALSE,normal,126,TRUE,0.9,flat,0,akinesis or dyskmem,no disease
+911,50,male,non-anginal pain,140,233,FALSE,ST-T wave abnormality,163,FALSE,0.6,flat,1,akinesis or dyskmem,no disease
+912,58,female,atypical angina,136,319,TRUE,normal,152,FALSE,0,downsloping,2,moderate or severe,no disease
+913,35,male,typical angina,120,198,FALSE,ST-T wave abnormality,130,TRUE,1.6,flat,0,akinesis or dyskmem,no disease
+914,45,male,typical angina,104,208,FALSE,normal,148,TRUE,3,flat,0,moderate or severe,disease
+915,66,male,typical angina,112,212,FALSE,normal,132,TRUE,0.1,downsloping,1,moderate or severe,no disease
+916,46,male,typical angina,120,249,FALSE,normal,144,FALSE,0.8,downsloping,0,akinesis or dyskmem,no disease
+917,65,male,typical angina,135,254,FALSE,normal,127,FALSE,2.8,flat,1,akinesis or dyskmem,no disease
+918,47,male,non-anginal pain,130,253,FALSE,ST-T wave abnormality,179,FALSE,0,downsloping,0,moderate or severe,disease
+919,59,male,asymptomatic,134,204,FALSE,ST-T wave abnormality,162,FALSE,0.8,downsloping,2,moderate or severe,no disease
+920,38,male,asymptomatic,120,231,FALSE,ST-T wave abnormality,182,TRUE,3.8,flat,0,akinesis or dyskmem,no disease
+921,39,male,typical angina,118,219,FALSE,ST-T wave abnormality,140,FALSE,1.2,flat,0,akinesis or dyskmem,no disease
+922,58,male,typical angina,146,218,FALSE,ST-T wave abnormality,105,FALSE,2,flat,1,akinesis or dyskmem,no disease
+923,44,male,atypical angina,120,263,FALSE,ST-T wave abnormality,173,FALSE,0,downsloping,0,akinesis or dyskmem,disease
+924,54,male,typical angina,140,239,FALSE,ST-T wave abnormality,160,FALSE,1.2,downsloping,0,moderate or severe,disease
+925,61,female,typical angina,130,330,FALSE,normal,169,FALSE,0,downsloping,0,moderate or severe,no disease
+926,57,male,typical angina,130,131,FALSE,ST-T wave abnormality,115,TRUE,1.2,flat,1,akinesis or dyskmem,no disease
+927,54,male,typical angina,110,206,FALSE,normal,108,TRUE,0,flat,1,moderate or severe,no disease
+928,42,male,non-anginal pain,120,240,TRUE,ST-T wave abnormality,194,FALSE,0.8,upsloping,0,akinesis or dyskmem,disease
+929,54,male,typical angina,124,266,FALSE,normal,109,TRUE,2.2,flat,1,akinesis or dyskmem,no disease
+930,60,male,typical angina,130,206,FALSE,normal,132,TRUE,2.4,flat,2,akinesis or dyskmem,no disease
+931,65,male,typical angina,135,254,FALSE,normal,127,FALSE,2.8,flat,1,akinesis or dyskmem,no disease
+932,40,male,typical angina,152,223,FALSE,ST-T wave abnormality,181,FALSE,0,downsloping,0,akinesis or dyskmem,no disease
+933,51,female,non-anginal pain,140,308,FALSE,normal,142,FALSE,1.5,downsloping,1,moderate or severe,disease
+934,38,male,asymptomatic,120,231,FALSE,ST-T wave abnormality,182,TRUE,3.8,flat,0,akinesis or dyskmem,no disease
+935,42,male,non-anginal pain,130,180,FALSE,ST-T wave abnormality,150,FALSE,0,downsloping,0,moderate or severe,disease
+936,56,male,atypical angina,120,240,FALSE,ST-T wave abnormality,169,FALSE,0,upsloping,0,moderate or severe,disease
+937,43,male,non-anginal pain,130,315,FALSE,ST-T wave abnormality,162,FALSE,1.9,downsloping,1,moderate or severe,disease
+938,64,male,non-anginal pain,140,335,FALSE,ST-T wave abnormality,158,FALSE,0,downsloping,0,moderate or severe,no disease
+939,53,male,typical angina,142,226,FALSE,normal,111,TRUE,0,downsloping,0,akinesis or dyskmem,disease
+940,49,female,atypical angina,134,271,FALSE,ST-T wave abnormality,162,FALSE,0,flat,0,moderate or severe,disease
+941,57,female,typical angina,140,241,FALSE,ST-T wave abnormality,123,TRUE,0.2,flat,0,akinesis or dyskmem,no disease
+942,52,female,non-anginal pain,136,196,FALSE,normal,169,FALSE,0.1,flat,0,moderate or severe,disease
+943,69,female,asymptomatic,140,239,FALSE,ST-T wave abnormality,151,FALSE,1.8,downsloping,2,moderate or severe,disease
+944,65,male,typical angina,120,177,FALSE,ST-T wave abnormality,140,FALSE,0.4,downsloping,0,akinesis or dyskmem,disease
+945,66,female,typical angina,178,228,TRUE,ST-T wave abnormality,165,TRUE,1,flat,2,akinesis or dyskmem,no disease
+946,56,male,asymptomatic,120,193,FALSE,normal,162,FALSE,1.9,flat,0,akinesis or dyskmem,disease
+947,67,female,non-anginal pain,152,277,FALSE,ST-T wave abnormality,172,FALSE,0,downsloping,1,moderate or severe,disease
+948,54,female,non-anginal pain,160,201,FALSE,ST-T wave abnormality,163,FALSE,0,downsloping,1,moderate or severe,disease
+949,70,male,typical angina,145,174,FALSE,ST-T wave abnormality,125,TRUE,2.6,upsloping,0,akinesis or dyskmem,no disease
+950,57,male,typical angina,132,207,FALSE,ST-T wave abnormality,168,TRUE,0,downsloping,0,akinesis or dyskmem,disease
+951,67,male,typical angina,160,286,FALSE,normal,108,TRUE,1.5,flat,3,moderate or severe,no disease
+952,62,female,non-anginal pain,130,263,FALSE,ST-T wave abnormality,97,FALSE,1.2,flat,1,akinesis or dyskmem,no disease
+953,54,female,non-anginal pain,135,304,TRUE,ST-T wave abnormality,170,FALSE,0,downsloping,0,moderate or severe,disease
+954,45,female,typical angina,138,236,FALSE,normal,152,TRUE,0.2,flat,0,moderate or severe,disease
+955,53,female,typical angina,130,264,FALSE,normal,143,FALSE,0.4,flat,0,moderate or severe,disease
+956,62,male,non-anginal pain,130,231,FALSE,ST-T wave abnormality,146,FALSE,1.8,flat,3,akinesis or dyskmem,disease
+957,49,female,typical angina,130,269,FALSE,ST-T wave abnormality,163,FALSE,0,downsloping,0,moderate or severe,disease
+958,50,male,non-anginal pain,140,233,FALSE,ST-T wave abnormality,163,FALSE,0.6,flat,1,akinesis or dyskmem,no disease
+959,65,female,non-anginal pain,140,417,TRUE,normal,157,FALSE,0.8,downsloping,1,moderate or severe,disease
+960,69,female,asymptomatic,140,239,FALSE,ST-T wave abnormality,151,FALSE,1.8,downsloping,2,moderate or severe,disease
+961,52,female,non-anginal pain,136,196,FALSE,normal,169,FALSE,0.1,flat,0,moderate or severe,disease
+962,58,female,typical angina,100,248,FALSE,normal,122,FALSE,1,flat,0,moderate or severe,disease
+963,52,male,typical angina,108,233,TRUE,ST-T wave abnormality,147,FALSE,0.1,downsloping,3,akinesis or dyskmem,disease
+964,57,female,typical angina,140,241,FALSE,ST-T wave abnormality,123,TRUE,0.2,flat,0,akinesis or dyskmem,no disease
+965,44,female,non-anginal pain,108,141,FALSE,ST-T wave abnormality,175,FALSE,0.6,flat,0,moderate or severe,disease
+966,76,female,non-anginal pain,140,197,FALSE,probable or definite left ventricular hypertrophy,116,FALSE,1.1,flat,0,moderate or severe,disease
+967,58,male,typical angina,128,259,FALSE,normal,130,TRUE,3,flat,2,akinesis or dyskmem,no disease
+968,60,female,non-anginal pain,120,178,TRUE,ST-T wave abnormality,96,FALSE,0,downsloping,0,moderate or severe,disease
+969,53,male,typical angina,140,203,TRUE,normal,155,TRUE,3.1,upsloping,0,akinesis or dyskmem,no disease
+970,52,male,atypical angina,120,325,FALSE,ST-T wave abnormality,172,FALSE,0.2,downsloping,0,moderate or severe,disease
+971,38,male,non-anginal pain,138,175,FALSE,ST-T wave abnormality,173,FALSE,0,downsloping,4,moderate or severe,disease
+972,52,male,non-anginal pain,172,199,TRUE,ST-T wave abnormality,162,FALSE,0.5,downsloping,0,akinesis or dyskmem,disease
+973,52,male,asymptomatic,118,186,FALSE,normal,190,FALSE,0,flat,0,mild or moderate,disease
+974,51,male,non-anginal pain,125,245,TRUE,normal,166,FALSE,2.4,flat,0,moderate or severe,disease
+975,43,male,typical angina,110,211,FALSE,ST-T wave abnormality,161,FALSE,0,downsloping,0,akinesis or dyskmem,disease
+976,39,male,typical angina,118,219,FALSE,ST-T wave abnormality,140,FALSE,1.2,flat,0,akinesis or dyskmem,no disease
+977,63,female,typical angina,108,269,FALSE,ST-T wave abnormality,169,TRUE,1.8,flat,2,moderate or severe,no disease
+978,52,male,atypical angina,128,205,TRUE,ST-T wave abnormality,184,FALSE,0,downsloping,0,moderate or severe,disease
+979,44,male,typical angina,110,197,FALSE,normal,177,FALSE,0,downsloping,1,moderate or severe,no disease
+980,45,male,typical angina,142,309,FALSE,normal,147,TRUE,0,flat,3,akinesis or dyskmem,no disease
+981,57,male,typical angina,140,192,FALSE,ST-T wave abnormality,148,FALSE,0.4,flat,0,mild or moderate,disease
+982,39,male,typical angina,118,219,FALSE,ST-T wave abnormality,140,FALSE,1.2,flat,0,akinesis or dyskmem,no disease
+983,67,female,typical angina,106,223,FALSE,ST-T wave abnormality,142,FALSE,0.3,downsloping,2,moderate or severe,disease
+984,64,male,typical angina,128,263,FALSE,ST-T wave abnormality,105,TRUE,0.2,flat,1,akinesis or dyskmem,disease
+985,59,male,typical angina,135,234,FALSE,ST-T wave abnormality,161,FALSE,0.5,flat,0,akinesis or dyskmem,disease
+986,62,male,non-anginal pain,130,231,FALSE,ST-T wave abnormality,146,FALSE,1.8,flat,3,akinesis or dyskmem,disease
+987,55,female,typical angina,180,327,FALSE,probable or definite left ventricular hypertrophy,117,TRUE,3.4,flat,0,moderate or severe,no disease
+988,57,male,atypical angina,154,232,FALSE,normal,164,FALSE,0,downsloping,1,moderate or severe,no disease
+989,60,male,typical angina,140,293,FALSE,normal,170,FALSE,1.2,flat,2,akinesis or dyskmem,no disease
+990,71,female,atypical angina,160,302,FALSE,ST-T wave abnormality,162,FALSE,0.4,downsloping,2,moderate or severe,disease
+991,56,male,atypical angina,120,236,FALSE,ST-T wave abnormality,178,FALSE,0.8,downsloping,0,moderate or severe,disease
+992,60,male,typical angina,117,230,TRUE,ST-T wave abnormality,160,TRUE,1.4,downsloping,2,akinesis or dyskmem,no disease
+993,50,female,typical angina,110,254,FALSE,normal,159,FALSE,0,downsloping,0,moderate or severe,disease
+994,43,male,typical angina,132,247,TRUE,normal,143,TRUE,0.1,flat,4,akinesis or dyskmem,no disease
+995,59,male,typical angina,110,239,FALSE,normal,142,TRUE,1.2,flat,1,akinesis or dyskmem,no disease
+996,44,male,atypical angina,120,263,FALSE,ST-T wave abnormality,173,FALSE,0,downsloping,0,akinesis or dyskmem,disease
+997,56,female,typical angina,134,409,FALSE,normal,150,TRUE,1.9,flat,2,akinesis or dyskmem,no disease
+998,54,male,typical angina,120,188,FALSE,ST-T wave abnormality,113,FALSE,1.4,flat,1,akinesis or dyskmem,no disease
+999,42,male,typical angina,136,315,FALSE,ST-T wave abnormality,125,TRUE,1.8,flat,0,mild or moderate,no disease
+1000,67,male,typical angina,125,254,TRUE,ST-T wave abnormality,163,FALSE,0.2,flat,2,akinesis or dyskmem,no disease
+1001,64,male,typical angina,145,212,FALSE,normal,132,FALSE,2,flat,2,mild or moderate,no disease
+1002,42,male,typical angina,140,226,FALSE,ST-T wave abnormality,178,FALSE,0,downsloping,0,moderate or severe,disease
+1003,66,male,typical angina,112,212,FALSE,normal,132,TRUE,0.1,downsloping,1,moderate or severe,no disease
+1004,52,male,typical angina,108,233,TRUE,ST-T wave abnormality,147,FALSE,0.1,downsloping,3,akinesis or dyskmem,disease
+1005,51,female,non-anginal pain,140,308,FALSE,normal,142,FALSE,1.5,downsloping,1,moderate or severe,disease
+1006,55,female,typical angina,128,205,FALSE,probable or definite left ventricular hypertrophy,130,TRUE,2,flat,1,akinesis or dyskmem,no disease
+1007,58,male,non-anginal pain,140,211,TRUE,normal,165,FALSE,0,downsloping,0,moderate or severe,disease
+1008,56,male,asymptomatic,120,193,FALSE,normal,162,FALSE,1.9,flat,0,akinesis or dyskmem,disease
+1009,42,male,atypical angina,120,295,FALSE,ST-T wave abnormality,162,FALSE,0,downsloping,0,moderate or severe,disease
+1010,40,male,typical angina,152,223,FALSE,ST-T wave abnormality,181,FALSE,0,downsloping,0,akinesis or dyskmem,no disease
+1011,51,male,typical angina,140,299,FALSE,ST-T wave abnormality,173,TRUE,1.6,downsloping,0,akinesis or dyskmem,no disease
+1012,45,male,atypical angina,128,308,FALSE,normal,170,FALSE,0,downsloping,0,moderate or severe,disease
+1013,48,male,atypical angina,110,229,FALSE,ST-T wave abnormality,168,FALSE,1,upsloping,0,akinesis or dyskmem,no disease
+1014,58,male,typical angina,114,318,FALSE,probable or definite left ventricular hypertrophy,140,FALSE,4.4,upsloping,3,mild or moderate,no disease
+1015,44,female,non-anginal pain,108,141,FALSE,ST-T wave abnormality,175,FALSE,0.6,flat,0,moderate or severe,disease
+1016,58,male,typical angina,128,216,FALSE,normal,131,TRUE,2.2,flat,3,akinesis or dyskmem,no disease
+1017,65,male,asymptomatic,138,282,TRUE,normal,174,FALSE,1.4,flat,1,moderate or severe,no disease
+1018,53,male,typical angina,123,282,FALSE,ST-T wave abnormality,95,TRUE,2,flat,2,akinesis or dyskmem,no disease
+1019,41,male,typical angina,110,172,FALSE,normal,158,FALSE,0,downsloping,0,akinesis or dyskmem,no disease
+1020,47,male,typical angina,112,204,FALSE,ST-T wave abnormality,143,FALSE,0.1,downsloping,0,moderate or severe,disease
+1021,59,male,atypical angina,140,221,FALSE,ST-T wave abnormality,164,TRUE,0,downsloping,0,moderate or severe,disease
+1022,60,male,typical angina,125,258,FALSE,normal,141,TRUE,2.8,flat,1,akinesis or dyskmem,no disease
+1023,47,male,typical angina,110,275,FALSE,normal,118,TRUE,1,flat,1,moderate or severe,no disease
+1024,50,female,typical angina,110,254,FALSE,normal,159,FALSE,0,downsloping,0,moderate or severe,disease
+1025,54,male,typical angina,120,188,FALSE,ST-T wave abnormality,113,FALSE,1.4,flat,1,akinesis or dyskmem,no disease
