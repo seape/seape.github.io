@@ -32,31 +32,31 @@ flowchart LR
 
 ## All the functions
 ### Part1 ([libc functions](https://man7.org/linux/man-pages/man3/isspace.3.html))
-|function name | ft_name |piscine project | External Function | 
-| ---  | --- | --- | --- |
-|isalpha| ft_isalpha | C02/ex02 | None |
-|isdigit| ft_isdigit | C02/ex03 | None |
-|isalnum| ft_isalnum | - | None |
-|isascii| ft_isascii |     | None |
-|isprint| ft_isprint | C02/ex06 | None |
-|strlen | ft_strlen  | C04/ex00 | None |
-|memset | ft_memset  | - | None |
-|bzero  | ft_bzero   | - | None |
-|memcpy | ft_memcpy  | - | None |
-|memmove| ft_memmove | - | None |
-|strlcpy| ft_strlcpy | C02/ex10 | None |
-|strlcat| ft_strlcat | C03/ex02 | None |
-|toupper| ft_toupper | C02/ex05 | None |
-|tolower| ft_tolower | C02/ex04 | None |
-|strchr | ft_strchr  | - | None |
-|strrchr| ft_strrchr | - | None |
-|strncmp| ft_strncmp | C03/ex01 | None |
-|memchr | ft_memchr  | - | None |
-|memcmp | ft_memcmp  | - | None |
-|strnstr| ft_strnstr | - | None |
-|atoi   | ft_atoi    | C04/ex03 | None |
-|calloc | ft_calloc  | - | malloc |
-|strdup | ft_strdup  | C07/ex00 | malloc |
+|function name | ft_name |piscine project | External Function | prototype | desc |
+| ---  | --- | --- | --- | :--- | :-- |
+|isalpha| ft_isalpha | C02/ex02 | None | int isalpha(int c); | test whether the ascii code is for alphabet |
+|isdigit| ft_isdigit | C02/ex03 | None | int isdigit(int c); | test whether the ascii code is for digit |
+|isalnum| ft_isalnum | - | None | int isalnum(int c); | equals to (isalpha() or isdigit ()) |
+|isascii| ft_isascii |     | None | int isascii(int c) | test whether the code is an ascii code |
+|isprint| ft_isprint | C02/ex06 | None | int isprint(int c); | test whether the character is printable|
+|strlen | ft_strlen  | C04/ex00 | None | size_t strlen(const char *s) | test the length of string s <string.h>|
+|memset | ft_memset  | - | None | void *memset(void *b, int c, size_t len);| writes len bytes of value c(converted to an unsigned char to the string b) <string.h>|
+|bzero  | ft_bzero   | - | None | void bzero(void *s, size_t n);| writes n zeroed bytes to the string s. <strings.h>|
+|memcpy | ft_memcpy  | - | None | void *memcpy(void *restrict dst, const void *restrict src, size_t n)| copy n bytes from src to dst|
+|memmove| ft_memmove | - | None | void *memmove(void *dst, const void *src, size_t len);| copy len bytes from string src to dst.|
+|strlcpy| ft_strlcpy | C02/ex10 | None | size_t strlcpy(char * restrict dst, const char * restrict src, size_t dstsize);| copy up to dstsize-1 characters from src to dst, NUL-terminateing the result if dstsize is not 0.|
+|strlcat| ft_strlcat | C03/ex02 | None | size_t strlcpy(char * restrict dst, const char * restrict src, size_t dstsize);| append src to the end of dst.|
+|toupper| ft_toupper | C02/ex05 | None | int toupper(int c);| convert lower case to upper case|
+|tolower| ft_tolower | C02/ex04 | None | int tolower(int c);| convert upper case to lower case|
+|strchr | ft_strchr  | - | None | char *strchr(const char *s, int c);| locate the first occurrence of c(convert to a char)|
+|strrchr| ft_strrchr | - | None | char *strchr(const char *s, int c);| locate the last occurrence of c(conver to a char)|
+|strncmp| ft_strncmp | C03/ex01 | None | int strncmp(const char *s1, const char *s2, size_t n| compare the two strings at most lenght of n|
+|memchr | ft_memchr  | - | None | void *memchr(const void *s, int c, size_t n);| locates the first occurrence of c(convert to an unsigned char)|
+|memcmp | ft_memcmp  | - | None | int memcmp(const void *s1, const void *s2, size_t n);| compares types string s1 aganst byte s2, return the difference if different|
+|strnstr| ft_strnstr | - | None | char *strnstr(const char *haystack, const char *needle, size_t len);| find the first occurrence of the null-terminated string needle|
+|atoi   | ft_atoi    | C04/ex03 | None | int atoi(const char *str);| <stdlib.h>|
+|calloc | ft_calloc  | - | malloc | void calloc(size_t count, size_t size);| contiguously alocates enough space for count objects that  are size bytes of memory each|
+|strdup | ft_strdup  | C07/ex00 | malloc | char *strdup(const char *s1);| allocates sufficient memory for a copy of string s1|
 
 
 ### Part2 (Additional functions)
