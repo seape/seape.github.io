@@ -9,12 +9,4 @@ category:
 
 ## Catalog
 
-I will share kinds of techniques here.
-
-- [Markdown Enhance](markdown.md)
-
-- [Page Config](page.md)
-
-- [Function Disable](disable.md)
-
-- [Encryption Demo](encrypt.md)
+This category will record all the things related with techniques.

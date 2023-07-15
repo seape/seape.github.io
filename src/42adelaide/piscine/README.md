@@ -7,5 +7,5 @@ category:
   - Guide
 ---
 
-All here is about the study in Unisa
+Here will show the details during Piscine period. 
 

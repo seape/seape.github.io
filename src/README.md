@@ -5,18 +5,18 @@ icon: home
 title: Blog Home
 heroImage: /haiyue.svg
 heroText: Haiyue's blog
-tagline: Record my technique life, scroll down for details
+tagline: My techniqual life, scroll down for details
 heroFullScreen: true
-projects:
-  - icon: image-portrait
-    name: About me
-    desc: See details of me here
-    link: /intro
-
-  - icon: blog
-    name: About the blog
-    desc: The vuepress and theme-hope are used for constructing the blog
-    link: https://theme-hope.vuejs.press/
+#projects:
+#  - icon: image-portrait
+#    name: About me
+#    desc: See details of me here
+#    link: /intro
+#
+#  - icon: blog
+#    name: About the blog
+#    desc: The vuepress and theme-hope are used for constructing the blog
+#    link: https://theme-hope.vuejs.press/
 #
 #  - icon: book
 #    name: book name

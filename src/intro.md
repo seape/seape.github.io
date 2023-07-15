@@ -30,7 +30,7 @@ footer: 'Need job opportunity now.'
 -----
 ## Skills
 
-::: tabs#fruit
+::: tabs#Skills
 
 @tab Language
 - Mandarin
@@ -50,9 +50,9 @@ footer: 'Need job opportunity now.'
 - Postgresql
 - Mongodb
 - Sqlite
+- Redis
 
 @tab Analysis technique
-
 
 :::
 

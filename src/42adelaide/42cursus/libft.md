@@ -10,6 +10,8 @@ tag:
 sticky: true
 ---
 # The libft Project
+
+This is the first project during cursus period. I will record all my processes for doing this project.
 ## The flowchar for processing
 
 ```mermaid

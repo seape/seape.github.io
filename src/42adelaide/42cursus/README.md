@@ -8,5 +8,5 @@ category:
   - 42Adelaide
 ---
 
-This period will do lot of projects.
+Here will note all the things will happen during cursus.
 
