@@ -112,6 +112,12 @@ export default hopeTheme({
 
   plugins: {
     blog: true,
+    components: {
+      // components you want
+      components: [
+        "PDF",
+      ],
+    },
 
     //comment: {
     //  // You should generate and use your own comment service

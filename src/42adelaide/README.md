@@ -7,5 +7,5 @@ category:
   - Guide
 ---
 
-All here is about the study in Unisa
+All here is about the study in 42 adelaide. If you you want to see more, please using the left sidebar to see details.
 
