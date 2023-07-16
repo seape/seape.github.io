@@ -389,7 +389,7 @@ char	*ft_strchr(const char *s, int c)
 
 ### code:ft_string_3.c
 ::: code-tabs#ft_string_3.c
-@tab ft_strlen
+@tab ft_strrchr
 ```cpp
 char	*ft_strrchr(const char *s, int c)
 {
@@ -407,7 +407,7 @@ char	*ft_strrchr(const char *s, int c)
 	return (rc);
 }
 ```
-@tab ft_memset
+@tab ft_strncmp
 ```cpp
 
 int	ft_strncmp(const char *s1, const char*s2, size_t n)
@@ -428,7 +428,7 @@ int	ft_strncmp(const char *s1, const char*s2, size_t n)
 
 ```
 
-@tab ft_bzero
+@tab ft_memchr
 ```cpp
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -447,7 +447,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 }
 
 ```
-@tab ft_memcpy
+@tab ft_memcmp
 ```cpp
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -468,7 +468,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 }
 
 ```
-@tab ft_memmove
+@tab ft_strnstr
 ```cpp
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
@@ -700,7 +700,6 @@ void	test_memcpy()
 void	test_memmove()
 {
 	char a[100] = "0123456789";
-
 	memmove(a + 2, a, 5);
 	//memmove(a, a + 3, 5);
 	printf("%s   %s\n", a, a + 3);
@@ -715,16 +714,15 @@ void	test_strlcpy()
 	printf("----------strlcpy-----------\n");
 	char a[100] = "I'm the world!";
 	char b[100];
-
 	ft_memset(b, 'A', 100);
 	int ret = ft_strlcpy(b, a, 20);
 	printf("%s %d\n", b, ret);
-
 	ft_memset(b, 'A', 100);
 	ret = strlcpy(b, a, 20);
 	printf("%s %d\n", b, ret);
 	printf("----------end: strlcpy-----------\n");
 }
+
 //size_t	ft_strlcat(
 //			char *restrict dst,
 //			const char *restrict src,
