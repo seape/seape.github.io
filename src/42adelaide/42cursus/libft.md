@@ -142,8 +142,9 @@ There are three parts for the projects, the three parts will be split into three
 - **ft_bonus.c** : implement all functions in bonus part
 
 
-All the code in part1
+### All the code in part1
 
+#### ft_ctype.c
 ::: code-tabs#ft_ctype.c
 @tab ft_isalpha
 ```cpp
@@ -201,7 +202,7 @@ int	ft_isprint(int c)
 ```
 :::
 
-
+#### ft_string_1.c
 ::: code-tabs#ft_string_1.c
 @tab ft_strlen
 ```cpp
@@ -295,7 +296,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 ```
 :::
 
-
+#### ft_string_2.c
 ::: code-tabs#ft_string_2.c
 @tab ft_strlcpy
 ```cpp
@@ -389,7 +390,7 @@ char	*ft_strchr(const char *s, int c)
 :::
 
 
-
+#### ft_string_3.c
 ::: code-tabs#ft_string_3.c
 @tab ft_strlen
 ```cpp
@@ -495,7 +496,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 :::
 
 
-
+#### ft_stdlib.c
 ::: code-tabs#ft_stdlib.c
 @tab ft_atoi
 ```cpp
@@ -563,7 +564,7 @@ char	*ft_strdup(const char *s1)
 :::
 
 
-All the test code for part1 is here
+### Part1 test code
 :::details
 ```cpp
 #include "libft.h"
