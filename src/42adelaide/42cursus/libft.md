@@ -13,7 +13,7 @@ sticky: true
 
 This is the first project during cursus period. I will record all my processes for doing this project.
 
-<PDF url="/data/42adelaide/libft.pdf" ratio="0.7" />
+<PDF url="/data/42adelaide/libft.pdf" ratio="1.4" />
 
 
 ## The flowchar for processing
