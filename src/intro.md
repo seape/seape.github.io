@@ -14,8 +14,8 @@ footer: 'Need job opportunity now.'
 
 | University | Major | Degree |
 | - | - | - |
-|Inner Mogolia University | Computer Science (Software Engineer) | Bachelor |
-| University of South Australia | Data Science | Master (July 2024) |
+|[Inner Mogolia University](https://www.imu.edu.cn/index.htm) | Computer Science (Software Engineer) | Bachelor |
+| [University of South Australia](https://www.unisa.edu.au/) | Data Science | Master (July 2024) |
 
 -----
 ## Work experience
