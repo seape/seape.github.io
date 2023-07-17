@@ -22,9 +22,9 @@ footer: 'Need job opportunity now.'
 
 | Company | Position |
 | - | - |
-|[东软集团(沈阳) Neusoft](https://www.neusoft.com/cn/) | Algorithm Engineer |
-| [北京新科永创科技有限公司](http://www.polygraph.cn/contact.asp) | Software Engineer |
-| [北京天目创新科技有限公司](http://www.bsei.com.cn/) | Senior Software Engineer |
+|[Neusoft Corporation](https://www.neusoft.com/cn/) | Algorithm Engineer |
+| [BeijingXinKeYongChuang Tech Co.,LTD.](http://www.polygraph.cn/contact.asp) | Software Engineer |
+| [Beijing Bsei Tech Co.,LTD.](http://www.bsei.com.cn/) | Senior Software Engineer |
 | [University of South Australia](https://unisa.edu.au/) | Academic Research Assistant |
 
 -----
