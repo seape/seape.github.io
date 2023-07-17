@@ -13,7 +13,7 @@ export const enSidebar = sidebar({
       text: "Life in 42 Adelaide",
       icon: "/assets/icon/42adelaide/42_adelaide.svg",
       prefix: "42adelaide/",
-      children: "structure"
+      children: "structure",
     },
     {
       text: "Techniques",
@@ -21,6 +21,6 @@ export const enSidebar = sidebar({
       prefix: "techniques/",
       children: "structure",
     },
-    "intro",
+    "intro"
   ],
 });

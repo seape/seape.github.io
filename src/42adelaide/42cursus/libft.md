@@ -8,6 +8,7 @@ category:
 tag:
   - libft
 sticky: true
+headerDepth: 5
 ---
 # The libft Project
 
@@ -141,7 +142,8 @@ There are three parts for the projects, the three parts will be split into three
 - **ft_part2.c** : implement all functions in part 2
 - **ft_bonus.c** : implement all functions in bonus part
 
-### code:ft_ctype.c
+### Part1: Libc Functions
+#### ft_ctype.c
 ::: code-tabs#ft_ctype.c
 @tab ft_isalpha
 ```cpp
@@ -199,7 +201,7 @@ int	ft_isprint(int c)
 ```
 :::
 
-### code:ft_string_1.c
+#### ft_string_1.c
 ::: code-tabs#ft_string_1.c
 @tab ft_strlen
 ```cpp
@@ -293,7 +295,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 ```
 :::
 
-### code:ft_string_2.c
+#### ft_string_2.c
 ::: code-tabs#ft_string_2.c
 @tab ft_strlcpy
 ```cpp
@@ -387,7 +389,7 @@ char	*ft_strchr(const char *s, int c)
 :::
 
 
-### code:ft_string_3.c
+#### ft_string_3.c
 ::: code-tabs#ft_string_3.c
 @tab ft_strrchr
 ```cpp
@@ -493,7 +495,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 :::
 
 
-### code:ft_stdlib.c
+#### ft_stdlib.c
 ::: code-tabs#ft_stdlib.c
 @tab ft_atoi
 ```cpp
@@ -561,7 +563,7 @@ char	*ft_strdup(const char *s1)
 :::
 
 
-### Part1 test code
+#### Test code
 :::details
 ```cpp
 #include "libft.h"
@@ -935,6 +937,13 @@ int main(void)
 	test_calloc();
 	test_strdup();
 }
-
 ```
 :::
+
+### Part2: Additional Functions
+
+
+
+
+### Part3: Bonus part
+

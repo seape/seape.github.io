@@ -65,6 +65,7 @@ export default hopeTheme({
 
       // sidebar
       sidebar: enSidebar,
+      headerDepth: 4, 
 
       footer: "Email me if have a software engineer position",
 
