@@ -696,6 +696,29 @@ thread_pool.wait()
 
 @tab Remove Duplication
 ``` sql
+-- copy table structure
+create table mosaicseamlines_unique as select * from mosaicseamlines limit 0;
+
+-- insert unique id
+insert into mosaicseamlines_unique(id) as select distinct id from mosaicseamlines;
+
+-- update other features based on id
+update mosaicseamlines_unique set 
+    quad = a.quad,
+    inventory_id = a.quad,
+    tile_identifier = a.tile_identifier,
+    image_identifier = a.image_identifier,
+    off_nadir_angle = a.off_nadir_angle,
+    cloud_cover = a.cloud_cover,
+    sun_elevation = a.sun_elevation,
+    accuracy = a.accuracy,
+    vehicle_id = a.vehicle_id,
+    collect_date = a.collect_date,
+    product_id = a.product_id,
+    product_line_name = a.product_line_name, 
+    geom = a.geom
+  from mosaicseamlines
+  where id = a.id;
 
 ```
 :::
