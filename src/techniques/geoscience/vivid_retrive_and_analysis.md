@@ -13,12 +13,12 @@ tag:
 star: false
 sticky: true
 ---
-
+[Connection Pool for Postgresql using python](https://pynative.com/psycopg2-python-postgresql-connection-pooling/#:~:text=PostgreSQL%20connection%20Pool%20is%20nothing,application%20while%20working%20with%20PostgreSQL.)
 ## The whole process
 
 ```mermaid
 ---
-title: The process for libft
+title: The process for vivid meta data
 ---
 flowchart LR
     start((Start))--> key[Get asscess key]
@@ -398,6 +398,306 @@ with open('D:\\aa.geojson', 'w') as fw:
 :::
 
 
-#### Parse data
+### Parse data
+There are several properties for each feature of the retrieved data from the server. Two things need to be done for preprocessing before usage. 
+- The first one is to remove the duplication and 
+- the second one is to export all prepared data to postgis.
+
+#### Remove Duplication
+```mermaid
+---
+title: The process for preprocessing
+---
+flowchart LR
+    subgraph rd[Remove Duplication]
+        direction TB
+        start[Parsing data] -->2db[Import to Database]
+        2db -->remove[According to FeatureId to remove]
+    end
+    subgraph export[Export to prepared]
+        newTbl[Create well prepared data Table] --> import[Import prepared data]
+    end
+    rd --> export --> End{{Finish}}
+```
+
+::: code-tabs
+@tab Parsing data to sql
+``` python
+import os
+import sys
+import argparse
+import json
+
+class MaxarCatalogMosaicProducts_Parser:
+    def __init__(self, tbl = None):
+        self.__tbl__ = 'MaxarCatalogMosaicProducts'
+        if tbl:
+            self.__tbl__ = tbl
+        
+        # Template arguments
+        # obj['quad']               the data related download tile
+        # obj['id']                 feature id
+        # obj['product_name']       
+        # obj['product_line_name']
+        # obj['collect_date_min']
+        # obj['collect_date_max']
+        # obj['product_id']
+        # obj['publish_date']
+        # obj['resolution_meters']
+        # obj['geom']
+        self.__insert_template_prefix__ = f'insert into {self.__tbl__}(quad, id, product_name, product_line_name, collect_date_min, collect_date_max, product_id, publish_date, resolution_meters, geom)'
+        self.__insert_template_suffix__ = "values('{obj['quad']}', '{obj['id']}', '{obj['product_name']}', '{obj['product_line_name']}', '{obj['collect_date_min']}', '{obj['collect_date_max']}', '{obj['product_id']}', '{obj['publish_date']}', {obj['resolution_meters']}, {obj['geom']});"
+        self.__insert_template__ = f'{self.__insert_template_prefix__} {self.__insert_template_suffix__}'
+        
+    def getSql(self, quad, feature):
+        obj = feature['properties']
+        obj['quad'] = quad
+        obj['id'] = feature['id']
+        obj['geom'] = f"ST_GeomFromGeoJSON('{json.dumps(feature['geometry'])}')"
+        #sql = eval(f'f"{self.__insert_template__}"')
+        
+        __insert_template_prefix__ = f'insert into {self.__tbl__}('
+        __insert_template_suffix__ = "values("
+        for k in obj.keys():
+            __insert_template_prefix__ = f'{__insert_template_prefix__}{k},'
+            if obj[k] is not None:
+                if k == 'geom':
+                    __insert_template_suffix__ = f"{__insert_template_suffix__}{obj[k]},"
+                else:
+                    __insert_template_suffix__ = f"{__insert_template_suffix__}'{obj[k]}',"
+            else:
+                __insert_template_suffix__ = f"{__insert_template_suffix__}null,"
+        sql = f'{__insert_template_prefix__[:-1]}) {__insert_template_suffix__[:-1]});'
+        return sql
+```
+
+@tab Parsing Executable
+``` python
+if __name__ == '__main__':
+    filename = sys.argv[1]
+    tbl = sys.argv[2]
+    mosaic_product = MaxarCatalogMosaicProducts_Parser(tbl)
+    with open(filename, 'r') as fr:
+        line = fr.readline()
+        is_break = False
+        while len(line) > 0:
+            quad, geojson = line.split('|')
+            json_obj = json.loads(geojson)
+            
+            for f in json_obj['features']:
+                sql = mosaic_product.getSql(quad, f)
+                print(sql)
+            line = fr.readline()
+```
+
+@tab Parsing example
+``` bat
+: parsing the data file
+python  main.py ..\1-MaxarCatalogMosaicSeamlines.geojson MosaicSeamlines > 1-Mosaicseamlines.sql
+
+: init db
+initdb -D .\pgdata -Upostgres -Upostgres
+
+```
+
+
+@tab Create table in postgresql
+``` sql 
+-- create postgis extension in postgresql
+create extension postgis;
+
+create table MaxarCatalogMosaicTiles(
+    quad varchar,
+    id varchar,
+    product_id varchar,
+    tile_identifier varchar,
+    cloud_cover_percentage varchar,
+    geom geometry
+);
+
+create table MaxarCatalogMosaicSeamlines(
+    quad varchar,
+    id varchar,
+    inventory_id varchar,
+    tile_identifier varchar,
+    image_identifier varchar,
+    off_nadir_angle float,
+    cloud_cover float,
+    sun_elevation float,
+    accuracy float,
+    vehicle_id varchar,
+    collect_date timestamp,
+    product_id varchar,
+    product_line_name varchar,
+    geom geometry
+);
+create table MaxarCatalogMosaicProducts(
+    quad varchar,
+    id varchar,
+    product_name varchar, 
+    product_line_name varchar, 
+    collect_date_min varchar, 
+    collect_date_max varchar, 
+    product_id varchar, 
+    publish_date timestamp, 
+    resolution_meters float,
+    geom geometry
+);
+```
+
+
+
+@tab pg_conn
+``` python
+#导入数据库驱动
+import sqlite3
+import json
+import os
+import shutil
+import psycopg2
+import time
+import threading
+import traceback
+import datetime as dt
+#from tile_conf import *
+
+
+class pg_conn:
+    #_instance_lock = threading.Lock()
+    def __init__(self, pg_conf):
+        self.pg_conf = pg_conf
+        for i in range(pg_conf['max_conn']):
+            self.db_pool = list()
+            db_node = {
+                'locker': threading.Lock(),
+                'conn': psycopg2.connect(
+                    database= pg_conf['db_info']['database'], 
+                    user    = pg_conf['db_info']['user'], 
+                    password= pg_conf['db_info']['password'], 
+                    host    = pg_conf['db_info']['host'], 
+                    port    = pg_conf['db_info']['port']
+                ),
+                'invoke_time':dt.datetime.now()
+            }
+            self.db_pool.append(db_node)
+    
+    def get_tbl(self):
+        rc = None
+        if hasattr(self, 'pg_conf'):
+            if self.pg_conf.__contains__('db_info'):
+                rc = self.pg_conf['db_info']['tbl']
+        return rc
+    #def __new__(cls, *args, **kwargs):
+    #    if not hasattr(pg_conn, "_instance"):
+    #        with pg_conn._instance_lock:
+    #            if not hasattr(pg_conn, "_instance"):
+    #                pg_conn._instance = object.__new__(cls) 
+    #    return pg_conn._instance
+        
+    def getDBNode(self):
+        rc = None
+        while rc is None:
+            for i in self.db_pool:
+                if not i['locker'].locked():
+                    rc = i
+        return rc
+    
+    def __del__(self):
+        for i in self.db_pool:
+            with i['locker']:
+                i['conn'].close()
+
+    #查询信息
+    def __query__(self, sql):
+        pg_node = self.getDBNode()
+        valid = 0
+        ret = None
+        with pg_node['locker']:
+            idx_c = pg_node['conn'].cursor()
+            try:
+                idx_c.execute(sql)
+                ret = idx_c.fetchall()
+                pg_node['conn'].commit()
+                pg_node['invoke_time'] = dt.datetime.now()
+            finally:
+                if idx_c:
+                    idx_c.close()
+        return ret
+
+    #执行非查询sql
+    def __execute__(self, sqls):
+        sqls_data = list()
+        if type(sqls) == type(str()):
+            sqls_data.append(sqls)
+        elif type(sqls) == type(tuple()) or type(sqls) == type(list()):
+            sqls_data.extend(sqls)
+        pg_node = self.getDBNode()
+        with pg_node['locker']: 
+            idx_c = pg_node['conn'].cursor()   # 创建游标
+            try:
+                for sql in sqls_data:
+                    idx_c.execute(sql)
+                t = dt.datetime.now() 
+                # 距上次调用相差10s，进行数据提交(暂时弃用)
+                #if (t-self.db_info['invoke_time']).total_seconds() > 10:
+                #    self.db_info['db_conn'].commit()
+                #    self.db_info['invoke_time'] = t
+                pg_node['conn'].commit()
+            finally:
+                if idx_c:
+                    idx_c.close()
+```
+
+@tab Export to PG
+``` python
+import sys
+sys.path.append('.')
+
+from meta_pg import *
+from thread_util import *
+
+task_pg_conf = {
+    'db_info':{
+        'database': 'postgres',
+        'user'    : 'postgres',
+        'password': '1234',
+        'host'    : '127.0.0.1',
+        'port'    : '5432',
+        'tbl'     : 'Mosaicseamlines'
+    },
+    'max_conn': 10
+}
+
+pg_pool = pg_conn(task_pg_conf)
+thread_pool = thread_util(10)
+
+files = [r'..\parser\0-Mosaicseamlines.sql', r'..\parser\1-Mosaicseamlines.sql']
+i = 0
+for file in files:
+    with open(file, 'r') as fr:
+        line = fr.readline()
+        #print(line)
+        sqls = list()
+        while len(line) > 0:
+            i += 1
+            sqls.append(line)
+            if len(sqls) >= 1000:
+                print(f'{file}: {i}')
+                thread_pool.process(pg_pool.__execute__, (sqls,), str(i))
+                sqls.clear()
+            line = fr.readline()
+        if len(sqls) > 0:
+            print(f'{file}: {i}')
+            thread_pool.process(pg_pool.__execute__, (sqls,), str(i))
+thread_pool.wait()
+
+# cd F:\01.workspace\06.work\srs\sql2db & F: & F:\temp\python37_withgdal\Python37\python.exe sql2pg.py
+```
+
+@tab Remove Duplication
+``` sql
+
+```
+:::
 
 
