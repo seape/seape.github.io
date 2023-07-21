@@ -4,7 +4,7 @@ index: false
 icon: laptop-code
 author: Haiyue
 category:
-  - Guide
+  - readme
 ---
 
 This part is mainly to talk about the geography. There are several topoics could to discuss, mainly talk the following parts.

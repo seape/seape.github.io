@@ -4,7 +4,7 @@ index: false
 icon: laptop-code
 author: Haiyue
 category:
-  - Guide
+  - readme
 ---
 
 ## Catalog

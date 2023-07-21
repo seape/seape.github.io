@@ -4,5 +4,9 @@ icon: /github.svg
 index: false
 author: Haiyue
 category:
-  - Guide
+  - readme
+tag: 
+  - github
 ---
+
+

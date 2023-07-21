@@ -7,8 +7,9 @@ export const enNavbar = navbar([
     icon: "building-columns",
     prefix: "/unisa/",
     children: [
-      {text: "Term1", link: "2022SP5"},
-      {text: "Term2", link: "2023SP2"}
+      {text: "Term1(2022SP5)", link: "2022SP5"},
+      {text: "Term2(2023SP2)", link: "2023SP2"},
+      {text: "Term3(2023SP5)", link: "2023SP5"},
     ]
   },
   {
@@ -26,6 +27,8 @@ export const enNavbar = navbar([
     prefix: "/techniques/",
     children: [
       {text: "Geoscience", link: "geoscience"},
+      {text: "Python", link: "python"},
+      {text: "R", link: "R"},
       {text: "Github", link: "github"},
     ]
   },

@@ -2,7 +2,7 @@
 title: WFS(Vivid) Retrive and Analysis
 #cover: /assets/images/unisa.jpg
 icon: earth-asia
-date: 2023-07-10
+date: 2023-07-15
 category:
   - geoscience
 tag:
@@ -13,9 +13,47 @@ tag:
 star: false
 sticky: true
 ---
-[Connection Pool for Postgresql using python](https://pynative.com/psycopg2-python-postgresql-connection-pooling/#:~:text=PostgreSQL%20connection%20Pool%20is%20nothing,application%20while%20working%20with%20PostgreSQL.)
+
+## Report
+::: details
+::: chart A bar chart
+```json
+{
+  "type": "bar",
+  "plugin": {
+    "datalabels": {
+      "anchor": "end",
+      "align": "end",
+      "font": {
+        "size": 14
+      }
+    }
+  },
+  "data": {
+    "labels": ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    "datasets": [{
+        "axis": "y",
+        "data": [65, 59, 80, 81, 56, 55, 40],
+        "fill": false,,
+        "borderWidth": 1
+      }
+    ]
+  },
+  "options": {
+    "indexAxis": "y",
+    "scales": {
+      "y": {
+        "beginAtZero": true
+      }
+    }
+  }
+}
+```
+::::
+
 ## The whole process
 
+### Process Graph
 ```mermaid
 ---
 title: The process for vivid meta data
@@ -28,10 +66,10 @@ flowchart LR
     cal--> End{{Finish}}
 ```
 
-## Get the Key
+### Get the Key
 Details refer to your own account
 
-## Download data
+### Download data
 
 ### Analysis
 Using WFS client for viewing the layers first. Details refer the picture below
@@ -496,7 +534,7 @@ if __name__ == '__main__':
 python  main.py ..\1-MaxarCatalogMosaicSeamlines.geojson MosaicSeamlines > 1-Mosaicseamlines.sql
 
 : init db
-initdb -D .\pgdata -Upostgres -Upostgres
+D:\pgsql\PostgreSQL\14\bin\initdb -D .\pgdata -Upostgres -Upostgres
 
 ```
 
@@ -549,12 +587,12 @@ create table MaxarCatalogMosaicProducts(
 
 @tab pg_conn
 ``` python
-#导入数据库驱动
 import sqlite3
 import json
 import os
 import shutil
 import psycopg2
+from psycopg2 import pool
 import time
 import threading
 import traceback
@@ -563,23 +601,14 @@ import datetime as dt
 
 
 class pg_conn:
-    #_instance_lock = threading.Lock()
     def __init__(self, pg_conf):
-        self.pg_conf = pg_conf
-        for i in range(pg_conf['max_conn']):
-            self.db_pool = list()
-            db_node = {
-                'locker': threading.Lock(),
-                'conn': psycopg2.connect(
-                    database= pg_conf['db_info']['database'], 
-                    user    = pg_conf['db_info']['user'], 
-                    password= pg_conf['db_info']['password'], 
-                    host    = pg_conf['db_info']['host'], 
-                    port    = pg_conf['db_info']['port']
-                ),
-                'invoke_time':dt.datetime.now()
-            }
-            self.db_pool.append(db_node)
+        self.threaded_postgreSQL_pool = psycopg2.pool.ThreadedConnectionPool(
+            5, 20, 
+            user    = pg_conf['db_info']['user'],
+            password= pg_conf['db_info']['password'],
+            host    = pg_conf['db_info']['host'],
+            port    = pg_conf['db_info']['port'],
+            database= pg_conf['db_info']['database'])
     
     def get_tbl(self):
         rc = None
@@ -587,6 +616,7 @@ class pg_conn:
             if self.pg_conf.__contains__('db_info'):
                 rc = self.pg_conf['db_info']['tbl']
         return rc
+
     #def __new__(cls, *args, **kwargs):
     #    if not hasattr(pg_conn, "_instance"):
     #        with pg_conn._instance_lock:
@@ -603,25 +633,22 @@ class pg_conn:
         return rc
     
     def __del__(self):
-        for i in self.db_pool:
-            with i['locker']:
-                i['conn'].close()
+        if self.threaded_postgreSQL_pool:
+            self.threaded_postgreSQL_pool.closeall()
 
     #查询信息
     def __query__(self, sql):
-        pg_node = self.getDBNode()
-        valid = 0
-        ret = None
-        with pg_node['locker']:
-            idx_c = pg_node['conn'].cursor()
+        pg_conn = self.threaded_postgreSQL_pool.getconn()
+        if pg_conn:
+            pg_cursor = pg_conn.cursor()
             try:
-                idx_c.execute(sql)
-                ret = idx_c.fetchall()
-                pg_node['conn'].commit()
-                pg_node['invoke_time'] = dt.datetime.now()
+                pg_cursor.execute(sql)
+                ret = pg_cursor.fetchall()
+            except Exception as e:
+                pass
             finally:
-                if idx_c:
-                    idx_c.close()
+                pg_cursor.close()
+                self.threaded_postgreSQL_pool.putconn(pg_conn)
         return ret
 
     #执行非查询sql
@@ -631,21 +658,20 @@ class pg_conn:
             sqls_data.append(sqls)
         elif type(sqls) == type(tuple()) or type(sqls) == type(list()):
             sqls_data.extend(sqls)
-        pg_node = self.getDBNode()
-        with pg_node['locker']: 
-            idx_c = pg_node['conn'].cursor()   # 创建游标
+            
+        pg_conn = self.threaded_postgreSQL_pool.getconn()
+        if pg_conn:
+            pg_cursor = pg_conn.cursor()
             try:
                 for sql in sqls_data:
-                    idx_c.execute(sql)
-                t = dt.datetime.now() 
-                # 距上次调用相差10s，进行数据提交(暂时弃用)
-                #if (t-self.db_info['invoke_time']).total_seconds() > 10:
-                #    self.db_info['db_conn'].commit()
-                #    self.db_info['invoke_time'] = t
-                pg_node['conn'].commit()
+                    pg_cursor.execute(sql)
+                pg_conn.commit()
+            except Exception as e:
+                pass
             finally:
-                if idx_c:
-                    idx_c.close()
+                pg_cursor.close()
+                self.threaded_postgreSQL_pool.putconn(pg_conn)
+        return None
 ```
 
 @tab Export to PG
@@ -698,9 +724,9 @@ thread_pool.wait()
 ``` sql
 -- copy table structure
 create table mosaicseamlines_unique as select * from mosaicseamlines limit 0;
-
+create index i_seamlines_id on mosaicseamlines(id);
 -- insert unique id
-insert into mosaicseamlines_unique(id) as select distinct id from mosaicseamlines;
+insert into mosaicseamlines_unique(id) select distinct id from mosaicseamlines;
 
 -- update other features based on id
 update mosaicseamlines_unique set 
@@ -717,10 +743,36 @@ update mosaicseamlines_unique set
     product_id = a.product_id,
     product_line_name = a.product_line_name, 
     geom = a.geom
-  from mosaicseamlines
-  where id = a.id;
+  from mosaicseamlines a
+  where mosaicseamlines_unique.id = a.id;
 
+
+create index i_seamlines_uid on mosaicseamlines_unique(id);
+create index i_seamlines_uproductid on mosaicseamlines_unique(product_id);
+create index i_seamlines_ugeom on mosaicseamlines_unique using gist(geom);
 ```
 :::
 
+
+## Analysis
+::: code-tabs
+@tab Analysis script
+``` sql
+alter table  mosaicseamlines rename to mosaicseamlines_old;
+alter table  mosaicseamlines_unique rename to mosaicseamlines;
+comments on table mosaicseamlines
+
+alter table mosaicseamlines add area float;
+update mosaicseamlines set area=st_area(geography(geom));
+
+alter table mosaicseamlines add column collect_year int;
+update mosaicseamlines set collect_year =EXTRACT(year from collect_date);
+
+
+comment on table mosaicseamlines is 'The meta of vivid mosaicseamlines without duplication';
+comment on table mosaicseamlines_old is 'The meta of vivid mosaicseamlines with duplication';
+
+create table mosaicseamlines_aear_statistic as select sum(area) area, product_id, collect_year from mosaicseamlines group by product_id, collect_year;
+```
+:::
 
