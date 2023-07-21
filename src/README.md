@@ -5,6 +5,7 @@ icon: home
 title: Blog Home
 heroImage: /haiyue.svg
 heroText: Haiyue's blog
+bgImage: /assets/images/sky.jpg
 tagline: My techniqual life, scroll down for details
 heroFullScreen: true
 #projects:
@@ -38,7 +39,6 @@ heroFullScreen: true
 #    desc: Detailed description of this custom item
 #    link: https://link.to.your.friend
 
-footer: 'Need job opportunity now.'
 ---
 <!-- 
 This is a blog home page demo.

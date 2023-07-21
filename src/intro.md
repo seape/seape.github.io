@@ -2,7 +2,6 @@
 icon: user
 cover: /assets/images/unisa.jpg
 
-footer: 'Need job opportunity now.'
 ---
 # Details of me
 ## This is me
@@ -55,5 +54,8 @@ footer: 'Need job opportunity now.'
 @tab Analysis technique
 
 :::
+
+## Contact me
+- Email: nutterair1989@gmail.com
 
 
