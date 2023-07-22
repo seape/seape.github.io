@@ -377,7 +377,7 @@ char	*ft_strchr(const char *s, int c)
 
 	ele = (char)c;
 	rc = (char *)s;
-	while (*s)
+	while (*rc)
 	{
 		if (*rc == c)
 			return (rc);
@@ -941,6 +941,17 @@ int main(void)
 :::
 
 ### Part2: Additional Functions
+When analyse the functions, it can easily find that the 7 functions are all about the operation on string, the last 4 functions are about output. So the eleven functions will be seperated into 2 groups which will store with 3 files, ft_part2_str1.c, ft_part2_str2.c, ft_part2_fd.c
+
+| ft_part2_str1.c | ft_part2_str2.c  | ft_part2_fd.c  |
+| -- | -- | -- |
+| ft_substr | ft_strmapi | ft_putchar_fd |
+| ft_strjoin | ft_striteri | ft_putstr_fd |
+| ft_strtrim | - | ft_putendl_fd |
+| ft_split | - | ft_putnbr_fd |
+| - | ft_itoa | - |
+
+
 
 
 
