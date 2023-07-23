@@ -9,6 +9,8 @@ cover: /assets/images/unisa.jpg
 ![](/haiyue.jpg)
 :::
 -----
+Hello, my name is Haiyue, you could call me Jet for short. If you have any questions on technique or any technical position please contact me via email.
+
 ## Details of education
 
 | University | Major | Degree |

@@ -11,7 +11,7 @@ tag:
 ## The structure of git
 ![The structure for git](/assets/images/github/git_struct.webp)
 
-## Collaborate in different git repository
+## Collaboration
 ![The structure for git](/assets/images/github/remote_collaborate.png)
 
 ## Git Code Hosting Center
