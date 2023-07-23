@@ -7,4 +7,7 @@ date: 2023-07-20
 sticky: 3
 category:
   - Guide
+tag:
+  - predictive
+  - machine learning
 ---
