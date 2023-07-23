@@ -1,4 +1,5 @@
 ---
+title: How to post you site on using Git
 icon: /github.svg
 date: 2022-01-09
 category:
@@ -7,8 +8,6 @@ tag:
   - github
   - gitpage
 ---
-
-# How to post you site on using Git
 
 ## Pre-requirement
 You should know how to use git. And how to push your project on github.
@@ -21,3 +20,9 @@ Here is the content for how to use github to post your personal static website.
 ## Different deployment methods
 
 Here is the content on different way to deploty your website.
+
+
+## Github Action
+### How to post to another repository
+01. https://cpina.github.io/push-to-another-repository-docs/
+02. https://github.com/cpina/push-to-another-repository-docs
