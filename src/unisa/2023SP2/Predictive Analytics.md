@@ -13,7 +13,9 @@ tag:
 ---
 
 ## Assignments
+All the links below are part of my work on colab.
 
+- [Distance Calculation](https://colab.research.google.com/drive/13IHqhJJmLK5PnxeLJu6PLoEZymh_re3Q?usp=sharing)
 - [Naive Bayes Classifer](https://colab.research.google.com/drive/1cDTw7AVfYLDFghssPx9wzWOaM_hgJkMz#scrollTo=tYfEmNPfbHpq)
 - [Practice every week](https://colab.research.google.com/drive/1cEi-9haVA3dNXO57qHEIboI1TeT9FkCi?usp=sharing)
 - [Neural Network: Hand writing recogniztion](https://colab.research.google.com/drive/1a3yBwY3KoKF4gEIE-_yUj_jd9OK7pgdM?usp=sharing)

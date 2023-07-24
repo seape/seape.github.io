@@ -5,6 +5,7 @@ icon: home
 title: Blog Home
 heroImage: /haiyue.svg
 heroText: Haiyue's blog
+#bgImage: /assets/images/bg_data.webp
 bgImage: /assets/images/sky.jpg
 tagline: My techniqual life, scroll down for details
 heroFullScreen: true
