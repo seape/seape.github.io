@@ -9,7 +9,7 @@ tag:
   - postgresql
   - connection
 star: false
-sticky: true
+sticky: false
 ---
 
 

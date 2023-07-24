@@ -8,7 +8,7 @@ category:
 tag:
   - threads
 star: false
-sticky: true
+sticky: false
 ---
 
 In this article, I implement a very simple thread pool using threading package. Details see the code below.

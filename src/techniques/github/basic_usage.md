@@ -1,5 +1,5 @@
 ---
-title: Basic Usuage
+title: Basic Usage
 icon: /github.svg
 date: 2023-07-23
 category:

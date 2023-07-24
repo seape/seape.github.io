@@ -21,6 +21,12 @@ export const enSidebar = sidebar({
       prefix: "techniques/",
       children: "structure",
     },
+    {
+      text: "Math",
+      icon: "square-root-variable",
+      prefix: "Math/",
+      children: "structure",
+    },
     "intro"
   ],
 });

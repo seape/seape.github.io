@@ -11,7 +11,7 @@ tag:
   - ogc
   - wfs
 star: false
-sticky: true
+sticky: false
 ---
 
 ## Report

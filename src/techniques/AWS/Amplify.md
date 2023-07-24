@@ -12,3 +12,5 @@ tag:
 star: false
 sticky: true
 ---
+
+[AWS documentation](https://docs.amplify.aws/cli/commands/mock/#mock-function%20%3Cfunction-name%3E)
