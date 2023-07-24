@@ -7,7 +7,7 @@ export default defineUserConfig({
     "/": {
       lang: "en-US",
       title: "Haiyue's Blog",
-      description: "A blog demo for vuepress-theme-hope",
+      description: "Haiyue's page",
     },
     //"/zh/": {
     //  lang: "zh-CN",
