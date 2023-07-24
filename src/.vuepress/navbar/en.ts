@@ -4,7 +4,7 @@ export const enNavbar = navbar([
   "/",
   {
     text: "Master of Data Science (Unisa)",
-    icon: "building-columns",
+    icon: "/assets/icon/unisa/unisa-logo.svg",
     prefix: "/unisa/",
     children: [
       {text: "Term1(2022SP5)", link: "2022SP5"},

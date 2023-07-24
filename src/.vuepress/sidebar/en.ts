@@ -5,7 +5,7 @@ export const enSidebar = sidebar({
     "",
     {
       text: "Unisa",
-      icon: "building-columns",
+      icon: "/assets/icon/unisa/unisa-logo.svg",
       prefix: "unisa/",
       children: "structure",
     },
