@@ -11,3 +11,4 @@ tag:
 ---
 
 Mainly talk about the techniques related with AWS
+[AWS CLI](https://docs.amplify.aws/cli/)

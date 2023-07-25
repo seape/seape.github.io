@@ -12,3 +12,4 @@ category:
 This category will record all the things related with techniques.
 
 [markmap](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode)
+[vuepress-theme-hope]

@@ -14,3 +14,16 @@ sticky: true
 ---
 
 [AWS documentation](https://docs.amplify.aws/cli/commands/mock/#mock-function%20%3Cfunction-name%3E)
+
+
+## Install Ampllify (windows)
+``` bash
+# method 1
+curl -sL https://aws-amplify.github.io/amplify-cli/install-win -o install.cmd && install.cmd
+
+# method 2
+npm i -g @aws-amplify/cli
+```
+
+
+

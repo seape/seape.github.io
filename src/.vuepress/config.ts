@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 export default defineUserConfig({
   base: "/",
@@ -16,7 +17,6 @@ export default defineUserConfig({
     //},
   },
   theme,
-
   // Enable it with pwa
   // shouldPrefetch: false,
 });
