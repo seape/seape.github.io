@@ -8,3 +8,9 @@ category:
   - readme
 footer: 'Need job opportunity now.'
 ---
+
+
+
+$\stackrel{\text{s}}{2}$
+
+$\text{\aa}$

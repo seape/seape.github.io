@@ -12,4 +12,5 @@ category:
 This category will record all the things related with techniques.
 
 [markmap](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode)
-[vuepress-theme-hope]
+
+[Solving the executable file cannot execute in vscode terminal](https://bobbyhadz.com/blog/yarn-cannot-be-loaded-running-scripts-disabled)
