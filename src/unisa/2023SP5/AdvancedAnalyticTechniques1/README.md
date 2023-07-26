@@ -1,5 +1,5 @@
 ---
-title: AdvancedAnalyticTechniques1
+title: Advanced Analytic 1
 index: false
 icon: calculator
 author: Haiyue

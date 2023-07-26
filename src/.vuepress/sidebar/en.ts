@@ -27,6 +27,12 @@ export const enSidebar = sidebar({
       prefix: "Math/",
       children: "structure",
     },
+    {
+      text: "Task",
+      icon: "list-check",
+      prefix: "Task/",
+      children: "structure",
+    },
     "intro"
   ],
 });

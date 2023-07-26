@@ -1,11 +1,14 @@
 ---
-title: Advanced Analytic Techniques 1
+title: Fourier Series Models
 index: true
-icon: calculator
+icon: dragon
 author: Haiyue
 date: 2023-07-20
 category:
-  - Guide
+  - math
+tag:
+  - fourier
+  - math
 ---
 
 ## 1 Fourier Series Models

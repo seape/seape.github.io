@@ -106,6 +106,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
+      "/Task/task_details.html": ["#1234"],
       "/demo/*": ["1234"],
       "/demo/encrypt.html": ["1234"],
       //"/zh/demo/encrypt.html": ["1234"],
