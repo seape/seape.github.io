@@ -1,9 +1,8 @@
 ---
-title: 室内作品集
+title: Architecture Works
 index: false
-icon: door-open
+icon: landmark
 author: Bin Zheng
-#category:
-#  - Guide
+
 #footer: 'Need job opportunity now.'
 ---

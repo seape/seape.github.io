@@ -1,7 +1,7 @@
 ---
-title: 室内作品集
+title: Landscape Works
 index: false
-icon: door-open
+icon: panorama
 author: Bin Zheng
 #category:
 #  - Guide

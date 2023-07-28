@@ -5,7 +5,7 @@ export const enNavbar = navbar([
   {
     text: "Portfolio",
     icon: "/assets/icon/unisa/unisa-logo.svg",
-    prefix: "/unisa/",
+    prefix: "/",
     children: [
       {text: "Architecture Works", link: "architecture"},
       {text: "Hand Painting", link: "handpaint"},

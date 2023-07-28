@@ -1,9 +1,8 @@
 ---
-title: 室内作品集
+title: Hand Drawings
 index: false
-icon: door-open
+icon: paintbrush
 author: Bin Zheng
-#category:
-#  - Guide
+
 #footer: 'Need job opportunity now.'
 ---

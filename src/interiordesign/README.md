@@ -1,5 +1,5 @@
 ---
-title: 室内作品集
+title: Interior Design
 index: false
 icon: door-open
 author: Bin Zheng
