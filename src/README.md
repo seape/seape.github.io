@@ -7,7 +7,7 @@ heroImage: /dog-artist-logo4.png
 heroText: BinZheng's blog
 #bgImage: /assets/images/bg_data.webp
 bgImage: /assets/images/sky.jpg
-tagline: My techniqual life, scroll down for details
+tagline: Works Collection of a drawing dog
 heroFullScreen: true
 #projects:
 #  - icon: image-portrait

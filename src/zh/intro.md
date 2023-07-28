@@ -3,4 +3,4 @@ icon: user
 cover: /assets/images/unisa.jpg
 
 ---
-# Details of me
+# 个人简历
