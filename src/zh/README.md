@@ -2,33 +2,33 @@
 home: true
 layout: BlogHome
 icon: home
-title: Blog Home
+title: 主页
 heroImage: /dog-artist-logo4.png
-heroText: BinZheng's blog
+heroText: 郑彬博客
 #bgImage: /assets/images/bg_data.webp
 bgImage: /assets/images/sky.jpg
-tagline: My techniqual life, scroll down for details
+tagline: 绘图狗的笔记
 heroFullScreen: true
-#projects:
-#  - icon: image-portrait
-#    name: About me
-#    desc: See details of me here
-#    link: /intro
-#
-#  - icon: blog
-#    name: About the blog
-#    desc: The vuepress and theme-hope are used for constructing the blog
-#    link: https://theme-hope.vuejs.press/
-#
-#  - icon: book
-#    name: book name
-#    desc: Detailed description of the book
-#    link: https://link.to.your.book
-#
-#  - icon: article
-#    name: article name
-#    desc: Detailed description of the article
-#    link: https://link.to.your.article
+projects:
+  - icon: image-portrait
+    name: 建筑作品
+    desc: See details of me here
+    link: /zh/architecture
+
+  - icon: blog
+    name: 手绘作品
+    desc: The vuepress and theme-hope are used for constructing the blog
+    link: /zh/handpaint
+
+  - icon: book
+    name: 室内设计
+    desc: Detailed description of the book
+    link: /zh/interiordesign
+
+  - icon: article
+    name: 景观作品
+    desc: Detailed description of the article
+    link: /zh/landscape
 #
 #  - icon: friend
 #    name: friend name
