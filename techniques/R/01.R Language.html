@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-beta.64" />
+    <meta name="theme" content="VuePress Theme Hope" />
+    <meta property="og:url" content="https://seamice.github.io/blog/techniques/R/01.R%20Language.html"><meta property="og:site_name" content="Haiyue's Blog"><meta property="og:title" content="01. R language Basic"><meta property="og:description" content="Data Basic Data Types character: "a", "test" numeric: 2, 47.5 integer: 2L (L is a special instruction to treat number as an interger) logical: TRUE, FALSE complex: 1 + 2i"><meta property="og:type" content="article"><meta property="og:locale" content="en-US"><meta property="og:updated_time" content="2023-07-25T11:59:26.000Z"><meta property="article:author" content="Haiyue"><meta property="article:tag" content="Rbasic"><meta property="article:published_time" content="2023-07-20T00:00:00.000Z"><meta property="article:modified_time" content="2023-07-25T11:59:26.000Z"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"01. R language Basic","image":[""],"datePublished":"2023-07-20T00:00:00.000Z","dateModified":"2023-07-25T11:59:26.000Z","author":[{"@type":"Person","name":"Haiyue"}]}</script><title>01. R language Basic | Haiyue's Blog</title><meta name="description" content="Data Basic Data Types character: "a", "test" numeric: 2, 47.5 integer: 2L (L is a special instruction to treat number as an interger) logical: TRUE, FALSE complex: 1 + 2i">
+    <style>
+      :root {
+        --bg-color: #fff;
+      }
+
+      html[data-theme="dark"] {
+        --bg-color: #1d1e1f;
+      }
+
+      html,
+      body {
+        background: var(--bg-color);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    </script>
+    <link rel="preload" href="/assets/style-3e1c6a44.css" as="style"><link rel="stylesheet" href="/assets/style-3e1c6a44.css">
+    <link rel="modulepreload" href="/assets/app-49149863.js"><link rel="modulepreload" href="/assets/01.R Language.html-731bef01.js"><link rel="modulepreload" href="/assets/01.R Language.html-cc583aca.js"><link rel="modulepreload" href="/assets/plugin-vue_export-helper-c27b6911.js"><link rel="prefetch" href="/assets/index.html-148edd72.js" as="script"><link rel="prefetch" href="/assets/intro.html-f3e1d0ba.js" as="script"><link rel="prefetch" href="/assets/index.html-a8302924.js" as="script"><link rel="prefetch" href="/assets/index.html-9ee3dc07.js" as="script"><link rel="prefetch" href="/assets/index.html-ee531e6e.js" as="script"><link rel="prefetch" href="/assets/task_details.html-cc9b77f3.js" as="script"><link rel="prefetch" href="/assets/index.html-2cae6318.js" as="script"><link rel="prefetch" href="/assets/index.html-ea168048.js" as="script"><link rel="prefetch" href="/assets/libft.html-855fc996.js" as="script"><link rel="prefetch" href="/assets/index.html-9689a5ab.js" as="script"><link rel="prefetch" href="/assets/index.html-524a4d73.js" as="script"><link rel="prefetch" href="/assets/Amplify.html-051b1e12.js" as="script"><link rel="prefetch" href="/assets/index.html-5b338c9d.js" as="script"><link rel="prefetch" href="/assets/02.Statistical tests.html-56920f59.js" as="script"><link rel="prefetch" href="/assets/03.Data manipulation.html-d00a0b23.js" as="script"><link rel="prefetch" href="/assets/index.html-66d8ab7d.js" as="script"><link rel="prefetch" href="/assets/index.html-b2a5c58b.js" as="script"><link rel="prefetch" href="/assets/gcptowarp.html-08d18e68.js" as="script"><link rel="prefetch" href="/assets/vivid_retrive_and_analysis.html-060d357b.js" as="script"><link rel="prefetch" href="/assets/index.html-a4712d63.js" as="script"><link rel="prefetch" href="/assets/basic_usage.html-e23def0b.js" as="script"><link rel="prefetch" href="/assets/post_site_using_git.html-0fad9769.js" as="script"><link rel="prefetch" href="/assets/index.html-14f385da.js" as="script"><link rel="prefetch" href="/assets/psql_conn_pool.html-d73bc260.js" as="script"><link rel="prefetch" href="/assets/thread.html-da426232.js" as="script"><link rel="prefetch" href="/assets/Big Data Concepts.html-3c0787bb.js" as="script"><link rel="prefetch" href="/assets/index.html-cd6e1712.js" as="script"><link rel="prefetch" href="/assets/Relational Databases and Warehouses.html-620207e6.js" as="script"><link rel="prefetch" href="/assets/Statistical Programming for Data Science.html-024e786c.js" as="script"><link rel="prefetch" href="/assets/Statistics for Data Science.html-bd956bcb.js" as="script"><link rel="prefetch" href="/assets/Data Visualisation.html-2bed49e7.js" as="script"><link rel="prefetch" href="/assets/Predictive Analytics.html-bc9cbd84.js" as="script"><link rel="prefetch" href="/assets/index.html-4729b407.js" as="script"><link rel="prefetch" href="/assets/Research Methods.html-6ee6d06b.js" as="script"><link rel="prefetch" href="/assets/Unsupervised Methods in Analytics.html-b7a1e668.js" as="script"><link rel="prefetch" href="/assets/index.html-d0626d8d.js" as="script"><link rel="prefetch" href="/assets/AdvancedAnalyticTechniques1.html-40385649.js" as="script"><link rel="prefetch" href="/assets/LinearRegressionAnalysis.html-1b69b5c5.js" as="script"><link rel="prefetch" href="/assets/index.html-1e44f05e.js" as="script"><link rel="prefetch" href="/assets/AdvancedAnalyticTechniques2.html-b8fa0a61.js" as="script"><link rel="prefetch" href="/assets/index.html-cafc5958.js" as="script"><link rel="prefetch" href="/assets/Data Science Professional Development.html-c8089821.js" as="script"><link rel="prefetch" href="/assets/index.html-f09cf691.js" as="script"><link rel="prefetch" href="/assets/404.html-22f88149.js" as="script"><link rel="prefetch" href="/assets/index.html-00781cd8.js" as="script"><link rel="prefetch" href="/assets/index.html-5ca91490.js" as="script"><link rel="prefetch" href="/assets/index.html-c8862c87.js" as="script"><link rel="prefetch" href="/assets/index.html-f5676493.js" as="script"><link rel="prefetch" href="/assets/index.html-dd12c8d0.js" as="script"><link rel="prefetch" href="/assets/index.html-a3570177.js" as="script"><link rel="prefetch" href="/assets/index.html-55f3d8c8.js" as="script"><link rel="prefetch" href="/assets/index.html-54a18fae.js" as="script"><link rel="prefetch" href="/assets/index.html-94aad3b6.js" as="script"><link rel="prefetch" href="/assets/index.html-2a23a78f.js" as="script"><link rel="prefetch" href="/assets/index.html-6625ad7f.js" as="script"><link rel="prefetch" href="/assets/index.html-8a70f073.js" as="script"><link rel="prefetch" href="/assets/index.html-eb7c66a7.js" as="script"><link rel="prefetch" href="/assets/index.html-3035c392.js" as="script"><link rel="prefetch" href="/assets/index.html-3635ca75.js" as="script"><link rel="prefetch" href="/assets/index.html-758fefae.js" as="script"><link rel="prefetch" href="/assets/index.html-7359f7a5.js" as="script"><link rel="prefetch" href="/assets/index.html-eb85b9e6.js" as="script"><link rel="prefetch" href="/assets/index.html-a02a22a7.js" as="script"><link rel="prefetch" href="/assets/index.html-3c620d40.js" as="script"><link rel="prefetch" href="/assets/index.html-97ef5b56.js" as="script"><link rel="prefetch" href="/assets/index.html-23b4ba33.js" as="script"><link rel="prefetch" href="/assets/index.html-82780aa1.js" as="script"><link rel="prefetch" href="/assets/index.html-6ca2fb23.js" as="script"><link rel="prefetch" href="/assets/index.html-71b4d405.js" as="script"><link rel="prefetch" href="/assets/index.html-1b626961.js" as="script"><link rel="prefetch" href="/assets/index.html-e0fba5cf.js" as="script"><link rel="prefetch" href="/assets/index.html-0e1dd573.js" as="script"><link rel="prefetch" href="/assets/index.html-92b70ed4.js" as="script"><link rel="prefetch" href="/assets/index.html-9b844995.js" as="script"><link rel="prefetch" href="/assets/index.html-60418c5e.js" as="script"><link rel="prefetch" href="/assets/index.html-1bff4bdd.js" as="script"><link rel="prefetch" href="/assets/index.html-428ca079.js" as="script"><link rel="prefetch" href="/assets/index.html-f53400be.js" as="script"><link rel="prefetch" href="/assets/index.html-360d5647.js" as="script"><link rel="prefetch" href="/assets/index.html-5afd0f1b.js" as="script"><link rel="prefetch" href="/assets/index.html-b1101840.js" as="script"><link rel="prefetch" href="/assets/index.html-b062dbb0.js" as="script"><link rel="prefetch" href="/assets/index.html-a8948cba.js" as="script"><link rel="prefetch" href="/assets/index.html-9a3b2b8c.js" as="script"><link rel="prefetch" href="/assets/index.html-aa1e53c9.js" as="script"><link rel="prefetch" href="/assets/index.html-9805d58a.js" as="script"><link rel="prefetch" href="/assets/index.html-1a501a68.js" as="script"><link rel="prefetch" href="/assets/intro.html-561dc435.js" as="script"><link rel="prefetch" href="/assets/index.html-4f2de808.js" as="script"><link rel="prefetch" href="/assets/index.html-37e0cdd0.js" as="script"><link rel="prefetch" href="/assets/index.html-d07acdad.js" as="script"><link rel="prefetch" href="/assets/task_details.html-a3a4fe7a.js" as="script"><link rel="prefetch" href="/assets/index.html-101da291.js" as="script"><link rel="prefetch" href="/assets/index.html-166c2940.js" as="script"><link rel="prefetch" href="/assets/libft.html-2adad89a.js" as="script"><link rel="prefetch" href="/assets/index.html-7de0a42f.js" as="script"><link rel="prefetch" href="/assets/index.html-6c831557.js" as="script"><link rel="prefetch" href="/assets/Amplify.html-a8ce41a3.js" as="script"><link rel="prefetch" href="/assets/index.html-ab844c03.js" as="script"><link rel="prefetch" href="/assets/02.Statistical tests.html-4565314a.js" as="script"><link rel="prefetch" href="/assets/03.Data manipulation.html-2eb40ef6.js" as="script"><link rel="prefetch" href="/assets/index.html-44aaf654.js" as="script"><link rel="prefetch" href="/assets/index.html-2eff2df5.js" as="script"><link rel="prefetch" href="/assets/gcptowarp.html-10cedf8f.js" as="script"><link rel="prefetch" href="/assets/vivid_retrive_and_analysis.html-fb53c2cd.js" as="script"><link rel="prefetch" href="/assets/index.html-5f318093.js" as="script"><link rel="prefetch" href="/assets/basic_usage.html-802685cd.js" as="script"><link rel="prefetch" href="/assets/post_site_using_git.html-d2ca638e.js" as="script"><link rel="prefetch" href="/assets/index.html-18c2559b.js" as="script"><link rel="prefetch" href="/assets/psql_conn_pool.html-3559e50f.js" as="script"><link rel="prefetch" href="/assets/thread.html-04b0db8b.js" as="script"><link rel="prefetch" href="/assets/Big Data Concepts.html-268aba69.js" as="script"><link rel="prefetch" href="/assets/index.html-c22ab581.js" as="script"><link rel="prefetch" href="/assets/Relational Databases and Warehouses.html-11987208.js" as="script"><link rel="prefetch" href="/assets/Statistical Programming for Data Science.html-cee8dfb8.js" as="script"><link rel="prefetch" href="/assets/Statistics for Data Science.html-eeca1496.js" as="script"><link rel="prefetch" href="/assets/Data Visualisation.html-cc06effa.js" as="script"><link rel="prefetch" href="/assets/Predictive Analytics.html-c11a63a0.js" as="script"><link rel="prefetch" href="/assets/index.html-9d20394f.js" as="script"><link rel="prefetch" href="/assets/Research Methods.html-42707820.js" as="script"><link rel="prefetch" href="/assets/Unsupervised Methods in Analytics.html-70e9f6a6.js" as="script"><link rel="prefetch" href="/assets/index.html-98dc825a.js" as="script"><link rel="prefetch" href="/assets/AdvancedAnalyticTechniques1.html-ea40b167.js" as="script"><link rel="prefetch" href="/assets/LinearRegressionAnalysis.html-64a49e56.js" as="script"><link rel="prefetch" href="/assets/index.html-b6f21047.js" as="script"><link rel="prefetch" href="/assets/AdvancedAnalyticTechniques2.html-5b48dbde.js" as="script"><link rel="prefetch" href="/assets/index.html-f3b2ee17.js" as="script"><link rel="prefetch" href="/assets/Data Science Professional Development.html-02a0f6ae.js" as="script"><link rel="prefetch" href="/assets/index.html-fafe18d3.js" as="script"><link rel="prefetch" href="/assets/404.html-228c94df.js" as="script"><link rel="prefetch" href="/assets/index.html-feb24371.js" as="script"><link rel="prefetch" href="/assets/index.html-705342c1.js" as="script"><link rel="prefetch" href="/assets/index.html-b6e3c0ea.js" as="script"><link rel="prefetch" href="/assets/index.html-67f189eb.js" as="script"><link rel="prefetch" href="/assets/index.html-4667b94a.js" as="script"><link rel="prefetch" href="/assets/index.html-5f9426e9.js" as="script"><link rel="prefetch" href="/assets/index.html-d2045c73.js" as="script"><link rel="prefetch" href="/assets/index.html-d5205329.js" as="script"><link rel="prefetch" href="/assets/index.html-acc99a51.js" as="script"><link rel="prefetch" href="/assets/index.html-b9958d7e.js" as="script"><link rel="prefetch" href="/assets/index.html-bbd54624.js" as="script"><link rel="prefetch" href="/assets/index.html-965160fe.js" as="script"><link rel="prefetch" href="/assets/index.html-c86cc4e8.js" as="script"><link rel="prefetch" href="/assets/index.html-baedb30b.js" as="script"><link rel="prefetch" href="/assets/index.html-7ba8fa6c.js" as="script"><link rel="prefetch" href="/assets/index.html-ac01a360.js" as="script"><link rel="prefetch" href="/assets/index.html-5193fd90.js" as="script"><link rel="prefetch" href="/assets/index.html-22b0b124.js" as="script"><link rel="prefetch" href="/assets/index.html-efb4be74.js" as="script"><link rel="prefetch" href="/assets/index.html-de5f7bc2.js" as="script"><link rel="prefetch" href="/assets/index.html-d64ca4ee.js" as="script"><link rel="prefetch" href="/assets/index.html-8b424c9d.js" as="script"><link rel="prefetch" href="/assets/index.html-788d63e6.js" as="script"><link rel="prefetch" href="/assets/index.html-c251bd46.js" as="script"><link rel="prefetch" href="/assets/index.html-1e2e6518.js" as="script"><link rel="prefetch" href="/assets/index.html-b5b061c3.js" as="script"><link rel="prefetch" href="/assets/index.html-fd769173.js" as="script"><link rel="prefetch" href="/assets/index.html-6084e8ea.js" as="script"><link rel="prefetch" href="/assets/index.html-5a9a6d64.js" as="script"><link rel="prefetch" href="/assets/index.html-5588e94f.js" as="script"><link rel="prefetch" href="/assets/index.html-341f8036.js" as="script"><link rel="prefetch" href="/assets/index.html-f1fabe26.js" as="script"><link rel="prefetch" href="/assets/index.html-d0c5529c.js" as="script"><link rel="prefetch" href="/assets/index.html-bbabac24.js" as="script"><link rel="prefetch" href="/assets/index.html-b9bfccd1.js" as="script"><link rel="prefetch" href="/assets/index.html-6e1be28c.js" as="script"><link rel="prefetch" href="/assets/index.html-6a7799f5.js" as="script"><link rel="prefetch" href="/assets/index.html-3be6e7ec.js" as="script"><link rel="prefetch" href="/assets/index.html-ae92b86a.js" as="script"><link rel="prefetch" href="/assets/index.html-942d6065.js" as="script"><link rel="prefetch" href="/assets/index.html-69572243.js" as="script"><link rel="prefetch" href="/assets/index.html-cb5637a4.js" as="script"><link rel="prefetch" href="/assets/auto-fa8841cf.js" as="script"><link rel="prefetch" href="/assets/index-ae8c1e74.js" as="script"><link rel="prefetch" href="/assets/flowchart-d65a1d8e.js" as="script"><link rel="prefetch" href="/assets/mermaid.core-ffa662a7.js" as="script"><link rel="prefetch" href="/assets/highlight.esm-75b11b9d.js" as="script"><link rel="prefetch" href="/assets/markdown.esm-0191f9da.js" as="script"><link rel="prefetch" href="/assets/math.esm-70a288c8.js" as="script"><link rel="prefetch" href="/assets/notes.esm-a106bb2c.js" as="script"><link rel="prefetch" href="/assets/reveal.esm-ec5549c1.js" as="script"><link rel="prefetch" href="/assets/search.esm-7e6792e2.js" as="script"><link rel="prefetch" href="/assets/zoom.esm-b83b91d0.js" as="script"><link rel="prefetch" href="/assets/VuePlayground-4eb9c5b8.js" as="script"><link rel="prefetch" href="/assets/photoswipe.esm-5794cde2.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><!--[--><!--[--><span tabindex="-1"></span><a href="#main-content" class="vp-skip-link sr-only">Skip to main content</a><!--]--><div class="theme-container has-toc"><!--[--><header id="navbar" class="vp-navbar"><div class="vp-navbar-start"><button type="button" class="vp-toggle-sidebar-button" title="Toggle Sidebar"><span class="icon"></span></button><!--[--><!----><!--]--><!--[--><a class="vp-link vp-brand" href="/"><img class="vp-nav-logo" src="/haiyue.jpg" alt="Haiyue&#39;s Blog"><!----><span class="vp-site-name hide-in-pad">Haiyue&#39;s Blog</span></a><!--]--><!--[--><!----><!--]--></div><div class="vp-navbar-center"><!--[--><!----><!--]--><!--[--><nav class="vp-nav-links"><div class="nav-item hide-in-mobile"><a class="vp-link nav-link" href="/"><span class="font-icon icon fa-fw fa-sm fas fa-home" style=""></span>Blog Home<!----></a></div><div class="nav-item hide-in-mobile"><div class="dropdown-wrapper"><button type="button" class="dropdown-title" aria-label="Master of Data Science (Unisa)"><span class="title"><img class="icon" src="/assets/icon/unisa/unisa-logo.svg" no-view style="">Master of Data Science (Unisa)</span><span class="arrow"></span><ul class="nav-dropdown"><li class="dropdown-item"><a class="vp-link nav-link" href="/unisa/2022SP5.html"><!---->Term1(2022SP5)<!----></a></li><li class="dropdown-item"><a class="vp-link nav-link" href="/unisa/2023SP2.html"><!---->Term2(2023SP2)<!----></a></li><li class="dropdown-item"><a class="vp-link nav-link" href="/unisa/2023SP5.html"><!---->Term3(2023SP5)<!----></a></li></ul></button></div></div><div class="nav-item hide-in-mobile"><div class="dropdown-wrapper"><button type="button" class="dropdown-title" aria-label="Life in 42 Adelaide"><span class="title"><img class="icon" src="/assets/icon/42adelaide/42_adelaide.svg" no-view style="">Life in 42 Adelaide</span><span class="arrow"></span><ul class="nav-dropdown"><li class="dropdown-item"><a class="vp-link nav-link" href="/42adelaide/piscine.html"><img class="icon" src="/assets/icon/42adelaide/dolphin.svg" no-view style="">Piscine(Dolphin)<!----></a></li><li class="dropdown-item"><a class="vp-link nav-link" href="/42adelaide/42cursus.html"><img class="icon" src="/assets/icon/42adelaide/sol.svg" no-view style="">42cursus(Sol)<!----></a></li></ul></button></div></div><div class="nav-item hide-in-mobile"><div class="dropdown-wrapper"><button type="button" class="dropdown-title" aria-label="Techniques"><span class="title"><span class="font-icon icon fa-fw fa-sm fas fa-building-columns" style=""></span>Techniques</span><span class="arrow"></span><ul class="nav-dropdown"><li class="dropdown-item"><a class="vp-link nav-link" href="/techniques/geoscience.html"><!---->Geoscience<!----></a></li><li class="dropdown-item"><a class="vp-link nav-link" href="/techniques/python.html"><!---->Python<!----></a></li><li class="dropdown-item"><a class="vp-link nav-link active" href="/techniques/R.html"><!---->R<!----></a></li><li class="dropdown-item"><a class="vp-link nav-link" href="/techniques/github.html"><!---->Github<!----></a></li></ul></button></div></div><div class="nav-item hide-in-mobile"><a href="https://github.com/seamice/" rel="noopener noreferrer" target="_blank" aria-label="Github" class="nav-link"><img class="icon" src="/github.svg" no-view style="">Github<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!----></a></div></nav><!--]--><!--[--><!----><!--]--></div><div class="vp-navbar-end"><!--[--><!----><!--]--><!--[--><!----><!----><div class="nav-item hide-in-mobile"><button type="button" id="appearance-switch"><svg xmlns="http://www.w3.org/2000/svg" class="icon auto-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="auto icon" style="display:block;"><path d="M512 992C246.92 992 32 777.08 32 512S246.92 32 512 32s480 214.92 480 480-214.92 480-480 480zm0-840c-198.78 0-360 161.22-360 360 0 198.84 161.22 360 360 360s360-161.16 360-360c0-198.78-161.22-360-360-360zm0 660V212c165.72 0 300 134.34 300 300 0 165.72-134.28 300-300 300z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon dark-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="dark icon" style="display:none;"><path d="M524.8 938.667h-4.267a439.893 439.893 0 0 1-313.173-134.4 446.293 446.293 0 0 1-11.093-597.334A432.213 432.213 0 0 1 366.933 90.027a42.667 42.667 0 0 1 45.227 9.386 42.667 42.667 0 0 1 10.24 42.667 358.4 358.4 0 0 0 82.773 375.893 361.387 361.387 0 0 0 376.747 82.774 42.667 42.667 0 0 1 54.187 55.04 433.493 433.493 0 0 1-99.84 154.88 438.613 438.613 0 0 1-311.467 128z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon light-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="light icon" style="display:none;"><path d="M952 552h-80a40 40 0 0 1 0-80h80a40 40 0 0 1 0 80zM801.88 280.08a41 41 0 0 1-57.96-57.96l57.96-58a41.04 41.04 0 0 1 58 58l-58 57.96zM512 752a240 240 0 1 1 0-480 240 240 0 0 1 0 480zm0-560a40 40 0 0 1-40-40V72a40 40 0 0 1 80 0v80a40 40 0 0 1-40 40zm-289.88 88.08-58-57.96a41.04 41.04 0 0 1 58-58l57.96 58a41 41 0 0 1-57.96 57.96zM192 512a40 40 0 0 1-40 40H72a40 40 0 0 1 0-80h80a40 40 0 0 1 40 40zm30.12 231.92a41 41 0 0 1 57.96 57.96l-57.96 58a41.04 41.04 0 0 1-58-58l58-57.96zM512 832a40 40 0 0 1 40 40v80a40 40 0 0 1-80 0v-80a40 40 0 0 1 40-40zm289.88-88.08 58 57.96a41.04 41.04 0 0 1-58 58l-57.96-58a41 41 0 0 1 57.96-57.96z"></path></svg></button></div><!----><!--]--><!--[--><!----><!--]--><button type="button" class="vp-toggle-navbar-button" aria-label="Toggle Navbar" aria-expanded="false" aria-controls="nav-screen"><span><span class="vp-top"></span><span class="vp-middle"></span><span class="vp-bottom"></span></span></button></div></header><!----><!--]--><!----><div class="toggle-sidebar-wrapper"><span class="arrow start"></span></div><aside id="sidebar" class="vp-sidebar"><!--[--><!----><!--]--><ul class="vp-sidebar-links"><li><!--[--><a class="vp-link nav-link vp-sidebar-link vp-sidebar-page" href="/"><span class="font-icon icon fa-fw fa-sm fas fa-home" style=""></span>Blog Home<!----></a><ul class="vp-sidebar-sub-headers"></ul><!--]--></li><li><section class="vp-sidebar-group"><p class="vp-sidebar-heading"><img class="icon" src="/assets/icon/unisa/unisa-logo.svg" no-view style=""><span class="vp-sidebar-title">Unisa</span><!----></p><ul class="vp-sidebar-links"><li><section class="vp-sidebar-group"><button class="vp-sidebar-heading clickable" type="button"><span class="font-icon icon fa-fw fa-sm fas fa-calendar-week" style=""></span><span class="vp-sidebar-title">Term1(2022SP5)</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-heading clickable" type="button"><span class="font-icon icon fa-fw fa-sm fas fa-calendar-week" style=""></span><span class="vp-sidebar-title">Term2(2023SP2)</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-heading clickable" type="button"><span class="font-icon icon fa-fw fa-sm fas fa-calendar-week" style=""></span><span class="vp-sidebar-title">Term3(2023SP5)</span><span class="vp-arrow end"></span></button><!----></section></li></ul></section></li><li><section class="vp-sidebar-group"><p class="vp-sidebar-heading"><img class="icon" src="/assets/icon/42adelaide/42_adelaide.svg" no-view style=""><span class="vp-sidebar-title">Life in 42 Adelaide</span><!----></p><ul class="vp-sidebar-links"><li><section class="vp-sidebar-group"><button class="vp-sidebar-heading clickable" type="button"><img class="icon" src="/assets/icon/42adelaide/dolphin.svg" no-view style=""><span class="vp-sidebar-title">01 Piscine Period</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-heading clickable" type="button"><img class="icon" src="/assets/icon/42adelaide/sol.svg" no-view style=""><span class="vp-sidebar-title">02 Cursus Period</span><span class="vp-arrow end"></span></button><!----></section></li></ul></section></li><li><section class="vp-sidebar-group"><p class="vp-sidebar-heading active"><span class="font-icon icon fa-fw fa-sm fas fa-book" style=""></span><span class="vp-sidebar-title">Techniques</span><!----></p><ul class="vp-sidebar-links"><li><section class="vp-sidebar-group"><button class="vp-sidebar-heading clickable" type="button"><img class="icon" src="/assets/icon/aws/aws-logo.svg" no-view style=""><span class="vp-sidebar-title">AWS</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-heading clickable" type="button"><span class="font-icon icon fa-fw fa-sm fas fa-laptop-code" style=""></span><span class="vp-sidebar-title">Geoscience</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-heading clickable" type="button"><img class="icon" src="/github.svg" no-view style=""><span class="vp-sidebar-title">Github</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-heading clickable" type="button"><img class="icon" src="/assets/icon/common/python.svg" no-view style=""><span class="vp-sidebar-title">Python</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-heading clickable active" type="button"><span class="font-icon icon fa-fw fa-sm fas fa-r" style=""></span><span class="vp-sidebar-title">R Language</span><span class="vp-arrow down"></span></button><ul class="vp-sidebar-links"><li><!--[--><a class="vp-link nav-link active vp-sidebar-link vp-sidebar-page active" href="/techniques/R/01.R%20Language.html"><span class="font-icon icon fa-fw fa-sm fas fa-registered" style=""></span>01. R language Basic<!----></a><ul class="vp-sidebar-sub-headers"><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#data"><!---->Data<!----></a><ul class="vp-sidebar-sub-headers"><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#basic-data-types"><!---->Basic Data Types<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#data-structure"><!---->Data Structure<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#logical-indexing"><!---->Logical indexing<!----></a><ul class="vp-sidebar-sub-headers"></ul></li></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#control-flow"><!---->Control flow<!----></a><ul class="vp-sidebar-sub-headers"><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#loops-code"><!---->Loops code<!----></a><ul class="vp-sidebar-sub-headers"></ul></li></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#functions"><!---->Functions<!----></a><ul class="vp-sidebar-sub-headers"><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#built-in-functions"><!---->Built-in functions<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#user-defined-functions"><!---->User-defined functions<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#anonymous-functions"><!---->Anonymous functions<!----></a><ul class="vp-sidebar-sub-headers"></ul></li></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#reading-and-writing"><!---->Reading and Writing<!----></a><ul class="vp-sidebar-sub-headers"><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#reading-data"><!---->Reading data<!----></a><ul class="vp-sidebar-sub-headers"><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#loading-other-data-formats"><!---->Loading other data formats<!----></a><ul class="vp-sidebar-sub-headers"></ul></li></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#writing-data"><!---->Writing data<!----></a><ul class="vp-sidebar-sub-headers"><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#read-and-write-data-in-r-format"><!---->Read and write data in R-format<!----></a><ul class="vp-sidebar-sub-headers"></ul></li></ul></li></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#working-directory"><!---->Working directory<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#warnings-suppression"><!---->Warnings Suppression<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#the-apply-family"><!---->The *apply family<!----></a><ul class="vp-sidebar-sub-headers"><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#apply"><!---->apply<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#sapply-result-is-a-vector"><!---->sapply : result is a vector<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#lapply-result-a-list"><!---->lapply: result a list<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#vapply-can-specify-types-of-returned-values"><!---->vapply: can specify types of returned values<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#tapply-group-results"><!---->tapply: group results<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#mapply-work-with-multiple-variables-at-the-same-time"><!---->mapply: work with multiple variables at the same time<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#rapply-works-with-elements-of-the-nested-list-recursively"><!---->rapply: works with elements of the nested list recursively<!----></a><ul class="vp-sidebar-sub-headers"></ul></li></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#statistical-analysis-descriptive-statistics"><!---->Statistical analysis - descriptive statistics<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#basic-plotting"><!---->Basic plotting<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#random-numbers-generation"><!---->Random numbers generation<!----></a><ul class="vp-sidebar-sub-headers"><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#normal-distribution"><!---->Normal distribution<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#uniform-distribution"><!---->Uniform distribution<!----></a><ul class="vp-sidebar-sub-headers"></ul></li><li class="vp-sidebar-sub-header"><a class="vp-link nav-link vp-sidebar-link vp-heading" href="/techniques/R/01.R%20Language.html#stable-distribution"><!---->Stable distribution<!----></a><ul class="vp-sidebar-sub-headers"></ul></li></ul></li></ul><!--]--></li><li><!--[--><a class="vp-link nav-link vp-sidebar-link vp-sidebar-page" href="/techniques/R/02.Statistical%20tests.html"><span class="font-icon icon fa-fw fa-sm fas fa-registered" style=""></span>02. Statistical tests<!----></a><ul class="vp-sidebar-sub-headers"></ul><!--]--></li><li><!--[--><a class="vp-link nav-link vp-sidebar-link vp-sidebar-page" href="/techniques/R/03.Data%20manipulation.html"><span class="font-icon icon fa-fw fa-sm fas fa-registered" style=""></span>03. Data manipulation<!----></a><ul class="vp-sidebar-sub-headers"></ul><!--]--></li></ul></section></li></ul></section></li><li><section class="vp-sidebar-group"><p class="vp-sidebar-heading"><span class="font-icon icon fa-fw fa-sm fas fa-square-root-variable" style=""></span><span class="vp-sidebar-title">Math</span><!----></p><ul class="vp-sidebar-links"><li><section class="vp-sidebar-group"><button class="vp-sidebar-heading clickable" type="button"><span class="font-icon icon fa-fw fa-sm fas fa-infinity" style=""></span><span class="vp-sidebar-title">Advanced Mathematics</span><span class="vp-arrow end"></span></button><!----></section></li></ul></section></li><li><section class="vp-sidebar-group"><p class="vp-sidebar-heading"><span class="font-icon icon fa-fw fa-sm fas fa-list-check" style=""></span><span class="vp-sidebar-title">Task</span><!----></p><ul class="vp-sidebar-links"><li><!--[--><a class="vp-link nav-link vp-sidebar-link vp-sidebar-page" href="/Task/task_details.html"><span class="font-icon icon fa-fw fa-sm fas fa-cubes-stacked" style=""></span>Details for task assignments<!----></a><ul class="vp-sidebar-sub-headers"></ul><!--]--></li></ul></section></li><li><!--[--><a class="vp-link nav-link vp-sidebar-link vp-sidebar-page" href="/intro.html"><span class="font-icon icon fa-fw fa-sm fas fa-user" style=""></span>Details of me<!----></a><ul class="vp-sidebar-sub-headers"></ul><!--]--></li></ul><!--[--><!----><!--]--></aside><!--[--><main id="main-content" class="vp-page"><!--[--><!----><!----><nav class="vp-breadcrumb disable"></nav><div class="vp-page-title"><h1><span class="font-icon icon fa-fw fa-sm fas fa-registered" style=""></span>01. R language Basic</h1><div class="page-info"><span class="page-author-info" aria-label="Author🖊" data-balloon-pos="down"><svg xmlns="http://www.w3.org/2000/svg" class="icon author-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="author icon"><path d="M649.6 633.6c86.4-48 147.2-144 147.2-249.6 0-160-128-288-288-288s-288 128-288 288c0 108.8 57.6 201.6 147.2 249.6-121.6 48-214.4 153.6-240 288-3.2 9.6 0 19.2 6.4 25.6 3.2 9.6 12.8 12.8 22.4 12.8h704c9.6 0 19.2-3.2 25.6-12.8 6.4-6.4 9.6-16 6.4-25.6-25.6-134.4-121.6-240-243.2-288z"></path></svg><span><span class="page-author-item">Haiyue</span></span><span property="author" content="Haiyue"></span></span><!----><span class="page-date-info" aria-label="Writing Date📅" data-balloon-pos="down"><svg xmlns="http://www.w3.org/2000/svg" class="icon calendar-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="calendar icon"><path d="M716.4 110.137c0-18.753-14.72-33.473-33.472-33.473-18.753 0-33.473 14.72-33.473 33.473v33.473h66.993v-33.473zm-334.87 0c0-18.753-14.72-33.473-33.473-33.473s-33.52 14.72-33.52 33.473v33.473h66.993v-33.473zm468.81 33.52H716.4v100.465c0 18.753-14.72 33.473-33.472 33.473a33.145 33.145 0 01-33.473-33.473V143.657H381.53v100.465c0 18.753-14.72 33.473-33.473 33.473a33.145 33.145 0 01-33.473-33.473V143.657H180.6A134.314 134.314 0 0046.66 277.595v535.756A134.314 134.314 0 00180.6 947.289h669.74a134.36 134.36 0 00133.94-133.938V277.595a134.314 134.314 0 00-133.94-133.938zm33.473 267.877H147.126a33.145 33.145 0 01-33.473-33.473c0-18.752 14.72-33.473 33.473-33.473h736.687c18.752 0 33.472 14.72 33.472 33.473a33.145 33.145 0 01-33.472 33.473z"></path></svg><span><!----></span><meta property="datePublished" content="2023-07-20T00:00:00.000Z"></span><!----><span class="page-reading-time-info" aria-label="Reading Time⌛" data-balloon-pos="down"><svg xmlns="http://www.w3.org/2000/svg" class="icon timer-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="timer icon"><path d="M799.387 122.15c4.402-2.978 7.38-7.897 7.38-13.463v-1.165c0-8.933-7.38-16.312-16.312-16.312H256.33c-8.933 0-16.311 7.38-16.311 16.312v1.165c0 5.825 2.977 10.874 7.637 13.592 4.143 194.44 97.22 354.963 220.201 392.763-122.204 37.542-214.893 196.511-220.2 389.397-4.661 5.049-7.638 11.651-7.638 19.03v5.825h566.49v-5.825c0-7.379-2.849-13.981-7.509-18.9-5.049-193.016-97.867-351.985-220.2-389.527 123.24-37.67 216.446-198.453 220.588-392.892zM531.16 450.445v352.632c117.674 1.553 211.787 40.778 211.787 88.676H304.097c0-48.286 95.149-87.382 213.728-88.676V450.445c-93.077-3.107-167.901-81.297-167.901-177.093 0-8.803 6.99-15.793 15.793-15.793 8.803 0 15.794 6.99 15.794 15.793 0 80.261 63.69 145.635 142.01 145.635s142.011-65.374 142.011-145.635c0-8.803 6.99-15.793 15.794-15.793s15.793 6.99 15.793 15.793c0 95.019-73.789 172.82-165.96 177.093z"></path></svg><span>About 22 min</span><meta property="timeRequired" content="PT22M"></span><span class="page-category-info" aria-label="Category🌈" data-balloon-pos="down"><svg xmlns="http://www.w3.org/2000/svg" class="icon category-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="category icon"><path d="M148.41 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H148.41c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.311-40.31zM147.556 553.478H429.73c22.263 0 40.311 18.048 40.311 40.31v282.176c0 22.263-18.048 40.312-40.31 40.312H147.555c-22.263 0-40.311-18.049-40.311-40.312V593.79c0-22.263 18.048-40.311 40.31-40.311zM593.927 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H593.927c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.31-40.31zM730.22 920.502H623.926c-40.925 0-74.22-33.388-74.22-74.425V623.992c0-41.038 33.387-74.424 74.425-74.424h222.085c41.038 0 74.424 33.226 74.424 74.067v114.233c0 10.244-8.304 18.548-18.547 18.548s-18.548-8.304-18.548-18.548V623.635c0-20.388-16.746-36.974-37.33-36.974H624.13c-20.585 0-37.331 16.747-37.331 37.33v222.086c0 20.585 16.654 37.331 37.126 37.331H730.22c10.243 0 18.547 8.304 18.547 18.547 0 10.244-8.304 18.547-18.547 18.547z"></path></svg><!--[--><span class="page-category-item category7 clickable" role="navigation">R</span><!--]--><meta property="articleSection" content="R"></span><span class="page-tag-info" aria-label="Tag🏷" data-balloon-pos="down"><svg xmlns="http://www.w3.org/2000/svg" class="icon tag-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="tag icon"><path d="M939.902 458.563L910.17 144.567c-1.507-16.272-14.465-29.13-30.737-30.737L565.438 84.098h-.402c-3.215 0-5.726 1.005-7.634 2.913l-470.39 470.39a10.004 10.004 0 000 14.164l365.423 365.424c1.909 1.908 4.42 2.913 7.132 2.913s5.223-1.005 7.132-2.913l470.39-470.39c2.01-2.11 3.014-5.023 2.813-8.036zm-240.067-72.121c-35.458 0-64.286-28.828-64.286-64.286s28.828-64.285 64.286-64.285 64.286 28.828 64.286 64.285-28.829 64.286-64.286 64.286z"></path></svg><!--[--><span class="page-tag-item tag2 clickable" role="navigation">Rbasic</span><!--]--><meta property="keywords" content="Rbasic"></span></div><hr></div><div class="toc-place-holder"><aside id="toc"><!--[--><!----><!--]--><div class="toc-header">On This Page<button type="button" class="print-button" title="Print"><svg xmlns="http://www.w3.org/2000/svg" class="icon print-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="print icon"><path d="M819.2 364.8h-44.8V128c0-17.067-14.933-32-32-32H281.6c-17.067 0-32 14.933-32 32v236.8h-44.8C145.067 364.8 96 413.867 96 473.6v192c0 59.733 49.067 108.8 108.8 108.8h44.8V896c0 17.067 14.933 32 32 32h460.8c17.067 0 32-14.933 32-32V774.4h44.8c59.733 0 108.8-49.067 108.8-108.8v-192c0-59.733-49.067-108.8-108.8-108.8zM313.6 160h396.8v204.8H313.6V160zm396.8 704H313.6V620.8h396.8V864zM864 665.6c0 25.6-19.2 44.8-44.8 44.8h-44.8V588.8c0-17.067-14.933-32-32-32H281.6c-17.067 0-32 14.933-32 32v121.6h-44.8c-25.6 0-44.8-19.2-44.8-44.8v-192c0-25.6 19.2-44.8 44.8-44.8h614.4c25.6 0 44.8 19.2 44.8 44.8v192z"></path></svg></button></div><div class="toc-wrapper"><ul class="toc-list"><!--[--><li class="toc-item"><a class="vp-link toc-link level2" href="/#data">Data</a></li><li><ul class="toc-list"><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#basic-data-types">Basic Data Types</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#data-structure">Data Structure</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#logical-indexing">Logical indexing</a></li><!----><!--]--></ul></li><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level2" href="/#control-flow">Control flow</a></li><li><ul class="toc-list"><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#loops-code">Loops code</a></li><!----><!--]--></ul></li><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level2" href="/#functions">Functions</a></li><li><ul class="toc-list"><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#built-in-functions">Built-in functions</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#user-defined-functions">User-defined functions</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#anonymous-functions">Anonymous functions</a></li><!----><!--]--></ul></li><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level2" href="/#reading-and-writing">Reading and Writing</a></li><li><ul class="toc-list"><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#reading-data">Reading data</a></li><li><ul class="toc-list"><!--[--><li class="toc-item"><a class="vp-link toc-link level4" href="/#loading-other-data-formats">Loading other data formats</a></li><!----><!--]--></ul></li><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#writing-data">Writing data</a></li><li><ul class="toc-list"><!--[--><li class="toc-item"><a class="vp-link toc-link level4" href="/#read-and-write-data-in-r-format">Read and write data in R-format</a></li><!----><!--]--></ul></li><!--]--></ul></li><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level2" href="/#working-directory">Working directory</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level2" href="/#warnings-suppression">Warnings Suppression</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level2" href="/#the-apply-family">The *apply family</a></li><li><ul class="toc-list"><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#apply">apply</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#sapply-result-is-a-vector">sapply : result is a vector</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#lapply-result-a-list">lapply: result a list</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#vapply-can-specify-types-of-returned-values">vapply: can specify types of returned values</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#tapply-group-results">tapply: group results</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#mapply-work-with-multiple-variables-at-the-same-time">mapply: work with multiple variables at the same time</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#rapply-works-with-elements-of-the-nested-list-recursively">rapply: works with elements of the nested list recursively</a></li><!----><!--]--></ul></li><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level2" href="/#statistical-analysis-descriptive-statistics">Statistical analysis - descriptive statistics</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level2" href="/#basic-plotting">Basic plotting</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level2" href="/#random-numbers-generation">Random numbers generation</a></li><li><ul class="toc-list"><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#normal-distribution">Normal distribution</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#uniform-distribution">Uniform distribution</a></li><!----><!--]--><!--[--><li class="toc-item"><a class="vp-link toc-link level3" href="/#stable-distribution">Stable distribution</a></li><!----><!--]--></ul></li><!--]--></ul><div class="toc-marker" style="top:-1.7rem;"></div></div><!--[--><!----><!--]--></aside></div><!----><div class="theme-hope-content"><h2 id="data" tabindex="-1"><a class="header-anchor" href="#data" aria-hidden="true">#</a> Data</h2><h3 id="basic-data-types" tabindex="-1"><a class="header-anchor" href="#basic-data-types" aria-hidden="true">#</a> Basic Data Types</h3><ul><li><strong>character</strong>: &quot;a&quot;, &quot;test&quot;</li><li><strong>numeric</strong>: 2, 47.5</li><li><strong>integer</strong>: 2L (L is a special instruction to treat number as an interger)</li><li><strong>logical</strong>: TRUE, FALSE</li><li><strong>complex</strong>: 1 + 2i</li></ul><details class="hint-container details"><summary>Sample</summary><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>a &lt;- &quot;abc&quot;; 
+class(a)  #character
+typeof(a)  #character
+
+b &lt;- 2
+class(b)  #numeric
+typeof(b)  #double
+
+d &lt;- 2L
+class(d) #integer
+typeof(d) #integer
+
+# Integer is numeric too.
+# Integers are 32-bit numbers while numerics are 64-bit doubles
+x &lt;- 2L
+is.integer(x)   #TRUE
+is.numeric(x)   #TRUE
+y &lt;- 2
+is.integer(y)   #FALSE
+is.numeric(y)   #TRUE
+
+x &lt;- 1:1000
+is.integer(x)   #TRUE
+object.size(x)  #4048 bytes
+
+y &lt;- as.numeric(1:1000)
+object.size(y)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></details><h3 id="data-structure" tabindex="-1"><a class="header-anchor" href="#data-structure" aria-hidden="true">#</a> Data Structure</h3><ol><li><strong><span style="color:#e39602;">Vector</span></strong>: Vector is a collection of elements of the same type, that is a character or logical or integer or numeric but never a mix of different types.</li><li><strong><span style="color:#e39602;">List</span></strong>: A list is a special type of vector, it is a collection of objects which don’t need to be of the same type. Unlike a vector, every object in the list could be absolutely anything. A list can be a combination of vectors, matrices, arrays, other lists, etc. A list is a universal container for any type of data.</li><li><strong><span style="color:#e39602;">Matrix</span></strong>: A matrix is a two-dimensional structure very similar to a vector. There is a number of rows and columns and all elements should be of the same type - numeric or character or logical, etc.</li><li><strong><span style="color:#e39602;">Data frame</span></strong>: A data frame is the most important data structure for statistics and data analysis. A data frame is a <em><strong>defacto standard</strong></em> for tabular data used in statistics.</li><li><strong><span style="color:#e39602;">Factors</span></strong>: The last data structure to mention is a factor. It is used to efficiently store and process <strong>categorical data.</strong></li></ol><details class="hint-container details"><summary>Sample code</summary><div class="vp-tabs"><div class="vp-tabs-nav" role="tablist"><button type="button" class="vp-tab-nav active" role="tab" aria-controls="tab-67-0" aria-selected="true">Vector</button><button type="button" class="vp-tab-nav" role="tab" aria-controls="tab-67-1" aria-selected="false">List</button><button type="button" class="vp-tab-nav" role="tab" aria-controls="tab-67-2" aria-selected="false">Matrix</button><button type="button" class="vp-tab-nav" role="tab" aria-controls="tab-67-3" aria-selected="false">Data frame</button><button type="button" class="vp-tab-nav" role="tab" aria-controls="tab-67-4" aria-selected="false">Factors</button></div><!--[--><div class="vp-tab active" id="tab-67-0" role="tabpanel" aria-expanded="true"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>help(&quot;Memory-limits&quot;)
+a &lt;- &quot;abcde&quot;
+length(a)    #check the length of vector
+
+x &lt;- vector() # an empty logical vector (default one)
+length(x)
+
+# create vectors
+y &lt;- vector(&quot;character&quot;, length=5)# a charactor vector with 5 empty elements
+y
+numeric(5) # a numeric vector with 5 elements
+logical(5) # a logical vector with 5 elements
+character(5) # a character vector with 5 elements
+integer(5) # an integer vector with 5 elements
+
+# create a vector by specifying its content using function c() 
+x &lt;- c(1,2,3,4,5)
+class(x)
+length(x)
+
+# vector is a homogeneous collection of elements, 
+# if you try to combine different data types they will be automatically converted.
+x &lt;- c(1,2,3,4,&quot;a&quot;)
+x   ## [1] &quot;1&quot; &quot;2&quot; &quot;3&quot; &quot;4&quot; &quot;a&quot;
+class(x)
+
+x &lt;- c(1L,2L,3L,4L,5L)
+x
+class(x)
+
+y &lt;- c(x, 2.2)  # combining two numeric vectors of one element each
+y
+class(y)
+
+x &lt;- c(1,2,3,4,&quot;5&quot;)
+x
+y &lt;- as.numeric(x)
+y
+
+#All elements will be converted into whatever is “easy” to convert without losing information.
+x &lt;- c(1,2,3,4,&quot;abc&quot;)
+x
+y &lt;- as.numeric(x)
+y
+
+# You can be more flexible with seq() and get any kind of numerical sequences
+seq(from = 5, to = 10, by = 0.2)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Vectors always have the same type of data with the only exception - they can have missing data represented as NA (Not Available), which is a special value indicating missing data.</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>x &lt;- c(1,2,3,NA,5)
+class(x) # numeric
+
+y &lt;- c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, NA, &quot;e&quot;)
+class(y) #character
+
+z &lt;- c(TRUE, TRUE, FALSE, NA)
+class(z) #logical
+
+
+#The function is.na() check every element of the vector to be NA.
+x &lt;- c(1,2,3,NA,5)
+is.na(x)  # FALSE FALSE FALSE TRUE FALSE
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Every object can have attributes. Attributes are object-specific and they are part of the object. Attributes include:</p><ol><li><strong>length()</strong> - length of the object, that is, the number of elements</li><li><strong>names()</strong> - names of each element if any</li><li><strong>dim()</strong> - number of dimensions of the object</li><li><strong>class()</strong> - data type</li><li><strong>nchar()</strong> - number of characters in every element of the object</li><li><strong>attributes()</strong> - provides a list of available attributes</li></ol><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>x &lt;- c(&quot;a&quot; = 1, &quot;b&quot; = 2, &quot;c&quot; = 3)
+x 
+## a b c
+## 1 2 3  
+class(x)     ## [1] &quot;numeric&quot;
+length(x)    ## [1] 3
+names(x)     ## [1] &quot;a&quot; &quot;b&quot; &quot;c&quot;
+attributes(x)## $names
+             ## [1] &quot;a&quot; &quot;b&quot; &quot;c&quot;
+
+y &lt;- c(&quot;abc&quot;, &quot;defgh&quot;)
+nchar(y)     ## [1] 3 5
+
+# Every function can be used not just to read object attributes but to change them too
+names(x) &lt;- c(&quot;d&quot;, &quot;e&quot;, &quot;f&quot;)
+x
+## d e f
+## 1 2 3
+
+# To access any element of the vector you can use an index or a name (for a named vectors) of the element
+x &lt;- c(&quot;a&quot; = 11, &quot;b&quot; = 12, &quot;c&quot; = 13)
+x[2] # get a value by an index
+## b
+## 12
+
+x[&quot;b&quot;] # get a value by a name
+## b
+## 12
+
+# You can assign new values to the elements of the vector using indexes or names. 
+x &lt;- c(&quot;a&quot; = 11, &quot;b&quot; = 12, &quot;c&quot; = 13)
+x
+## a b c
+## 11 12 13
+x[&quot;b&quot;] &lt;- 99 # assign value 99 to an element with name &quot;b&quot; of the vector &quot;x&quot;
+x
+## a b c
+## 11 99 13
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p></p></div><div class="vp-tab" id="tab-67-1" role="tabpanel" aria-expanded="false"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>x &lt;- list(1:5, 2.5, &quot;abcdef&quot;, TRUE)
+x
+## [[1]]
+## [1] 1 2 3 4 5
+##
+## [[2]]
+## [1] 2.5
+##
+## [[3]]
+## [1] &quot;abcdef&quot;
+##
+## [[4]]
+## [1] TRUE
+
+# Similar to a vector, a list can be named. 
+# That is, every element of the list can have a name that can be used
+# to retrieve data.
+x &lt;- list(a = 1:5, b = 2.5, c = &quot;abcdef&quot;, d = TRUE)
+x
+## $a
+## [1] 1 2 3 4 5
+##
+## $b
+## [1] 2.5
+##
+## $c
+## [1] &quot;abcdef&quot;
+##
+## $d
+## [1] TRUE
+
+# To address elements of the list you can use indexes in double square brackets 
+# or elements names if the list is named. Also, you can use a so-called 
+# dollar-sign notation (for named list only).
+x[[3]] # list element number 3
+x[[&quot;c&quot;]] # list element with name &quot;c&quot;
+x$c # the same as above - element with name &quot;c&quot;
+
+# As mentioned before, a list is a special type of a vector. 
+# Hence, you can use an index (or a name) with a single square brackets 
+# but the result will be a list a single element. 
+# So, a list is a collection of one-element lists containing object of 
+# any data types.:
+x &lt;- list(a = 1:5, b = 2.5, c = &quot;abcdef&quot;, d = TRUE)
+x
+## $a
+## [1] 1 2 3 4 5
+##
+## $b
+## [1] 2.5
+##
+## $c
+## [1] &quot;abcdef&quot;
+##
+## $d
+## [1] TRUE
+x[1]
+## $a
+## [1] 1 2 3 4 5
+class(x[1])   ## [1] &quot;list&quot;
+length(x[1])  ## [1] 1
+
+x[[1]]        ## [1] 1 2 3 4 5
+class(x[[1]]) ## [1] &quot;integer&quot;
+
+length(x[[1]])## [1] 5
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p></p></div><div class="vp-tab" id="tab-67-2" role="tabpanel" aria-expanded="false"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>m &lt;- matrix(nrow = 2, ncol = 3) # empty matrix with 2 columns and 3 rows
+m
+## [,1] [,2] [,3]
+## [1,] NA NA NA
+## [2,] NA NA NA
+
+class(m)
+## [1] &quot;matrix&quot; &quot;array&quot;
+
+typeof(m) # by default empty matrix is logical the same way as empty vector
+## [1] &quot;logical&quot;
+
+dim(m)
+## [1] 2 3
+
+# There are two dimensions and the first one (rows) has two elements, 
+# while the second one (columns) has three elements. In R rows are 
+# always a first dimension.
+
+m &lt;- matrix(c(1:6), 2, 3)
+m
+
+## [,1] [,2] [,3]
+## [1,] 1 3 5
+## [2,] 2 4 6
+
+class(m)   ## [1] &quot;matrix&quot; &quot;array&quot;
+typeof(m)  ## [1] &quot;integer&quot;
+
+# By default, matrices in R are filled column-wise. 
+# However, you can change that behavior with the optional
+# parameter byrow if you need it.
+m &lt;- matrix(letters, ncol = 2, byrow = TRUE) # filling row-wise
+m
+## [,1] [,2]
+## [1,] &quot;a&quot; &quot;b&quot;
+## [2,] &quot;c&quot; &quot;d&quot;
+## [3,] &quot;e&quot; &quot;f&quot;
+## [4,] &quot;g&quot; &quot;h&quot;
+## [5,] &quot;i&quot; &quot;j&quot;
+## [6,] &quot;k&quot; &quot;l&quot;
+## [7,] &quot;m&quot; &quot;n&quot;
+## [8,] &quot;o&quot; &quot;p&quot;
+## [9,] &quot;q&quot; &quot;r&quot;
+## [10,] &quot;s&quot; &quot;t&quot;
+## [11,] &quot;u&quot; &quot;v&quot;
+## [12,] &quot;w&quot; &quot;x&quot;
+## [13,] &quot;y&quot; &quot;z&quot;
+
+class(m)  ## [1] &quot;matrix&quot; &quot;array&quot;
+typeof(m) ## [1] &quot;character&quot;
+
+
+# There are other ways to create a matrix. 
+# 1. The first one is to start with a vector and then transform it into a matrix by changing its dimension attribute.
+x &lt;- 1:12
+dim(x)  ## NULL
+dim(x) &lt;- c(3, 4)
+x
+## [,1] [,2] [,3] [,4]
+## [1,] 1 4 7 10
+## [2,] 2 5 8 11
+## [3,] 3 6 9 12
+# 2. The second option is to combine two (or more) vectors by binding them together with functions 
+#    a. rbind()  (row bind) and 
+#    b. cbind()  (column bind). 
+#  These functions work not just for matrices but for any objects that can create a two-dimensional structure.
+x &lt;- 1:4
+y &lt;- 5:8
+cbind(x,y) # take vectors &quot;x&quot; and &quot;y&quot; as columns
+## x y
+## [1,] 1 5
+## [2,] 2 6
+## [3,] 3 7
+## [4,] 4 8
+
+rbind(x,y) # take the same vectors as rows
+## [,1] [,2] [,3] [,4]
+## x 1 2 3 4
+## y 5 6 7 8
+
+# Indexing of values in a matrix requires two indexes - 
+#  1. first for a row and 
+#  2. second for a column.
+m &lt;- matrix(1:12, 3, 4)
+m
+## [,1] [,2] [,3] [,4]
+## [1,] 1 4 7 10
+## [2,] 2 5 8 11
+## [3,] 3 6 9 12
+
+m[2,4] # value on the row 2 and on the column 4
+## [1] 11
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>Array</strong>: Array is a matrix with more than two dimensions. There might be as many dimensions as you want but all elements should be of the same data type.</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>x &lt;- 1:12
+dim(x) &lt;- c(2, 3, 2) # make a 3-dimensional array
+x
+## , , 1
+##
+## [,1] [,2] [,3]
+## [1,] 1 3 5
+## [2,] 2 4 6
+##
+## , , 2
+##
+## [,1] [,2] [,3]
+## [1,] 7 9 11
+## [2,] 8 10 12
+
+class(x)    ## [1] &quot;array&quot;
+typeof(x)   ## [1] &quot;integer&quot;
+x[2,3,2] # an element in row 2, column 3 of the slice 2
+## [1] 12
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><div class="vp-tab" id="tab-67-3" role="tabpanel" aria-expanded="false"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>df &lt;- data.frame(id = letters[1:10], x = 1:10, y = 11:20)
+df
+##   id x y
+## 1 a 1 11
+## 2 b 2 12
+## 3 c 3 13
+## 4 d 4 14
+## 5 e 5 15
+## 6 f 6 16
+## 7 g 7 17
+## 8 h 8 18
+## 9 i 9 19
+## 10 j 10 20
+
+# A data frame always has column names. If you try to create a data frame 
+# without providing column names, which is possible, column names will be 
+# created for you automatically. Rows can have names too but this is optional.
+
+names(df)   ## [1] &quot;id&quot; &quot;x&quot; &quot;y&quot;
+class(df)   ## [1] &quot;data.frame&quot;
+typeof(df)  ## [1] &quot;list&quot;
+dim(df)     ## [1] 10 3
+
+# A data frame is a special type of list, which is a special type of a vector.
+# Also, a data frame has the two-dimensional structure as a matrix, which is 
+# a special type of a vector too. 
+# Hence, all types of indexing or accessing values you have seen before can be 
+# used with data frame.
+
+df[&quot;x&quot;] # single brackets with a name. Result is a data frame with one column.
+##   x
+## 1 1
+## 2 2
+## 3 3
+## 4 4
+## 5 5
+## 6 6
+## 7 7
+## 8 8
+## 9 9
+## 10 10
+
+df[2] # single brackets with an index. Result is the same as above - a data frame.
+##   x
+## 1 1
+## 2 2
+## 3 3
+## 4 4
+## 5 5
+## 6 6
+## 7 7
+## 8 8
+## 9 9
+## 10 10
+
+
+df$id # dollar-sign notation. Result is a vector of all values in the column
+## [1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot; &quot;f&quot; &quot;g&quot; &quot;h&quot; &quot;i&quot; &quot;j&quot;
+
+df[[&quot;x&quot;]] # double square brackets with a name. Result is as above.
+## [1] 1 2 3 4 5 6 7 8 9 10
+
+df[[2]] # double square brackets with an index number. Result is as above.
+## [1] 1 2 3 4 5 6 7 8 9 10
+
+df[3, 2] # individual indexes for row and column. Result is a vector of length 1.
+## [1] 3
+
+df[3,&quot;x&quot;] # the same as above but with the name instead of index.
+## [1] 3
+
+# When you access values in a vector, matrix, array, list or data frame names 
+# or indexes should not be single values. 
+# Moreover, you remember that there are no single values in R - 
+# there are always vectors. Hence, you can access or change multiple values at the same time.
+x &lt;- c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;)
+x
+## [1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot; &quot;f&quot;
+
+x[c(1,3,6)] # an index is a vector with three elements
+## [1] &quot;a&quot; &quot;c&quot; &quot;f&quot;
+
+m &lt;- matrix(1:12, nrow=3, ncol=4)
+m
+##     [,1] [,2] [,3] [,4]
+## [1,]   1    4    7   10
+## [2,]   2    5    8   11
+## [3,]   3    6    9   12
+
+m[c(1,2), c(1,3)] # indexes for rows and columns are vectors
+##     [,1] [,2]
+## [1,]   1   7
+## [2,]   2   8
+
+df &lt;- data.frame(id = letters[1:10], x = 1:10, y = 11:20)
+df
+##  id x y
+## 1 a 1 11
+## 2 b 2 12
+## 3 c 3 13
+## 4 d 4 14
+## 5 e 5 15
+## 6 f 6 16
+## 7 g 7 17
+## 8 h 8 18
+## 9 i 9 19
+## 10 j 10 20
+
+df[c(1,2), c(1,3)] # the same story as with a matrix above
+##   id y
+## 1 a 11
+## 2 b 12
+
+df[c(1,2), c(&quot;id&quot;, &quot;y&quot;)] # now there is a vector of names for columns
+##   id y
+## 1 a 11
+## 2 b 12
+
+# When you deal with two-dimensional (or higher) data structures and 
+# you don’t want to make a selection along any particular dimension 
+# then you can just drop that index
+
+m &lt;- matrix(1:12, nrow=3, ncol=4)
+m
+##     [,1] [,2] [,3] [,4]
+## [1,]   1    4    7   10
+## [2,]   2    5    8   11
+## [3,]   3    6    9   12
+
+m[ , c(1,3)] # to take all rows for columns 1 and 3
+##     [,1] [,2] 
+## [1,]   1    7 
+## [2,]   2    8 
+## [3,]   3    9
+
+df &lt;- data.frame(id = letters[1:10], x = 1:10, y = 11:20)
+df
+##   id x   y
+## 1  a 1  11
+## 2  b 2  12
+## 3  c 3  13
+## 4  d 4  14
+## 5  e 5  15
+## 6  f 6  16
+## 7  g 7  17
+## 8  h 8  18
+## 9  i 9  19
+## 10 j 10 20
+
+df[ , c(&quot;id&quot;, &quot;y&quot;)] # all rows for columns &quot;id&quot; and &quot;y&quot;
+##   id  y
+## 1  a 11
+## 2  b 12
+## 3  c 13
+## 4  d 14
+## 5  e 15
+## 6  f 16
+## 7  g 17
+## 8  h 18
+## 9  i 19
+## 10 j 20
+
+df[c(1,3), ] # to take rows 1 and 3 for all columns in the data frame
+##   id x   y
+## 1  a 1  11
+## 2  c 3  13
+
+#There are many data sets embedded in R that can be used as examples. Let’s have a look on one of them
+mtcars
+head(mtcars) # first 6 rows of the data frame. You can change the number of rows.
+tail(mtcars) # last 6 rows of the data frame
+ncol(mtcars) # number of columns
+nrow(mtcars) # number of rows
+dim(mtcars) # dimensions, that is number of rows and columns
+names(mtcars) # column names of the data frame
+colnames(mtcars) # again, column names
+rownames(mtcars) # row names of the data frame
+str(mtcars) # structure - name, type and preview of every column
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><div class="vp-tab" id="tab-67-4" role="tabpanel" aria-expanded="false"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>colour &lt;- c(&quot;red&quot;, &quot;blue&quot;, &quot;red&quot;, &quot;red&quot;)
+colour # This is a character vector
+
+
+# A factor is an integer vector with all characters coded alphabetically 
+# (as it is common in R you can change everything).
+as.integer(colour_f) # actual data stored as integers
+## [1] 2 1 2 2
+
+nlevels(colour_f) # number of levels in the data
+## [1] 2
+
+levels(colour_f) # what are the levels
+## [1] &quot;blue&quot; &quot;red&quot;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Storing character data as a factor is so efficient computationally that R used to do it by default. Each time you create a data frame or load data from external sources, R automatically converts character columns to factors. Most data analytic or predictive functions in R expect that numerical variables presented as numeric and categorical variables presented as factors. However, in some situations that behavior is not desirable and you have to say explicitly that you want to keep characters as characters.</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>df &lt;- data.frame(id = letters[1:10], x = 1:10, y = 11:20, stringsAsFactors = FALSE)
+df$id
+## [1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot; &quot;f&quot; &quot;g&quot; &quot;h&quot; &quot;i&quot; &quot;j&quot;
+class(df$id)
+## [1] &quot;character&quot;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Categorical variables can be nominal or ordinal. Categorical nominal does not have any order, e.g. “red”, “blue”, “green” or “male” and “female”. None of the values is more important or goes ahead of others. Categorical ordinal has an order, some values are above the others, e.g. “high”, “medium”, “low” or “good”, “bad”, “ugly”.<br> In a similar fashion, factors can be ordered and non-ordered. For non-ordered factors (default behavior) levels are assigned alphabetically. For ordered factors, you have to nominate levels and set the parameter <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="red"><mi>o</mi><mi>r</mi><mi>d</mi><mi>e</mi><mi>r</mi><mi>e</mi><mi>d</mi><mo>=</mo><mi>T</mi><mi>R</mi><mi>U</mi><mi>E</mi></mstyle><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\textcolor{red}{ordered=TRUE}.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;color:red;">or</span><span class="mord mathnormal" style="color:red;">d</span><span class="mord mathnormal" style="color:red;">ere</span><span class="mord mathnormal" style="color:red;">d</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel" style="color:red;">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;color:red;">TR</span><span class="mord mathnormal" style="margin-right:0.10903em;color:red;">U</span><span class="mord mathnormal" style="margin-right:0.05764em;color:red;">E</span><span class="mord">.</span></span></span></span></p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>movies &lt;- c(&quot;good&quot;, &quot;bad&quot;, &quot;ugly&quot;, &quot;ugly&quot;, &quot;good&quot;, &quot;good&quot;)
+movies_f &lt;- factor(movies)
+levels(movies_f) # levels were assigned alphabetically
+## [1] &quot;bad&quot; &quot;good&quot; &quot;ugly&quot;
+
+movies_f &lt;- factor(movies, levels = c(&quot;ugly&quot;, &quot;bad&quot;, &quot;good&quot;))
+levels(movies_f) # levels were manually assigned
+## [1] &quot;ugly&quot; &quot;bad&quot; &quot;good&quot;
+
+min(movies_f) # does not work as our factor is non-ordered, there is no min or max
+
+
+# let&#39;s try again
+movies_f &lt;- factor(movies, levels = c(&quot;ugly&quot;, &quot;bad&quot;, &quot;good&quot;), ordered = TRUE)
+levels(movies_f) # levels were manually assigned and order was set
+## [1] &quot;ugly&quot; &quot;bad&quot; &quot;good&quot;
+min(movies_f) # now it works as &quot;ugly&quot; is the lowest level
+## [1] ugly
+## Levels: ugly &lt; bad &lt; good
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><!--]--></div></details><h3 id="logical-indexing" tabindex="-1"><a class="header-anchor" href="#logical-indexing" aria-hidden="true">#</a> Logical indexing</h3><p>You already know how to address data by using indexes and names. There is one more way - using logical or Boolean variables.</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>x &lt;- seq(10)
+x # integer vector
+## [1] 1 2 3 4 5 6 7 8 9 10
+y &lt;- c(TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE)
+y # logical vector
+## [1] TRUE TRUE TRUE TRUE TRUE FALSE FALSE FALSE FALSE FALSE
+x[y] # select values from &quot;x&quot; that correspond to TRUE in &quot;y&quot;
+## [1] 1 2 3 4 5
+
+# A logical indexing works for all data structures - vectors, lists, 
+# matrices, data frames. You have to pay attention that length of the 
+# logical vector used for indexing is the same as the length of the 
+# object you try to index.
+# Logical vectors can be created using relational operators: &lt;, &gt;, &lt;=, &gt;=, ==, !=, %in%.
+
+df &lt;- data.frame(x = c(1,-2,3,-4,5,-6,7,-8,9,-10), y = letters[1:10])
+df
+df[df$x &gt; 0, ] # select only rows where value in column &quot;x&quot; is positive
+
+df[df$y %in% c(&quot;a&quot;, &quot;e&quot;, &quot;i&quot;), ] # select row if column &quot;y&quot; value is a vowel
+
+# Logical indexing as other types of indexing can be used for assignment data as well
+x &lt;- c(1,-2,3,-4,5,-6,7,-8,9,-10)
+x[x &lt; 0] &lt;- 99 # select all values that less than zero and set them to 99
+x
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="control-flow" tabindex="-1"><a class="header-anchor" href="#control-flow" aria-hidden="true">#</a> Control flow</h2><p>Control flow in R is very similar of it in Python. There are loops and selections.</p><h3 id="loops-code" tabindex="-1"><a class="header-anchor" href="#loops-code" aria-hidden="true">#</a> Loops code</h3><div class="vp-code-tabs"><div class="vp-code-tabs-nav" role="tablist"><button type="button" class="vp-code-tab-nav active" role="tab" aria-controls="codetab-159-0" aria-selected="true">for</button><button type="button" class="vp-code-tab-nav" role="tab" aria-controls="codetab-159-1" aria-selected="false">while</button><button type="button" class="vp-code-tab-nav" role="tab" aria-controls="codetab-159-2" aria-selected="false">repeat</button></div><!--[--><div class="vp-code-tab active" id="codetab-159-0" role="tabpanel" aria-expanded="true"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code># using for loop to implement the function above
+res &lt;- numeric(length = length(x)) # prepare empty vector of the size 10
+for(i in seq(1, length(x))){ # iterate through number from 1 to 10
+    res[i] &lt;- x[i] + y[i] # do summation for paired values of x and y
+}
+res # output results
+## [1] 12 14 16 18 20 22 24 26 28 30
+
+x &lt;- 1:10 # initial data set
+res &lt;- c() # prepare empty vector of length zero
+for(i in x){ # iterate through all elements of x
+    res &lt;- c(res, i * 2) # add new value to the end of result vector
+}
+res # output results
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><div class="vp-code-tab" id="codetab-159-1" role="tabpanel" aria-expanded="false"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>x &lt;- 0 # initial value of x
+while(x &lt; 5){ # repeat while x is less than 5
+    print(x) # print to control the process
+    x &lt;- x + 1 # change value of x
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><div class="vp-code-tab" id="codetab-159-2" role="tabpanel" aria-expanded="false"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>x &lt;- 0 # optional value to start with
+repeat{ # keep repeating till break command
+    print(x) # do something
+    x &lt;- x + 1 # these 4 lines create a stopping condition
+    if(x &gt; 5){
+        break
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><!--]--></div><div class="hint-container tip"><p class="hint-container-title">Custom Title</p><p>An operator <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mi>r</mi><mi>e</mi><mi>a</mi><mi>k</mi></mrow><annotation encoding="application/x-tex">break</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span><span class="mord mathnormal">re</span><span class="mord mathnormal" style="margin-right:0.03148em;">ak</span></span></span></span> can be used in any type of loops to break the loop even if condition in a while loop is still satisfied (TRUE) or a sequence in a for loop is not exhausted yet.</p></div><div class="hint-container warning"><p class="hint-container-title">Custom Title</p><p>IMPORTANT NOTE! Loops are very inefficient in R. Always try to avoid them if possible, instead, use vectorisation</p></div><h2 id="functions" tabindex="-1"><a class="header-anchor" href="#functions" aria-hidden="true">#</a> Functions</h2><h3 id="built-in-functions" tabindex="-1"><a class="header-anchor" href="#built-in-functions" aria-hidden="true">#</a> Built-in functions</h3><p>When you just started R, several packages were loaded automatically and all functions you used so far were from these packages. You can see the list of loaded packages: <code>print(.packages())</code><br> As you can not memorise all functions, you should be able to find a help on any function you need.</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>help.start() # opens a HTML document with major manuals
+# and reference list of all packages
+help(switch) # opens a help-file for function &quot;switch&quot;
+?(switch) # the same as above
+help(package=&quot;base&quot;) # opens documentation for chosen package, e.g. &quot;base&quot;
+vignette() # gives a list for all available vignettes (tutorials)
+# for all installed packages
+vignette(topic=&quot;dplyr&quot;, package=&quot;dplyr&quot;) # opens selected vignetts from selected package
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="vp-code-tabs"><div class="vp-code-tabs-nav" role="tablist"><button type="button" class="vp-code-tab-nav active" role="tab" aria-controls="codetab-190-0" aria-selected="true">Basic functions</button><button type="button" class="vp-code-tab-nav" role="tab" aria-controls="codetab-190-1" aria-selected="false">Basic Packages</button></div><!--[--><div class="vp-code-tab active" id="codetab-190-0" role="tabpanel" aria-expanded="true"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code># generate 100 random numbers from normal distribution with given mean and standard deviation
+x &lt;- rnorm(100, mean = 10, sd = 2)
+# descriptive statistics
+mean(x)
+## [1] 10.1993
+
+sd(x)
+## [1] 2.070667
+
+median(x)
+## [1] 10.11881
+
+IQR(x)
+## [1] 2.48354
+
+quantile(x, c(0, 0.25, 0.5, 0.75, 1))
+## 0% 25% 50% 75% 100%
+## 6.031015 9.079756 10.118812 11.563296 16.342306
+
+# 5-poit descriptive statistics by one function
+summary(x)
+
+# plotting - histogram
+hist(x)
+
+# plotting - boxplot
+boxplot(x)
+
+# t-test that mean equal 10
+t.test(x, mu=10)
+
+# download and install package into the default location
+install.packages(&quot;dplyr&quot;)
+# load the package into the session, making all its functions available to use
+library(dplyr)
+As there are so many packages, it is very common to have a conflict between packages when the same
+function name use in different packages. To avoid problems you should limit a number of packages you load.
+Load only packages you really need for the code you run.
+Also, you can specify what particular function from what package you want to run. In this case you don’t
+need to load the package.
+dplyr::select() # function &quot;select&quot; from package &quot;dplyr&quot;
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><div class="vp-code-tab" id="codetab-190-1" role="tabpanel" aria-expanded="false"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code># Here is a short example of some functions that are loaded automatically and always available in R
+
+# download and install package into the default location
+install.packages(&quot;dplyr&quot;)
+
+# load the package into the session, making all its functions available to use
+library(dplyr)
+
+# As there are so many packages, it is very common to have a 
+# conflict between packages when the same function name use 
+# in different packages. To avoid problems you should limit 
+# a number of packages you load. Load only packages you really 
+# need for the code you run. Also, you can specify what particular 
+# function from what package you want to run. In this case you don’t
+# need to load the package.
+dplyr::select() # function &quot;select&quot; from package &quot;dplyr&quot;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><!--]--></div><h3 id="user-defined-functions" tabindex="-1"><a class="header-anchor" href="#user-defined-functions" aria-hidden="true">#</a> User-defined functions</h3><p>There is a huge number of built-in functions in R. And the number is really HUGE. In fact, no one knows how many functions in R as people keep adding new functions every day. Still, you might need to create your own functions doing something specific to your project and your individual needs. You know all advantages of custom functions: more manageable program development, simpler and easier to understand code, code re-usability, minimised code duplication within the program, better testing, etc.</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>function_name &lt;- function(argument1, argument2, ...){
+  statement1
+  statement2
+  ...
+  return(object)
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="anonymous-functions" tabindex="-1"><a class="header-anchor" href="#anonymous-functions" aria-hidden="true">#</a> Anonymous functions</h3><p>Sometimes you might want to create a custom function for a single use. You don’t plan to use this function again and you don’t want to go through a “normal” way of defining a function with the name and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>e</mi><mi>t</mi><mi>u</mi><mi>r</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">return</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">re</span><span class="mord mathnormal">t</span><span class="mord mathnormal">u</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">n</span></span></span></span> statement. Later you will see more example when this “lazy” function might be very useful. Here is a small preview based on use of build-in function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>a</mi><mi>p</mi><mi>p</mi><mi>l</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">sapply</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">s</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.01968em;">ppl</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span>.</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code># create a data frame
+df &lt;- data.frame(Column.A=rnorm(100), Column.B=rnorm(100))
+head(df)
+## Column.A Column.B
+## 1 0.04162114 1.3366736
+## 2 -0.40900746 -0.8913365
+## 3 -0.62365826 0.9140609
+## 4 1.32485597 0.1582932
+## 5 2.06373481 1.8249187
+## 6 0.81531798 -0.2219813
+
+# apply built-in function max() to every column
+sapply(df, max)
+## Column.A Column.B
+## 2.582803 2.122063
+
+# apply built-in function min() to every column
+sapply(df, min)
+## Column.A Column.B
+## -2.037951 -2.687856
+
+# apply a custom anonumous function calculating a difference
+sapply(df, function(x) max(x) - min(x))
+## Column.A Column.B
+## 4.620754 4.809919
+
+# You could do the job above by creating and applying a “normal” function. 
+# Also, you could do the same job manually:
+sapply(df, max) - sapply(df, min)
+## Column.A Column.B
+## 4.620754 4.809919
+
+# Results are the same. However, using anonymous function is a more elegant 
+# and more powerful way
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="reading-and-writing" tabindex="-1"><a class="header-anchor" href="#reading-and-writing" aria-hidden="true">#</a> Reading and Writing</h2><h3 id="reading-data" tabindex="-1"><a class="header-anchor" href="#reading-data" aria-hidden="true">#</a> Reading data</h3><div class="vp-code-tabs"><div class="vp-code-tabs-nav" role="tablist"><button type="button" class="vp-code-tab-nav active" role="tab" aria-controls="codetab-218-0" aria-selected="true">scan()</button><button type="button" class="vp-code-tab-nav" role="tab" aria-controls="codetab-218-1" aria-selected="false">read.table()</button><button type="button" class="vp-code-tab-nav" role="tab" aria-controls="codetab-218-2" aria-selected="false">read.csv()</button></div><!--[--><div class="vp-code-tab active" id="codetab-218-0" role="tabpanel" aria-expanded="true"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code># Function scan() is the most simple and straight-forward function to 
+# load data from the file or console. Data will be stored in a vector 
+# or a list of vectors, so it is important to control for the same type 
+# of data in each vector. Press “Enter” twice to indicate an end of data 
+# entry.
+numbers &lt;- scan()
+
+# This is a default behavior for scan() to take numerical values from the 
+# terminal. Or saying that more precisely, to take values from the terminal 
+# and convert them into numbers. You can take character values too and there 
+# is not need to use quotation marks in the input.
+pets &lt;- scan(what=&quot;&quot;)
+
+# You can load different data types to be stored in different vectors. In 
+# this case, the result is a list of vectors
+pets &lt;- scan(what = list(&quot;&quot;, 0, 0))
+
+# It is possible to use scan() for loading data from the file.
+# prepare data file for the example
+cat( &quot;TITLE extra line&quot;,
+     &quot;2 3 5 7&quot;,
+     &quot;11 13 17&quot;, file = &quot;ex.data.txt&quot;, sep = &quot;\n&quot;)
+
+# read the text file as numeric (default settings)
+my.data &lt;- scan(&quot;ex.data.txt&quot;, skip = 1, quiet = TRUE)
+print(my.data)
+
+# read the text file as character with three columns
+# with space as a delimiter (default settings)
+my.data &lt;- scan(&quot;ex.data.txt&quot;, what = list(&quot;&quot;,&quot;&quot;,&quot;&quot;), skip = 1, nlines=2)
+
+unlink(&quot;ex.data.txt&quot;) # tidy up - close connection
+
+# Function scan() is a universal function and it can be used to read any 
+# text files. There are other functions that do a similar job, for example
+# readLines() to read from the file or readline() to read from the terminal.
+# However, you will not use these functions too often as there are many 
+# specialised functions that can do reading data from files much better.
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><div class="vp-code-tab" id="codetab-218-1" role="tabpanel" aria-expanded="false"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code># Examples in the previous section were about (potentially) unstructured
+# data. Very often text files with data are semi-structured data with a 
+# fixed number of row and columns. Function read.table() is one of the most
+# important for loading data into R. It reads a text file and converts
+# loaded data into a data frame.
+
+# read data from the file, use comma as delimiter
+# first row has headings and first column has names of rows
+my.data &lt;- read.table(file=&quot;mtcars.csv&quot;, header=TRUE, sep=&quot;,&quot;, row.names=1)
+head(my.data)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><div class="vp-code-tab" id="codetab-218-2" role="tabpanel" aria-expanded="false"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code># read data from the csv-file
+my.data &lt;- read.csv(file=&quot;mtcars.csv&quot;)
+head(my.data)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><!--]--></div><div class="hint-container tip"><p class="hint-container-title">Tips</p><p>Other functions from the same family are <code>read.csv2()</code>, <code>read.delim()</code>, <code>read.delim2()</code>. All of them are based on <code>read.table()</code> with most parameters predefined.</p></div><h4 id="loading-other-data-formats" tabindex="-1"><a class="header-anchor" href="#loading-other-data-formats" aria-hidden="true">#</a> Loading other data formats</h4><p>Data presented to you can be stored in a huge number of different formats and most probably you will be able to find a package that can open that format and load data into R. Here is just a brief list.<br> Text files: Besides the presented functions above from the base package, there are other functions that can do the same job of loading text files and do it better!</p><p><strong>Excel files:</strong> There are several packages to load Excel files that do the job with more or less success:</p><ol><li>xslx</li><li>readxl</li><li>XLConnect</li><li>openxlsx.</li></ol><p>Every package has function <code>read.xlsx()</code> or <code>read_excel()</code> or something similar to allow you to load data from the Excel file including Excel files with multiple working sheets.</p><p><strong>Statistical packages:</strong> R can read files in SAS (sas7bdat). Also, there is a couple universal packages (foreign, haven) that can read different formats at the same time – SAS, SPSS, State, Weka, dBase,Mintab, etc.</p><h3 id="writing-data" tabindex="-1"><a class="header-anchor" href="#writing-data" aria-hidden="true">#</a> Writing data</h3><p>Most of the packages listed above can read and write(!!!) data in these “foreign” formats. Hence, you can create files natively supported by other applications. Look for the functions like (beware of a proper package for each function):</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>write.csv() # CSV format, it is universally supported by all applications
+readr::write_csv() # CSV format again
+openxlsx::write.xlsx() # Excel
+foreign::write.arff() # Weka
+
+#for other statistical packages
+foreign::write.foreign(df, datafile, codefile, package = c(&quot;SPSS&quot;, &quot;Stata&quot;, &quot;SAS&quot;), ...)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="read-and-write-data-in-r-format" tabindex="-1"><a class="header-anchor" href="#read-and-write-data-in-r-format" aria-hidden="true">#</a> Read and write data in R-format</h4><p>R has its own format to store data. And “data” mean multiple variables at the same time.</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>x &lt;- 2
+y &lt;- list(a=1:3, b=LETTERS[1:3])
+save(x,y, file=&quot;mydata.RData&quot;) # save two variables
+rm(list=ls()) # delete all variables - clean up evrything
+load(file=&quot;mydata.RData&quot;) # load stored data
+print(y) # check results
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>You can even store your entire working environment with all loaded variables and functions.</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>myfun &lt;- function(x){
+    print(x)
+}
+save.image(file=&quot;myimage.RData&quot;) # save the working environment
+rm(list=ls()) # delete all variables - clean up evrything
+load(file=&quot;myimage.RData&quot;) # restore the working environment
+myfun(x) # check results
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="working-directory" tabindex="-1"><a class="header-anchor" href="#working-directory" aria-hidden="true">#</a> Working directory</h2><p>When saving or loading any files, R always look in the working directory unless you specify an absolute path to the file or folder. The last one is a very bad practice. The good approach is to put your files in the working directory and use a relative path.</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>getwd() # to check your current working directory
+setwd(&quot;C:/Users/tim&quot;) # to set working directory
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>Even better way to deal with working directory is to use RStudio functionality. Go into a menu Session-&gt; Set Working Directory -&gt; To Source File Location. This way your working directory will be the same one where your R-code file is stored.</p><h2 id="warnings-suppression" tabindex="-1"><a class="header-anchor" href="#warnings-suppression" aria-hidden="true">#</a> Warnings Suppression</h2><p>You can change global settings and suppress all warnings from all functions in your code</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>options(warn = -1)
+y &lt;- as.numeric(x) # no warning from this function and
+print(y) # from any other function in the code
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip"><p class="hint-container-title">Tips</p><p>You can run function <code>options()</code> without any parameters to see your current global settings and then you can change any of them. For example, you can change stringsAsFactors to FALSE and avoid hassle with automatic conversion of strings into factors in all data frames mentioned in the previous lecture, and in loading text files discussed above.</p></div><p>You can change settings only for one function you run and keep warnings allowed for all other functions in the code</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>options(warn = 0) # restore warnings on global level
+y &lt;- as.numeric(x) # this results in a warning as before
+y &lt;- suppressWarnings(as.numeric(x)) # evaluate the function but ignore all warnings
+print(y)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="the-apply-family" tabindex="-1"><a class="header-anchor" href="#the-apply-family" aria-hidden="true">#</a> The *apply family</h2><h3 id="apply" tabindex="-1"><a class="header-anchor" href="#apply" aria-hidden="true">#</a> <strong>apply</strong></h3><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>#Syntax: apply(X, MARGIN, FUN, ...)
+#@param X an array-type object, e.g. data frame or matrix; 
+#@param MARGIN indicates a dimension for applying a function, 
+#               1 indicates rows, 
+#               2 indicates columns; 
+#@param FUN is a function to apply;
+#@param ... optional arguments for the function FUN.
+# the same data as above, the same results
+# however different format - a vector
+apply(my.data, 2, mean)
+
+# Using custom functions and even anonymous functions
+apply(mtcars, 2, function(x) round(max(x)-min(x), 1))
+
+# apply log trasformation with base 3 to every column
+log.cars &lt;- apply(mtcars, 2, log, base=3) 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="sapply-result-is-a-vector" tabindex="-1"><a class="header-anchor" href="#sapply-result-is-a-vector" aria-hidden="true">#</a> <strong>sapply</strong> : result is a vector</h3><p>The function considers elements of the vector or list and applies a function to every element. Hence, it does not require MARGIN parameter as vectors and lists have no dimensionality. The result data structure is a vector.</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>my.data &lt;- list(a=rnorm(100), b=letters)
+# check the length of every element of my.data, result is a vector
+sapply(my.data, length) 
+
+# the same as above but result is a list
+lapply(my.data, length) 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="lapply-result-a-list" tabindex="-1"><a class="header-anchor" href="#lapply-result-a-list" aria-hidden="true">#</a> <strong>lapply</strong>: result a list</h3><p>The function considers elements of the vector or list and applies a function to every element. Hence, it does not require MARGIN parameter as vectors and lists have no dimensionality. The result data structure is a list.</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>my.data &lt;- list(a=rnorm(100), b=letters)
+lapply(my.data, length) # the same as above but result is a list
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="vapply-can-specify-types-of-returned-values" tabindex="-1"><a class="header-anchor" href="#vapply-can-specify-types-of-returned-values" aria-hidden="true">#</a> <strong>vapply</strong>: can <em><strong>specify</strong></em> types of returned values</h3><p>Above three functions are the most popular. However, there are some other members of the family. vapply which is the almost same as sapply but it has an extra parameter FUN.VALUE to specify types of returned values. As a result of the extra information, this function can be safer and sometimes faster to run.</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>my.data &lt;- list(a=rnorm(100), b=letters)
+# returned value should be an integer
+vapply(my.data, FUN=length, FUN.VALUE=0L) 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="tapply-group-results" tabindex="-1"><a class="header-anchor" href="#tapply-group-results" aria-hidden="true">#</a> <strong>tapply</strong>: group results</h3><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>x &lt;- 1:20 # define a vector
+print(x)
+y &lt;- factor(rep(letters[1:4], each = 5)) # define another vector of the same length
+print(y) # there looks to be 4 groups
+
+# get sum of elements of &quot;x&quot; corresponding to groups set by &quot;y&quot;
+tapply(x, y, sum) 
+
+# Function tapply can be used for data frames columns too. For example, you can 
+# use mtcars data to calculate an average fuel consumption in miles per gallon 
+# (US style) for cars with different number of cylinders.
+tapply(mtcars$mpg, mtcars$cyl, mean)
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip"><p class="hint-container-title">Tips</p><p>While this functionality is <strong>extremely useful</strong>, <code>tapply</code> is not very popular function as this job is a very primitive example of groupby and aggregate functionality and there are functions that can be done this job much-much better. You will see these functions later.</p></div><h3 id="mapply-work-with-multiple-variables-at-the-same-time" tabindex="-1"><a class="header-anchor" href="#mapply-work-with-multiple-variables-at-the-same-time" aria-hidden="true">#</a> <strong>mapply</strong>: work with multiple variables at the same time</h3><p>Function mapply allows to work with multiple variables at the same time and apply a given function to the first element of the every variable, then to the second element of the every variable, to the third . . . , and so on. Results will be combined in one vector.</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code># prepare data for the example
+x &lt;- 1:10; y &lt;- 11:20; z &lt;- 21:30
+mapply(sum, x, y, z) # do summation for elements of each variable
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="rapply-works-with-elements-of-the-nested-list-recursively" tabindex="-1"><a class="header-anchor" href="#rapply-works-with-elements-of-the-nested-list-recursively" aria-hidden="true">#</a> <strong>rapply</strong>: works with elements of the nested list recursively</h3><p>Function rapply works with elements of the nested list recursively and you can select format of the result object - a list or a vector.</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>
+# prepare a nested list - there are three levels of lists
+my.data &lt;- list(list(a = 1:10, b = list(c = letters[1:5])), d = &quot;a test&quot;)
+rapply(my.data, length, how=&quot;replace&quot;) # replace elements of the original list by the results
+
+
+rapply(my.data, length, how=&quot;unlist&quot;) # put results in a vector
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="statistical-analysis-descriptive-statistics" tabindex="-1"><a class="header-anchor" href="#statistical-analysis-descriptive-statistics" aria-hidden="true">#</a> <strong>Statistical analysis</strong> - descriptive statistics</h2><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>mean(mtcars$mpg) # mean
+sd(mtcars$mpg) # standard deviation
+var(mtcars$mpg) # variance
+
+library(moments) # load a library
+skewness(mtcars$mpg) # skewness
+kurtosis(mtcars$mpg) # kurtosis
+
+# you can get moments of any order
+moment(mtcars$mpg, order=2, central = TRUE)
+
+# You can get all main statistics for all columns in your data set at 
+# the same time.
+fBasics::basicStats(mtcars) # beware of the package required
+
+# another and more detailed version
+Hmisc::describe(mtcars) # beware of the package required
+
+# one more version
+psych::describe(mtcars) # beware of the package required
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="basic-plotting" tabindex="-1"><a class="header-anchor" href="#basic-plotting" aria-hidden="true">#</a> <strong>Basic plotting</strong></h2><div class="vp-tabs"><div class="vp-tabs-nav" role="tablist"><button type="button" class="vp-tab-nav active" role="tab" aria-controls="tab-373-0" aria-selected="true">Scatter Plot</button><button type="button" class="vp-tab-nav" role="tab" aria-controls="tab-373-1" aria-selected="false">Bar chart</button><button type="button" class="vp-tab-nav" role="tab" aria-controls="tab-373-2" aria-selected="false">Pie chart</button><button type="button" class="vp-tab-nav" role="tab" aria-controls="tab-373-3" aria-selected="false">Histogram</button><button type="button" class="vp-tab-nav" role="tab" aria-controls="tab-373-4" aria-selected="false">Box plot</button><button type="button" class="vp-tab-nav" role="tab" aria-controls="tab-373-5" aria-selected="false">Adding extra elements</button><button type="button" class="vp-tab-nav" role="tab" aria-controls="tab-373-6" aria-selected="false">Multiple graphs</button></div><!--[--><div class="vp-tab active" id="tab-373-0" role="tabpanel" aria-expanded="true"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>plot(x=mtcars$hp, y=mtcars$mpg, main=&quot;Fuel consumption versus Power&quot;,
+xlab=&quot;Power, hp&quot;, ylab=&quot;Fuel consumption, MpG&quot;)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>Function plot() is a universal one and can be used for many different types of plots.</p><h3 id="lines-chart" tabindex="-1"><a class="header-anchor" href="#lines-chart" aria-hidden="true">#</a> Lines chart</h3><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>plot( x=mtcars$hp, y=mtcars$mpg, type=&quot;l&quot;, main=&quot;Fuel consumption versus Power&quot;,
+xlab=&quot;Power, hp&quot;, ylab=&quot;Fuel consumption, MpG&quot;)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="combined-chart" tabindex="-1"><a class="header-anchor" href="#combined-chart" aria-hidden="true">#</a> Combined chart</h3><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>plot(x=mtcars$hp, y=mtcars$mpg, type=&quot;b&quot;, main=&quot;Fuel consumption versus Power&quot;,
+xlab=&quot;Power, hp&quot;, ylab=&quot;Fuel consumption, MpG&quot;)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></div><div class="vp-tab" id="tab-373-1" role="tabpanel" aria-expanded="false"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code># get average MPG per a number of cylinders by using tapply
+temp_mpg_per_cylinder &lt;- tapply(mtcars$mpg, mtcars$cyl, mean)
+barplot(temp_mpg_per_cylinder) # plot results
+
+# get counts for cars by number of cylinders and transmission
+counts &lt;- table(mtcars$cyl, mtcars$am, dnn=c(&quot;cyl&quot;, &quot;am&quot;))
+counts
+
+barplot(
+    counts, 
+    main = &quot;Stacked Bar Chart&quot;, 
+    xlab = &quot;Frequency&quot;,
+    ylab = &quot;am&quot;, 
+    col = c(&quot;coral&quot;, &quot;darkgoldenrod1&quot;, &quot;darkolivegreen1&quot;),
+    legend = rownames(counts), 
+    horiz = TRUE)
+
+barplot(
+    counts, 
+    main = &quot;Side-by-side Bar Chart&quot;, 
+    xlab = &quot;am&quot;,
+    ylab = &quot;Frequency&quot;, 
+    col = c(&quot;coral&quot;, &quot;darkgoldenrod1&quot;, &quot;darkolivegreen1&quot;),
+    legend = rownames(counts), 
+    beside = TRUE)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><div class="vp-tab" id="tab-373-2" role="tabpanel" aria-expanded="false"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>pie(temp_mpg_per_cylinder)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></div><div class="vp-tab" id="tab-373-3" role="tabpanel" aria-expanded="false"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>#example 1
+hist(mtcars$mpg)
+
+#example 2
+hist(
+    mtcars$mpg[mtcars$am == 0], 
+    breaks=seq(10,40,4), 
+    col=rgb(0,0,1,1/4),
+    main=&quot;Distribution of fuel consumption \nfor cars with automatic and manual transmission&quot;,
+    xlab=&quot;Fuel consumption, MpG&quot;)
+hist(
+    mtcars$mpg[mtcars$am == 1], 
+    breaks=seq(10,40,4), 
+    col=rgb(1,0,0,1/4), 
+    add=TRUE)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><div class="vp-tab" id="tab-373-4" role="tabpanel" aria-expanded="false"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>#example 1
+boxplot(mtcars$mpg)
+
+#example 2 - multiple box plots side by side
+boxplot(mpg ~ am, data=mtcars)
+# Above command uses a so-called “formula” notation. Parameter data nominates 
+# a dataframe with the data. Formula mpg ~ am tells that variable mpg from the
+# nominated dataframe depends on variable am from the same dataframe. So, you
+# get two box plots - one for each category of car transmissions.
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><div class="vp-tab" id="tab-373-5" role="tabpanel" aria-expanded="false"><p>Extra lines or points can be added to any graph by using functions like lines(), points(), abline(), etc. These functions do not create new plotting window but add elements to the existing graph. Hence, you should have a plotting window available before using these functions.</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>hist(mtcars$mpg) # creates a plotting window and put a histogram there
+abline(h=5, col=&quot;red&quot;, lty=2) # add a horisontal line
+abline(v=17, col=&quot;blue&quot;, lwd=6) # add a vertical line
+points(x=c(13, 22), y=c(8,2), pch=7, cex=3, col=&quot;red&quot;) # add points
+# prepare data for normal distribution density curve
+xfit &lt;- seq(min(mtcars$mpg), max(mtcars$mpg), length = 40)
+yfit &lt;- dnorm(xfit, mean = mean(mtcars$mpg), sd = sd(mtcars$mpg))
+yfit &lt;- yfit * length(mtcars$mpg) * 5
+lines(xfit, yfit, col = &quot;green&quot;, lwd = 2) # add a custom line
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><div class="vp-tab" id="tab-373-6" role="tabpanel" aria-expanded="false"><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code># create a graphics space that allows for 4 plots in total,
+# 2 graphs in the each of 2 rows
+par(mfrow = c(2, 2))
+# create 4 plots
+temp_mpg_per_cylinder &lt;- tapply(mtcars$mpg, mtcars$cyl, mean)
+hist(mtcars$mpg, main = &quot;Histogram&quot;)
+boxplot(mpg ~ am, data=mtcars, main = &quot;Box plot&quot;)
+plot(x=mtcars$hp, y=mtcars$mpg, main = &quot;Scatter plot&quot;)
+pie(temp_mpg_per_cylinder, main = &quot;Pie chart&quot;)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><!--]--></div><h2 id="random-numbers-generation" tabindex="-1"><a class="header-anchor" href="#random-numbers-generation" aria-hidden="true">#</a> Random numbers generation</h2><h3 id="normal-distribution" tabindex="-1"><a class="header-anchor" href="#normal-distribution" aria-hidden="true">#</a> Normal distribution</h3><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code># 1000 numbers from Normal distribution with mean 10 and standard deviation 2
+x &lt;- rnorm(1000, 10, 2)
+summary(x) # one more possible way to get summary statistics
+hist(x, breaks=20, main = &quot;Normal distribution&quot;)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="uniform-distribution" tabindex="-1"><a class="header-anchor" href="#uniform-distribution" aria-hidden="true">#</a> Uniform distribution</h3><p>Example 1</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>x &lt;- runif(10000) # 10,000 numbers uniformely distributed between 0 and 1
+summary(x) # one more possible way to get summary statistics
+hist(x, breaks=20, main = &quot;Uniform distribution&quot;)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Example 2</p><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code># create 12 sets (columns) of 10000 uniformly distributed numbers each
+x &lt;- matrix(runif(120000), nrow=10000, ncol=12)
+# sum up all 12 columns
+y &lt;- apply(x, 1, sum)
+hist(y, breaks=100, main=&quot;Histogram of summation of 12 uniform distributions&quot;)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip"><p class="hint-container-title">Tips</p><p>Try to type <code>?Distributions</code> to see a full list of distributions included in stats package loaded in R by default.</p></div><h3 id="stable-distribution" tabindex="-1"><a class="header-anchor" href="#stable-distribution" aria-hidden="true">#</a> Stable distribution</h3><div class="language-R line-numbers-mode" data-ext="R"><pre class="language-R"><code>x &lt;- stable::rstable(1000, disp = 1, tail = 1.9) # beware of the package used
+hist(x, breaks=50, main=&quot;Histogram of stable distribution&quot;)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></div><!----><footer class="page-meta"><!----><div class="meta-item git-info"><div class="update-time"><span class="label">Last update: </span><!----></div><div class="contributors"><span class="label">Contributors: </span><!--[--><!--[--><span class="contributor" title="email: nutterair1989@gmail.com">Haiyue</span><!--]--><!--]--></div></div></footer><nav class="vp-page-nav"><!----><a class="vp-link nav-link next" href="/techniques/R/02.Statistical%20tests.html"><div class="hint">Next<span class="arrow end"></span></div><div class="link">02. Statistical tests<span class="font-icon icon fa-fw fa-sm fas fa-registered" style=""></span></div></a></nav><!----><!----><!--]--></main><!--]--><footer class="vp-footer-wrapper"><div class="vp-footer">Email me if needed</div><div class="vp-copyright">Copyright © 2023 Haiyue</div></footer></div><!--]--><!----><!--]--></div>
+    <script type="module" src="/assets/app-49149863.js" defer></script>
+  </body>
+</html>
