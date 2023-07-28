@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o as t,c as o,b as n}from"./app-49149863.js";const s={},c=n("p",null,"Here will show the details during Piscine period.",-1),r=[c];function i(_,l){return t(),o("div",null,r)}const f=e(s,[["render",i],["__file","index.html.vue"]]);export{f as default};

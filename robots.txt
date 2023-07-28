@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://seamice.github.io/blog/sitemap.xml
+Sitemap: https://seape.github.io/sitemap.xml
