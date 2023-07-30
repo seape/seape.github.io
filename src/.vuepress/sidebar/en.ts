@@ -27,6 +27,12 @@ export const enSidebar = sidebar({
       prefix: "landscape/",
       children: "structure",
     },
+    {
+      text: "Techniques",
+      icon: "gear",
+      prefix: "technique/",
+      children: "structure",
+    },
     "intro"
   ],
 });

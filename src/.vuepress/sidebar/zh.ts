@@ -27,5 +27,11 @@ export const zhSidebar = sidebar({
       prefix: "landscape/",
       children: "structure",
     },
+    {
+      text: "技术相关",
+      icon: "gear",
+      prefix: "technique/",
+      children: "structure",
+    },
   ],
 });
