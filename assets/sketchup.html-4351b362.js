@@ -1,0 +1,1 @@
+import{_ as t}from"./plugin-vue_export-helper-c27b6911.js";import{o as c,c as s,b as e}from"./app-0e64a523.js";const o={},r=e("p",null,[e("a",{href:"/techniques/sketch_shortcuts.dat"},"Sketchup shortcuts")],-1),_=[r];function n(a,h){return c(),s("div",null,_)}const f=t(o,[["render",n],["__file","sketchup.html.vue"]]);export{f as default};
