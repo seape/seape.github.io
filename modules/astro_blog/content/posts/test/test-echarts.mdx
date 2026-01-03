@@ -1,0 +1,176 @@
+---
+title: ECharts 图表测试
+description: 测试在 MDX 文件中使用 ECharts Vue 组件
+pubDate: 2024-12-11
+category: 测试
+tags: [echarts, vue, 可视化]
+---
+
+import EChartsTest from '../../../src/components/ECharts_Test.vue'
+
+::: info 测试用例
+这是测试信息
+:::
+
+# ECharts 图表组件测试
+
+本文演示如何在 MDX 文件中使用 ECharts 组件来展示数据可视化图表。
+
+## 折线图示例
+
+<EChartsTest
+  client:only="vue"
+  option={{
+    title: {
+      text: '月度销售数据',
+      left: 'center'
+    },
+    tooltip: {
+      trigger: 'axis'
+    },
+    xAxis: {
+      type: 'category',
+      data: ['1月', '2月', '3月', '4月', '5月', '6月']
+    },
+    yAxis: {
+      type: 'value'
+    },
+    series: [{
+      name: '销售额',
+      type: 'line',
+      data: [150, 230, 224, 218, 135, 147],
+      smooth: true,
+      lineStyle: {
+        color: '#5470c6'
+      },
+      areaStyle: {
+        color: {
+          type: 'linear',
+          x: 0,
+          y: 0,
+          x2: 0,
+          y2: 1,
+          colorStops: [
+            { offset: 0, color: 'rgba(84, 112, 198, 0.5)' },
+            { offset: 1, color: 'rgba(84, 112, 198, 0.1)' }
+          ]
+        }
+      }
+    }]
+  }}
+  height="350px"
+/>
+
+## 饼图示例
+
+<EChartsTest
+  client:only="vue"
+  option={{
+    title: {
+      text: '访问来源',
+      left: 'center'
+    },
+    tooltip: {
+      trigger: 'item',
+      formatter: '{a} <br/>{b}: {c} ({d}%)'
+    },
+    legend: {
+      orient: 'vertical',
+      left: 'left'
+    },
+    series: [{
+      name: '访问来源',
+      type: 'pie',
+      radius: '50%',
+      data: [
+        { value: 1048, name: '搜索引擎' },
+        { value: 735, name: '直接访问' },
+        { value: 580, name: '邮件营销' },
+        { value: 484, name: '联盟广告' },
+        { value: 300, name: '视频广告' }
+      ],
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      }
+    }]
+  }}
+  height="400px"
+/>
+
+## 柱状图示例
+
+<EChartsTest
+  client:only="vue"
+  option={{
+    title: {
+      text: '周访问量统计',
+      left: 'center'
+    },
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'shadow'
+      }
+    },
+    xAxis: {
+      type: 'category',
+      data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+    },
+    yAxis: {
+      type: 'value'
+    },
+    series: [{
+      name: '访问量',
+      type: 'bar',
+      data: [120, 200, 150, 80, 70, 110, 130],
+      itemStyle: {
+        color: {
+          type: 'linear',
+          x: 0,
+          y: 0,
+          x2: 0,
+          y2: 1,
+          colorStops: [
+            { offset: 0, color: '#83bff6' },
+            { offset: 0.5, color: '#188df0' },
+            { offset: 1, color: '#188df0' }
+          ]
+        }
+      }
+    }]
+  }}
+  height="350px"
+/>
+
+## 使用说明
+
+### 组件属性
+
+| 属性 | 类型 | 默认值 | 说明 |
+|------|------|--------|------|
+| `option` | Object | 必填 | ECharts 配置项 |
+| `width` | String | '100%' | 图表宽度 |
+| `height` | String | '400px' | 图表高度 |
+| `theme` | String | 'light' | 主题：'light' 或 'dark' |
+| `autoResize` | Boolean | true | 是否自动调整大小 |
+
+### 基本用法
+
+```mdx
+import EChartsTest from '../../components/ECharts_Test.vue'
+
+<EChartsTest
+  client:only="vue"
+  option={{
+    xAxis: { type: 'category', data: ['A', 'B', 'C'] },
+    yAxis: { type: 'value' },
+    series: [{ type: 'bar', data: [10, 20, 30] }]
+  }}
+/>
+```
+
+> 注意：必须添加 `client:only="vue"` 指令才能在客户端渲染图表。

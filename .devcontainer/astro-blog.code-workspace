@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "blog-main",
+			"path": ".."
+		},
+		{
+			"path": "../modules/astro_blog"
+		}
+	],
+	"settings": {}
+}

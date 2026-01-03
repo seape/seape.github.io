@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npm run type-check:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)",
+      "Bash(find:*)",
+      "Bash(npm run lint)",
+      "Bash(npm install:*)",
+      "Bash(npm ls:*)",
+      "mcp__ide__getDiagnostics",
+      "WebFetch(domain:localhost)",
+      "Bash(curl:*)",
+      "Bash(netstat:*)",
+      "Bash(tree:*)",
+      "Bash(pkill:*)",
+      "Bash(npm create:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(cat:*)",
+      "Bash(node:*)",
+      "Bash(awk:*)",
+      "Bash(xargs -r kill -9)",
+      "Bash(head:*)",
+      "Bash(while read f)",
+      "Bash(do grep -l ^date: $f)",
+      "Bash(done)",
+      "Bash(*)",
+      "Bash(pgrep:*)",
+      "Bash(xargs ps:*)",
+      "Bash(grep:*)",
+      "Bash(npx astro:*)",
+      "Bash(xargs kill -9)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
