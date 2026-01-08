@@ -30,7 +30,13 @@
       "Bash(xargs ps:*)",
       "Bash(grep:*)",
       "Bash(npx astro:*)",
-      "Bash(xargs kill -9)"
+      "Bash(xargs kill -9)",
+      "Bash(wc:*)",
+      "Bash(du:*)",
+      "Bash(timeout 15s npm run dev:*)",
+      "Bash(npx astro sync:*)",
+      "WebSearch",
+      "Bash(python3:*)"
     ],
     "deny": [],
     "ask": []

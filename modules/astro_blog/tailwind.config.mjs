@@ -1,7 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}', './content/**/*.{md,mdx}'],
   darkMode: 'class',
+  safelist: [
+    // TagCard 和 IconCard 组件使用的颜色类
+    'bg-primary-100', 'bg-primary-900/30', 'text-primary-300', 'text-primary-500', 'text-primary-700',
+    'bg-secondary-100', 'bg-secondary-900/30', 'text-secondary-300', 'text-secondary-500', 'text-secondary-700',
+    'bg-accent-100', 'bg-accent-900/30', 'text-accent-300', 'text-accent-500', 'text-accent-700',
+    'bg-green-100', 'bg-green-900/30', 'text-green-300', 'text-green-700',
+    'bg-yellow-100', 'bg-yellow-900/30', 'text-yellow-300', 'text-yellow-700',
+    'bg-red-100', 'bg-red-900/30', 'text-red-300', 'text-red-700',
+    'bg-cyan-100', 'bg-cyan-900/30', 'text-cyan-300', 'text-cyan-700',
+  ],
   theme: {
     extend: {
       colors: {

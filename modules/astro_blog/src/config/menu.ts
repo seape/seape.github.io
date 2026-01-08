@@ -47,6 +47,11 @@ export const menu: NavigationItem[] = [
     icon: 'archives'
   },
   {
+    name: '演示',
+    href: '/slides',
+    icon: 'slides'
+  },
+  {
     name: '关于',
     href: '/about',
     icon: 'about'

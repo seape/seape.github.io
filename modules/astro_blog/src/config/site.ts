@@ -2,16 +2,16 @@ import type { SiteConfig } from '@/types';
 import { menu } from './menu';
 
 export const siteConfig: SiteConfig = {
-  title: 'Astro Tech Blog',
-  description: '基于Astro构建的现代化技术博客，专注于分享前端开发、技术思考和学习笔记。',
+  title: 'Jet\'s Blog',
+  description: '基于Astro+Vue+Tailwind构建的个人技术博客，分享我的技术思考和学习笔记。',
   author: 'Haiyue',
-  email: 'haiyue@example.com',
+  email: 'unisa.dady@gmail.com',
   avatar: '/images/avatar.jpg',
   social: {
-    github: 'https://github.com/haiyue',
-    twitter: 'https://twitter.com/haiyue',
+    github: 'https://github.com/jet-w',
+    // twitter: 'https://twitter.com/haiyue',
     linkedin: 'https://linkedin.com/in/haiyue',
-    email: 'mailto:haiyue@example.com'
+    email: 'mailto:unisa.dady@gmail.com'
   },
   menu
 };

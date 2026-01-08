@@ -297,15 +297,15 @@ export const sidebarConfig: SidebarConfig = {
       showForPaths: ['/posts/techniques/**']
     },
 
-    // 扫描 LLM-MCP 目录
+    // 扫描技术文档目录
     {
       type: 'scan',
-      title: 'LLM & MCP',
-      icon: 'ri:robot-line',
-      scanPath: 'LLM-MCP',
+      title: '媒体',
+      icon: 'ri:folder-3-line',
+      scanPath: 'media',
       collapsed: true,
+      showForPaths: ['/posts/media/**']
     },
-
     // 示例：混合配置
     // {
     //   type: 'mixed',
@@ -327,7 +327,5 @@ export const sidebarConfig: SidebarConfig = {
     //   ]
     // },
     
-    // 分隔符
-    { type: 'divider', title: '技术内容' },
   ]
 };

@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry, render } from 'astro:content';
 import PageLayout from '@/layouts/PageLayout.astro';
+import SlidesLayout from '@/layouts/SlidesLayout.astro';
 import FloatingToc from '@/components/blog/FloatingToc.vue';
 
 export async function getStaticPaths() {
@@ -100,6 +101,22 @@ type Props = {
 const { post, prevPost, nextPost, isDirectory } = Astro.props;
 const Content = post ? (await render(post)).Content : null;
 
+// 判断是否使用 slides 布局
+const isSlides = post?.data.layout === 'slides';
+
+// 解析 Markdown 为幻灯片结构（当 layout: slides 时）
+function parseSlides(markdown: string): string[][] {
+  const cleanMarkdown = markdown
+    .replace(/<!--[\s\S]*?-->/g, '')
+    .trim();
+  const horizontalSlides = cleanMarkdown.split(/\n---\n/);
+  return horizontalSlides.map((hSlide) => {
+    return hSlide.split(/\n----\n/).map(s => s.trim());
+  });
+}
+
+const slidesData = isSlides && post?.body ? parseSlides(post.body) : [];
+
 // 计算阅读时间（简单估算）
 const readingTime = post ? Math.ceil((post.body?.length || 0) / 1000) : 0;
 
@@ -113,7 +130,29 @@ const formatDate = (date: Date) => {
 };
 ---
 
-{post ? (
+{post && isSlides ? (
+  <!-- Slides 布局 -->
+  <SlidesLayout
+    title={post.data.title}
+    description={post.data.description}
+    theme={post.data.theme}
+    transition={post.data.transition}
+    controls={post.data.controls}
+    progress={post.data.progress}
+    center={post.data.center}
+    slideNumber={post.data.slideNumber}
+  >
+    {slidesData.map((verticalSlides) => (
+      <section>
+        {verticalSlides.map((slideContent) => (
+          <section data-markdown>
+            <textarea data-template set:text={slideContent}></textarea>
+          </section>
+        ))}
+      </section>
+    ))}
+  </SlidesLayout>
+) : post ? (
 <PageLayout
   title={post.data.title}
   description={post.data.description}

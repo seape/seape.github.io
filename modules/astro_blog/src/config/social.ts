@@ -41,8 +41,8 @@ export const defaultIcons: Record<string, string> = {
  * 也可通过 icon 字段自定义图标
  */
 export const socialLinks: SocialLink[] = [
-  { type: 'github', url: 'https://github.com/haiyue', label: 'GitHub' },
-  { type: 'twitter', url: 'https://twitter.com/haiyue', label: 'Twitter' },
-  { type: 'linkedin', url: 'https://linkedin.com/in/haiyue', label: 'LinkedIn' },
-  { type: 'email', url: 'mailto:haiyue@example.com', label: 'Email' }
+  { type: 'github', url: 'https://github.com/jet-w', label: 'GitHub' },
+  // { type: 'twitter', url: 'https://twitter.com/haiyue', label: 'Twitter' },
+  { type: 'linkedin', url: 'https://www.linkedin.com/in/haiyue-wang-9b5410103/', label: 'LinkedIn' },
+  { type: 'email', url: 'mailto:unisa.dady@gmail.com', label: 'Email' }
 ];

@@ -8,6 +8,8 @@ import rehypeKatex from 'rehype-katex';
 import { remarkContainers } from './src/plugins/remark-containers.mjs';
 import { remarkMermaid } from './src/plugins/remark-mermaid.mjs';
 import { rehypeCleanContainers } from './src/plugins/rehype-clean-containers.mjs';
+import { rehypeRelativeLinks } from './src/plugins/rehype-relative-links.mjs';
+import { rehypeTabs } from './src/plugins/rehype-tabs.mjs';
 import rehypeRaw from 'rehype-raw';
 
 // https://astro.build/config
@@ -21,7 +23,7 @@ export default defineConfig({
   ],
   markdown: {
     remarkPlugins: [remarkMermaid, remarkDirective, remarkContainers, remarkMath],
-    rehypePlugins: [rehypeRaw, rehypeKatex, rehypeCleanContainers],
+    rehypePlugins: [rehypeRaw, rehypeTabs, rehypeKatex, rehypeCleanContainers, rehypeRelativeLinks],
     shikiConfig: {
       theme: 'github-dark',
       langs: [],

@@ -16,7 +16,7 @@
 export interface TagGroup {
   name: string;
   tags: string[];
-  color?: 'primary' | 'secondary' | 'accent';
+  color?: 'primary' | 'secondary' | 'accent' | 'success' | 'warning' | 'danger' | 'info';
 }
 
 export interface Props {
@@ -26,25 +26,32 @@ export interface Props {
 
 const { title, groups } = Astro.props;
 
-const colorMap = {
-  primary: 'bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300',
-  secondary: 'bg-secondary-100 dark:bg-secondary-900/30 text-secondary-700 dark:text-secondary-300',
-  accent: 'bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300'
+const colorStyles = {
+  primary: { bg: '#dbeafe', text: '#1d4ed8' },
+  secondary: { bg: '#e0e7ff', text: '#4338ca' },
+  accent: { bg: '#ede9fe', text: '#6d28d9' },
+  success: { bg: '#dcfce7', text: '#15803d' },
+  warning: { bg: '#fef9c3', text: '#a16207' },
+  danger: { bg: '#fee2e2', text: '#b91c1c' },
+  info: { bg: '#cffafe', text: '#0e7490' }
 };
 ---
 
-<div class="card">
+<div class="card mb-6 last:mb-0 h-full">
   <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6">
     {title}
   </h2>
-  <div class="space-y-4">
+  <div class="space-y-1">
     {groups ? (
       groups.map((group) => (
         <div>
           <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-2">{group.name}</h3>
           <div class="flex flex-wrap gap-2">
             {group.tags.map((tag) => (
-              <span class={`px-3 py-1 rounded-full text-sm ${colorMap[group.color || 'primary']}`}>
+              <span
+                class="px-3 py-1 rounded-full text-sm"
+                style={`background-color: ${colorStyles[group.color || 'primary'].bg}; color: ${colorStyles[group.color || 'primary'].text};`}
+              >
                 {tag}
               </span>
             ))}

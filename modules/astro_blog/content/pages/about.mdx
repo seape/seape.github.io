@@ -37,14 +37,16 @@ import SocialLinks from '@/components/about/SocialLinks.astro';
 </div>
 
 {/* 技能和兴趣 */}
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+<div class="grid grid-cols-1 md:grid-cols-2 mb-16" style="gap: 2rem;">
 
 <TagCard
   title="技术栈"
   groups={[
-    { name: '前端技术', tags: ['Vue.js', 'React', 'TypeScript', 'Astro', 'Nuxt.js', 'Next.js'], color: 'primary' },
-    { name: '样式和工具', tags: ['Tailwind CSS', 'Sass', 'Vite', 'Webpack', 'ESLint', 'Prettier'], color: 'secondary' },
-    { name: '后端技术', tags: ['Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'Redis'], color: 'accent' }
+    { name: '前端技术', tags: ['Vue.js', 'TypeScript', 'Astro', '...'], color: 'primary' },
+    { name: '样式和工具', tags: ['Tailwind CSS', 'Sass', 'Vite', '...'], color: 'secondary' },
+    { name: '后端技术', tags: ['Node.js', 'Python', 'C++', 'C#', 'Java', 'SQL', '...'], color: 'accent' },
+    { name: '数据库', tags: ['PostgreSQL', 'MongoDB', 'Redis', 'DynamoDB', '...'], color: 'success' },
+    { name: '平台', tags: ['AWS'], color: 'info' }
   ]}
 />
 
@@ -52,8 +54,9 @@ import SocialLinks from '@/components/about/SocialLinks.astro';
   title="兴趣爱好"
   items={[
     { icon: 'code', title: '编程', description: '热爱探索新技术，参与开源项目', color: 'primary' },
-    { icon: 'book', title: '阅读', description: '喜欢阅读技术书籍和科幻小说', color: 'secondary' },
-    { icon: 'music', title: '音乐', description: '编程时喜欢听各种类型的音乐', color: 'accent' }
+    { icon: 'book', title: '阅读', description: '喜欢阅读技术书籍和历史故事书', color: 'secondary' },
+    { icon: 'music', title: '音乐', description: '编程时喜欢听各种类型的音乐', color: 'accent' },
+    { icon: 'video', title: '视频', description: '喜欢看知识及故事分享的视频内容', color: 'accent' }
   ]}
 />
 

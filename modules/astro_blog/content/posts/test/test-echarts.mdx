@@ -6,7 +6,7 @@ category: 测试
 tags: [echarts, vue, 可视化]
 ---
 
-import EChartsTest from '../../../src/components/ECharts_Test.vue'
+import ECharts from '@/components/EChartsCard.vue'
 
 ::: info 测试用例
 这是测试信息
@@ -18,7 +18,7 @@ import EChartsTest from '../../../src/components/ECharts_Test.vue'
 
 ## 折线图示例
 
-<EChartsTest
+<ECharts
   client:only="vue"
   option={{
     title: {
@@ -63,7 +63,7 @@ import EChartsTest from '../../../src/components/ECharts_Test.vue'
 
 ## 饼图示例
 
-<EChartsTest
+<ECharts
   client:only="vue"
   option={{
     title: {
@@ -103,7 +103,7 @@ import EChartsTest from '../../../src/components/ECharts_Test.vue'
 
 ## 柱状图示例
 
-<EChartsTest
+<ECharts
   client:only="vue"
   option={{
     title: {
@@ -163,7 +163,7 @@ import EChartsTest from '../../../src/components/ECharts_Test.vue'
 ```mdx
 import EChartsTest from '../../components/ECharts_Test.vue'
 
-<EChartsTest
+<ECharts
   client:only="vue"
   option={{
     xAxis: { type: 'category', data: ['A', 'B', 'C'] },
@@ -172,5 +172,14 @@ import EChartsTest from '../../components/ECharts_Test.vue'
   }}
 />
 ```
+
+<ECharts
+  client:only="vue"
+  option={{
+    xAxis: { type: 'category', data: ['A', 'B', 'C'] },
+    yAxis: { type: 'value' },
+    series: [{ type: 'bar', data: [10, 20, 30] }]
+  }}
+/>
 
 > 注意：必须添加 `client:only="vue"` 指令才能在客户端渲染图表。
