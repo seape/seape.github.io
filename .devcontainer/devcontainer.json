@@ -24,7 +24,8 @@
 	"mounts": [
 		"type=bind,source=${localWorkspaceFolder},target=${localWorkspaceFolder}",
 		// "type=volume,source=mas-home,target=/home/${localEnv:USER:developer}",
-		"type=bind,source=/home/${localEnv:USER:developer}/.aws/,target=/home/${localEnv:USER:developer}/.aws/"
+		"type=bind,source=/home/${localEnv:USER:developer}/.aws/,target=/home/${localEnv:USER:developer}/.aws/",
+		"type=bind,source=/home/${localEnv:USER:developer}/.ssh/,target=/home/${localEnv:USER:developer}/.ssh/"
 	],
 
 	// "features": {

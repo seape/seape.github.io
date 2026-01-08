@@ -36,7 +36,9 @@
       "Bash(timeout 15s npm run dev:*)",
       "Bash(npx astro sync:*)",
       "WebSearch",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(ls:*)",
+      "Bash(xxd:*)"
     ],
     "deny": [],
     "ask": []

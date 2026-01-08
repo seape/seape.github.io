@@ -527,12 +527,13 @@ const archives = sidebarConfig.showArchives
     });
 
     // 高亮当前页面
-    const currentPath = window.location.pathname;
+    const currentPath = window.location.pathname.replace(/\/$/, ''); // 移除尾部斜杠
     const treeLinks = document.querySelectorAll('.tree-file');
 
     treeLinks.forEach(link => {
-      const href = link.getAttribute('href');
-      if (href && currentPath.includes(href.replace('/posts/', ''))) {
+      const href = link.getAttribute('href')?.replace(/\/$/, ''); // 移除尾部斜杠
+      // 精确匹配：当前路径必须等于链接路径
+      if (href && currentPath === href) {
         link.classList.add('active');
 
         // 展开父级文件夹

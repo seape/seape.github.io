@@ -22,7 +22,7 @@ export default defineConfig({
     })
   ],
   markdown: {
-    remarkPlugins: [remarkMermaid, remarkDirective, remarkContainers, remarkMath],
+    remarkPlugins: [remarkMermaid, remarkContainers, remarkDirective, remarkMath],
     rehypePlugins: [rehypeRaw, rehypeTabs, rehypeKatex, rehypeCleanContainers, rehypeRelativeLinks],
     shikiConfig: {
       theme: 'github-dark',
