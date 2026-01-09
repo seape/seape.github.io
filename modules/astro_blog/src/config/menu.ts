@@ -21,36 +21,10 @@ export const menu: NavigationItem[] = [
     href: '/',
     icon: 'home'
   },
-  {
-    name: '博客教学',
-    href: '/posts/blog_docs',
-    icon: 'posts'
-  },
-  {
-    name: '数学',
-    href: '/posts/math',
-    icon: 'posts'
-  },
-  {
-    name: '工具',
-    href: '/posts/tools',
-    icon: 'categories'
-  },
-  {
-    name: '量化',
-    href: '/posts/qt-model',
-    icon: 'archives'
-  },
-  {
-    name: '技术',
-    href: '/posts/techniques',
-    icon: 'archives'
-  },
-  {
-    name: '演示',
-    href: '/slides',
-    icon: 'slides'
-  },
+  { name: '文章', href: '/posts' },
+  { name: '标签', href: '/tags' },
+  { name: '分类', href: '/categories' },
+  { name: '归档', href: '/archives' },
   {
     name: 'PTE',
     href: '/posts/pte',
