@@ -9,7 +9,7 @@ export const siteConfig: SiteConfig = {
   avatar: '/images/avatar.svg',
   social: {
     github: 'https://github.com/jet-w',
-    // twitter: 'https://twitter.com/haiyue',
+    twitter: 'https://twitter.com/haiyue',
     linkedin: 'https://linkedin.com/in/haiyue',
     email: 'mailto:unisa.dady@gmail.com'
   },

@@ -24,6 +24,7 @@ star: false
 比特币诞生于2008年全球金融危机期间，中本聪（Satoshi Nakamoto）发表的白皮书《Bitcoin: A Peer-to-Peer Electronic Cash System》提出了一个去中心化的电子现金系统。
 
 ::: note 设计初衷
+
 比特币的核心设计目标：
 - **去信任化**：无需依赖第三方金融机构
 - **去中心化**：没有单一控制点

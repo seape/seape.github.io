@@ -12,8 +12,11 @@ export function rehypeTabs() {
     visit(tree, 'element', (node, index, parent) => {
       if (!parent || index === undefined) return;
 
-      // Look for divs that contain @tab markers
+      // Look for divs that contain @tab markers (including tabs-wrapper from remark-containers)
       if (node.tagName !== 'div') return;
+
+      // Check if this is a tabs-wrapper div
+      const isTabsWrapper = node.properties?.className?.includes('tabs-wrapper');
 
       // Check if this div contains @tab paragraphs
       const children = node.children || [];

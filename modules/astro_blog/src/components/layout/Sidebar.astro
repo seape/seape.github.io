@@ -420,7 +420,7 @@ const archives = sidebarConfig.showArchives
       <div class="space-y-2">
         {archives.map((archive) => (
           <a
-            href={`/archives/${archive.year}/${archive.month}`}
+            href={`/archives/${archive.year}/${String(archive.month).padStart(2, '0')}`}
             class="flex items-center justify-between p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group"
           >
             <span class="text-sm text-slate-700 dark:text-slate-300 group-hover:text-primary-500">

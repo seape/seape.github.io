@@ -140,7 +140,7 @@ const totalPosts = archives.reduce((sum, y) => sum + y.totalCount, 0);
               <div class="bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 overflow-hidden">
                 <!-- 月份标题 -->
                 <a
-                  href={`/archives/${yearData.year}/${monthData.month}`}
+                  href={`/archives/${yearData.year}/${String(monthData.month).padStart(2, '0')}`}
                   class="flex items-center justify-between p-4 bg-slate-50 dark:bg-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-700/50 transition-colors"
                 >
                   <span class="font-semibold text-slate-900 dark:text-slate-100">
@@ -168,7 +168,7 @@ const totalPosts = archives.reduce((sum, y) => sum + y.totalCount, 0);
                   ))}
                   {monthData.posts.length > 5 && (
                     <a
-                      href={`/archives/${yearData.year}/${monthData.month}`}
+                      href={`/archives/${yearData.year}/${String(monthData.month).padStart(2, '0')}`}
                       class="block p-4 text-center text-sm text-primary-500 hover:bg-slate-50 dark:hover:bg-slate-700/30 transition-colors"
                     >
                       查看全部 {monthData.count} 篇文章 →

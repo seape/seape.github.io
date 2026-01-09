@@ -334,6 +334,19 @@
   @apply flex items-center gap-1 px-3 py-1 text-xs text-slate-300 bg-slate-800/90 hover:bg-slate-700 rounded-full border border-slate-600 transition-colors duration-200;
 }
 
+/* 底部收起按钮 */
+.code-block-collapse {
+  @apply flex justify-center py-2 border-t border-slate-700/50 bg-gradient-to-t from-slate-900 to-transparent;
+}
+
+.code-block-wrapper.collapsed .code-block-collapse {
+  @apply hidden;
+}
+
+.collapse-bottom-btn {
+  @apply flex items-center gap-1 px-3 py-1 text-xs text-slate-300 bg-slate-800/90 hover:bg-slate-700 rounded-full border border-slate-600 transition-colors duration-200 cursor-pointer;
+}
+
 /* 加载动画 */
 .loading {
   @apply animate-pulse;

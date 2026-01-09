@@ -100,6 +100,7 @@ CloudTrail 记录 → EventBridge 触发 → Lambda 自动打 Tag
 ```
 
 ::: warning 为什么不用"人工要求打 Tag"？
+
 - 人会忘
 - CI 很难统一
 - 审计无法保证一致性

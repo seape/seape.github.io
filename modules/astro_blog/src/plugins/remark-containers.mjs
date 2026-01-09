@@ -41,18 +41,73 @@ export function remarkContainers() {
         return;
       }
 
-      // 检查是否匹配容器开始语法
-      const containerMatch = firstChild.value.match(/^::: (tip|note|warning|danger|info|details)(.*)$/);
+      // 检查是否是 tabs 容器开始语法（支持 :::tabs 和 ::: tabs）
+      const tabsMatch = firstChild.value.match(/^:::\s*tabs\s*$/m);
+      if (tabsMatch) {
+        // 寻找 tabs 结束标记
+        let endIndex = -1;
+        const siblings = parent.children;
+
+        for (let i = index + 1; i < siblings.length; i++) {
+          const sibling = siblings[i];
+          if (sibling.type === 'paragraph' &&
+              sibling.children &&
+              sibling.children.length > 0 &&
+              sibling.children[0].type === 'text' &&
+              sibling.children[0].value.trim() === ':::') {
+            endIndex = i;
+            break;
+          }
+        }
+
+        if (endIndex === -1) {
+          endIndex = siblings.length;
+        }
+
+        // 收集中间的内容
+        const contentNodes = siblings.slice(index + 1, endIndex);
+
+        // 创建 tabs 包装器
+        const openingHTML = '<div class="tabs-wrapper">';
+        const closingHTML = '</div>';
+
+        const htmlNode = {
+          type: 'html',
+          value: openingHTML
+        };
+
+        const closeNode = {
+          type: 'html',
+          value: closingHTML
+        };
+
+        // 替换节点
+        const replaceCount = endIndex - index + 1; // +1 包含结束标记
+        const newNodes = [htmlNode, ...contentNodes, closeNode];
+        siblings.splice(index, replaceCount, ...newNodes);
+
+        return index + newNodes.length;
+      }
+
+      // 检查是否匹配容器开始语法（支持标题后直接跟内容，无需空行）
+      const containerMatch = firstChild.value.match(/^::: (tip|note|warning|danger|info|details)(.*)$/m);
       if (containerMatch) {
-        const [, type, titlePart] = containerMatch;
+        const [matchedLine, type, titlePart] = containerMatch;
         const customTitle = titlePart ? titlePart.trim() : '';
         const title = customTitle || getDefaultTitle(type);
 
-        // 检查是否这个段落只包含开始标签（常见于有空行分隔的情况）
-        const isOnlyStartTag = firstChild.value.trim() === `:::${type}${titlePart}`.trim() ||
-                              firstChild.value.trim() === `::: ${type}${titlePart}`.trim();
+        // 检查是否标题行后面还有内容（无空行的情况）
+        const fullValue = firstChild.value;
+        const matchEnd = fullValue.indexOf(matchedLine) + matchedLine.length;
+        const remainingContent = fullValue.slice(matchEnd).replace(/^\n/, ''); // 移除开头的换行符
 
-        // 寻找结束标记，包括检查文本节点内的结束标记
+        // 检查是否这个段落只包含开始标签
+        const isOnlyStartTag = remainingContent.trim() === '' &&
+                              (fullValue.trim() === `:::${type}${titlePart}`.trim() ||
+                               fullValue.trim() === `::: ${type}${titlePart}`.trim() ||
+                               fullValue.trim() === `::: ${type} ${titlePart}`.trim());
+
+        // 寻找结束标记
         let endIndex = -1;
         const siblings = parent.children;
 
@@ -70,61 +125,91 @@ export function remarkContainers() {
           }
         }
 
-        for (let i = searchStart; i < siblings.length; i++) {
-          const sibling = siblings[i];
+        // 用于存储开始段落中的剩余内容（无空行情况）
+        let inlineContentNodes = [];
+        if (!isOnlyStartTag && remainingContent.trim() !== '') {
+          // 标题行后面直接有内容，需要处理这部分内容
+          // 检查剩余内容中是否包含结束标记
+          if (remainingContent.includes(':::')) {
+            const parts = remainingContent.split(':::');
+            const contentBeforeClose = parts[0].trim();
 
-          // 检查段落类型中是否有结束标记
-          if (sibling.type === 'paragraph' &&
-              sibling.children &&
-              sibling.children.length > 0 &&
-              sibling.children[0] &&
-              sibling.children[0].type === 'text') {
-
-            const textValue = sibling.children[0].value;
-
-            // 检查是否包含结束标记
-            if (textValue.includes(':::')) {
-              endIndex = i + 1; // 不包含这个段落
-
-              // 如果结束标记不是独立的，需要分割内容
-              if (textValue.trim() !== ':::') {
-                const parts = textValue.split(':::');
-                if (parts.length >= 2) {
-                  // 第一部分作为内容，清理后面的部分
-                  sibling.children[0].value = parts[0].trimEnd();
-                  if (sibling.children[0].value === '') {
-                    // 如果第一部分是空的，移除这个段落
-                    endIndex = i;
-                  }
-                }
-              }
-              break;
+            if (contentBeforeClose) {
+              inlineContentNodes.push({
+                type: 'paragraph',
+                children: [{ type: 'text', value: contentBeforeClose }]
+              });
             }
+
+            // 找到了结束标记，不需要继续搜索
+            endIndex = index + 1;
+          } else {
+            // 剩余内容作为第一个内容节点
+            inlineContentNodes.push({
+              type: 'paragraph',
+              children: [{ type: 'text', value: remainingContent.trim() }]
+            });
           }
+        }
 
-          // 检查列表中是否包含结束标记
-          if (sibling.type === 'list') {
-            let foundClosing = false;
+        // 如果还没找到结束标记，继续搜索后续节点
+        if (endIndex === -1) {
+          for (let i = searchStart; i < siblings.length; i++) {
+            const sibling = siblings[i];
 
-            // 检查列表的最后一项是否包含:::
-            const lastItem = sibling.children[sibling.children.length - 1];
-            if (lastItem && lastItem.children && lastItem.children.length > 0) {
-              const lastParagraph = lastItem.children[lastItem.children.length - 1];
-              if (lastParagraph && lastParagraph.type === 'paragraph' && lastParagraph.children && lastParagraph.children.length > 0) {
-                const lastText = lastParagraph.children[lastParagraph.children.length - 1];
-                if (lastText && lastText.type === 'text') {
-                  if (lastText.value.includes(':::')) {
-                    endIndex = i + 1; // 包含这个列表
+            // 检查段落类型中是否有结束标记
+            if (sibling.type === 'paragraph' &&
+                sibling.children &&
+                sibling.children.length > 0 &&
+                sibling.children[0] &&
+                sibling.children[0].type === 'text') {
 
-                    // 清理文本节点中的结束标记
-                    const parts = lastText.value.split(':::');
-                    lastText.value = parts[0].trimEnd();
-                    foundClosing = true;
+              const textValue = sibling.children[0].value;
+
+              // 检查是否包含结束标记
+              if (textValue.includes(':::')) {
+                endIndex = i + 1; // 不包含这个段落
+
+                // 如果结束标记不是独立的，需要分割内容
+                if (textValue.trim() !== ':::') {
+                  const parts = textValue.split(':::');
+                  if (parts.length >= 2) {
+                    // 第一部分作为内容，清理后面的部分
+                    sibling.children[0].value = parts[0].trimEnd();
+                    if (sibling.children[0].value === '') {
+                      // 如果第一部分是空的，移除这个段落
+                      endIndex = i;
+                    }
+                  }
+                }
+                break;
+              }
+            }
+
+            // 检查列表中是否包含结束标记
+            if (sibling.type === 'list') {
+              let foundClosing = false;
+
+              // 检查列表的最后一项是否包含:::
+              const lastItem = sibling.children[sibling.children.length - 1];
+              if (lastItem && lastItem.children && lastItem.children.length > 0) {
+                const lastParagraph = lastItem.children[lastItem.children.length - 1];
+                if (lastParagraph && lastParagraph.type === 'paragraph' && lastParagraph.children && lastParagraph.children.length > 0) {
+                  const lastText = lastParagraph.children[lastParagraph.children.length - 1];
+                  if (lastText && lastText.type === 'text') {
+                    if (lastText.value.includes(':::')) {
+                      endIndex = i + 1; // 包含这个列表
+
+                      // 清理文本节点中的结束标记
+                      const parts = lastText.value.split(':::');
+                      lastText.value = parts[0].trimEnd();
+                      foundClosing = true;
+                    }
                   }
                 }
               }
+              if (foundClosing) break;
             }
-            if (foundClosing) break;
           }
         }
 
@@ -149,7 +234,7 @@ export function remarkContainers() {
         }
 
         // 收集中间的内容，从正确的起始位置开始
-        const contentNodes = siblings.slice(searchStart, endIndex);
+        const contentNodes = [...inlineContentNodes, ...siblings.slice(searchStart, endIndex)];
 
         // 创建HTML容器
         const openingHTML = `<div class="container-${type} custom-container" data-container-type="${type}">

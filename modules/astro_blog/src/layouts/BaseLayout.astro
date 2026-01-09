@@ -241,8 +241,9 @@ const faviconType = faviconSvgExists ? 'image/svg+xml' : faviconIcoExists ? 'ima
           wrapper.appendChild(content);
           content.appendChild(pre);
 
-          // 如果需要收缩，添加展开按钮到内容区
+          // 如果需要收缩，添加展开按钮和底部收起按钮
           if (shouldCollapse) {
+            // 展开按钮（收缩状态显示）
             const expandOverlay = document.createElement('div');
             expandOverlay.className = 'code-block-expand';
             expandOverlay.innerHTML = `
@@ -255,6 +256,19 @@ const faviconType = faviconSvgExists ? 'image/svg+xml' : faviconIcoExists ? 'ima
             `;
             content.appendChild(expandOverlay);
 
+            // 底部收起按钮（展开状态显示）
+            const collapseOverlay = document.createElement('div');
+            collapseOverlay.className = 'code-block-collapse';
+            collapseOverlay.innerHTML = `
+              <button class="collapse-bottom-btn">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                </svg>
+                <span>收起代码</span>
+              </button>
+            `;
+            content.appendChild(collapseOverlay);
+
             // 展开按钮点击事件
             const expandBtn = expandOverlay.querySelector('.expand-btn');
             if (expandBtn) {
@@ -262,6 +276,18 @@ const faviconType = faviconSvgExists ? 'image/svg+xml' : faviconIcoExists ? 'ima
                 wrapper.classList.remove('collapsed');
                 const collapseText = header.querySelector('.collapse-text') as HTMLElement | null;
                 if (collapseText) collapseText.textContent = '收缩';
+              });
+            }
+
+            // 底部收起按钮点击事件
+            const collapseBottomBtn = collapseOverlay.querySelector('.collapse-bottom-btn');
+            if (collapseBottomBtn) {
+              collapseBottomBtn.addEventListener('click', () => {
+                wrapper.classList.add('collapsed');
+                const collapseText = header.querySelector('.collapse-text') as HTMLElement | null;
+                if (collapseText) collapseText.textContent = '展开';
+                // 滚动到代码块顶部
+                wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
               });
             }
           }
