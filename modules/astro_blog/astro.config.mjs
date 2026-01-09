@@ -33,6 +33,26 @@ export default defineConfig({
   site: 'https://jet-w.github.io',
   base: '/',
   build: {
-    assets: 'assets'  // 将 _astro 改为 assets
+    assets: 'assets'
+  },
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          // 自定义文件命名，移除下划线前缀
+          entryFileNames: 'assets/[name].[hash].js',
+          chunkFileNames: (chunkInfo) => {
+            // 替换开头的下划线
+            const name = chunkInfo.name.replace(/^_/, '');
+            return `assets/${name}.[hash].js`;
+          },
+          assetFileNames: (assetInfo) => {
+            // 替换开头的下划线
+            const name = assetInfo.name.replace(/^_/, '');
+            return `assets/${name}.[hash][extname]`;
+          }
+        }
+      }
+    }
   }
 });
