@@ -53,7 +53,7 @@ export const menu: NavigationItem[] = [
   },
   {
     name: 'PTE',
-    href: '/pte',
+    href: '/posts/pte',
     icon: 'about'
   },
   {
