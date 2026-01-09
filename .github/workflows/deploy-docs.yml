@@ -27,14 +27,13 @@ jobs:
         with:
           node-version: 22
           cache: 'npm'
-          
+
       - name: Build Blog
         env:
           NODE_OPTIONS: --max_old_space_size=8692
           VUEPRESS_SHIKI_DISABLE: true             # disable shiki for unused languages
         run: |-
           make build-astro
-          > modules/blog-en/src/.vuepress/dist/.nojekyll
 
       #- name: Deploy Docs
       #  uses: JamesIves/github-pages-deploy-action@v4
@@ -43,7 +42,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{secrets.API_TOKEN_KEY}}
         with:
-          source-directory: 'modules/blog-en/src/.vuepress/dist'
+          source-directory: 'modules/astro_blog//dist'
           destination-github-username: 'jet-w'
           destination-repository-name: 'jet-w.github.io'
           user-email: unisa.dady@gmail.com
