@@ -32,4 +32,7 @@ export default defineConfig({
   },
   site: 'https://jet-w.github.io',
   base: '/',
+  build: {
+    assets: 'assets'  // 将 _astro 改为 assets
+  }
 });
