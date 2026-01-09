@@ -26,9 +26,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: pnpm
-          cache-dependency-path: modules/astro_blog/pnpm-lock.yaml 
-
+          cache: 'npm'
+          
       - name: Build Blog
         env:
           NODE_OPTIONS: --max_old_space_size=8692
