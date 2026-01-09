@@ -33,7 +33,8 @@
         :class="{
           'other-month': !day.currentMonth,
           'today': day.isToday,
-          'has-task': day.tasks.length > 0
+          'has-task': day.tasks.length > 0,
+          'past-day': isPastDay(day) && day.tasks.length > 0
         }"
         :style="day.tasks.length ? { borderLeft: `4px solid ${day.tasks[0].color}` } : {}"
         @click="selectDay(day)"
@@ -318,6 +319,16 @@ function getTaskCompletionPercent(day, taskIndex) {
 
   if (totalQuantity === 0) return 0;
   return Math.round((totalDone / totalQuantity) * 100);
+}
+
+// 检查是否是过去的日期
+function isPastDay(day) {
+  if (!day || !day.dateObj) return false;
+  const dayDate = new Date(day.dateObj);
+  const todayDate = new Date();
+  todayDate.setHours(0, 0, 0, 0);
+  dayDate.setHours(0, 0, 0, 0);
+  return dayDate < todayDate;
 }
 
 // 获取日期状态
@@ -697,6 +708,10 @@ html:not(.dark) .month-title {
 
 .calendar-day.has-task {
   background: #ffffff;
+}
+
+.calendar-day.past-day {
+  background: #e5e7eb;
 }
 
 .day-number {
@@ -1180,6 +1195,10 @@ html:not(.dark) .month-title {
 
 :global(.dark) .calendar-day.has-task {
   background: #1e293b;
+}
+
+:global(.dark) .calendar-day.past-day {
+  background: #475569;
 }
 
 :global(.dark) .day-number {

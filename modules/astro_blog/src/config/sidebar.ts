@@ -306,6 +306,15 @@ export const sidebarConfig: SidebarConfig = {
       collapsed: true,
       showForPaths: ['/posts/media/**']
     },
+    // 扫描技术文档目录
+    {
+      type: 'scan',
+      title: 'PTE',
+      icon: 'ri:folder-3-line',
+      scanPath: 'PTE',
+      collapsed: true,
+      showForPaths: ['/posts/PTE/**']
+    },
     // 示例：混合配置
     // {
     //   type: 'mixed',

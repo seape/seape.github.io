@@ -52,6 +52,11 @@ export const menu: NavigationItem[] = [
     icon: 'slides'
   },
   {
+    name: 'PTE',
+    href: '/pte',
+    icon: 'about'
+  },
+  {
     name: '关于',
     href: '/about',
     icon: 'about'
