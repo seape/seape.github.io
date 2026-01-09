@@ -6,7 +6,7 @@ category:
   - Docker
   - DevOps
 tag:
-  - CI/CD
+  - CICD
   - 自动化部署
   - Jenkins
   - GitLab CI

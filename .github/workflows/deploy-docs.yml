@@ -1,0 +1,52 @@
+
+name: Deploy Jet's Astro Blog
+
+on:
+  push:
+    branches:
+      # make sure this is the branch you are using
+      - astro
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-astro-blog:
+    runs-on: ubuntu-latest
+    # needs: environment-prepare
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # if your docs needs submodules, uncomment the following line
+          # submodules: true
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: modules/astro_blog/pnpm-lock.yaml 
+
+      - name: Build Blog
+        env:
+          NODE_OPTIONS: --max_old_space_size=8692
+          VUEPRESS_SHIKI_DISABLE: true             # disable shiki for unused languages
+        run: |-
+          make build-astro
+          > modules/blog-en/src/.vuepress/dist/.nojekyll
+
+      #- name: Deploy Docs
+      #  uses: JamesIves/github-pages-deploy-action@v4
+      - name: Push release to Blog repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{secrets.API_TOKEN_KEY}}
+        with:
+          source-directory: 'modules/blog-en/src/.vuepress/dist'
+          destination-github-username: 'jet-w'
+          destination-repository-name: 'jet-w.github.io'
+          user-email: unisa.dady@gmail.com
+          target-branch: astro
+          target-directory: /
