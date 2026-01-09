@@ -30,5 +30,6 @@ export default defineConfig({
       wrap: true
     }
   },
-  site: 'https://localhost:4321'
+  site: 'https://jet-w.github.io',
+  base: '/',
 });
