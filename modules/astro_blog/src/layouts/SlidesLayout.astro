@@ -204,7 +204,9 @@ const revealConfig = JSON.stringify({
             });
 
             // 渲染当前可见幻灯片中的 Mermaid
-            function renderVisibleMermaid() {
+            async function renderVisibleMermaid() {
+              var needsLayout = false;
+
               mermaidContainers.forEach(function(item) {
                 if (item.rendered) return;
 
@@ -212,6 +214,7 @@ const revealConfig = JSON.stringify({
                 if (section && (section.classList.contains('present') || section.closest('.present'))) {
                   item.container.textContent = item.code;
                   item.rendered = true;
+                  needsLayout = true;
                 }
               });
 
@@ -223,14 +226,20 @@ const revealConfig = JSON.stringify({
               });
 
               if (toRender.length > 0) {
-                mermaid.run({ nodes: toRender }).catch(function(e) {
+                try {
+                  await mermaid.run({ nodes: toRender });
+                  // Mermaid 渲染完成后，通知 Reveal.js 重新计算布局
+                  if (needsLayout) {
+                    Reveal.layout();
+                  }
+                } catch(e) {
                   console.warn('Mermaid render warning:', e);
-                });
+                }
               }
             }
 
-            // 初始渲染
-            setTimeout(renderVisibleMermaid, 100);
+            // 初始渲染 - 使用更长的延迟确保 Reveal.js 完全初始化
+            setTimeout(renderVisibleMermaid, 200);
 
             // 幻灯片切换时渲染
             Reveal.on('slidechanged', function() {

@@ -6,7 +6,7 @@ export const siteConfig: SiteConfig = {
   description: '基于Astro+Vue+Tailwind构建的个人技术博客，分享我的技术思考和学习笔记。',
   author: 'Haiyue',
   email: 'unisa.dady@gmail.com',
-  avatar: '/images/avatar.jpg',
+  avatar: '/images/avatar.svg',
   social: {
     github: 'https://github.com/jet-w',
     // twitter: 'https://twitter.com/haiyue',
