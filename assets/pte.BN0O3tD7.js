@@ -693,19 +693,19 @@ const pteDateConfig = {
       name: 'Read Aloud',
       quantity: 7,
       unit: '题',
-      completed: 0
+      completed: 7
     }, {
       type: 'RS',
       name: 'Repeat Sentence',
       quantity: 7,
       unit: '题',
-      completed: 0
+      completed: 7
     }, {
-      type: 'RL',
-      name: 'Retell Lecture',
+      type: 'DI',
+      name: 'Describe Image',
       quantity: 1,
       unit: '题',
-      completed: 0
+      completed: 1
     }]
   },
   '2026-01-10': {
@@ -2609,23 +2609,23 @@ function _createMdxContent(props) {
       children: "推荐学习资源"
     }), "\n", createVNode(_components.div, {
       class: "custom-tabs",
-      "data-tabs-id": "tabs-a6gd0cuni",
+      "data-tabs-id": "tabs-v6a0idkhg",
       children: [createVNode(_components.div, {
         class: "tabs-header",
         children: [createVNode(_components.button, {
           class: "tab-button active",
           "data-tab-index": "0",
-          onclick: "switchTab('tabs-a6gd0cuni', 0)",
+          onclick: "switchTab('tabs-v6a0idkhg', 0)",
           children: "官方资源"
         }), createVNode(_components.button, {
           class: "tab-button",
           "data-tab-index": "1",
-          onclick: "switchTab('tabs-a6gd0cuni', 1)",
+          onclick: "switchTab('tabs-v6a0idkhg', 1)",
           children: "第三方平台"
         }), createVNode(_components.button, {
           class: "tab-button",
           "data-tab-index": "2",
-          onclick: "switchTab('tabs-a6gd0cuni', 2)",
+          onclick: "switchTab('tabs-v6a0idkhg', 2)",
           children: "词汇工具"
         })]
       }), createVNode(_components.div, {
