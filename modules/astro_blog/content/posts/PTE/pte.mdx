@@ -29,8 +29,21 @@ export const pteDateConfig = {
   // 练习量逐渐递增：WFD 5→20, RA/RS 5→20, DI 2→8, RL 1→5, 阅读 2→8
   // 第1周 (01-05 周一 ~ 01-11 周日) - 全勤
   // 2026-01-05 是周一
-  '2026-01-09': { phase: '基础阶段', title: 'RA/RS + RL 入门', duration: '5小时', description: 'RA/RS 练习，RL 笔记技巧学习', materials: 'APEUni WFD/RL 题库', exercises: [{ type: 'RA', name: 'Read Aloud', quantity: 7, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 7, unit: '题', completed: 0 }, { type: 'RL', name: 'Retell Lecture', quantity: 1, unit: '题', completed: 0 }] },
-  '2026-01-10': { phase: '基础阶段', title: '周末综合练习', duration: '5小时', description: 'RA/RS/WFD 综合复习，阅读穿插', materials: 'APEUni、PTE Official', exercises: [{ type: 'RA', name: 'Read Aloud', quantity: 8, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 8, unit: '题', completed: 0 }, { type: 'WFD', name: 'Write From Dictation', quantity: 8, unit: '题', completed: 0 }, { type: 'FIB-RW', name: 'Fill in the Blanks (R&W)', quantity: 2, unit: '题', completed: 0 }] },
+  '2026-01-09': { phase: '基础阶段', title: 'RA/RS + RL 入门', duration: '5小时', description: 'RA/RS 练习，RL 笔记技巧学习', materials: 'APEUni WFD/RL 题库', 
+  exercises: [
+    { type: 'RA', name: 'Read Aloud', quantity: 7, unit: '题', completed: 7 }, 
+    { type: 'RS', name: 'Repeat Sentence', quantity: 7, unit: '题', completed: 7 }, 
+    { type: 'DI', name: 'Describe Image', quantity: 1, unit: '题', completed: 1 }
+  ] 
+  },
+  '2026-01-10': { phase: '基础阶段', title: '周末综合练习', duration: '5小时', description: 'RA/RS/WFD 综合复习，阅读穿插', materials: 'APEUni、PTE Official', 
+  exercises: [
+    { type: 'RA', name: 'Read Aloud', quantity: 8, unit: '题', completed: 0 }, 
+    { type: 'RS', name: 'Repeat Sentence', quantity: 8, unit: '题', completed: 0 }, 
+    { type: 'WFD', name: 'Write From Dictation', quantity: 8, unit: '题', completed: 0 }, 
+    { type: 'FIB-RW', name: 'Fill in the Blanks (R&W)', quantity: 2, unit: '题', completed: 0 }
+  ] 
+  },
   '2026-01-11': { phase: '基础阶段', title: '周末综合练习', duration: '5小时', description: 'RA/RS/WFD 综合复习，DI/RL 穿插', materials: 'APEUni、PTE Official', exercises: [{ type: 'RA', name: 'Read Aloud', quantity: 8, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 8, unit: '题', completed: 0 }, { type: 'WFD', name: 'Write From Dictation', quantity: 8, unit: '题', completed: 0 }, { type: 'DI', name: 'Describe Image', quantity: 2, unit: '题', completed: 0 }, { type: 'RL', name: 'Retell Lecture', quantity: 1, unit: '题', completed: 0 }] },
   // 第2周 (01-12 周一 ~ 01-18 周日) - 周三01-14、周四01-15休息
   // 01-12周一, 01-13周二, 跳过01-14周三/01-15周四, 01-16周五, 01-17周六, 01-18周日
