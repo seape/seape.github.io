@@ -2334,23 +2334,23 @@ function _createMdxContent(props) {
       children: "推荐学习资源"
     }), "\n", createVNode(_components.div, {
       class: "custom-tabs",
-      "data-tabs-id": "tabs-0kfnjtr3x",
+      "data-tabs-id": "tabs-0s86odho0",
       children: [createVNode(_components.div, {
         class: "tabs-header",
         children: [createVNode(_components.button, {
           class: "tab-button active",
           "data-tab-index": "0",
-          onclick: "switchTab('tabs-0kfnjtr3x', 0)",
+          onclick: "switchTab('tabs-0s86odho0', 0)",
           children: "官方资源"
         }), createVNode(_components.button, {
           class: "tab-button",
           "data-tab-index": "1",
-          onclick: "switchTab('tabs-0kfnjtr3x', 1)",
+          onclick: "switchTab('tabs-0s86odho0', 1)",
           children: "第三方平台"
         }), createVNode(_components.button, {
           class: "tab-button",
           "data-tab-index": "2",
-          onclick: "switchTab('tabs-0kfnjtr3x', 2)",
+          onclick: "switchTab('tabs-0s86odho0', 2)",
           children: "词汇工具"
         })]
       }), createVNode(_components.div, {

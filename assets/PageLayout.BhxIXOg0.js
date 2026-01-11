@@ -1,13 +1,13 @@
 import { c as createAstro, a as createComponent, m as maybeRenderHead, r as renderComponent, d as addAttribute, b as renderTemplate, e as renderScript, g as renderSlot } from './astro/server.CsXMQSOf.js';
 import 'piccolore';
-import { $ as $$BaseLayout } from './BaseLayout.qewaU1s5.js';
+import { $ as $$BaseLayout } from './BaseLayout.C2z4-P-t.js';
 import { s as siteConfig } from './site.CxBSWjpv.js';
 import { defineComponent, useSSRContext, ref, onMounted, mergeProps, onUnmounted, watch } from 'vue';
 import { ssrRenderAttrs, ssrRenderAttr, ssrRenderList, ssrInterpolate, ssrRenderTeleport, ssrRenderComponent, ssrRenderClass } from 'vue/server-renderer';
 /* empty css                        */
 import { _ as _export_sfc } from './plugin-vue_export-helper.pcqpp-6-.js';
 import 'clsx';
-import { g as getCollection } from './astro_content.CIQFSyCX.js';
+import { g as getCollection } from './astro_content.Dd8_DFFD.js';
 
 const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   __name: "ThemeToggle",
