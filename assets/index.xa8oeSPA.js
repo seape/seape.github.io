@@ -3,7 +3,7 @@ import 'piccolore';
 import 'clsx';
 import { s as siteConfig } from './site.CxBSWjpv.js';
 /* empty css                                                           */
-import { g as getCollection } from './astro_content.xRmykwHC.js';
+import { g as getCollection } from './astro_content.BICvqxTT.js';
 import { defineComponent, mergeProps, createVNode, resolveDynamicComponent, ref, computed, h, useSSRContext } from 'vue';
 import { ssrRenderAttrs, ssrRenderList, ssrRenderClass, ssrRenderVNode, ssrInterpolate, ssrRenderAttr } from 'vue/server-renderer';
 /* empty css                                                                                 */
