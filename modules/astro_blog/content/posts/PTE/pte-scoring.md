@@ -3,6 +3,7 @@ title: PTE 评分标准与实用技巧
 description: PTE 各题型评分细则、策略建议和实用技巧汇总
 pubDate: 2025-01-08
 author: Jet
+icon: circle-dot
 tags:
   - PTE
   - 英语学习
