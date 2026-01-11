@@ -7,7 +7,7 @@ import { ssrRenderAttrs, ssrRenderAttr, ssrRenderList, ssrInterpolate, ssrRender
 /* empty css                        */
 import { _ as _export_sfc } from './plugin-vue_export-helper.pcqpp-6-.js';
 import 'clsx';
-import { g as getCollection } from './astro_content.aKWqVD7u.js';
+import { g as getCollection } from './astro_content.OFvxEJCk.js';
 
 const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   __name: "ThemeToggle",
