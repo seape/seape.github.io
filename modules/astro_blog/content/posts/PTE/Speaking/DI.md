@@ -18,8 +18,6 @@ sticky: false
 4. According to the information we can get from the graph <span style="color:orange;font-weight:bold">[ITEM C]</span> has the smallest number, which is around <span style="color:orange;font-weight:bold">[VALUE of C]</span>. It’s clear that <span style="color:orange;font-weight:bold">[ITEM X]</span> has always been higher than <span style="color:orange;font-weight:bold">[ITEM Y]</span>.
 5. In general if this trend continues <span style="color:orange;font-weight:bold">[ITEM Z]</span> will keep increasing in the future and this graph is about <span style="color:orange;font-weight:bold">[TITLE]</span>.
 
-![Alt text](/data/study/pte/barchart.png)
-
 <!-- ## Linechart
 1. The following graph shows information about <span style="color:orange;font-weight:bold">[TITLE]</span>, including|from <span style="color:orange;font-weight:bold">[ITEMS/DATE]</span>.
 2. According to the graph we can see that the horizontal axis indicates <span style="color:orange;font-weight:bold">[Meaning]</span>, from <span style="color:orange;font-weight:bold">[value 1]</span> to <span style="color:orange;font-weight:bold">[value 2]</span>.
