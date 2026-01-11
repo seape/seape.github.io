@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./pte.CPSbUy20.js');
+						return import('./pte.BTG5-Rss.js');
 					}
 					const collectedLinks = ["/assets/StudyCalendar_vue_vue_type_style_index_0_scoped_ab7e9190_lang.css.BZjoVXMq.css"];
 					const collectedStyles = [];

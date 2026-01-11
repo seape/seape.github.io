@@ -634,6 +634,7 @@ const frontmatter = {
   "description": "系统化的 PTE 考试备考日历，分为基础、强化、冲刺三个阶段",
   "pubDate": "2025-01-07T00:00:00.000Z",
   "author": "Jet",
+  "icon": "circle-dot",
   "tags": ["PTE", "英语学习", "备考计划"],
   "categories": ["学习"]
 };
@@ -2333,23 +2334,23 @@ function _createMdxContent(props) {
       children: "推荐学习资源"
     }), "\n", createVNode(_components.div, {
       class: "custom-tabs",
-      "data-tabs-id": "tabs-w9m6k06rj",
+      "data-tabs-id": "tabs-0kfnjtr3x",
       children: [createVNode(_components.div, {
         class: "tabs-header",
         children: [createVNode(_components.button, {
           class: "tab-button active",
           "data-tab-index": "0",
-          onclick: "switchTab('tabs-w9m6k06rj', 0)",
+          onclick: "switchTab('tabs-0kfnjtr3x', 0)",
           children: "官方资源"
         }), createVNode(_components.button, {
           class: "tab-button",
           "data-tab-index": "1",
-          onclick: "switchTab('tabs-w9m6k06rj', 1)",
+          onclick: "switchTab('tabs-0kfnjtr3x', 1)",
           children: "第三方平台"
         }), createVNode(_components.button, {
           class: "tab-button",
           "data-tab-index": "2",
-          onclick: "switchTab('tabs-w9m6k06rj', 2)",
+          onclick: "switchTab('tabs-0kfnjtr3x', 2)",
           children: "词汇工具"
         })]
       }), createVNode(_components.div, {
