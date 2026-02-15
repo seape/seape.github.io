@@ -1,0 +1,266 @@
+---
+title: PTE 三个月备考计划
+description: 系统化的 PTE 考试备考日历，分为基础、强化、冲刺三个阶段
+pubDate: 2025-01-07
+author: Jet
+icon: circle-dot
+tags:
+  - PTE
+  - 英语学习
+  - 备考计划
+categories:
+  - 学习
+---
+
+import StudyCalendar from '@/components/pte/StudyCalendar.vue';
+
+export const ptePhases = [
+  { id: 1, name: '基础阶段', color: '#10b981', weeks: 4 },
+  { id: 2, name: '强化阶段', color: '#3b82f6', weeks: 4 },
+  { id: 3, name: '冲刺阶段', color: '#f59e0b', weeks: 4 },
+];
+
+{/* 按日期配置学习计划，exercises 中的 completed 字段标记完成数量 */}
+{/* 第一周全勤，从第二周开始周三、周四休息，其余时间每天 5 小时 */}
+{/* 基础阶段：重点 RA, RS, WFD，穿插 DI, RL 和阅读 */}
+{/* 强化阶段：全题型涉猎 */}
+export const pteDateConfig = {
+  // ============ 第一阶段：基础夯实（第1-4周）============
+  // 重点：RA, RS, WFD，穿插 DI, RL 和阅读训练
+  // 练习量逐渐递增：WFD 5→20, RA/RS 5→20, DI 2→8, RL 1→5, 阅读 2→8
+  // 第1周 (01-05 周一 ~ 01-11 周日) - 全勤
+  // 2026-01-05 是周一
+  '2026-01-09': { phase: '基础阶段', title: 'RA/RS + RL 入门', duration: '5小时', description: 'RA/RS 练习，RL 笔记技巧学习', materials: 'APEUni WFD/RL 题库', 
+  exercises: [
+    { type: 'RA', name: 'Read Aloud', quantity: 7, unit: '题', completed: 7 }, 
+    { type: 'RS', name: 'Repeat Sentence', quantity: 7, unit: '题', completed: 7 }, 
+    { type: 'DI', name: 'Describe Image', quantity: 1, unit: '题', completed: 1 }
+  ] 
+  },
+  '2026-01-10': { phase: '基础阶段', title: '周末综合练习', duration: '5小时', description: 'RA/RS/WFD 综合复习，阅读穿插', materials: 'APEUni、PTE Official', 
+  exercises: [
+    { type: 'RA', name: 'Read Aloud', quantity: 8, unit: '题', completed: 8 }, 
+    { type: 'RS', name: 'Repeat Sentence', quantity: 8, unit: '题', completed: 8 }, 
+    { type: 'WFD', name: 'Write From Dictation', quantity: 8, unit: '题', completed: 8 }, 
+    { type: 'DI', name: 'Describe Image', quantity: 2, unit: '题', completed: 2 }
+  ] 
+  },
+  // '2026-01-11': { phase: '基础阶段', title: '周末综合练习', duration: '5小时', description: 'RA/RS/WFD 综合复习，DI/RL 穿插', materials: 'APEUni、PTE Official', exercises: [{ type: 'RA', name: 'Read Aloud', quantity: 8, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 8, unit: '题', completed: 0 }, { type: 'WFD', name: 'Write From Dictation', quantity: 8, unit: '题', completed: 0 }, { type: 'DI', name: 'Describe Image', quantity: 2, unit: '题', completed: 0 }, { type: 'RL', name: 'Retell Lecture', quantity: 1, unit: '题', completed: 0 }] },
+  // 第2周 (01-12 周一 ~ 01-18 周日) - 周三01-14、周四01-15休息
+  // 01-12周一, 01-13周二, 跳过01-14周三/01-15周四, 01-16周五, 01-17周六, 01-18周日
+  '2026-01-12': { phase: '基础阶段', title: 'RA/RS 提升', duration: '5小时', description: '口语核心题型练习提升', materials: 'APEUni、PTE Magic', exercises: [{ type: 'RA', name: 'Read Aloud', quantity: 9, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 9, unit: '题', completed: 0 }, { type: 'WFD', name: 'Write From Dictation', quantity: 9, unit: '题', completed: 0 }] },
+  '2026-01-13': { phase: '基础阶段', title: 'WFD + DI 训练', duration: '5小时', description: 'WFD 听写练习，DI 图表描述', materials: 'APEUni WFD/DI 题库',
+     exercises: [
+      { type: 'WFD', name: 'Write From Dictation', quantity: 10, unit: '题', completed: 0 },
+      { type: 'DI', name: 'Describe Image', quantity: 3, unit: '题', completed: 0 },
+      { type: 'RS', name: 'Repeat Sentence', quantity: 8, unit: '题', completed: 0 }
+    ]},
+  '2026-01-16': { phase: '基础阶段', title: 'RA/RS + DI 练习', duration: '5小时', description: 'RA/RS 巩固，DI 模板练习', materials: 'APEUni', exercises: [
+    { type: 'RA', name: 'Read Aloud', quantity: 10, unit: '题', completed: 0 }, 
+    { type: 'RS', name: 'Repeat Sentence', quantity: 10, unit: '题', completed: 0 }, 
+    { type: 'DI', name: 'Describe Image', quantity: 3, unit: '题', completed: 0 }] },
+  '2026-01-17': { phase: '基础阶段', title: 'WFD + RL 练习', duration: '5小时', description: 'WFD 巩固，RL 复述技巧', materials: 'APEUni WFD/RL 题库', exercises: [{ type: 'WFD', name: 'Write From Dictation', quantity: 11, unit: '题', completed: 0 }, { type: 'RL', name: 'Retell Lecture', quantity: 2, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 8, unit: '题', completed: 0 }] },
+  // '2026-01-18': { phase: '基础阶段', title: '周末综合练习', duration: '5小时', description: '全面复习本周内容', materials: 'APEUni、PTE Official', exercises: [{ type: 'RA', name: 'Read Aloud', quantity: 11, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 11, unit: '题', completed: 0 }, { type: 'WFD', name: 'Write From Dictation', quantity: 11, unit: '题', completed: 0 }, { type: 'FIB-RW', name: 'Fill in the Blanks (R&W)', quantity: 4, unit: '题', completed: 0 }] },
+  // 第3周 (01-19 周一 ~ 01-25 周日) - 周三01-21、周四01-22休息
+  '2026-01-19': { phase: '基础阶段', title: 'RA/RS 强化', duration: '5小时', description: '口语核心题型强化训练', materials: 'APEUni、PTE Magic', exercises: [{ type: 'RA', name: 'Read Aloud', quantity: 12, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 12, unit: '题', completed: 0 }, { type: 'WFD', name: 'Write From Dictation', quantity: 12, unit: '题', completed: 0 }] },
+  '2026-01-20': { phase: '基础阶段', title: 'WFD + DI 强化', duration: '5小时', description: 'WFD 听写强化，DI 图表练习', materials: 'APEUni', exercises: [{ type: 'WFD', name: 'Write From Dictation', quantity: 13, unit: '题', completed: 0 }, { type: 'DI', name: 'Describe Image', quantity: 4, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 10, unit: '题', completed: 0 }] },
+  '2026-01-23': { phase: '基础阶段', title: 'RA/RS + DI 强化', duration: '5小时', description: 'RA/RS 精练，DI 各类图表练习', materials: 'APEUni', exercises: [{ type: 'RA', name: 'Read Aloud', quantity: 14, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 14, unit: '题', completed: 0 }, { type: 'DI', name: 'Describe Image', quantity: 5, unit: '题', completed: 0 }] },
+  '2026-01-24': { phase: '基础阶段', title: 'WFD + RL 强化', duration: '5小时', description: 'WFD 巩固，RL 复述技巧强化', materials: 'APEUni WFD/RL 题库', exercises: [{ type: 'WFD', name: 'Write From Dictation', quantity: 14, unit: '题', completed: 0 }, { type: 'RL', name: 'Retell Lecture', quantity: 3, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 10, unit: '题', completed: 0 }] },
+  // '2026-01-25': { phase: '基础阶段', title: '周末综合练习', duration: '5小时', description: '全面复习，模拟测试', materials: 'APEUni、PTE Official', exercises: [{ type: 'RA', name: 'Read Aloud', quantity: 15, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 15, unit: '题', completed: 0 }, { type: 'WFD', name: 'Write From Dictation', quantity: 15, unit: '题', completed: 0 }, { type: 'Mock', name: '单模块模考', quantity: 1, unit: '套', completed: 0 }] },
+  // 第4周 (01-26 周一 ~ 02-01 周日) - 周三01-28、周四01-29休息
+  '2026-01-26': { phase: '基础阶段', title: 'RA/RS 巩固', duration: '5小时', description: '口语核心题型巩固训练', materials: 'APEUni、PTE Magic', exercises: [{ type: 'RA', name: 'Read Aloud', quantity: 16, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 16, unit: '题', completed: 0 }, { type: 'WFD', name: 'Write From Dictation', quantity: 16, unit: '题', completed: 0 }] },
+  '2026-01-27': { phase: '基础阶段', title: 'WFD + DI/RL 综合', duration: '5小时', description: 'WFD 听写，DI 图表与 RL 练习', materials: 'APEUni', exercises: [{ type: 'WFD', name: 'Write From Dictation', quantity: 17, unit: '题', completed: 0 }, { type: 'DI', name: 'Describe Image', quantity: 5, unit: '题', completed: 0 }, { type: 'RL', name: 'Retell Lecture', quantity: 3, unit: '题', completed: 0 }, { type: 'RA', name: 'Read Aloud', quantity: 8, unit: '题', completed: 0 }] },
+  '2026-01-30': { phase: '基础阶段', title: 'RA/RS + DI/RL', duration: '5小时', description: '口语综合强化', materials: 'APEUni', exercises: [{ type: 'RA', name: 'Read Aloud', quantity: 18, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 18, unit: '题', completed: 0 }, { type: 'DI', name: 'Describe Image', quantity: 7, unit: '题', completed: 0 }, { type: 'RL', name: 'Retell Lecture', quantity: 4, unit: '题', completed: 0 }] },
+  '2026-01-31': { phase: '基础阶段', title: '基础阶段总结', duration: '5小时', description: '基础阶段复习与模考', materials: 'PTE Official', exercises: [{ type: 'Mock', name: '完整模考', quantity: 1, unit: '套', completed: 0 }, { type: 'Review', name: '错题复习', quantity: 15, unit: '题', completed: 0 }] },
+  // '2026-02-01': { phase: '基础阶段', title: '基础阶段复盘', duration: '5小时', description: '模考分析，薄弱项梳理', materials: 'APEUni', exercises: [{ type: 'RA', name: 'Read Aloud', quantity: 20, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 20, unit: '题', completed: 0 }, { type: 'WFD', name: 'Write From Dictation', quantity: 20, unit: '题', completed: 0 }, { type: 'Analysis', name: '模考分析', quantity: 1, unit: '次', completed: 0 }] },
+
+  // ============ 第二阶段：强化提升（第5-8周）============
+  // 全题型涉猎，均衡训练
+  // 第5周 (02-02 周一 ~ 02-08 周日) - 周三02-04、周四02-05休息
+  '2026-02-02': { phase: '强化阶段', title: 'Speaking 全题型', duration: '5小时', description: '口语全题型训练', materials: 'APEUni、PTE Magic', exercises: [{ type: 'RA', name: 'Read Aloud', quantity: 15, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 20, unit: '题', completed: 0 }, { type: 'DI', name: 'Describe Image', quantity: 15, unit: '题', completed: 0 }, { type: 'RL', name: 'Retell Lecture', quantity: 8, unit: '题', completed: 0 }, { type: 'ASQ', name: 'Answer Short Question', quantity: 20, unit: '题', completed: 0 }] },
+  '2026-02-03': { phase: '强化阶段', title: 'Writing 全题型', duration: '5小时', description: '写作全题型训练', materials: 'APEUni Essay/SWT', exercises: [{ type: 'SWT', name: 'Summarize Written Text', quantity: 4, unit: '篇', completed: 0 }, { type: 'Essay', name: 'Write Essay', quantity: 2, unit: '篇', completed: 0 }, { type: 'WFD', name: 'Write From Dictation', quantity: 30, unit: '题', completed: 0 }] },
+  '2026-02-06': { phase: '强化阶段', title: 'Reading 全题型', duration: '5小时', description: '阅读全题型训练', materials: 'APEUni Reading', exercises: [{ type: 'FIB-RW', name: 'Fill in the Blanks (R&W)', quantity: 10, unit: '题', completed: 0 }, { type: 'FIB-R', name: 'Fill in the Blanks (Reading)', quantity: 10, unit: '题', completed: 0 }, { type: 'RO', name: 'Re-order Paragraphs', quantity: 10, unit: '题', completed: 0 }, { type: 'MCQ-R', name: 'Multiple Choice (Reading)', quantity: 10, unit: '题', completed: 0 }] },
+  '2026-02-07': { phase: '强化阶段', title: 'Listening 全题型', duration: '5小时', description: '听力全题型训练', materials: 'APEUni Listening', exercises: [{ type: 'SST', name: 'Summarize Spoken Text', quantity: 3, unit: '篇', completed: 0 }, { type: 'FIB-L', name: 'Fill in the Blanks (Listening)', quantity: 10, unit: '题', completed: 0 }, { type: 'HIW', name: 'Highlight Incorrect Words', quantity: 8, unit: '题', completed: 0 }, { type: 'WFD', name: 'Write From Dictation', quantity: 30, unit: '题', completed: 0 }, { type: 'MCQ-L', name: 'Multiple Choice (Listening)', quantity: 5, unit: '题', completed: 0 }] },
+  // '2026-02-08': { phase: '强化阶段', title: '周末模考', duration: '5小时', description: '完整模拟考试', materials: 'PTE Official', exercises: [{ type: 'Mock', name: '完整模考', quantity: 1, unit: '套', completed: 0 }, { type: 'Analysis', name: '错题分析', quantity: 1, unit: '次', completed: 0 }] },
+  // 第6周 (02-09 周一 ~ 02-15 周日) - 周三02-11、周四02-12休息
+  '2026-02-09': { phase: '强化阶段', title: 'Speaking 全题型', duration: '5小时', description: '口语全题型强化', materials: 'APEUni、PTE Magic', exercises: [{ type: 'RA', name: 'Read Aloud', quantity: 15, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 20, unit: '题', completed: 0 }, { type: 'DI', name: 'Describe Image', quantity: 15, unit: '题', completed: 0 }, { type: 'RL', name: 'Retell Lecture', quantity: 8, unit: '题', completed: 0 }, { type: 'ASQ', name: 'Answer Short Question', quantity: 20, unit: '题', completed: 0 }] },
+  '2026-02-10': { phase: '强化阶段', title: 'Writing + Listening', duration: '5小时', description: '写作与听力综合', materials: 'APEUni', exercises: [{ type: 'SWT', name: 'Summarize Written Text', quantity: 3, unit: '篇', completed: 0 }, { type: 'Essay', name: 'Write Essay', quantity: 2, unit: '篇', completed: 0 }, { type: 'SST', name: 'Summarize Spoken Text', quantity: 3, unit: '篇', completed: 0 }, { type: 'WFD', name: 'Write From Dictation', quantity: 25, unit: '题', completed: 0 }] },
+  '2026-02-13': { phase: '强化阶段', title: 'Reading + Speaking', duration: '5小时', description: '阅读与口语综合', materials: 'APEUni', exercises: [{ type: 'FIB-RW', name: 'Fill in the Blanks (R&W)', quantity: 10, unit: '题', completed: 0 }, { type: 'FIB-R', name: 'Fill in the Blanks (Reading)', quantity: 10, unit: '题', completed: 0 }, { type: 'RA', name: 'Read Aloud', quantity: 20, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 20, unit: '题', completed: 0 }] },
+  '2026-02-14': { phase: '强化阶段', title: 'Listening 强化', duration: '5小时', description: '听力全题型强化', materials: 'APEUni Listening', exercises: [{ type: 'SST', name: 'Summarize Spoken Text', quantity: 3, unit: '篇', completed: 0 }, { type: 'FIB-L', name: 'Fill in the Blanks (Listening)', quantity: 10, unit: '题', completed: 0 }, { type: 'HIW', name: 'Highlight Incorrect Words', quantity: 10, unit: '题', completed: 0 }, { type: 'WFD', name: 'Write From Dictation', quantity: 35, unit: '题', completed: 0 }] },
+  // '2026-02-15': { phase: '强化阶段', title: '周末模考', duration: '5小时', description: '完整模拟考试', materials: 'PTE Official', exercises: [{ type: 'Mock', name: '完整模考', quantity: 1, unit: '套', completed: 0 }, { type: 'Analysis', name: '错题分析', quantity: 1, unit: '次', completed: 0 }] },
+  // 第7周 (02-16 周一 ~ 02-22 周日) - 周三02-18、周四02-19休息
+  '2026-02-16': { phase: '强化阶段', title: 'Speaking 全题型', duration: '5小时', description: '口语全题型精练', materials: 'APEUni、PTE Magic', exercises: [{ type: 'RA', name: 'Read Aloud', quantity: 15, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 20, unit: '题', completed: 0 }, { type: 'DI', name: 'Describe Image', quantity: 15, unit: '题', completed: 0 }, { type: 'RL', name: 'Retell Lecture', quantity: 8, unit: '题', completed: 0 }, { type: 'ASQ', name: 'Answer Short Question', quantity: 20, unit: '题', completed: 0 }] },
+  '2026-02-17': { phase: '强化阶段', title: 'Writing 全题型', duration: '5小时', description: '写作全题型精练', materials: 'APEUni Essay/SWT', exercises: [{ type: 'SWT', name: 'Summarize Written Text', quantity: 4, unit: '篇', completed: 0 }, { type: 'Essay', name: 'Write Essay', quantity: 2, unit: '篇', completed: 0 }, { type: 'WFD', name: 'Write From Dictation', quantity: 30, unit: '题', completed: 0 }] },
+  '2026-02-20': { phase: '强化阶段', title: 'Reading 全题型', duration: '5小时', description: '阅读全题型精练', materials: 'APEUni Reading', exercises: [{ type: 'FIB-RW', name: 'Fill in the Blanks (R&W)', quantity: 12, unit: '题', completed: 0 }, { type: 'FIB-R', name: 'Fill in the Blanks (Reading)', quantity: 12, unit: '题', completed: 0 }, { type: 'RO', name: 'Re-order Paragraphs', quantity: 10, unit: '题', completed: 0 }, { type: 'MCQ-R', name: 'Multiple Choice (Reading)', quantity: 10, unit: '题', completed: 0 }] },
+  '2026-02-21': { phase: '强化阶段', title: 'Listening 全题型', duration: '5小时', description: '听力全题型精练', materials: 'APEUni Listening', exercises: [{ type: 'SST', name: 'Summarize Spoken Text', quantity: 4, unit: '篇', completed: 0 }, { type: 'FIB-L', name: 'Fill in the Blanks (Listening)', quantity: 10, unit: '题', completed: 0 }, { type: 'HIW', name: 'Highlight Incorrect Words', quantity: 10, unit: '题', completed: 0 }, { type: 'WFD', name: 'Write From Dictation', quantity: 35, unit: '题', completed: 0 }] },
+  // '2026-02-22': { phase: '强化阶段', title: '周末模考', duration: '5小时', description: '完整模拟考试与复盘', materials: 'PTE Official', exercises: [{ type: 'Mock', name: '完整模考', quantity: 1, unit: '套', completed: 0 }, { type: 'Analysis', name: '深度复盘', quantity: 1, unit: '次', completed: 0 }] },
+  // 第8周 (02-23 周一 ~ 03-01 周日) - 周三02-25、周四02-26休息
+  '2026-02-23': { phase: '强化阶段', title: 'Speaking 全题型', duration: '5小时', description: '口语全题型冲刺', materials: 'APEUni、PTE Magic', exercises: [{ type: 'RA', name: 'Read Aloud', quantity: 20, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 25, unit: '题', completed: 0 }, { type: 'DI', name: 'Describe Image', quantity: 15, unit: '题', completed: 0 }, { type: 'RL', name: 'Retell Lecture', quantity: 8, unit: '题', completed: 0 }] },
+  '2026-02-24': { phase: '强化阶段', title: '综合训练', duration: '5小时', description: '四大模块综合', materials: 'APEUni', exercises: [{ type: 'RA', name: 'Read Aloud', quantity: 15, unit: '题', completed: 0 }, { type: 'WFD', name: 'Write From Dictation', quantity: 25, unit: '题', completed: 0 }, { type: 'FIB-RW', name: 'Fill in the Blanks (R&W)', quantity: 8, unit: '题', completed: 0 }, { type: 'SST', name: 'Summarize Spoken Text', quantity: 2, unit: '篇', completed: 0 }] },
+  '2026-02-27': { phase: '强化阶段', title: '强化阶段总结', duration: '5小时', description: '强化阶段复习与模考', materials: 'PTE Official', exercises: [{ type: 'Mock', name: '完整模考', quantity: 1, unit: '套', completed: 0 }, { type: 'Review', name: '错题复习', quantity: 40, unit: '题', completed: 0 }] },
+  '2026-02-28': { phase: '强化阶段', title: '强化阶段复盘', duration: '5小时', description: '模考分析，薄弱项强化', materials: 'APEUni', exercises: [{ type: 'Weak', name: '薄弱题型练习', quantity: 30, unit: '题', completed: 0 }, { type: 'Analysis', name: '模考分析', quantity: 1, unit: '次', completed: 0 }, { type: 'WFD', name: 'Write From Dictation', quantity: 30, unit: '题', completed: 0 }] },
+  // '2026-03-01': { phase: '强化阶段', title: '综合复习', duration: '5小时', description: '全题型综合复习', materials: 'APEUni', exercises: [{ type: 'RA', name: 'Read Aloud', quantity: 15, unit: '题', completed: 0 }, { type: 'RS', name: 'Repeat Sentence', quantity: 20, unit: '题', completed: 0 }, { type: 'DI', name: 'Describe Image', quantity: 10, unit: '题', completed: 0 }, { type: 'WFD', name: 'Write From Dictation', quantity: 30, unit: '题', completed: 0 }] },
+
+  // ============ 第三阶段：冲刺突破（第9-12周）============
+  // 机经冲刺，高频预测
+  // 第9周 (03-02 周一 ~ 03-08 周日) - 周三03-04、周四03-05休息
+  '2026-03-02': { phase: '冲刺阶段', title: '高频机经冲刺', duration: '5小时', description: 'WFD/RA/RS 高频机经', materials: 'APEUni 机经、羊驼 PTE', exercises: [{ type: 'WFD', name: 'WFD 高频机经', quantity: 50, unit: '题', completed: 0 }, { type: 'RA', name: 'RA 高频预测', quantity: 25, unit: '题', completed: 0 }, { type: 'RS', name: 'RS 高频预测', quantity: 25, unit: '题', completed: 0 }] },
+  '2026-03-03': { phase: '冲刺阶段', title: 'Speaking 机经', duration: '5小时', description: 'DI/RL/ASQ 机经冲刺', materials: 'APEUni 预测题', exercises: [{ type: 'DI', name: 'DI 高频预测', quantity: 20, unit: '题', completed: 0 }, { type: 'RL', name: 'RL 高频预测', quantity: 10, unit: '题', completed: 0 }, { type: 'ASQ', name: 'ASQ 高频', quantity: 30, unit: '题', completed: 0 }] },
+  '2026-03-06': { phase: '冲刺阶段', title: 'Reading 机经', duration: '5小时', description: '阅读机经冲刺', materials: 'APEUni 机经题库', exercises: [{ type: 'FIB-RW', name: 'FIB-RW 高频', quantity: 15, unit: '题', completed: 0 }, { type: 'FIB-R', name: 'FIB-R 高频', quantity: 15, unit: '题', completed: 0 }, { type: 'RO', name: 'RO 高频', quantity: 15, unit: '题', completed: 0 }] },
+  '2026-03-07': { phase: '冲刺阶段', title: 'Listening 机经', duration: '5小时', description: '听力机经冲刺', materials: 'APEUni 机经题库', exercises: [{ type: 'SST', name: 'SST 高频', quantity: 5, unit: '篇', completed: 0 }, { type: 'HIW', name: 'HIW 高频', quantity: 15, unit: '题', completed: 0 }, { type: 'WFD', name: 'WFD 高频', quantity: 40, unit: '题', completed: 0 }] },
+  // '2026-03-08': { phase: '冲刺阶段', title: '周末全真模考', duration: '5小时', description: '全真模拟考试', materials: 'PTE Official', exercises: [{ type: 'Mock', name: '全真模考', quantity: 1, unit: '套', completed: 0 }, { type: 'Analysis', name: '深度复盘', quantity: 1, unit: '次', completed: 0 }] },
+  // 第10周 (03-09 周一 ~ 03-15 周日) - 周三03-11、周四03-12休息
+  '2026-03-09': { phase: '冲刺阶段', title: '高频机经冲刺', duration: '5小时', description: 'WFD/RA/RS 机经巩固', materials: 'APEUni 机经、羊驼 PTE', exercises: [{ type: 'WFD', name: 'WFD 高频机经', quantity: 50, unit: '题', completed: 0 }, { type: 'RA', name: 'RA 高频预测', quantity: 25, unit: '题', completed: 0 }, { type: 'RS', name: 'RS 高频预测', quantity: 25, unit: '题', completed: 0 }] },
+  '2026-03-10': { phase: '冲刺阶段', title: 'Speaking 机经', duration: '5小时', description: 'DI/RL 机经强化', materials: 'APEUni 预测题', exercises: [{ type: 'DI', name: 'DI 高频预测', quantity: 20, unit: '题', completed: 0 }, { type: 'RL', name: 'RL 高频预测', quantity: 10, unit: '题', completed: 0 }, { type: 'ASQ', name: 'ASQ 高频', quantity: 30, unit: '题', completed: 0 }] },
+  '2026-03-13': { phase: '冲刺阶段', title: 'Reading + Writing', duration: '5小时', description: '阅读写作机经', materials: 'APEUni 机经', exercises: [{ type: 'FIB-RW', name: 'FIB-RW 高频', quantity: 15, unit: '题', completed: 0 }, { type: 'SWT', name: 'SWT 高频', quantity: 4, unit: '篇', completed: 0 }, { type: 'Essay', name: 'Essay 预测', quantity: 2, unit: '篇', completed: 0 }] },
+  '2026-03-14': { phase: '冲刺阶段', title: 'Listening 机经', duration: '5小时', description: '听力机经强化', materials: 'APEUni 机经题库', exercises: [{ type: 'SST', name: 'SST 高频', quantity: 5, unit: '篇', completed: 0 }, { type: 'HIW', name: 'HIW 高频', quantity: 15, unit: '题', completed: 0 }, { type: 'WFD', name: 'WFD 高频', quantity: 40, unit: '题', completed: 0 }] },
+  // '2026-03-15': { phase: '冲刺阶段', title: '周末全真模考', duration: '5小时', description: '全真模拟考试', materials: 'PTE Official', exercises: [{ type: 'Mock', name: '全真模考', quantity: 1, unit: '套', completed: 0 }, { type: 'Analysis', name: '深度复盘', quantity: 1, unit: '次', completed: 0 }] },
+  // 第11周 (03-16 周一 ~ 03-22 周日) - 周三03-18、周四03-19休息
+  '2026-03-16': { phase: '冲刺阶段', title: '高频机经冲刺', duration: '5小时', description: 'WFD/RA/RS 最终冲刺', materials: 'APEUni 机经', exercises: [{ type: 'WFD', name: 'WFD 高频机经', quantity: 50, unit: '题', completed: 0 }, { type: 'RA', name: 'RA 高频预测', quantity: 25, unit: '题', completed: 0 }, { type: 'RS', name: 'RS 高频预测', quantity: 25, unit: '题', completed: 0 }] },
+  '2026-03-17': { phase: '冲刺阶段', title: 'Speaking 冲刺', duration: '5小时', description: '口语最终冲刺', materials: 'APEUni 预测题', exercises: [{ type: 'DI', name: 'DI 高频预测', quantity: 20, unit: '题', completed: 0 }, { type: 'RL', name: 'RL 高频预测', quantity: 10, unit: '题', completed: 0 }, { type: 'RA', name: 'RA 热身', quantity: 15, unit: '题', completed: 0 }] },
+  '2026-03-20': { phase: '冲刺阶段', title: '综合冲刺', duration: '5小时', description: '全题型最终冲刺', materials: 'APEUni 机经', exercises: [{ type: 'WFD', name: 'WFD 高频', quantity: 40, unit: '题', completed: 0 }, { type: 'FIB-RW', name: 'FIB-RW 高频', quantity: 10, unit: '题', completed: 0 }, { type: 'SST', name: 'SST 高频', quantity: 3, unit: '篇', completed: 0 }] },
+  '2026-03-21': { phase: '冲刺阶段', title: '薄弱项强化', duration: '5小时', description: '针对性训练薄弱项', materials: '根据模考分析选择', exercises: [{ type: 'Weak', name: '薄弱题型练习', quantity: 40, unit: '题', completed: 0 }, { type: 'Review', name: '错题三刷', quantity: 30, unit: '题', completed: 0 }] },
+  // '2026-03-22': { phase: '冲刺阶段', title: '周末全真模考', duration: '5小时', description: '考前模拟', materials: 'PTE Official', exercises: [{ type: 'Mock', name: '全真模考', quantity: 1, unit: '套', completed: 0 }, { type: 'Analysis', name: '最终复盘', quantity: 1, unit: '次', completed: 0 }] },
+  // 第12周 (03-23 周一 ~ 03-29 周日) - 周三03-25、周四03-26休息
+  '2026-03-23': { phase: '冲刺阶段', title: '考前冲刺', duration: '5小时', description: 'WFD/RA/RS 最后冲刺', materials: 'APEUni 机经', exercises: [{ type: 'WFD', name: 'WFD 高频机经', quantity: 50, unit: '题', completed: 0 }, { type: 'RA', name: 'RA 高频', quantity: 20, unit: '题', completed: 0 }, { type: 'RS', name: 'RS 高频', quantity: 20, unit: '题', completed: 0 }] },
+  '2026-03-24': { phase: '冲刺阶段', title: '考前复习', duration: '5小时', description: '全题型轻量复习', materials: 'APEUni', exercises: [{ type: 'RA', name: 'RA 热身', quantity: 15, unit: '题', completed: 0 }, { type: 'RS', name: 'RS 热身', quantity: 15, unit: '题', completed: 0 }, { type: 'WFD', name: 'WFD 复习', quantity: 30, unit: '题', completed: 0 }, { type: 'DI', name: 'DI 热身', quantity: 10, unit: '题', completed: 0 }] },
+  '2026-03-27': { phase: '冲刺阶段', title: '考前热身', duration: '5小时', description: '保持手感', materials: 'APEUni', exercises: [{ type: 'RA', name: 'RA 热身', quantity: 20, unit: '题', completed: 0 }, { type: 'RS', name: 'RS 热身', quantity: 20, unit: '题', completed: 0 }, { type: 'WFD', name: 'WFD 热身', quantity: 30, unit: '题', completed: 0 }] },
+  '2026-03-28': { phase: '冲刺阶段', title: '考前最后冲刺', duration: '5小时', description: '轻松复习，调整心态', materials: '错题本、高频机经', exercises: [{ type: 'WFD', name: 'WFD 高频复习', quantity: 30, unit: '题', completed: 0 }, { type: 'RA', name: 'RA 热身', quantity: 15, unit: '题', completed: 0 }, { type: 'RS', name: 'RS 热身', quantity: 15, unit: '题', completed: 0 }] },
+  // '2026-03-29': { phase: '冲刺阶段', title: '考前休息', duration: '3小时', description: '轻量复习，充分休息', materials: '高频机经', exercises: [{ type: 'RA', name: 'RA 轻量热身', quantity: 10, unit: '题', completed: 0 }, { type: 'WFD', name: 'WFD 轻量复习', quantity: 20, unit: '题', completed: 0 }] },
+};
+
+# PTE 三个月备考计划
+
+系统化的备考安排，帮助你高效准备 PTE 考试。
+
+## 备考日历
+
+点击日期查看当天的学习任务详情。
+
+<StudyCalendar
+  client:load
+  phases={ptePhases}
+  dateConfig={pteDateConfig}
+  startDate="2026-01-05"
+  title="PTE 备考日历"
+/>
+
+---
+
+## 三阶段学习策略
+
+### 第一阶段：基础夯实（第 1-4 周）
+
+**目标**：熟悉核心题型，建立发音基础
+
+**时间安排**：每天 5 小时，第一周全勤，第二周起周三、周四休息
+
+| 题型 | 重点内容 | 练习量 |
+|------|---------|--------|
+| RA (Read Aloud) | 发音基础，跟读练习 | 5→20 题/天 |
+| RS (Repeat Sentence) | 听力复述，短期记忆 | 5→20 题/天 |
+| WFD (Write From Dictation) | 听写训练，拼写准确 | 5→20 题/天 |
+| DI (Describe Image) | 模板学习，图表描述 | 2→8 题/天 |
+| RL (Retell Lecture) | 笔记技巧，复述要点 | 1→5 题/天 |
+| 阅读 (FIB-R/RO) | 逻辑训练，词汇积累 | 2→8 题/天 |
+
+::: tip 基础阶段建议
+
+- 重点攻克 RA、RS、WFD 三大核心题型
+- 练习量逐周递增，循序渐进
+- 跟读时录音对比，纠正发音问题
+- 第 4 周末进行首次完整模考
+:::
+
+---
+
+### 第二阶段：强化提升（第 5-8 周）
+
+**目标**：全题型涉猎，均衡训练
+
+**时间安排**：每天 5 小时，周三、周四休息，周末模考
+
+| 模块 | 题型 | 练习量 |
+|------|------|--------|
+| Speaking | RA/RS/DI/RL/ASQ 全题型 | 每天综合练习 |
+| Writing | SWT 3-4 篇 + Essay 2 篇 + WFD 25-35 题 | 每周 2 天 |
+| Reading | FIB-RW/FIB-R/RO/MCQ 全题型 | 每周 2 天 |
+| Listening | SST 3-4 篇 + FIB-L + HIW + WFD | 每周 2 天 |
+
+::: warning 强化阶段注意
+
+- 按模块轮换训练，全面覆盖所有题型
+- 每周末进行完整模考，检验学习效果
+- 建立错题本，记录易错点和薄弱项
+- 第 8 周末深度复盘，为冲刺阶段做准备
+:::
+
+---
+
+### 第三阶段：冲刺突破（第 9-12 周）
+
+**目标**：机经冲刺，高频预测
+
+**时间安排**：每天 5 小时（最后一天 3 小时），周三、周四休息
+
+| 重点 | 内容 | 练习量 |
+|------|------|--------|
+| WFD 高频 | 机经题库刷题 | 40-50 题/天 |
+| RA/RS 预测 | 高频预测题 | 各 20-25 题/天 |
+| DI/RL 机经 | 高频图表和讲座 | DI 20 题 + RL 10 题 |
+| Reading 机经 | FIB-RW/FIB-R/RO 高频 | 各 15 题/天 |
+| Listening 机经 | SST/HIW 高频 | SST 5 篇 + HIW 15 题 |
+| 模考 | 全真模拟 | 每周 1 次 |
+
+::: danger 冲刺阶段提醒
+
+- 机经命中率高，集中刷高频预测题
+- 每周至少一次全真模考，保持手感
+- 针对薄弱项进行专项强化训练
+- 考前 2 天轻量复习，调整作息和心态
+:::
+
+---
+
+## 推荐学习资源
+:::tabs
+
+@tab 官方资源
+
+- **PTE Official** - 官方模拟题
+- **Scored Practice Test** - 官方评分测试
+
+@tab 第三方平台
+
+- **APEUni** - 免费题库 + 机经
+- **PTE Magic** - 口语评分
+- **羊驼 PTE** - 中文社区
+
+@tab 词汇工具
+
+- **Anki** - 间隔重复记忆
+- **墨墨背单词** - 科学记忆曲线
+
+:::
+
+
+---
+
+## 考试当天注意事项
+
+::: note 考前准备
+1. 提前 30 分钟到达考场
+2. 携带有效护照（原件）
+3. 不要携带手机进入考场
+4. 提前熟悉考场位置
+:::
+
+::: tip 考试技巧
+- 口语部分说话时靠近麦克风
+- 遇到不会的题不要纠结，及时跳过
+- 保持专注，不要被周围考生影响
+:::
+
+---
+
+祝你 PTE 考试顺利，早日达到目标分数！

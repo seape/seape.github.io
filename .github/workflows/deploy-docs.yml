@@ -1,5 +1,5 @@
 
-name: Deploy Vicky's Astro Blog
+name: Deploy Jet's Astro Blog
 
 on:
   push:
@@ -21,24 +21,57 @@ jobs:
           fetch-depth: 0
           # if your docs needs submodules, uncomment the following line
           # submodules: true
+          
+      - name: Setup Package Manager pnpm
+        id: pnpm-cache
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.28.2
 
       - name: Setup Node.js Environment
+        id: node-setup
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'npm'
+          cache: pnpm
+          cache-dependency-path: ./pnpm-lock.yaml 
+
+      - name: Cache Astro build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ steps.pnpm-cache.outputs.PNPM_STORE_PATH }}
+            node_modules
+            .astro
+          key: ${{ runner.os }}-astro-${{ hashFiles('pnpm-lock.yaml') }}-${{ hashFiles('src/**') }}
+          restore-keys: |
+            ${{ runner.os }}-astro-${{ hashFiles('pnpm-lock.yaml') }}-
+            ${{ runner.os }}-astro-
 
       - name: Build Blog
-        env:
-          NODE_OPTIONS: --max_old_space_size=8692
-          VUEPRESS_SHIKI_DISABLE: true             # disable shiki for unused languages
+        # env:
+        #   NODE_OPTIONS: --max_old_space_size=8692
+        #   VUEPRESS_SHIKI_DISABLE: true             # disable shiki for unused languages
         run: |-
           make build-astro
-
+          
+      #- name: Deploy Docs
+      #  uses: JamesIves/github-pages-deploy-action@v4
+      # - name: Push release to Blog repository
+      #   uses: cpina/github-action-push-to-another-repository@main
+      #   env:
+      #     API_TOKEN_GITHUB: ${{secrets.API_TOKEN_KEY}}
+      #   with:
+      #     source-directory: 'dist'
+      #     destination-github-username: 'jet-w'
+      #     destination-repository-name: 'jet-w.github.io'
+      #     user-email: unisa.dady@gmail.com
+      #     target-branch: astro
+      #     target-directory: /
 
       - name: Deploy Blog to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           # This is the branch where the docs are deployed to
           branch: astro-pages
-          folder: 'modules/astro_blog/dist'
+          folder: 'dist'
