@@ -12,7 +12,7 @@ export const menu = [
   { name: '归档', href: '/archives' },
   {
     name: 'PTE',
-    href: '/posts/pte',
+    href: '/posts/blog_docs_zh/pte',
     icon: 'about'
   },
   {
