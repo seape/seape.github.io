@@ -28,6 +28,7 @@ sticky: false
 }
 </style>
 
+::: details Deprecated Tempalte
 
 ## The Unified Template 
 
@@ -63,5 +64,41 @@ Finally, an important point about <span class="blank">___ (key takeaway / warnin
 
 In conclusion, the <span class="pronoun">[lecture/discussion]</span> offers valuable insights into <span class="blank">___ (overall summary of topic)</span> and is overall informative.
 
+:::
 
 :::
+
+
+## RL/SST Tempalte
+The lecture gives information on <span class="blank">[Topic]</span> and highlights several key points.
+
+Firstly, the speaker talks about <span class="blank">[first key idea / general concept]</span>.
+
+Later, the speaker gives information about <span class="blank">___ [second key idea / development / change]</span> and explains the reasons behind it.
+
+Furthermore, the speaker illustrates the point with an example of <span class="blank">___ [specific example / case / situation]</span>.
+
+In the end, they emphasize an important note on <span class="blank">___ [key takeaway / warning / conclusion point]</span>.
+
+In conclusion, the lecture offers valuable insights into <span class="blank">[Topic]</span> and is very informative.
+
+## SGD Template
+The discussion involves several <span class="pronoun">people/students/teachers</span> talking about <span class="blank">[Topic]</span>.
+
+First of all, the first speaker talks about <span class="blank">[first key idea / general concept]</span>.<br>
+* Later, <span class="pronoun">he/she</span> provides more information about <span class="blank">[details, reasons, or explanation]</span> and explains the reasons behind it.
+* Furthermore, the first speaker illustrates the point with an example of <span class="blank">[specific example, case, or scenario supporting the idea]</span>.
+* In the end, the first speaker emphasizes an important note on <span class="blank">[key takeaway, conclusion point, or caution]</span>.
+
+Following the first speaker, the second speaker turns to <span class="blank">[second key idea / general concept]</span>.<br>
+* Later, <span class="pronoun">he/she</span> provides more information about <span class="blank">[details, reasons, or explanation]</span> and explains the reasons behind it.
+* Furthermore, the first speaker illustrates the point with an example of <span class="blank">[specific example, case, or scenario supporting the idea]</span>.
+* In the end, the first speaker emphasizes an important note on <span class="blank">[key takeaway, conclusion point, or caution]</span>.
+
+As for the third speaker, <span class="pronoun">he/she</span> agree/disagree with <span class="blank">(speaker 1/2)</span>.
+<span class="pronoun">He/She</span> shares their opinion about <span class="blank">[agreed/disagreed idea]</span>.<br>
+* Later, <span class="pronoun">he/she</span> provides more information about <span class="blank">[details, reasons, or explanation]</span> and explains the reasons behind it.
+* Furthermore, the first speaker illustrates the point with an example of <span class="blank">[specific example, case, or scenario supporting the idea]</span>.
+* In the end, the first speaker emphasizes an important note on <span class="blank">[key takeaway, conclusion point, or caution]</span>.
+
+In conclusion, the discussion focuses on <span class="blank">[Topic]</span> and examines <span class="blank">[overall ideas, issues, or key points discussed by all speakers]</span> throughout the dialogue.
