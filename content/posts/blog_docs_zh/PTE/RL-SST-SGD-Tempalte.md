@@ -68,6 +68,7 @@ In conclusion, the <span class="pronoun">[lecture/discussion]</span> offers valu
 
 :::
 
+--- 
 
 ## RL/SST Tempalte
 The lecture gives information on <span class="blank">[Topic]</span> and highlights several key points.
@@ -81,6 +82,8 @@ Furthermore, the speaker illustrates the point with an example of <span class="b
 In the end, they emphasize an important note on <span class="blank">___ [key takeaway / warning / conclusion point]</span>.
 
 In conclusion, the lecture offers valuable insights into <span class="blank">[Topic]</span> and is very informative.
+
+---
 
 ## SGD Template
 The discussion involves several <span class="pronoun">people/students/teachers</span> talking about <span class="blank">[Topic]</span>.
