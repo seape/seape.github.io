@@ -95,8 +95,7 @@ Following the first speaker, the second speaker turns to <span class="blank">[se
 * Furthermore, the first speaker illustrates the point with an example of <span class="blank">[specific example, case, or scenario supporting the idea]</span>.
 * In the end, the first speaker emphasizes an important note on <span class="blank">[key takeaway, conclusion point, or caution]</span>.
 
-As for the third speaker, <span class="pronoun">he/she</span> agree/disagree with <span class="blank">(speaker 1/2)</span>.
-<span class="pronoun">He/She</span> shares their opinion about <span class="blank">[agreed/disagreed idea]</span>.<br>
+As for the third speaker, <span class="pronoun">he/she</sapn> shares view on <span class="blank">[the idea]</span>.
 * Later, <span class="pronoun">he/she</span> provides more information about <span class="blank">[details, reasons, or explanation]</span> and explains the reasons behind it.
 * Furthermore, the first speaker illustrates the point with an example of <span class="blank">[specific example, case, or scenario supporting the idea]</span>.
 * In the end, the first speaker emphasizes an important note on <span class="blank">[key takeaway, conclusion point, or caution]</span>.
