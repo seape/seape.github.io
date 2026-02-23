@@ -11,7 +11,7 @@ star: false
 sticky: false
 ---
 
-### 法律改变人的行为 #101003 极高频 极限预测
+### 1. 法律改变人的行为 #101003 极高频 极限预测
 
 ::: tabs
 
@@ -84,11 +84,11 @@ Personally speaking, laws have little effect on human behaviors.
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">laws change behavior</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 员工参与决策的利弊 #101004 极高频 极限预测
+### 2. 员工参与决策的利弊 #101004 极高频 极限预测
 
 ::: tabs
 
@@ -148,11 +148,11 @@ Personally speaking, I firmly believe that there are both advantages and disadva
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">loyalty grows, conflicts arise</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 书面考试是否有效评估学习成果 #101005 极高频 极限预测
+### 3. 书面考试是否有效评估学习成果 #101005 极高频 极限预测
 
 ::: tabs
 
@@ -225,11 +225,11 @@ Personally speaking, I firmly believe that a formal written examination is not a
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">exams assess learning well</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 旅行对于教育的必要性 #101006 极高频 极限预测
+### 4. 旅行对于教育的必要性 #101006 极高频 极限预测
 
 ::: tabs
 
@@ -302,11 +302,11 @@ Personally speaking, I firmly believe that travel is not a necessary component o
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">travel helps quality education</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 欠发达国家的旅游业利弊相当 #101007 极高频 极限预测
+### 5. 欠发达国家的旅游业利弊相当 #101007 极高频 极限预测
 
 ::: tabs
 
@@ -366,11 +366,11 @@ Personally speaking, the disadvantages of tourism are as great as the advantages
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">jobs grow, environment suffers</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 大众传媒引发的信息革命带来的利弊 #101009 极高频 极限预测
+### 6. 大众传媒引发的信息革命带来的利弊 #101009 极高频 极限预测
 
 ::: tabs
 
@@ -430,11 +430,11 @@ Personally speaking, I firmly believe that the information revolution by modern 
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">fast news, more crime</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 大众传媒影响社会与个性 #101010 极高频 极限预测
+### 7. 大众传媒影响社会与个性 #101010 极高频 极限预测
 
 ::: tabs
 
@@ -494,12 +494,12 @@ Personally speaking, mass media has a profound influence on society and individu
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">media shapes society</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 :::
 
-### 大众传媒对年轻人的影响 #101011 极高频 极限预测
+### 8. 大众传媒对年轻人的影响 #101011 极高频 极限预测
 
 ::: tabs
 
@@ -549,11 +549,11 @@ Personally speaking, I firmly believe that mass media, including TV and newspape
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">media shapes youth views</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 气候变化谁负责 #101012 极高频 极限预测
+### 9. 气候变化谁负责 #101012 极高频 极限预测
 
 ::: tabs
 
@@ -649,11 +649,11 @@ Personally speaking, I firmly believe that individuals should take responsibilit
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">governments lead climate action</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 电视功能 学习/放松/陪伴 #101013 极高频 极限预测
+### 10. 电视功能 学习/放松/陪伴 #101013 极高频 极限预测
 
 ::: tabs
 
@@ -749,11 +749,11 @@ Personally speaking, I firmly believe that television helps people to relax and 
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">TV relaxes and teaches</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 100年最重要发明 #101014 极高频 极限预测
+### 11. 100年最重要发明 #101014 极高频 极限预测
 
 ::: tabs
 
@@ -849,11 +849,11 @@ Personally speaking, I firmly believe that the computer is the most important in
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">antibiotics save many lives</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 日用消费品营销 #101015 极高频 极限预测
+### 12. 日用消费品营销 #101015 极高频 极限预测
 
 ::: tabs
 
@@ -926,11 +926,11 @@ Personally speaking, marketing in companies producing consumer goods should plac
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">reputation builds lasting trust</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 研究气候变化某方面 #101016 极高频 极限预测
+### 13. 研究气候变化某方面 #101016 极高频 极限预测
 
 ::: tabs
 
@@ -1003,11 +1003,11 @@ Personally speaking, I firmly believe that global warming should be a main study
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">studying weather saves lives</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 高中学习百年前戏剧的利弊 #101028 极高频 极限预测
+### 14. 高中学习百年前戏剧的利弊 #101028 极高频 极限预测
 
 ::: tabs
 
@@ -1071,11 +1071,11 @@ Personally speaking, there are both benefits and problems for high school studen
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">they have two sides</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 大商场替代小商铺 #101030 极高频 极限预测
+### 15. 大商场替代小商铺 #101030 极高频 极限预测
 
 ::: tabs
 
@@ -1148,11 +1148,11 @@ Personally speaking, large shopping malls replacing small local shops is a not p
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">malls help towns grow</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 医学延长寿命 #101039 极高频 极限预测
+### 16. 医学延长寿命 #101039 极高频 极限预测
 
 ::: tabs
 
@@ -1224,11 +1224,11 @@ Personally speaking, the extension of life expectancy caused by medical technolo
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">long life helps people</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 体验式学习 #101040 极高频 极限预测
+### 17. 体验式学习 #101040 极高频 极限预测
 
 ::: tabs
 
@@ -1301,11 +1301,11 @@ Personally speaking, I firmly believe that experiential learning is not benefici
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">learning by doing works</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 家长为孩子行为负法律责任 #101042 极高频 极限预测
+### 18. 家长为孩子行为负法律责任 #101042 极高频 极限预测
 
 ::: tabs
 
@@ -1378,11 +1378,11 @@ Personally speaking, parents should not be held legally responsible for the acti
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">parents being responsible helps</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 学校扣迟交作业分数 #101043 极高频 极限预测
+### 19. 学校扣迟交作业分数 #101043 极高频 极限预测
 
 ::: tabs
 
@@ -1452,11 +1452,11 @@ Personally speaking, I firmly believe that universities should / shouldn't deduc
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">rules with reminders work</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 兼顾工作和学习 #101044 极高频 极限预测
+### 20. 兼顾工作和学习 #101044 极高频 极限预测
 
 ::: tabs
 
@@ -1529,11 +1529,11 @@ Personally speaking, I firmly believe that it is not realistic to combine learni
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">both can work together</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 政府面临最严重问题 #101055 极高频 极限预测
+### 21. 政府面临最严重问题 #101055 极高频 极限预测
 
 ::: tabs
 
@@ -1616,17 +1616,17 @@ Personally speaking, I firmly believe that air pollution is the most pressing is
 
 * Paragraph 3 — The Solution
 
-  Next, another important point is that <span style="color:orange">buses cut pollution</span>. This is because it plays a big role in this area. For example, <span style="color:orange">fewer cars help air</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
+  Next, another important point is that <span style="color:orange">developing public transportation</span>. This is because it plays a big role in this area. For example, <span style="color:orange">public transportation reduces fossil fuel use</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
 
 * Paragraph 4 — Conclusion
 
-  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">buses and laws help</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
+  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">public transportation helps</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 建筑设计对工作生活影响 #101056 极高频 极限预测
+### 22. 建筑设计对工作生活影响 #101056 极高频 极限预测
 
 ::: tabs
 
@@ -1650,7 +1650,10 @@ Personally speaking, I firmly believe that the design of buildings affects where
     - [building design with small windows] – [dark space and poor ventilation] – [low mood and depression]
   * 参考论证2：建筑隔音差 – 持续噪音干扰 – 焦虑压力上升
     - [building design with poor soundproofing] – [constant noise disturbance] – [increased stress and anxiety]
-* Body Paragraph 2 – 对工作的影响
+
+:::
+
+::: details 观点： 对工作的影响
 * 论点1：工作效率提升
   - Spacious office buildings can lead to greater work productivity.
   * 参考论证1：大空间设计 – 功能分区合理 – 文件查找更便捷
@@ -1678,17 +1681,17 @@ Personally speaking, I firmly believe that the design of buildings affects where
 
 * Paragraph 3 — Effects on Working
 
-  Next, another important point is that <span style="color:orange">big rooms help work</span>. This is because it plays a big role in this area. For example, <span style="color:orange">good layout helps focus</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
+  Next, another important point is that <span style="color:orange">big rooms help work</span>. This is because it plays a big role in this area. For example, <span style="color:orange">having clear functional zoning</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
 
 * Paragraph 4 — Conclusion
 
-  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">design shapes both areas</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
+  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">design of buildings affects people's life</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 城市生活与乡村生活 #101062 极高频 极限预测
+### 23. 城市生活与乡村生活 #101062 极高频 极限预测
 
 ::: tabs
 
@@ -1751,6 +1754,24 @@ Personally speaking, I prefer living in the city.
 
 * Paragraph 2 — First Main Argument
 
+  To start with, one key point is that <span style="color:orange">slow pace lowers stress</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">nature helps people relax</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
+
+* Paragraph 3 — Second Main Argument
+
+  Next, another important point is that <span style="color:orange">clean air boosts health</span>. This is because it plays a big role in this area. For example, <span style="color:orange">less pollution prevents illness</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
+
+* Paragraph 4 — Conclusion
+
+  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">countryside living is healthier</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
+
+@tab Old Answer
+
+* Paragraph 1 — Introduction
+
+  In today's fast changing world, many topics keep getting public attention and debate. One such topic is <span style="color:orange">countryside or city life</span>. While people have different views on this matter, I believe that <span style="color:orange">countryside life is better</span>. This essay will look at the main parts of this topic and show why this view makes sense through clear reasons and good examples.
+
+* Paragraph 2 — First Main Argument
+
   To start with, one key point is that <span style="color:orange">country life calms</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">nature helps people relax</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
 
 * Paragraph 3 — Second Main Argument
@@ -1761,11 +1782,11 @@ Personally speaking, I prefer living in the city.
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">country life is good</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 人生经历经验是更好的老师 #101122 极高频 极限预测
+### 24. 人生经历经验是更好的老师 #101122 极高频 极限预测
 
 ::: tabs
 
@@ -1828,6 +1849,24 @@ Personally speaking, books and formal school education teach people more effecti
 
 * Paragraph 2 — First Main Argument
 
+  To start with, one key point is that <span style="color:orange">real practice grows skills</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">internships sharpen thinking</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
+
+* Paragraph 3 — Second Main Argument
+
+  Next, another important point is that <span style="color:orange">doing jobs boosts hiring</span>. This is because it plays a big role in this area. For example, <span style="color:orange">internships build readiness</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
+
+* Paragraph 4 — Conclusion
+
+  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">experience beats textbooks</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
+
+@tab Old Answer
+
+* Paragraph 1 — Introduction
+
+  In today's fast changing world, many topics keep getting public attention and debate. One such topic is <span style="color:orange">experience or school</span>. While people have different views on this matter, I believe that <span style="color:orange">experience teaches better</span>. This essay will look at the main parts of this topic and show why this view makes sense through clear reasons and good examples.
+
+* Paragraph 2 — First Main Argument
+
   To start with, one key point is that <span style="color:orange">experience builds skills</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">learning by doing helps</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
 
 * Paragraph 3 — Second Main Argument
@@ -1838,11 +1877,11 @@ Personally speaking, books and formal school education teach people more effecti
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">experience teaches more</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 大学购买数码媒体取代纸质书 #101123 极高频 极限预测
+### 25. 大学购买数码媒体取代纸质书 #101123 极高频 极限预测
 
 ::: tabs
 
@@ -1890,6 +1929,24 @@ Personally speaking, there are both advantages and disadvantages of universities
 
 * Paragraph 2 — Advantages
 
+  To start with, one key point is that <span style="color:orange">digital access speeds learning</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">students study anywhere anytime</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
+
+* Paragraph 3 — Disadvantages
+
+  Next, another important point is that <span style="color:orange">screens hurt focus</span>. This is because it plays a big role in this area. For example, <span style="color:orange">quick browsing blocks thinking</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
+
+* Paragraph 4 — Conclusion
+
+  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">both types are needed</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
+
+@tab Old Answer
+
+* Paragraph 1 — Introduction
+
+  In today's fast changing world, many topics keep getting public attention and debate. One such topic is <span style="color:orange">digital media or textbooks</span>. While people have different views on this matter, I believe that <span style="color:orange">there are two sides</span>. This essay will look at the main parts of this topic and show why this view makes sense through clear reasons and good examples.
+
+* Paragraph 2 — Advantages
+
   To start with, one key point is that <span style="color:orange">digital media is faster</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">online media saves money</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
 
 * Paragraph 3 — Disadvantages
@@ -1900,11 +1957,11 @@ Personally speaking, there are both advantages and disadvantages of universities
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">both types are needed</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 政府改善公共交通还是修路 #101124 极高频 极限预测
+### 26. 政府改善公共交通还是修路 #101124 极高频 极限预测
 
 ::: tabs
 
@@ -1963,25 +2020,25 @@ Personally speaking, governments should build more roads for vehicle owning popu
 
 * Paragraph 1 — Introduction
 
-  In today's fast changing world, many topics keep getting public attention and debate. One such topic is <span style="color:orange">public transport or roads</span>. While people have different views on this matter, I believe that <span style="color:orange">we need better transport</span>. This essay will look at the main parts of this topic and show why this view makes sense through clear reasons and good examples.
+  In today's fast changing world, many topics keep getting public attention and debate. One such topic is <span style="color:orange">public transport or roads</span>. While people have different views on this matter, I believe that <span style="color:orange">we need better public transport</span>. This essay will look at the main parts of this topic and show why this view makes sense through clear reasons and good examples.
 
 * Paragraph 2 — First Main Argument
 
-  To start with, one key point is that <span style="color:orange">transport costs less</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">families save money</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
+  To start with, one key point is that <span style="color:orange">public transport costs less</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">families save money</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
 
 * Paragraph 3 — Second Main Argument
 
-  Next, another important point is that <span style="color:orange">transport cuts traffic</span>. This is because it plays a big role in this area. For example, <span style="color:orange">people travel faster</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
+  Next, another important point is that <span style="color:orange">public transport cuts traffic</span>. This is because it plays a big role in this area. For example, <span style="color:orange">people travel faster</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
 
 * Paragraph 4 — Conclusion
 
-  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">transport helps everyone</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
+  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">public transport helps everyone</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 兼顾工作和私人生活-普遍性与后果 #101126 极高频 极限预测
+### 27. 兼顾工作和私人生活-普遍性与后果 #101126 极高频 极限预测
 
 ::: tabs
 
@@ -2005,7 +2062,10 @@ Personally speaking, the problem is extremely widespread and this shortage of ti
     - [high living costs] – [more work shifts to earn money] – [less time on personal life]
   * 参考论证2：高昂的城市生活成本 – 加班工作以保收支平衡 – 没时间娱乐放松
     - [high costs of city life] – [overtime work to make ends meet] – [limited time spent on entertainment]
-* Body paragraph 2 – 时间短缺会带来问题
+
+:::
+
+::: details  时间短缺会带来问题
 * 论点1：会带来健康问题
   - The shortage of personal time will lead to severe health issues.
   * 参考论证1：没时间放松 – 长期焦虑压抑 – 精神健康问题
@@ -2029,6 +2089,25 @@ Personally speaking, the problem is extremely widespread and this shortage of ti
 
 * Paragraph 2 — How Widespread
 
+  To start with, one key point is that <span style="color:orange">young people overwork</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">overtime cuts free time</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
+
+* Paragraph 3 — Problems Caused
+
+  Next, another important point is that <span style="color:orange">no rest harms health</span>. This is because it plays a big role in this area. For example, <span style="color:orange">less time breaks families</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
+
+* Paragraph 4 — Conclusion
+
+  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">health and family suffer</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
+
+@tab Old Answer
+
+
+* Paragraph 1 — Introduction
+
+  In today's fast changing world, many topics keep getting public attention and debate. One such topic is <span style="color:orange">work and personal time</span>. While people have different views on this matter, I believe that <span style="color:orange">the problem is widespread</span>. This essay will look at the main parts of this topic and show why this view makes sense through clear reasons and good examples.
+
+* Paragraph 2 — How Widespread
+
   To start with, one key point is that <span style="color:orange">young people overwork</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">too much work</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
 
 * Paragraph 3 — Problems Caused
@@ -2039,11 +2118,11 @@ Personally speaking, the problem is extremely widespread and this shortage of ti
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">health and family suffer</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 兼顾工作与私人生活-重要性与成因 #101127 极高频 极限预测
+### 28. 兼顾工作与私人生活-重要性与成因 #101127 极高频 极限预测
 
 ::: tabs
 
@@ -2091,6 +2170,25 @@ Personally speaking, I firmly believe that the balance is quite important, but i
 
 * Paragraph 2 — The Importance
 
+  To start with, one key point is that <span style="color:orange">balance helps health</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">more rest boosts health</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
+
+* Paragraph 3 — Why It Is Hard
+
+  Next, another important point is that <span style="color:orange">work pressure grows</span>. This is because it plays a big role in this area. For example, <span style="color:orange">costs force overtime</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
+
+* Paragraph 4 — Conclusion
+
+  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">balance matters most</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
+
+@tab Old Answer
+
+
+* Paragraph 1 — Introduction
+
+  In today's fast changing world, many topics keep getting public attention and debate. One such topic is <span style="color:orange">work and life balance</span>. While people have different views on this matter, I believe that <span style="color:orange">balance is very important</span>. This essay will look at the main parts of this topic and show why this view makes sense through clear reasons and good examples.
+
+* Paragraph 2 — The Importance
+
   To start with, one key point is that <span style="color:orange">balance helps health</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">more rest helps life</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
 
 * Paragraph 3 — Why It Is Hard
@@ -2101,11 +2199,11 @@ Personally speaking, I firmly believe that the balance is quite important, but i
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">balance matters most</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 描述新发明及优点 #101128 极高频 极限预测
+### 29. 描述新发明及优点 #101128 极高频 极限预测
 
 ::: tabs
 
@@ -2178,11 +2276,11 @@ Personally speaking, I firmly believe that the new invention is the electric veh
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">smartphones change lives</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 减少工时缓解失业 #101132 极高频 极限预测
+### 30. 减少工时缓解失业 #101132 极高频 极限预测
 
 ::: tabs
 
@@ -2261,6 +2359,25 @@ Personally speaking, shortening the working week and putting more people to work
 
 * Paragraph 2 — Advantages
 
+  To start with, one key point is that <span style="color:orange">flexible hours help youth</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">more people get work</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
+
+* Paragraph 3 — Disadvantages
+
+  Next, another important point is that <span style="color:orange">less work hurts careers</span>. This is because it plays a big role in this area. For example, <span style="color:orange">lower pay causes pressure</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
+
+* Paragraph 4 — Conclusion
+
+  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">both sides matter</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
+
+@tab Old Answer
+
+
+* Paragraph 1 — Introduction
+
+  In today's fast changing world, many topics keep getting public attention and debate. One such topic is <span style="color:orange">shorter working week idea</span>. While people have different views on this matter, I believe that <span style="color:orange">there are two sides</span>. This essay will look at the main parts of this topic and show why this view makes sense through clear reasons and good examples.
+
+* Paragraph 2 — Advantages
+
   To start with, one key point is that <span style="color:orange">young people adapt well</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">more people get work</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
 
 * Paragraph 3 — Disadvantages
@@ -2271,11 +2388,11 @@ Personally speaking, shortening the working week and putting more people to work
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">both sides matter</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 名人是否放弃隐私 #101134 极高频 极限预测
+### 31. 名人是否放弃隐私 #101134 极高频 极限预测
 
 ::: tabs
 
@@ -2338,6 +2455,25 @@ Personally speaking, people who are famous entertainers or sportspeople should n
 
 * Paragraph 2 — First Main Argument
 
+  To start with, one key point is that <span style="color:orange">being known helps careers</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">more attention lead to more offers</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
+
+* Paragraph 3 — Second Main Argument
+
+  Next, another important point is that <span style="color:orange">fans bring in money</span>. This is because it plays a big role in this area. For example, <span style="color:orange">fame raises their worth</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
+
+* Paragraph 4 — Conclusion
+
+  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">fame brings rewards</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
+
+
+@tab Old Answer
+
+* Paragraph 1 — Introduction
+
+  In today's fast changing world, many topics keep getting public attention and debate. One such topic is <span style="color:orange">famous people and privacy</span>. While people have different views on this matter, I believe that <span style="color:orange">fame means less privacy</span>. This essay will look at the main parts of this topic and show why this view makes sense through clear reasons and good examples.
+
+* Paragraph 2 — First Main Argument
+
   To start with, one key point is that <span style="color:orange">being known helps careers</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">more people see them</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
 
 * Paragraph 3 — Second Main Argument
@@ -2348,11 +2484,10 @@ Personally speaking, people who are famous entertainers or sportspeople should n
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">fame brings rewards</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
 
 :::
 
-### 未来人们工时减少 #101135 极高频 极限预测
+### 32. 未来人们工时减少 #101135 极高频 极限预测
 
 ::: tabs
 
@@ -2419,17 +2554,36 @@ Personally speaking, people will not work less hours at their jobs.
 
 * Paragraph 3 — Second Main Argument
 
+  Next, another important point is that <span style="color:orange">health focus cuts overwork</span>. This is because it plays a big role in this area. For example, <span style="color:orange">people choose more rest</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
+
+* Paragraph 4 — Conclusion
+
+  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">working less is likely</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
+
+@tab Old Answer
+
+
+* Paragraph 1 — Introduction
+
+  In today's fast changing world, many topics keep getting public attention and debate. One such topic is <span style="color:orange">future working hours</span>. While people have different views on this matter, I believe that <span style="color:orange">people will work less</span>. This essay will look at the main parts of this topic and show why this view makes sense through clear reasons and good examples.
+
+* Paragraph 2 — First Main Argument
+
+  To start with, one key point is that <span style="color:orange">technology saves time</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">AI shortens work</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
+
+* Paragraph 3 — Second Main Argument
+
   Next, another important point is that <span style="color:orange">health awareness grows</span>. This is because it plays a big role in this area. For example, <span style="color:orange">less overwork happens</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
 
 * Paragraph 4 — Conclusion
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">working less is likely</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 年龄限制 #101136 极高频 极限预测
+### 33. 年龄限制 #101136 极高频 极限预测
 
 ::: tabs
 
@@ -2492,6 +2646,25 @@ Personally speaking, the minimum age for driving is eighteen.
 
 * Paragraph 2 — First Main Argument
 
+  To start with, one key point is that <span style="color:orange">age brings stability</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">maturity builds strong bonds</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
+
+* Paragraph 3 — Second Main Argument
+
+  Next, another important point is that <span style="color:orange">protecting young people</span>. This is because it plays a big role in this area. For example, <span style="color:orange">preventing early exposure to risky activities</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
+
+* Paragraph 4 — Conclusion
+
+  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">age limits help growth</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
+
+@tab Old Answer
+
+
+* Paragraph 1 — Introduction
+
+  In today's fast changing world, many topics keep getting public attention and debate. One such topic is <span style="color:orange">age restrictions</span>. While people have different views on this matter, I believe that <span style="color:orange">twenty is old enough</span>. This essay will look at the main parts of this topic and show why this view makes sense through clear reasons and good examples.
+
+* Paragraph 2 — First Main Argument
+
   To start with, one key point is that <span style="color:orange">age brings stability</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">a stable marriage</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
 
 * Paragraph 3 — Second Main Argument
@@ -2502,11 +2675,11 @@ Personally speaking, the minimum age for driving is eighteen.
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">age limits help growth</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 外语应成为必修课 #101137 极高频 极限预测
+### 34. 外语应成为必修课 #101137 极高频 极限预测
 
 ::: tabs
 
@@ -2573,17 +2746,36 @@ Personally speaking, I firmly believe that schools should not make learning a fo
 
 * Paragraph 3 — Second Main Argument
 
+  Next, another important point is that <span style="color:orange">language helps jobs</span>. This is because it plays a big role in this area. For example, <span style="color:orange">global work creates chances</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
+
+* Paragraph 4 — Conclusion
+
+  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">languages help people grow</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
+
+@tab Old Answer
+
+
+* Paragraph 1 — Introduction
+
+  In today's fast changing world, many topics keep getting public attention and debate. One such topic is <span style="color:orange">compulsory foreign language</span>. While people have different views on this matter, I believe that <span style="color:orange">schools should require it</span>. This essay will look at the main parts of this topic and show why this view makes sense through clear reasons and good examples.
+
+* Paragraph 2 — First Main Argument
+
+  To start with, one key point is that <span style="color:orange">learning helps thinking</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">students learn more views</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
+
+* Paragraph 3 — Second Main Argument
+
   Next, another important point is that <span style="color:orange">language helps jobs</span>. This is because it plays a big role in this area. For example, <span style="color:orange">more career chances</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
 
 * Paragraph 4 — Conclusion
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">languages help people grow</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 国家花钱建筑修复vs现代住房 #101138 极高频 极限预测
+### 35. 国家花钱建筑修复vs现代住房 #101138 极高频 极限预测
 
 ::: tabs
 
@@ -2656,11 +2848,11 @@ Personally speaking, I believe that countries should not spend large amounts of 
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">restoration saves our past</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 21世纪孩子越来越难 #101139 极高频 极限预测
+### 36. 21世纪孩子越来越难 #101139 极高频 极限预测
 
 ::: tabs
 
@@ -2719,6 +2911,25 @@ Personally speaking, it is easier for children to live and grow in the 21st cent
 
 * Paragraph 1 — Introduction
 
+  In today's fast changing world, many topics keep getting public attention and debate. One such topic is <span style="color:orange">childhood in 21st century</span>. While people have different views on this matter, I believe that <span style="color:orange">it is harder now</span>. This essay will look at the main parts of this topic and show why this view makes sense through clear reasons and good examples.
+
+* Paragraph 2 — First Main Argument
+
+  To start with, one key point is that <span style="color:orange">school pressure increases</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">children face harder exams</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
+
+* Paragraph 3 — Second Main Argument
+
+  Next, another important point is that <span style="color:orange">polluted places harm growth</span>. This is because it plays a big role in this area. For example, <span style="color:orange">pollution makes children sick</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
+
+* Paragraph 4 — Conclusion
+
+  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">life is harder now</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
+
+@tab Old Answer
+
+
+* Paragraph 1 — Introduction
+
   In today's fast changing world, many topics keep getting public attention and debate. One such topic is <span style="color:orange">children growing up</span>. While people have different views on this matter, I believe that <span style="color:orange">it is harder now</span>. This essay will look at the main parts of this topic and show why this view makes sense through clear reasons and good examples.
 
 * Paragraph 2 — First Main Argument
@@ -2733,11 +2944,11 @@ Personally speaking, it is easier for children to live and grow in the 21st cent
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">life is harder now</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 要不要限定最高薪资 #101140 极高频 极限预测
+### 37. 要不要限定最高薪资 #101140 极高频 极限预测
 
 ::: tabs
 
@@ -2800,6 +3011,25 @@ Personally speaking, there should not be a maximum wage for high-paying people.
 
 * Paragraph 2 — First Main Argument
 
+  To start with, one key point is that <span style="color:orange">it cuts company costs</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">capped pay steadies firms</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
+
+* Paragraph 3 — Second Main Argument
+
+  Next, another important point is that <span style="color:orange">people feel less stress</span>. This is because it plays a big role in this area. For example, <span style="color:orange">workers enjoy personal time</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
+
+* Paragraph 4 — Conclusion
+
+  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">wage caps help people</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
+
+@tab Old Answer
+
+
+* Paragraph 1 — Introduction
+
+  In today's fast changing world, many topics keep getting public attention and debate. One such topic is <span style="color:orange">maximum wage rules</span>. While people have different views on this matter, I believe that <span style="color:orange">a wage cap helps</span>. This essay will look at the main parts of this topic and show why this view makes sense through clear reasons and good examples.
+
+* Paragraph 2 — First Main Argument
+
   To start with, one key point is that <span style="color:orange">it cuts company costs</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">companies save costs</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
 
 * Paragraph 3 — Second Main Argument
@@ -2810,11 +3040,11 @@ Personally speaking, there should not be a maximum wage for high-paying people.
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">wage caps help people</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 有AI翻译还需学外语吗 #101143 极高频 极限预测
+### 38. 有AI翻译还需学外语吗 #101143 极高频 极限预测
 
 ::: tabs
 
@@ -2881,17 +3111,15 @@ Personally speaking, I firmly believe that learning a foreign language is not ne
 
 * Paragraph 3 — Second Main Argument
 
-  Next, another important point is that <span style="color:orange">language helps careers</span>. This is because it plays a big role in this area. For example, <span style="color:orange">more job chances</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
+  Next, another important point is that <span style="color:orange">language helps careers</span>. This is because it plays a big role in this area. For example, <span style="color:orange">global job chances</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
 
 * Paragraph 4 — Conclusion
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">learning language still helps</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
-
 :::
 
-### 毕业或工作前结婚 #101001 降频区
+### 39. 毕业或工作前结婚 #101001 降频区
 
 ::: tabs
 
@@ -2958,17 +3186,17 @@ Personally speaking, I firmly believe that getting married before finishing scho
 
 * Paragraph 3 — Second Main Argument
 
-  Next, another important point is that <span style="color:orange">it causes money problems</span>. This is because it plays a big role in this area. For example, <span style="color:orange">no job means pressure</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
+  Next, another important point is that <span style="color:orange">it causes financial pressure</span>. This is because it plays a big role in this area. For example, <span style="color:orange">fewer skills lead to low-paying jobs</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
 
 * Paragraph 4 — Conclusion
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">early marriage is unwise</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 维护过去的建筑 #101023 降频区
+### 40. 维护过去的建筑 #101023 降频区
 
 ::: tabs
 
@@ -3041,11 +3269,11 @@ Personally speaking, I believe that it is not important to preserve the beautifu
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">preservation is important</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
-### 电视功能-放松/陪伴 #101130 降频区
+### 41. 电视功能-放松/陪伴 #101130 降频区
 
 ::: tabs
 
@@ -3089,6 +3317,25 @@ Personally speaking, I firmly believe that television can be both relaxation and
 
 * Paragraph 1 — Introduction
 
+  In today's fast changing world, many topics keep getting public attention and debate. One such topic is <span style="color:orange">television in life</span>. While people have different views on this matter, I believe that <span style="color:orange">television is necessary</span>. This essay will look at the main parts of this topic and show why this view makes sense through clear reasons and good examples.
+
+* Paragraph 2 — Relaxation
+
+  To start with, one key point is that <span style="color:orange">television helps relax</span>. This means that it has a real effect on this topic. For example, <span style="color:orange">shows lower stress</span>, which clearly shows the value of this point. So, this reason strongly supports my view on this topic.
+
+* Paragraph 3 — Companionship
+
+  Next, another important point is that <span style="color:orange">television is a companion</span>. This is because it plays a big role in this area. For example, <span style="color:orange">people feel less alone</span> shows how this part affects the topic. Even though some may have a different view, the overall proof supports my position.
+
+* Paragraph 4 — Conclusion
+
+  In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">it relaxes and comforts</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
+
+
+@tab Old Answer
+
+* Paragraph 1 — Introduction
+
   In today's fast changing world, many topics keep getting public attention and debate. One such topic is <span style="color:orange">television in life</span>. While people have different views on this matter, I believe that <span style="color:orange">television does both</span>. This essay will look at the main parts of this topic and show why this view makes sense through clear reasons and good examples.
 
 * Paragraph 2 — Relaxation
@@ -3103,7 +3350,7 @@ Personally speaking, I firmly believe that television can be both relaxation and
 
   In summary, this is a big topic with many views. After looking at the main points and proof, it is clear that <span style="color:orange">it relaxes and comforts</span>. In the end, having a careful and fair view of this topic will help people and society make better choices in the future.
 
-+1
+
 
 :::
 
