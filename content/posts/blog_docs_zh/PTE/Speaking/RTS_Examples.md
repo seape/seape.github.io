@@ -26,9 +26,9 @@ Excuse me! I was trying to photocopy a document, but it seems the machine isn't 
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">the photocopier at the library</span>.<br>
-The situation is that <span style="color:orange">I was trying to photocopy a document, but I found the photocopier not working and there is a flashing light next to the photocopy icon</span>.<br>
-This is important because <span style="color:orange">I need to photocopy this document urgently</span>.<br>
+I'd like to talk to you about <span style="color:orange">the <span style="color:red">photocopier</span> at the library</span>.<br>
+The situation is that <span style="color:orange">I was trying to <span style="color:red">photocopy</span> a <span style="color:red">document</span>, but I found the <span style="color:red">photocopier</span> not working and there is a <span style="color:red">flashing</span> light next to the <span style="color:red">photocopy</span> icon</span>.<br>
+This is important because <span style="color:orange">I need to <span style="color:red">photocopy</span> this <span style="color:red">document</span> <span style="color:red">urgently</span></span>.<br>
 I was wondering if you could <span style="color:orange">help me with it</span>.<br>
 I'd really appreciate it.
 
@@ -38,7 +38,9 @@ I'd really appreciate it.
 
 photocopier /ˈfoʊtəˌkɑːpiər/ n. 复印机<br>
 document /ˈdɑːkjəmənt/ n. 文件<br>
-urgently /ˈɜːrdʒəntli/ adv. 紧急地
+urgently /ˈɜːrdʒəntli/ adv. 紧急地<br>
+photocopy /ˈfoʊtəˌkɑːpi/ v. 复印<br>
+flashing /ˈflæʃɪŋ/ adj. 闪烁的
 
 :::
 
@@ -58,9 +60,9 @@ Hi, sorry to bother you! I'm currently working on an assignment that's due next 
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">the noise in the library</span>.<br>
-The situation is that <span style="color:orange">I have an assignment due next week, but you are playing a video without headphones, and I am too distracted to focus on my study</span>.<br>
-This is important because <span style="color:orange">I need a quiet place to concentrate on my assignment</span>.<br>
-I was wondering if you could <span style="color:orange">lower the volume or use headphones</span>.<br>
+The situation is that <span style="color:orange">I have an <span style="color:red">assignment</span> due next week, but you are playing a video without <span style="color:red">headphones</span>, and I am too <span style="color:red">distracted</span> to focus on my study</span>.<br>
+This is important because <span style="color:orange">I need a quiet place to <span style="color:red">concentrate</span> on my <span style="color:red">assignment</span></span>.<br>
+I was wondering if you could <span style="color:orange">lower the <span style="color:red">volume</span> or use <span style="color:red">headphones</span></span>.<br>
 I'd really appreciate it.
 
 :::
@@ -70,7 +72,8 @@ I'd really appreciate it.
 assignment /əˈsaɪnmənt/ n. 作业<br>
 distracted /dɪˈstræktɪd/ adj. 分心的<br>
 concentrate /ˈkɑːnsəntreɪt/ v. 集中注意力<br>
-volume /ˈvɑːljuːm/ n. 音量
+volume /ˈvɑːljuːm/ n. 音量<br>
+headphones /ˈhedfoʊnz/ n. 耳机
 
 :::
 
@@ -90,9 +93,9 @@ Hi! I heard you're looking for someone to work at the school café. I know you'r
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">the job in the school cafe</span>.<br>
-The situation is that <span style="color:orange">I am interested in applying for the job, and I know you are looking for someone with experience, which I am actually currently lacking</span>.<br>
-This is important because <span style="color:orange">I am eager to learn and determined to work hard</span>.<br>
-I was wondering if you could <span style="color:orange">give me the opportunity to prove myself</span>.<br>
+The situation is that <span style="color:orange">I am interested in <span style="color:red">applying</span> for the job, and I know you are looking for someone with <span style="color:red">experience</span>, which I am actually currently <span style="color:red">lacking</span></span>.<br>
+This is important because <span style="color:orange">I am <span style="color:red">eager</span> to learn and <span style="color:red">determined</span> to work hard</span>.<br>
+I was wondering if you could <span style="color:orange">give me the <span style="color:red">opportunity</span> to prove myself</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -101,7 +104,10 @@ I'd really appreciate it.
 
 experience /ɪkˈspɪriəns/ n. 经验<br>
 determined /dɪˈtɜːrmɪnd/ adj. 坚定的<br>
-opportunity /ˌɑːpərˈtuːnəti/ n. 机会
+opportunity /ˌɑːpərˈtuːnəti/ n. 机会<br>
+applying /əˈplaɪɪŋ/ v. 申请<br>
+lacking /ˈlækɪŋ/ v. 缺乏<br>
+eager /ˈiːɡər/ adj. 渴望的
 
 :::
 
@@ -121,8 +127,8 @@ Hi! I've noticed that some of my food in the fridge has been disappearing lately
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">my food in the fridge</span>.<br>
-The situation is that <span style="color:orange">I find my food in the fridge disappearing, and I notice there may be a visitor of yours eating my food</span>.<br>
-This is important because <span style="color:orange">I feel that they don't obey the rules we agreed on</span>.<br>
+The situation is that <span style="color:orange">I find my food in the fridge <span style="color:red">disappearing</span>, and I notice there may be a <span style="color:red">visitor</span> of yours eating my food</span>.<br>
+This is important because <span style="color:orange">I feel that they don't <span style="color:red">obey</span> the rules we agreed on</span>.<br>
 I was wondering if you could <span style="color:orange">talk about this and find a way to make sure it doesn't happen again</span>.<br>
 I'd really appreciate it.
 
@@ -130,7 +136,9 @@ I'd really appreciate it.
 
 ::: details Difficult Words phonetic symbols
 
-disappearing /ˌdɪsəˈpɪrɪŋ/ v. 消失
+disappearing /ˌdɪsəˈpɪrɪŋ/ v. 消失<br>
+visitor /ˈvɪzɪtər/ n. 访客<br>
+obey /oʊˈbeɪ/ v. 遵守
 
 :::
 
@@ -149,10 +157,10 @@ Hi! I saw the advertisement for the part-time job at the campus cafeteria, and I
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">the part-time job at the campus cafeteria</span>.<br>
-The situation is that <span style="color:orange">I noticed the advertisement for the part-time job, and I'm really interested, but I don't know what is required for this job</span>.<br>
-This is important because <span style="color:orange">I want to know more about the job responsibilities and requirements</span>.<br>
-I was wondering if you could <span style="color:orange">tell me more about what the role involves and what skills you're looking for</span>.<br>
+I'd like to talk to you about <span style="color:orange">the part-time job at the campus <span style="color:red">cafeteria</span></span>.<br>
+The situation is that <span style="color:orange">I noticed the <span style="color:red">advertisement</span> for the part-time job, and I'm really interested, but I don't know what is <span style="color:red">required</span> for this job</span>.<br>
+This is important because <span style="color:orange">I want to know more about the job <span style="color:red">responsibilities</span> and <span style="color:red">requirements</span></span>.<br>
+I was wondering if you could <span style="color:orange">tell me more about what the role <span style="color:red">involves</span> and what skills you're looking for</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -162,7 +170,9 @@ I'd really appreciate it.
 cafeteria /ˌkæfəˈtɪriə/ n. 自助餐厅<br>
 advertisement /ˌædvərˈtaɪzmənt/ n. 广告<br>
 responsibilities /rɪˌspɑːnsəˈbɪlətiz/ n. 职责<br>
-requirements /rɪˈkwaɪərmənts/ n. 要求
+requirements /rɪˈkwaɪərmənts/ n. 要求<br>
+involves /ɪnˈvɑːlvz/ v. 涉及<br>
+required /rɪˈkwaɪərd/ adj. 必需的
 
 :::
 
@@ -181,9 +191,9 @@ Excuse me! I borrowed this book last week, and while I was reading it, I noticed
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">a book I borrowed from the library</span>.<br>
+I'd like to talk to you about <span style="color:orange">a book I <span style="color:red">borrowed</span> from the library</span>.<br>
 The situation is that <span style="color:orange">while I was reading it, I noticed that two pages have been torn out, but I didn't do it</span>.<br>
-This is important because <span style="color:orange">I want to make sure it's not recorded as my responsibility</span>.<br>
+This is important because <span style="color:orange">I want to make sure it's not <span style="color:red">recorded</span> as my <span style="color:red">responsibility</span></span>.<br>
 I was wondering if you could <span style="color:orange">make a note of it</span>.<br>
 I'd really appreciate it.
 
@@ -191,7 +201,9 @@ I'd really appreciate it.
 
 ::: details Difficult Words phonetic symbols
 
-responsibility /rɪˌspɑːnsəˈbɪləti/ n. 责任
+responsibility /rɪˌspɑːnsəˈbɪləti/ n. 责任<br>
+borrowed /ˈbɑːroʊd/ v. 借入<br>
+recorded /rɪˈkɔːrdɪd/ v. 记录
 
 :::
 
@@ -211,8 +223,8 @@ Hi, excuse me! I've noticed you guys really enjoys the party but the sound you c
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">the noise from your party</span>.<br>
-The situation is that <span style="color:orange">you are holding a party in your room at night, which is too noisy for me to sleep</span>.<br>
-This is important because <span style="color:orange">I have an important exam early tomorrow morning</span>.<br>
+The situation is that <span style="color:orange">you are holding a party in your room at night, which is too <span style="color:red">noisy</span> for me to sleep</span>.<br>
+This is <span style="color:red">important</span> because <span style="color:orange">I have an <span style="color:red">important</span> exam early tomorrow morning</span>.<br>
 I was wondering if you could <span style="color:orange">lower down your voice a little bit or finish the party early</span>.<br>
 I'd really appreciate it.
 
@@ -220,7 +232,8 @@ I'd really appreciate it.
 
 ::: details Difficult Words phonetic symbols
 
-important /ɪmˈpɔːrtənt/ adj. 重要的
+important /ɪmˈpɔːrtənt/ adj. 重要的<br>
+noisy /ˈnɔɪzi/ adj. 吵闹的
 
 :::
 
@@ -239,10 +252,10 @@ Hi, how are you? I'd like to discuss the music volume with you. I've noticed the
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">the music volume</span>.<br>
-The situation is that <span style="color:orange">you are holding a party with loud music in the living room at night, which is too noisy and influences my sleep</span>.<br>
+I'd like to talk to you about <span style="color:orange">the music <span style="color:red">volume</span></span>.<br>
+The situation is that <span style="color:orange">you are holding a party with loud music in the living room at night, which is too <span style="color:red">noisy</span> and <span style="color:red">influences</span> my sleep</span>.<br>
 This is important because <span style="color:orange">I have an important exam early tomorrow morning</span>.<br>
-I was wondering if you could <span style="color:orange">lower down the volume a little bit</span>.<br>
+I was wondering if you could <span style="color:orange">lower down the <span style="color:red">volume</span> a little bit</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -250,7 +263,8 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 volume /ˈvɑːljuːm/ n. 音量<br>
-influences /ˈɪnfluənsɪz/ v. 影响
+influences /ˈɪnfluənsɪz/ v. 影响<br>
+noisy /ˈnɔɪzi/ adj. 吵闹的
 
 :::
 
@@ -271,7 +285,7 @@ Hi, I hope you're enjoying that book I lent you a few weeks ago. I just wanted t
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">the book I lent you three weeks ago</span>.<br>
 The situation is that <span style="color:orange">I lent you a book three weeks ago, and you haven't returned it yet</span>.<br>
-This is important because <span style="color:orange">I need the book very much now for my upcoming exam preparation</span>.<br>
+This is important because <span style="color:orange">I need the book very much now for my <span style="color:red">upcoming</span> exam <span style="color:red">preparation</span></span>.<br>
 I was wondering if you could <span style="color:orange">return it by tomorrow</span>.<br>
 I'd really appreciate it.
 
@@ -279,7 +293,8 @@ I'd really appreciate it.
 
 ::: details Difficult Words phonetic symbols
 
-preparation /ˌprepəˈreɪʃən/ n. 准备
+preparation /ˌprepəˈreɪʃən/ n. 准备<br>
+upcoming /ˈʌpkʌmɪŋ/ adj. 即将到来的
 
 :::
 
@@ -298,10 +313,10 @@ Excuse me, professor. I wanted to let you know that I have a sports competition 
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">the tutorial session this afternoon</span>.<br>
-The situation is that <span style="color:orange">you scheduled a tutorial session for this afternoon, but I have an important competition to attend at the same time</span>.<br>
-This is important because <span style="color:orange">I really value the session but the competition is also important</span>.<br>
-I was wondering if you could <span style="color:orange">arrange a make-up class or let me review the material one-on-one later</span>.<br>
+I'd like to talk to you about <span style="color:orange">the <span style="color:red">tutorial</span> <span style="color:red">session</span> this afternoon</span>.<br>
+The situation is that <span style="color:orange">you <span style="color:red">scheduled</span> a <span style="color:red">tutorial</span> <span style="color:red">session</span> for this afternoon, but I have an important <span style="color:red">competition</span> to attend at the same time</span>.<br>
+This is important because <span style="color:orange">I really value the <span style="color:red">session</span> but the <span style="color:red">competition</span> is also important</span>.<br>
+I was wondering if you could <span style="color:orange"><span style="color:red">arrange</span> a make-up class or let me review the <span style="color:red">material</span> one-on-one later</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -310,7 +325,10 @@ I'd really appreciate it.
 
 tutorial /tuːˈtɔːriəl/ n. 辅导课<br>
 competition /ˌkɑːmpəˈtɪʃən/ n. 比赛<br>
-scheduled /ˈskedʒuːld/ adj. 安排的
+scheduled /ˈskedʒuːld/ adj. 安排的<br>
+arrange /əˈreɪndʒ/ v. 安排<br>
+material /məˈtɪriəl/ n. 材料<br>
+session /ˈseʃən/ n. 课程
 
 :::
 
@@ -329,10 +347,10 @@ Excuse me! I've applied for a loan to cover my university accommodation fees, bu
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">my university accommodation fees</span>.<br>
-The situation is that <span style="color:orange">I've applied for a loan to pay for the fees, but there is a delay to receive the money, and my part-time job and savings are still not enough to pay the fees all at once</span>.<br>
-This is important because <span style="color:orange">the payment deadline is approaching</span>.<br>
-I was wondering if you could <span style="color:orange">arrange an alternative payment plan, like paying in installments, until the loan comes through</span>.<br>
+I'd like to talk to you about <span style="color:orange">my university <span style="color:red">accommodation</span> fees</span>.<br>
+The situation is that <span style="color:orange">I've applied for a <span style="color:red">loan</span> to pay for the fees, but there is a delay to receive the money, and my part-time job and savings are still not enough to pay the fees all at once</span>.<br>
+This is important because <span style="color:orange">the payment deadline is <span style="color:red">approaching</span></span>.<br>
+I was wondering if you could <span style="color:orange">arrange an <span style="color:red">alternative</span> payment plan, like paying in <span style="color:red">installments</span>, until the <span style="color:red">loan</span> comes through</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -341,7 +359,9 @@ I'd really appreciate it.
 
 accommodation /əˌkɑːməˈdeɪʃən/ n. 住宿<br>
 alternative /ɔːlˈtɜːrnətɪv/ adj. 替代的<br>
-installments /ɪnˈstɔːlmənts/ n. 分期付款
+installments /ɪnˈstɔːlmənts/ n. 分期付款<br>
+approaching /əˈproʊtʃɪŋ/ v. 接近<br>
+loan /loʊn/ n. 贷款
 
 :::
 
@@ -361,16 +381,17 @@ Hey, I'm in a bit of a bind — I can't find my class notes anywhere and I reall
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">the class notes</span>.<br>
-The situation is that <span style="color:orange">I can't find my class notes, but I need them to finish my assignments</span>.<br>
+The situation is that <span style="color:orange">I can't find my class notes, but I need them to finish my <span style="color:red">assignments</span></span>.<br>
 This is important because <span style="color:orange">your notes are very good and I really need them</span>.<br>
-I was wondering if you could <span style="color:orange">lend me yours for a day or two</span>.<br>
+I was wondering if you could <span style="color:orange"><span style="color:red">lend</span> me yours for a day or two</span>.<br>
 I'd really appreciate it.
 
 :::
 
 ::: details Difficult Words phonetic symbols
 
-assignments /əˈsaɪnmənts/ n. 作业
+assignments /əˈsaɪnmənts/ n. 作业<br>
+lend /lend/ v. 借出
 
 :::
 
@@ -389,8 +410,8 @@ Hi, I'm calling because I'm in a bit of a situation. I just got to our usual cla
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">the new classroom location</span>.<br>
-The situation is that <span style="color:orange">I arrived at our usual classroom and saw a notice saying the computer is broken and we need to move to a different classroom, but because I was late today, everyone had already moved</span>.<br>
+I'd like to talk to you about <span style="color:orange">the new classroom <span style="color:red">location</span></span>.<br>
+The situation is that <span style="color:orange">I <span style="color:red">arrived</span> at our usual classroom and saw a <span style="color:red">notice</span> saying the computer is broken and we need to move to a different classroom, but because I was late today, everyone had already moved</span>.<br>
 This is important because <span style="color:orange">I'm here alone and I don't know where to go</span>.<br>
 I was wondering if you could <span style="color:orange">tell me how to get to the new classroom</span>.<br>
 I'd really appreciate it.
@@ -399,7 +420,9 @@ I'd really appreciate it.
 
 ::: details Difficult Words phonetic symbols
 
-arrived /əˈraɪvd/ v. 到达
+arrived /əˈraɪvd/ v. 到达<br>
+location /loʊˈkeɪʃən/ n. 位置<br>
+notice /ˈnoʊtɪs/ n. 通知
 
 :::
 
@@ -418,17 +441,20 @@ Excuse me, I'd like to report a problem! The heater in my room is not working at
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">the heater in my room</span>.<br>
-The situation is that <span style="color:orange">the heater in my room has stopped working</span>.<br>
-This is important because <span style="color:orange">it's the middle of winter and my room is uncomfortably cold, especially at night</span>.<br>
-I was wondering if you could <span style="color:orange">arrange for someone to check or fix it as soon as possible</span>.<br>
+I'd like to talk to you about <span style="color:orange">the <span style="color:red">heater</span> in my room</span>.<br>
+The situation is that <span style="color:orange">the <span style="color:red">heater</span> in my room has stopped working</span>.<br>
+This is important because <span style="color:orange">it's the middle of winter and my room is <span style="color:red">uncomfortably</span> cold, <span style="color:red">especially</span> at night</span>.<br>
+I was wondering if you could <span style="color:orange"><span style="color:red">arrange</span> for someone to check or fix it as soon as possible</span>.<br>
 I'd really appreciate it.
 
 :::
 
 ::: details Difficult Words phonetic symbols
 
-uncomfortably /ʌnˈkʌmftərbli/ adv. 不舒适地
+uncomfortably /ʌnˈkʌmftərbli/ adv. 不舒适地<br>
+heater /ˈhiːtər/ n. 加热器<br>
+especially /ɪˈspeʃəli/ adv. 尤其<br>
+arrange /əˈreɪndʒ/ v. 安排
 
 :::
 
@@ -447,9 +473,9 @@ Hey everyone! I just found that my desk and stationery have been used by you guy
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">my desk and stationery</span>.<br>
-The situation is that <span style="color:orange">I've noticed you seem to use my desk and my stationery when I am not around</span>.<br>
-This is important because <span style="color:orange">I am very concerned about losing my things</span>.<br>
+I'd like to talk to you about <span style="color:orange">my desk and <span style="color:red">stationery</span></span>.<br>
+The situation is that <span style="color:orange">I've <span style="color:red">noticed</span> you seem to use my desk and my <span style="color:red">stationery</span> when I am not around</span>.<br>
+This is important because <span style="color:orange">I am very <span style="color:red">concerned</span> about losing my things</span>.<br>
 I was wondering if you could <span style="color:orange">ask me first next time</span>.<br>
 I'd really appreciate it.
 
@@ -458,7 +484,8 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 stationery /ˈsteɪʃəneri/ n. 文具<br>
-concerned /kənˈsɜːrnd/ adj. 担心的
+concerned /kənˈsɜːrnd/ adj. 担心的<br>
+noticed /ˈnoʊtɪst/ v. 注意到
 
 :::
 
@@ -478,9 +505,9 @@ Hi, excuse me! When I'm working on this urgent assignment, my computer suddenly 
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">my computer issue</span>.<br>
-The situation is that <span style="color:orange">I am working on an urgent assignment in the campus library, but my computer suddenly stopped working, and I tried restarting it, but nothing happens</span>.<br>
-This is important because <span style="color:orange">the assignment is urgent and I need to finish it</span>.<br>
-I was wondering if you could <span style="color:orange">help me, or direct me to the library technician</span>.<br>
+The situation is that <span style="color:orange">I am working on an <span style="color:red">urgent</span> assignment in the campus library, but my computer <span style="color:red">suddenly</span> stopped working, and I tried <span style="color:red">restarting</span> it, but nothing happens</span>.<br>
+This is important because <span style="color:orange">the assignment is <span style="color:red">urgent</span> and I need to finish it</span>.<br>
+I was wondering if you could <span style="color:orange">help me, or direct me to the library <span style="color:red">technician</span></span>.<br>
 I'd really appreciate it.
 
 :::
@@ -488,7 +515,9 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 technician /tekˈnɪʃən/ n. 技术人员<br>
-urgent /ˈɜːrdʒənt/ adj. 紧急的
+urgent /ˈɜːrdʒənt/ adj. 紧急的<br>
+suddenly /ˈsʌdənli/ adv. 突然地<br>
+restarting /riːˈstɑːrtɪŋ/ v. 重启
 
 :::
 
@@ -507,8 +536,8 @@ Hi Tom! I'd like to discuss the book that I borrowed with you. Unfortunately, I 
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">the book I borrowed from you</span>.<br>
-The situation is that <span style="color:orange">I have to return the book to you, but when I got to school I realized I have forgotten to bring it</span>.<br>
+I'd like to talk to you about <span style="color:orange">the book I <span style="color:red">borrowed</span> from you</span>.<br>
+The situation is that <span style="color:orange">I have to return the book to you, but when I got to school I <span style="color:red">realized</span> I have <span style="color:red">forgotten</span> to bring it</span>.<br>
 This is important because <span style="color:orange">I know you really need it today</span>.<br>
 I was wondering if you could <span style="color:orange">give me one hour so I could rush home to bring it to you</span>.<br>
 I'd really appreciate it.
@@ -517,7 +546,9 @@ I'd really appreciate it.
 
 ::: details Difficult Words phonetic symbols
 
-realized /ˈriːəlaɪzd/ v. 意识到
+realized /ˈriːəlaɪzd/ v. 意识到<br>
+borrowed /ˈbɑːroʊd/ v. 借入<br>
+forgotten /fərˈɡɑːtən/ v. 忘记
 
 :::
 
@@ -536,10 +567,10 @@ Hello, Professor. I'd like to discuss the upcoming deadline for my paper. Unfort
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">the upcoming deadline for my paper</span>.<br>
-The situation is that <span style="color:orange">I have a deadline next week for a paper to submit, but my computer is broken, so I need more time to finish it</span>.<br>
-This is important because <span style="color:orange">I've been working hard, but I need a bit more time to ensure the quality of my work</span>.<br>
-I was wondering if you could <span style="color:orange">give me a one-week extension</span>.<br>
+I'd like to talk to you about <span style="color:orange">the upcoming <span style="color:red">deadline</span> for my paper</span>.<br>
+The situation is that <span style="color:orange">I have a <span style="color:red">deadline</span> next week for a paper to <span style="color:red">submit</span>, but my computer is broken, so I need more time to finish it</span>.<br>
+This is important because <span style="color:orange">I've been working hard, but I need a bit more time to <span style="color:red">ensure</span> the <span style="color:red">quality</span> of my work</span>.<br>
+I was wondering if you could <span style="color:orange">give me a one-week <span style="color:red">extension</span></span>.<br>
 I'd really appreciate it.
 
 :::
@@ -548,7 +579,9 @@ I'd really appreciate it.
 
 extension /ɪkˈstenʃən/ n. 延期<br>
 quality /ˈkwɑːləti/ n. 质量<br>
-deadline /ˈdedlaɪn/ n. 截止日期
+deadline /ˈdedlaɪn/ n. 截止日期<br>
+ensure /ɪnˈʃʊr/ v. 确保<br>
+submit /səbˈmɪt/ v. 提交
 
 :::
 
@@ -567,8 +600,8 @@ Hi, how are you? I'd like to discuss our housework with you. It seems that you h
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">our housework schedule</span>.<br>
-The situation is that <span style="color:orange">it seems that you haven't followed the schedule to complete housework</span>.<br>
+I'd like to talk to you about <span style="color:orange">our <span style="color:red">housework</span> <span style="color:red">schedule</span></span>.<br>
+The situation is that <span style="color:orange">it seems that you haven't <span style="color:red">followed</span> the <span style="color:red">schedule</span> to complete <span style="color:red">housework</span></span>.<br>
 This is important because <span style="color:orange">we need to keep our flat clean and tidy</span>.<br>
 I was wondering if you could <span style="color:orange">stick to our cleaning plan</span>.<br>
 I'd really appreciate it.
@@ -577,7 +610,9 @@ I'd really appreciate it.
 
 ::: details Difficult Words phonetic symbols
 
-schedule /ˈskedʒuːl/ n. 日程表
+schedule /ˈskedʒuːl/ n. 日程表<br>
+housework /ˈhaʊswɜːrk/ n. 家务<br>
+followed /ˈfɑːloʊd/ v. 遵循
 
 :::
 
@@ -597,9 +632,9 @@ Hi, how are you! I'd like to discuss your birthday party with you. I'm so happy 
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">your birthday party this weekend</span>.<br>
-The situation is that <span style="color:orange">I'm so happy that I have been invited, but I need to complete an essay this weekend</span>.<br>
-This is important because <span style="color:orange">the essay deadline is coming and I cannot attend your party</span>.<br>
-I was wondering if you could <span style="color:orange">understand my situation, and we could celebrate together another time</span>.<br>
+The <span style="color:red">situation</span> is that <span style="color:orange">I'm so happy that I have been <span style="color:red">invited</span>, but I need to complete an <span style="color:red">essay</span> this weekend</span>.<br>
+This is important because <span style="color:orange">the <span style="color:red">essay</span> <span style="color:red">deadline</span> is coming and I cannot attend your party</span>.<br>
+I was wondering if you could <span style="color:orange">understand my <span style="color:red">situation</span>, and we could <span style="color:red">celebrate</span> together another time</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -608,7 +643,9 @@ I'd really appreciate it.
 
 celebrate /ˈselɪbreɪt/ v. 庆祝<br>
 essay /ˈeseɪ/ n. 论文<br>
-deadline /ˈdedlaɪn/ n. 截止日期
+deadline /ˈdedlaɪn/ n. 截止日期<br>
+situation /ˌsɪtʃuˈeɪʃən/ n. 情况<br>
+invited /ɪnˈvaɪtɪd/ v. 邀请
 
 :::
 
@@ -627,10 +664,10 @@ Hey Tom! I'd like to express gratitude to you! Thanks much for agreeing to my in
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">the interview for my course assignment</span>.<br>
-The situation is that <span style="color:orange">you agreed to be interviewed by me for a course assignment, and I want to thank you for that</span>.<br>
-This is important because <span style="color:orange">the interview will take place on Wednesday afternoon and will last for about an hour</span>.<br>
-I was wondering if you could <span style="color:orange">get prepared before the interview</span>.<br>
+I'd like to talk to you about <span style="color:orange">the <span style="color:red">interview</span> for my course <span style="color:red">assignment</span></span>.<br>
+The situation is that <span style="color:orange">you <span style="color:red">agreed</span> to be <span style="color:red">interviewed</span> by me for a course <span style="color:red">assignment</span>, and I want to thank you for that</span>.<br>
+This is important because <span style="color:orange">the <span style="color:red">interview</span> will take place on Wednesday afternoon and will last for about an hour</span>.<br>
+I was wondering if you could <span style="color:orange">get <span style="color:red">prepared</span> before the <span style="color:red">interview</span></span>.<br>
 I'd really appreciate it.
 
 :::
@@ -639,7 +676,9 @@ I'd really appreciate it.
 
 interview /ˈɪntərvjuː/ n. 采访<br>
 assignment /əˈsaɪnmənt/ n. 作业<br>
-prepared /prɪˈperd/ adj. 准备好的
+prepared /prɪˈperd/ adj. 准备好的<br>
+agreed /əˈɡriːd/ v. 同意<br>
+interviewed /ˈɪntərvjuːd/ v. 采访
 
 :::
 
@@ -659,9 +698,9 @@ Hi, how are you? I'd like to discuss our meeting place. I just noticed that the 
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">our study plan</span>.<br>
-The situation is that <span style="color:orange">I arranged to go to the library with you to use the study room, but I just found out that the study room is double booked</span>.<br>
+The situation is that <span style="color:orange">I <span style="color:red">arranged</span> to go to the <span style="color:red">library</span> with you to use the study room, but I just found out that the study room is double booked</span>.<br>
 This is important because <span style="color:orange">we still need a place to study</span>.<br>
-I was wondering if you could <span style="color:orange">switch to a nearby café instead</span>.<br>
+I was wondering if you could <span style="color:orange">switch to a <span style="color:red">nearby</span> café instead</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -669,7 +708,8 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 arranged /əˈreɪndʒd/ v. 安排<br>
-library /ˈlaɪbreri/ n. 图书馆
+library /ˈlaɪbreri/ n. 图书馆<br>
+nearby /ˌnɪrˈbaɪ/ adj. 附近的
 
 :::
 
@@ -689,9 +729,9 @@ Hi, how are you! I'd like to discuss the upcoming speech with you. I've noticed 
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">your upcoming speech</span>.<br>
-The situation is that <span style="color:orange">I've noticed that you are going to give a speech and you feel really nervous about it</span>.<br>
-This is important because <span style="color:orange">being too nervous might affect your performance</span>.<br>
-I was wondering if you could <span style="color:orange">just take a deep breath before you start and focus on the audience during the speech</span>.<br>
+The situation is that <span style="color:orange">I've noticed that you are going to give a speech and you feel really <span style="color:red">nervous</span> about it</span>.<br>
+This is important because <span style="color:orange">being too <span style="color:red">nervous</span> might <span style="color:red">affect</span> your <span style="color:red">performance</span></span>.<br>
+I was wondering if you could <span style="color:orange">just take a deep <span style="color:red">breath</span> before you start and focus on the <span style="color:red">audience</span> during the speech</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -700,7 +740,9 @@ I'd really appreciate it.
 
 performance /pərˈfɔːrməns/ n. 表现<br>
 audience /ˈɔːdiəns/ n. 观众<br>
-nervous /ˈnɜːrvəs/ adj. 紧张的
+nervous /ˈnɜːrvəs/ adj. 紧张的<br>
+breath /breθ/ n. 呼吸<br>
+affect /əˈfekt/ v. 影响
 
 :::
 
@@ -719,10 +761,10 @@ Hi, excuse me! I'd like to discuss your hiking shoes with you. I've found that y
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">your hiking shoes</span>.<br>
-The situation is that <span style="color:orange">I've noticed you are not wearing proper shoes for the hiking trip</span>.<br>
-This is important because <span style="color:orange">it may lead to discomfort or injuries during the hike</span>.<br>
-I was wondering if you could <span style="color:orange">borrow a spare pair in the equipment store</span>.<br>
+I'd like to talk to you about <span style="color:orange">your <span style="color:red">hiking</span> shoes</span>.<br>
+The situation is that <span style="color:orange">I've noticed you are not wearing <span style="color:red">proper</span> shoes for the <span style="color:red">hiking</span> trip</span>.<br>
+This is important because <span style="color:orange">it may lead to <span style="color:red">discomfort</span> or <span style="color:red">injuries</span> during the hike</span>.<br>
+I was wondering if you could <span style="color:orange">borrow a spare pair in the <span style="color:red">equipment</span> store</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -731,7 +773,9 @@ I'd really appreciate it.
 
 discomfort /dɪsˈkʌmfərt/ n. 不适<br>
 injuries /ˈɪndʒəriz/ n. 受伤<br>
-equipment /ɪˈkwɪpmənt/ n. 设备
+equipment /ɪˈkwɪpmənt/ n. 设备<br>
+proper /ˈprɑːpər/ adj. 合适的<br>
+hiking /ˈhaɪkɪŋ/ n. 徒步旅行
 
 :::
 
@@ -750,10 +794,10 @@ Hi guys! As you know that Sally will leave the city to start university next wee
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">a present for our friend who is leaving for university</span>.<br>
-The situation is that <span style="color:orange">one of our friends is going away to start university next week, and she's excited but sad to say goodbye</span>.<br>
-This is important because <span style="color:orange">we want to cheer her up with a nice gift for her new apartment</span>.<br>
-I was wondering if you could <span style="color:orange">consider getting her a cute desk lamp, so she'll use it for studying in her new apartment</span>.<br>
+I'd like to talk to you about <span style="color:orange">a present for our friend who is leaving for <span style="color:red">university</span></span>.<br>
+The situation is that <span style="color:orange">one of our friends is going away to start <span style="color:red">university</span> next week, and she's <span style="color:red">excited</span> but sad to say goodbye</span>.<br>
+This is important because <span style="color:orange">we want to cheer her up with a nice gift for her new <span style="color:red">apartment</span></span>.<br>
+I was wondering if you could <span style="color:orange"><span style="color:red">consider</span> getting her a cute desk lamp, so she'll use it for studying in her new <span style="color:red">apartment</span></span>.<br>
 I'd really appreciate it.
 
 :::
@@ -761,7 +805,9 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 university /ˌjuːnɪˈvɜːrsəti/ n. 大学<br>
-apartment /əˈpɑːrtmənt/ n. 公寓
+apartment /əˈpɑːrtmənt/ n. 公寓<br>
+excited /ɪkˈsaɪtɪd/ adj. 兴奋的<br>
+consider /kənˈsɪdər/ v. 考虑
 
 :::
 
@@ -780,10 +826,10 @@ Hi, how are you? I'd like to discuss the food in our cafeteria with you. I've no
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">the food in our school cafeteria</span>.<br>
-The situation is that <span style="color:orange">I think the food served in the school cafeteria is not healthy enough</span>.<br>
+I'd like to talk to you about <span style="color:orange">the food in our school <span style="color:red">cafeteria</span></span>.<br>
+The situation is that <span style="color:orange">I think the food served in the school <span style="color:red">cafeteria</span> is not <span style="color:red">healthy</span> enough</span>.<br>
 This is important because <span style="color:orange">it affects students' health</span>.<br>
-I was wondering if you could <span style="color:orange">add more fresh vegetables and fruits, and reduce some hamburgers or fries</span>.<br>
+I was wondering if you could <span style="color:orange">add more fresh <span style="color:red">vegetables</span> and fruits, and <span style="color:red">reduce</span> some <span style="color:red">hamburgers</span> or fries</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -792,7 +838,9 @@ I'd really appreciate it.
 
 cafeteria /ˌkæfəˈtɪriə/ n. 自助餐厅<br>
 vegetables /ˈvedʒtəbəlz/ n. 蔬菜<br>
-hamburgers /ˈhæmbɜːrɡərz/ n. 汉堡包
+hamburgers /ˈhæmbɜːrɡərz/ n. 汉堡包<br>
+healthy /ˈhelθi/ adj. 健康的<br>
+reduce /rɪˈduːs/ v. 减少
 
 :::
 
@@ -811,9 +859,9 @@ Hi, how are you? I'd like to talk about the book return issue with you. I've hea
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">returning your library books</span>.<br>
-The situation is that <span style="color:orange">I've heard your leg got injured, so you cannot return those books back to the library</span>.<br>
-This is important because <span style="color:orange">the books need to be returned on time</span>.<br>
+I'd like to talk to you about <span style="color:orange"><span style="color:red">returning</span> your <span style="color:red">library</span> books</span>.<br>
+The situation is that <span style="color:orange">I've heard your leg got <span style="color:red">injured</span>, so you cannot return those books back to the <span style="color:red">library</span></span>.<br>
+This is important because <span style="color:orange">the books need to be <span style="color:red">returned</span> on time</span>.<br>
 I was wondering if you could <span style="color:orange">let me drop them off for you</span>.<br>
 I'd really appreciate it.
 
@@ -822,7 +870,9 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 injured /ˈɪndʒərd/ adj. 受伤的<br>
-library /ˈlaɪbreri/ n. 图书馆
+library /ˈlaɪbreri/ n. 图书馆<br>
+returning /rɪˈtɜːrnɪŋ/ v. 归还<br>
+returned /rɪˈtɜːrnd/ v. 归还
 
 :::
 
@@ -842,9 +892,9 @@ Hi, how are you? I'd like to discuss the course that you want to take with you. 
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">the course you want to take</span>.<br>
-The situation is that <span style="color:orange">I've taken the course for one semester, and I think it's way too difficult</span>.<br>
-This is important because <span style="color:orange">the assignments are tough and the exams are super challenging</span>.<br>
-I was wondering if you could <span style="color:orange">consider other courses instead</span>.<br>
+The situation is that <span style="color:orange">I've taken the course for one <span style="color:red">semester</span>, and I think it's way too <span style="color:red">difficult</span></span>.<br>
+This is important because <span style="color:orange">the <span style="color:red">assignments</span> are tough and the exams are super <span style="color:red">challenging</span></span>.<br>
+I was wondering if you could <span style="color:orange"><span style="color:red">consider</span> other courses instead</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -852,7 +902,10 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 challenging /ˈtʃælɪndʒɪŋ/ adj. 具有挑战性的<br>
-assignments /əˈsaɪnmənts/ n. 作业
+assignments /əˈsaɪnmənts/ n. 作业<br>
+semester /sɪˈmestər/ n. 学期<br>
+difficult /ˈdɪfɪkəlt/ adj. 困难的<br>
+consider /kənˈsɪdər/ v. 考虑
 
 :::
 
@@ -871,10 +924,10 @@ Excuse me, tutor! May I take a moment of your time? I'd like to discuss my cours
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">my course assignment</span>.<br>
-The situation is that <span style="color:orange">I have just finished writing a course assignment and want to get some feedback on my work</span>.<br>
-This is important because <span style="color:orange">I want to know if there is any chance to improve</span>.<br>
-I was wondering if you could <span style="color:orange">give me some feedback on it</span>.<br>
+I'd like to talk to you about <span style="color:orange">my course <span style="color:red">assignment</span></span>.<br>
+The situation is that <span style="color:orange">I have just <span style="color:red">finished</span> writing a course <span style="color:red">assignment</span> and want to get some <span style="color:red">feedback</span> on my work</span>.<br>
+This is important because <span style="color:orange">I want to know if there is any chance to <span style="color:red">improve</span></span>.<br>
+I was wondering if you could <span style="color:orange">give me some <span style="color:red">feedback</span> on it</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -883,7 +936,8 @@ I'd really appreciate it.
 
 assignment /əˈsaɪnmənt/ n. 作业<br>
 feedback /ˈfiːdbæk/ n. 反馈<br>
-improve /ɪmˈpruːv/ v. 改进
+improve /ɪmˈpruːv/ v. 改进<br>
+finished /ˈfɪnɪʃt/ v. 完成
 
 :::
 
@@ -903,8 +957,8 @@ Hi, excuse me! I'd like to discuss the class notes with you. I've just noticed t
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">the class notes</span>.<br>
-The situation is that <span style="color:orange">I attended a lecture earlier today, but later realized that I lost the notebook where I had written all my notes</span>.<br>
-This is important because <span style="color:orange">I need to catch up with the class, and you always keep very clear and detailed notes</span>.<br>
+The situation is that <span style="color:orange">I <span style="color:red">attended</span> a <span style="color:red">lecture</span> earlier today, but later <span style="color:red">realized</span> that I lost the <span style="color:red">notebook</span> where I had written all my notes</span>.<br>
+This is important because <span style="color:orange">I need to catch up with the class, and you always keep very clear and <span style="color:red">detailed</span> notes</span>.<br>
 I was wondering if you could <span style="color:orange">lend me your notes</span>.<br>
 I'd really appreciate it.
 
@@ -914,7 +968,9 @@ I'd really appreciate it.
 
 realized /ˈriːəlaɪzd/ v. 意识到<br>
 detailed /ˈdiːteɪld/ adj. 详细的<br>
-notebook /ˈnoʊtbʊk/ n. 笔记本
+notebook /ˈnoʊtbʊk/ n. 笔记本<br>
+attended /əˈtendɪd/ v. 参加<br>
+lecture /ˈlektʃər/ n. 讲座
 
 :::
 
@@ -933,10 +989,10 @@ Hi, how are you? I'd like to discuss the class and assignment problems with you.
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">your class attendance and assignments</span>.<br>
-The situation is that <span style="color:orange">I've noticed you frequently skip classes, arrive late, leave early, and do not submit assignments on time</span>.<br>
-This is important because <span style="color:orange">it may affect your grades and academic performance</span>.<br>
-I was wondering if you could <span style="color:orange">set an alarm for everyday's class and submit assignments on time</span>.<br>
+I'd like to talk to you about <span style="color:orange">your class <span style="color:red">attendance</span> and assignments</span>.<br>
+The situation is that <span style="color:orange">I've noticed you <span style="color:red">frequently</span> skip classes, arrive late, leave early, and do not <span style="color:red">submit</span> assignments on time</span>.<br>
+This is important because <span style="color:orange">it may affect your <span style="color:red">grades</span> and <span style="color:red">academic</span> <span style="color:red">performance</span></span>.<br>
+I was wondering if you could <span style="color:orange">set an alarm for everyday's class and <span style="color:red">submit</span> assignments on time</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -946,7 +1002,9 @@ I'd really appreciate it.
 attendance /əˈtendəns/ n. 出勤<br>
 academic /ˌækəˈdemɪk/ adj. 学术的<br>
 performance /pərˈfɔːrməns/ n. 表现<br>
-frequently /ˈfriːkwəntli/ adv. 频繁地
+frequently /ˈfriːkwəntli/ adv. 频繁地<br>
+submit /səbˈmɪt/ v. 提交<br>
+grades /ɡreɪdz/ n. 成绩
 
 :::
 
@@ -966,9 +1024,9 @@ Hi! I'd like you to know that the class is really important and once you pay att
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">leaving the class early</span>.<br>
-The situation is that <span style="color:orange">I know you find the class boring and want to leave early</span>.<br>
-This is important because <span style="color:orange">the class is really important and your attendance will be affected if you leave</span>.<br>
-I was wondering if you could <span style="color:orange">stay in class and pay more attention to it</span>.<br>
+The situation is that <span style="color:orange">I know you find the class <span style="color:red">boring</span> and want to leave early</span>.<br>
+This is important because <span style="color:orange">the class is really important and your <span style="color:red">attendance</span> will be <span style="color:red">affected</span> if you leave</span>.<br>
+I was wondering if you could <span style="color:orange">stay in class and pay more <span style="color:red">attention</span> to it</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -976,7 +1034,9 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 attendance /əˈtendəns/ n. 出勤<br>
-affected /əˈfektɪd/ adj. 受影响的
+affected /əˈfektɪd/ adj. 受影响的<br>
+attention /əˈtenʃən/ n. 注意力<br>
+boring /ˈbɔːrɪŋ/ adj. 无聊的
 
 :::
 
@@ -996,8 +1056,8 @@ Hi everyone! I need to let you know about a change to my speech time. I've just 
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">a change to my speech time</span>.<br>
-The situation is that <span style="color:orange">I am supposed to give a speech in class, but I realize I have left my notebook at home, and I need to go back to get it</span>.<br>
-This is important because <span style="color:orange">my speech notes are all in that notebook, so the speech will start 20 minutes later than planned</span>.<br>
+The situation is that <span style="color:orange">I am <span style="color:red">supposed</span> to give a speech in class, but I realize I have left my <span style="color:red">notebook</span> at home, and I need to go back to get it</span>.<br>
+This is important because <span style="color:orange">my speech notes are all in that <span style="color:red">notebook</span>, so the speech will start 20 minutes later than <span style="color:red">planned</span></span>.<br>
 I was wondering if you could <span style="color:orange">wait for me</span>.<br>
 I'd really appreciate it.
 
@@ -1006,7 +1066,8 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 supposed /səˈpoʊzd/ adj. 应该的<br>
-notebook /ˈnoʊtbʊk/ n. 笔记本
+notebook /ˈnoʊtbʊk/ n. 笔记本<br>
+planned /plænd/ adj. 计划的
 
 :::
 
@@ -1026,9 +1087,9 @@ Excuse me, professor. I'd like to discuss our assignment with you. I know the de
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">our group assignment</span>.<br>
-The situation is that <span style="color:orange">the deadline is coming and I've already finished my part, but my group member has not finished his part of the work yet</span>.<br>
-This is important because <span style="color:orange">we need more time to complete it</span>.<br>
-I was wondering if you could <span style="color:orange">give our group a three-day extension</span>.<br>
+The situation is that <span style="color:orange">the <span style="color:red">deadline</span> is coming and I've already finished my part, but my group member has not finished his part of the work yet</span>.<br>
+This is important because <span style="color:orange">we need more time to <span style="color:red">complete</span> it</span>.<br>
+I was wondering if you could <span style="color:orange">give our group a three-day <span style="color:red">extension</span></span>.<br>
 I'd really appreciate it.
 
 :::
@@ -1036,7 +1097,8 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 extension /ɪkˈstenʃən/ n. 延期<br>
-deadline /ˈdedlaɪn/ n. 截止日期
+deadline /ˈdedlaɪn/ n. 截止日期<br>
+complete /kəmˈpliːt/ v. 完成
 
 :::
 
@@ -1055,9 +1117,9 @@ Excuse me, lecturer. I'd like to discuss the poster volunteer with you. I've not
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">the poster volunteer position</span>.<br>
-The situation is that <span style="color:orange">I've noticed you're looking for a volunteer to create a poster, and I'm really interested in this task</span>.<br>
-This is important because <span style="color:orange">I would like to work on it with one of my friends, and we both have design experience</span>.<br>
+I'd like to talk to you about <span style="color:orange">the poster <span style="color:red">volunteer</span> <span style="color:red">position</span></span>.<br>
+The situation is that <span style="color:orange">I've noticed you're looking for a <span style="color:red">volunteer</span> to create a poster, and I'm really <span style="color:red">interested</span> in this task</span>.<br>
+This is important because <span style="color:orange">I would like to work on it with one of my friends, and we both have <span style="color:red">design</span> <span style="color:red">experience</span></span>.<br>
 I was wondering if you could <span style="color:orange">let me work on it with my friend</span>.<br>
 I'd really appreciate it.
 
@@ -1066,7 +1128,10 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 volunteer /ˌvɑːlənˈtɪr/ n. 志愿者<br>
-experience /ɪkˈspɪriəns/ n. 经验
+experience /ɪkˈspɪriəns/ n. 经验<br>
+position /pəˈzɪʃən/ n. 职位<br>
+design /dɪˈzaɪn/ n. 设计<br>
+interested /ˈɪntrəstɪd/ adj. 感兴趣的
 
 :::
 
@@ -1086,7 +1151,7 @@ Hi, this is Tom! I just noticed that I gave you the wrong exam time! The exam is
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">the exam time I told you earlier</span>.<br>
-The situation is that <span style="color:orange">I just told you the exam is scheduled for 3 p.m. tomorrow afternoon, but I've just found out the exam is actually at 2 p.m. this afternoon</span>.<br>
+The situation is that <span style="color:orange">I just told you the exam is <span style="color:red">scheduled</span> for 3 p.m. tomorrow afternoon, but I've just found out the exam is <span style="color:red">actually</span> at 2 p.m. this afternoon</span>.<br>
 This is important because <span style="color:orange">you might miss the exam if you don't hurry</span>.<br>
 I was wondering if you could <span style="color:orange">hurry to the exam hall right now</span>.<br>
 I'd really appreciate it.
@@ -1095,7 +1160,8 @@ I'd really appreciate it.
 
 ::: details Difficult Words phonetic symbols
 
-scheduled /ˈskedʒuːld/ adj. 安排的
+scheduled /ˈskedʒuːld/ adj. 安排的<br>
+actually /ˈæktʃuəli/ adv. 实际上
 
 :::
 
@@ -1115,9 +1181,9 @@ Hi, how are you? I'd like to discuss with you about the course content. Unfortun
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">the course content</span>.<br>
-The situation is that <span style="color:orange">you came to ask me for help with some parts of the course, but unfortunately, I don't understand those parts either</span>.<br>
-This is important because <span style="color:orange">we both need to understand it for the exam</span>.<br>
-I was wondering if you could <span style="color:orange">make an appointment with our tutor together with me</span>.<br>
+The situation is that <span style="color:orange">you came to ask me for help with some parts of the course, but <span style="color:red">unfortunately</span>, I don't <span style="color:red">understand</span> those parts either</span>.<br>
+This is important because <span style="color:orange">we both need to <span style="color:red">understand</span> it for the exam</span>.<br>
+I was wondering if you could <span style="color:orange">make an <span style="color:red">appointment</span> with our tutor together with me</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -1125,7 +1191,8 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 unfortunately /ʌnˈfɔːrtʃənətli/ adv. 不幸地<br>
-appointment /əˈpɔɪntmənt/ n. 预约
+appointment /əˈpɔɪntmənt/ n. 预约<br>
+understand /ˌʌndərˈstænd/ v. 理解
 
 :::
 
@@ -1144,10 +1211,10 @@ Hello, how you are? This is a report about a broken red traffic light. I'm on my
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">a broken red traffic light</span>.<br>
-The situation is that <span style="color:orange">I'm on my way to school, and I noticed that a red traffic light nearby is not working properly</span>.<br>
-This is important because <span style="color:orange">it might affect the traffic and cause accidents</span>.<br>
-I was wondering if you could <span style="color:orange">send a maintenance worker to fix it as soon as possible</span>.<br>
+I'd like to talk to you about <span style="color:orange">a broken red <span style="color:red">traffic</span> light</span>.<br>
+The situation is that <span style="color:orange">I'm on my way to school, and I noticed that a red <span style="color:red">traffic</span> light nearby is not working <span style="color:red">properly</span></span>.<br>
+This is important because <span style="color:orange">it might affect the <span style="color:red">traffic</span> and cause <span style="color:red">accidents</span></span>.<br>
+I was wondering if you could <span style="color:orange">send a <span style="color:red">maintenance</span> worker to fix it as soon as possible</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -1155,7 +1222,9 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 maintenance /ˈmeɪntənəns/ n. 维护<br>
-accidents /ˈæksɪdənts/ n. 事故
+accidents /ˈæksɪdənts/ n. 事故<br>
+properly /ˈprɑːpərli/ adv. 正确地<br>
+traffic /ˈtræfɪk/ n. 交通
 
 :::
 
@@ -1174,10 +1243,10 @@ Hi, how are you? I'd like to discuss with you about your course enrollment. I he
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">your course enrollment</span>.<br>
-The situation is that <span style="color:orange">I heard you're planning to drop the course you've already enrolled in</span>.<br>
-This is important because <span style="color:orange">it's a big decision that might affect your study plan</span>.<br>
-I was wondering if you could <span style="color:orange">consult the tutor first before making the final decision, and I'd be happy to go with you</span>.<br>
+I'd like to talk to you about <span style="color:orange">your course <span style="color:red">enrollment</span></span>.<br>
+The situation is that <span style="color:orange">I heard you're planning to drop the course you've already <span style="color:red">enrolled</span> in</span>.<br>
+This is important because <span style="color:orange">it's a big <span style="color:red">decision</span> that might affect your study plan</span>.<br>
+I was wondering if you could <span style="color:orange"><span style="color:red">consult</span> the tutor first before making the final <span style="color:red">decision</span>, and I'd be happy to go with you</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -1185,7 +1254,9 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 enrollment /ɪnˈroʊlmənt/ n. 注册<br>
-decision /dɪˈsɪʒən/ n. 决定
+decision /dɪˈsɪʒən/ n. 决定<br>
+enrolled /ɪnˈroʊld/ v. 注册<br>
+consult /kənˈsʌlt/ v. 咨询
 
 :::
 
@@ -1213,18 +1284,18 @@ Hi, how are you? I'd like to discuss the assignment plan with you. I've already 
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">our class plan</span>.<br>
-The situation is that <span style="color:orange">I have made plans to attend a class with you, but another friend has invited me to work on an assignment together at the same time</span>.<br>
-This is important because <span style="color:orange">the deadline of the assignment is coming</span>.<br>
-I was wondering if you could <span style="color:orange">understand my situation, and we could reschedule our plan to attend class together</span>.<br>
+The <span style="color:red">situation</span> is that <span style="color:orange">I have made plans to attend a class with you, but another friend has invited me to work on an <span style="color:red">assignment</span> together at the same time</span>.<br>
+This is important because <span style="color:orange">the <span style="color:red">deadline</span> of the <span style="color:red">assignment</span> is coming</span>.<br>
+I was wondering if you could <span style="color:orange">understand my <span style="color:red">situation</span>, and we could <span style="color:red">reschedule</span> our plan to attend class together</span>.<br>
 I'd really appreciate it.<br>
 
 如果是和后面邀请一起做作业的朋友解释：<br>
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">your assignment invitation</span>.<br>
-The situation is that <span style="color:orange">I've already made plans to attend a class with another friend at the same time</span>.<br>
+I'd like to talk to you about <span style="color:orange">your <span style="color:red">assignment</span> <span style="color:red">invitation</span></span>.<br>
+The <span style="color:red">situation</span> is that <span style="color:orange">I've already made plans to attend a class with another friend at the same time</span>.<br>
 This is important because <span style="color:orange">the class is really important</span>.<br>
-I was wondering if you could <span style="color:orange">understand my situation, and we could reschedule the plan to work on the assignment together</span>.<br>
+I was wondering if you could <span style="color:orange">understand my <span style="color:red">situation</span>, and we could <span style="color:red">reschedule</span> the plan to work on the <span style="color:red">assignment</span> together</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -1233,7 +1304,9 @@ I'd really appreciate it.
 
 reschedule /riːˈskedʒuːl/ v. 重新安排<br>
 assignment /əˈsaɪnmənt/ n. 作业<br>
-invitation /ˌɪnvɪˈteɪʃən/ n. 邀请
+invitation /ˌɪnvɪˈteɪʃən/ n. 邀请<br>
+situation /ˌsɪtʃuˈeɪʃən/ n. 情况<br>
+deadline /ˈdedlaɪn/ n. 截止日期
 
 :::
 
@@ -1252,10 +1325,10 @@ Hi professor, this is Tom. I'd like to discuss the upcoming holiday research pro
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">the upcoming holiday research project</span>.<br>
-The situation is that <span style="color:orange">I know you are organizing a holiday research project, and I'm really interested in participating</span>.<br>
-This is important because <span style="color:orange">I need more information about the specific schedule and whether I need to relocate or travel for the research</span>.<br>
-I was wondering if you could <span style="color:orange">tell me the exact starting time and whether relocation or travel is required</span>.<br>
+I'd like to talk to you about <span style="color:orange">the upcoming holiday <span style="color:red">research</span> project</span>.<br>
+The situation is that <span style="color:orange">I know you are <span style="color:red">organizing</span> a holiday <span style="color:red">research</span> project, and I'm really interested in <span style="color:red">participating</span></span>.<br>
+This is important because <span style="color:orange">I need more information about the <span style="color:red">specific</span> schedule and whether I need to relocate or travel for the <span style="color:red">research</span></span>.<br>
+I was wondering if you could <span style="color:orange">tell me the exact starting time and whether <span style="color:red">relocation</span> or travel is <span style="color:red">required</span></span>.<br>
 I'd really appreciate it.
 
 :::
@@ -1264,7 +1337,10 @@ I'd really appreciate it.
 
 participating /pɑːrˈtɪsɪpeɪtɪŋ/ v. 参与<br>
 relocation /ˌriːloʊˈkeɪʃən/ n. 搬迁<br>
-specific /spəˈsɪfɪk/ adj. 具体的
+specific /spəˈsɪfɪk/ adj. 具体的<br>
+organizing /ˈɔːrɡənaɪzɪŋ/ v. 组织<br>
+research /rɪˈsɜːrtʃ/ n. 研究<br>
+required /rɪˈkwaɪərd/ adj. 必需的
 
 :::
 
@@ -1284,8 +1360,8 @@ Excuse me, everyone. Sorry to disturb your study. I'd like to discuss the room b
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">switching rooms</span>.<br>
-The situation is that <span style="color:orange">I organized a meeting for my debating club and booked a room, but I find the room is too small for all the participants</span>.<br>
-This is important because <span style="color:orange">the room next to this is much larger and would be more suitable for our meeting</span>.<br>
+The situation is that <span style="color:orange">I <span style="color:red">organized</span> a meeting for my <span style="color:red">debating</span> club and booked a room, but I find the room is too small for all the <span style="color:red">participants</span></span>.<br>
+This is important because <span style="color:orange">the room next to this is much larger and would be more <span style="color:red">suitable</span> for our meeting</span>.<br>
 I was wondering if you could <span style="color:orange">switch rooms with us</span>.<br>
 I'd really appreciate it.
 
@@ -1295,7 +1371,8 @@ I'd really appreciate it.
 
 debating /dɪˈbeɪtɪŋ/ adj. 辩论的<br>
 participants /pɑːrˈtɪsɪpənts/ n. 参与者<br>
-suitable /ˈsuːtəbəl/ adj. 合适的
+suitable /ˈsuːtəbəl/ adj. 合适的<br>
+organized /ˈɔːrɡənaɪzd/ v. 组织
 
 :::
 
@@ -1316,8 +1393,8 @@ Hi, how are you? I'd like to invite you and your wife over for dinner. Before I 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">a dinner party</span>.<br>
 The situation is that <span style="color:orange">I'd like to invite you and your wife over for dinner</span>.<br>
-This is important because <span style="color:orange">I want to make sure the food is suitable for everyone before I plan the menu</span>.<br>
-I was wondering if you could <span style="color:orange">let me know if either of you needs to avoid certain foods or has any preference</span>.<br>
+This is important because <span style="color:orange">I want to make sure the food is <span style="color:red">suitable</span> for everyone before I plan the menu</span>.<br>
+I was wondering if you could <span style="color:orange">let me know if either of you needs to <span style="color:red">avoid</span> <span style="color:red">certain</span> foods or has any <span style="color:red">preference</span></span>.<br>
 I'd really appreciate it.
 
 :::
@@ -1325,7 +1402,9 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 preference /ˈprefərəns/ n. 偏好<br>
-suitable /ˈsuːtəbəl/ adj. 合适的
+suitable /ˈsuːtəbəl/ adj. 合适的<br>
+certain /ˈsɜːrtən/ adj. 某些<br>
+avoid /əˈvɔɪd/ v. 避免
 
 :::
 
@@ -1344,9 +1423,9 @@ Hi, how are you? I just came out of the lecture and, to be honest, I had a hard 
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">today's lecture</span>.<br>
-The situation is that <span style="color:orange">I just came out of the lecture, and I didn't understand some of the main points the professor was making</span>.<br>
-This is important because <span style="color:orange">I noticed you were taking good notes and paid attention during class</span>.<br>
+I'd like to talk to you about <span style="color:orange">today's <span style="color:red">lecture</span></span>.<br>
+The situation is that <span style="color:orange">I just came out of the <span style="color:red">lecture</span>, and I didn't <span style="color:red">understand</span> some of the main points the <span style="color:red">professor</span> was making</span>.<br>
+This is important because <span style="color:orange">I noticed you were taking good notes and paid <span style="color:red">attention</span> during class</span>.<br>
 I was wondering if you could <span style="color:orange">help me go over a few things, or maybe share your notes</span>.<br>
 I'd really appreciate it.
 
@@ -1355,7 +1434,9 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 lecture /ˈlektʃər/ n. 讲座<br>
-professor /prəˈfesər/ n. 教授
+professor /prəˈfesər/ n. 教授<br>
+attention /əˈtenʃən/ n. 注意力<br>
+understand /ˌʌndərˈstænd/ v. 理解
 
 :::
 
@@ -1374,8 +1455,8 @@ Excuse me, tutor. I'm on my way to the presentation right now, but a big tree ju
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">my presentation</span>.<br>
-The situation is that <span style="color:orange">I was on my way to give the presentation, but a big tree has fallen onto the road and blocked my way, so I'm going to be late</span>.<br>
+I'd like to talk to you about <span style="color:orange">my <span style="color:red">presentation</span></span>.<br>
+The situation is that <span style="color:orange">I was on my way to give the <span style="color:red">presentation</span>, but a big tree has <span style="color:red">fallen</span> onto the road and <span style="color:red">blocked</span> my way, so I'm going to be late</span>.<br>
 This is important because <span style="color:orange">I don't want to hold up the class</span>.<br>
 I was wondering if you could <span style="color:orange">let the other students present first</span>.<br>
 I'd really appreciate it.
@@ -1384,7 +1465,9 @@ I'd really appreciate it.
 
 ::: details Difficult Words phonetic symbols
 
-presentation /ˌprezənˈteɪʃən/ n. 演讲
+presentation /ˌprezənˈteɪʃən/ n. 演讲<br>
+blocked /blɑːkt/ v. 阻挡<br>
+fallen /ˈfɔːlən/ v. 倒下
 
 :::
 
@@ -1404,9 +1487,9 @@ Excuse me. I booked e-tickets for myself and my friend online, and they're all s
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">my e-tickets</span>.<br>
-The situation is that <span style="color:orange">I booked e-tickets for myself and my friend online, and they're saved on my phone, but my phone just ran out of battery right at the check-in</span>.<br>
-This is important because <span style="color:orange">I need to show my tickets but I can't access them right now</span>.<br>
-I was wondering if you could <span style="color:orange">find another way to verify my booking</span>.<br>
+The situation is that <span style="color:orange">I booked e-tickets for myself and my friend online, and they're saved on my phone, but my phone just ran out of <span style="color:red">battery</span> right at the check-in</span>.<br>
+This is important because <span style="color:orange">I need to show my tickets but I can't <span style="color:red">access</span> them right now</span>.<br>
+I was wondering if you could <span style="color:orange">find another way to <span style="color:red">verify</span> my <span style="color:red">booking</span></span>.<br>
 I'd really appreciate it.
 
 :::
@@ -1414,7 +1497,9 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 battery /ˈbætəri/ n. 电池<br>
-verify /ˈverɪfaɪ/ v. 验证
+verify /ˈverɪfaɪ/ v. 验证<br>
+access /ˈækses/ v. 访问<br>
+booking /ˈbʊkɪŋ/ n. 预订
 
 :::
 
@@ -1433,10 +1518,10 @@ Hi Professor, I'm sorry I didn't hand in my assignment on time. I had almost fin
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">my assignment submission</span>.<br>
-The situation is that <span style="color:orange">I had nearly finished my assignment, but my sister asked me to attend my parents' party, and as a result I missed the deadline</span>.<br>
+I'd like to talk to you about <span style="color:orange">my <span style="color:red">assignment</span> <span style="color:red">submission</span></span>.<br>
+The situation is that <span style="color:orange">I had nearly finished my <span style="color:red">assignment</span>, but my sister asked me to <span style="color:red">attend</span> my parents' party, and as a result I missed the <span style="color:red">deadline</span></span>.<br>
 This is important because <span style="color:orange">I had almost finished it and I just need a little more time</span>.<br>
-I was wondering if you could <span style="color:orange">give me a little more time to submit it</span>.<br>
+I was wondering if you could <span style="color:orange">give me a little more time to <span style="color:red">submit</span> it</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -1445,7 +1530,9 @@ I'd really appreciate it.
 
 submission /səbˈmɪʃən/ n. 提交<br>
 assignment /əˈsaɪnmənt/ n. 作业<br>
-deadline /ˈdedlaɪn/ n. 截止日期
+deadline /ˈdedlaɪn/ n. 截止日期<br>
+submit /səbˈmɪt/ v. 提交<br>
+attend /əˈtend/ v. 参加
 
 :::
 
@@ -1464,10 +1551,10 @@ Hey! I just noticed that you keep talking to me during the lecture, but the lect
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">our conversation during the lecture</span>.<br>
-The situation is that <span style="color:orange">you keep talking to me during the lecture, but I want to focus on the class</span>.<br>
-This is important because <span style="color:orange">the lecture is really important and I need to take notes carefully</span>.<br>
-I was wondering if you could <span style="color:orange">stop chatting for now, and we can talk after the class</span>.<br>
+I'd like to talk to you about <span style="color:orange">our <span style="color:red">conversation</span> during the <span style="color:red">lecture</span></span>.<br>
+The situation is that <span style="color:orange">you keep talking to me during the <span style="color:red">lecture</span>, but I want to focus on the class</span>.<br>
+This is important because <span style="color:orange">the <span style="color:red">lecture</span> is really important and I need to take notes <span style="color:red">carefully</span></span>.<br>
+I was wondering if you could <span style="color:orange">stop <span style="color:red">chatting</span> for now, and we can talk after the class</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -1475,7 +1562,9 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 conversation /ˌkɑːnvərˈseɪʃən/ n. 对话<br>
-lecture /ˈlektʃər/ n. 讲座
+lecture /ˈlektʃər/ n. 讲座<br>
+carefully /ˈkerfəli/ adv. 仔细地<br>
+chatting /ˈtʃætɪŋ/ v. 聊天
 
 :::
 
@@ -1494,9 +1583,9 @@ Hi teacher, I'd like to discuss the volunteer position with you. As you know I'm
 ::: details Template Answer
 
 Hi, do you have a moment?<br>
-I'd like to talk to you about <span style="color:orange">the volunteer position for the school Open Week</span>.<br>
-The situation is that <span style="color:orange">I'm really interested in being a volunteer to help prepare for the Open Week</span>.<br>
-This is important because <span style="color:orange">I'm responsible and good at communicating with people, so I'm quite suitable for the task</span>.<br>
+I'd like to talk to you about <span style="color:orange">the <span style="color:red">volunteer</span> <span style="color:red">position</span> for the school Open Week</span>.<br>
+The situation is that <span style="color:orange">I'm really interested in being a <span style="color:red">volunteer</span> to help <span style="color:red">prepare</span> for the Open Week</span>.<br>
+This is important because <span style="color:orange">I'm <span style="color:red">responsible</span> and good at <span style="color:red">communicating</span> with people, so I'm quite <span style="color:red">suitable</span> for the task</span>.<br>
 I was wondering if you could <span style="color:orange">give me this chance</span>.<br>
 I'd really appreciate it.
 
@@ -1506,7 +1595,10 @@ I'd really appreciate it.
 
 volunteer /ˌvɑːlənˈtɪr/ n. 志愿者<br>
 communicating /kəˈmjuːnɪkeɪtɪŋ/ v. 沟通<br>
-responsible /rɪˈspɑːnsəbəl/ adj. 负责任的
+responsible /rɪˈspɑːnsəbəl/ adj. 负责任的<br>
+suitable /ˈsuːtəbəl/ adj. 合适的<br>
+position /pəˈzɪʃən/ n. 职位<br>
+prepare /prɪˈper/ v. 准备
 
 :::
 
@@ -1526,9 +1618,9 @@ Hi! I totally get that you're under pressure right now, but I'm really not comfo
 
 Hi, do you have a moment?<br>
 I'd like to talk to you about <span style="color:orange">the assignment</span>.<br>
-The situation is that <span style="color:orange">I know you haven't started the work and you want to copy my nearly completed assignment because you are out of time</span>.<br>
-This is important because <span style="color:orange">I think it's important that we each submit our own work</span>.<br>
-I was wondering if you could <span style="color:orange">let me help explain how I approached some of the questions or point you to some resources instead</span>.<br>
+The situation is that <span style="color:orange">I know you haven't started the work and you want to copy my nearly <span style="color:red">completed</span> assignment because you are out of time</span>.<br>
+This is important because <span style="color:orange">I think it's important that we each <span style="color:red">submit</span> our own work</span>.<br>
+I was wondering if you could <span style="color:orange">let me help <span style="color:red">explain</span> how I <span style="color:red">approached</span> some of the questions or point you to some <span style="color:red">resources</span> instead</span>.<br>
 I'd really appreciate it.
 
 :::
@@ -1536,7 +1628,10 @@ I'd really appreciate it.
 ::: details Difficult Words phonetic symbols
 
 approached /əˈproʊtʃt/ v. 着手处理<br>
-resources /ˈriːsɔːrsɪz/ n. 资源
+resources /ˈriːsɔːrsɪz/ n. 资源<br>
+submit /səbˈmɪt/ v. 提交<br>
+completed /kəmˈpliːtɪd/ adj. 完成的<br>
+explain /ɪkˈspleɪn/ v. 解释
 
 :::
 
