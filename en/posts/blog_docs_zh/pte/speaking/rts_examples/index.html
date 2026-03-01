@@ -21,7 +21,7 @@
 .line-clamp-2[data-v-86db9372]{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .fade-enter-active[data-v-2f7ddff8],.fade-leave-active[data-v-2f7ddff8]{transition:opacity .2s ease}.fade-enter-from[data-v-2f7ddff8],.fade-leave-to[data-v-2f7ddff8]{opacity:0}.line-clamp-2[data-v-2f7ddff8]{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.fade-enter-active[data-v-2bbb9268],.fade-leave-active[data-v-2bbb9268]{transition:opacity .2s ease}.fade-enter-from[data-v-2bbb9268],.fade-leave-to[data-v-2bbb9268]{opacity:0}.rotate-enter-active[data-v-1e242347],.rotate-leave-active[data-v-1e242347]{transition:transform .2s ease}.rotate-enter-from[data-v-1e242347],.rotate-leave-to[data-v-1e242347]{transform:rotate(90deg)}.mobile-menu-overlay{position:fixed;inset:0;background-color:#00000080;z-index:99998}.mobile-menu-panel{position:fixed;top:0;right:0;height:100%;width:20rem;max-width:80vw;background-color:#fff;box-shadow:-4px 0 20px #00000026;z-index:99999;overflow-y:auto}.dark .mobile-menu-panel{background-color:#0f172a}.fade-enter-active,.fade-leave-active{transition:opacity .3s ease}.fade-enter-from,.fade-leave-to{opacity:0}.slide-enter-active,.slide-leave-active{transition:transform .3s ease}.slide-enter-from,.slide-leave-to{transform:translate(100%)}
 .line-clamp-1[data-v-2138fea3]{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}.scrollbar-hide[data-v-2138fea3]{-ms-overflow-style:none;scrollbar-width:none}.scrollbar-hide[data-v-2138fea3]::-webkit-scrollbar{display:none}
-</style></head> <body class="min-h-screen w-full overflow-x-hidden"> <div id="app" class="flex flex-col min-h-screen w-full min-w-0">  <header class="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-700 w-full"> <div class="w-full px-4"> <nav class="relative flex items-center justify-between h-16"> <!-- 左侧：图标和标题 --> <div class="flex items-center space-x-4"> <a href="/en/" class="flex items-center space-x-3 hover:opacity-80 transition-opacity"> <img src="/images/avatar.png" alt="Vicky's Blog" class="w-8 h-8 rounded-full"> <div class="hidden sm:block"> <h1 class="text-xl font-bold text-slate-900 dark:text-slate-100"> Vicky&#39;s Blog </h1>  </div> </a> </div> <!-- 中间：导航菜单（桌面端显示） --> <div class="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"> <div class="flex items-center space-x-8"> <a href="/en/" class="text-sm font-medium transition-colors hover:text-primary-500 text-slate-700 dark:text-slate-300"> Home </a><a href="/en/posts" class="text-sm font-medium transition-colors hover:text-primary-500 text-primary-500"> Posts </a><a href="/en/tags" class="text-sm font-medium transition-colors hover:text-primary-500 text-slate-700 dark:text-slate-300"> Tags </a><a href="/en/categories" class="text-sm font-medium transition-colors hover:text-primary-500 text-slate-700 dark:text-slate-300"> Categories </a><a href="/en/archives" class="text-sm font-medium transition-colors hover:text-primary-500 text-slate-700 dark:text-slate-300"> Archives </a><a href="/en/about" class="text-sm font-medium transition-colors hover:text-primary-500 text-slate-700 dark:text-slate-300"> About </a> </div> </div> <!-- 右侧：搜索、语言切换、主题切换（桌面端）+ 菜单按钮（移动端） --> <div class="flex items-center space-x-2"> <!-- 桌面端显示 --> <div class="hidden lg:block"> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="2eYDpD" prefix="s2" component-url="/assets/SearchBox.Cmgrbz83.js" component-export="default" renderer-url="/assets/client.KU856bOs.js" props="{&quot;placeholder&quot;:[0,&quot;Search posts, tags, content...&quot;],&quot;searchLabel&quot;:[0,&quot;Search&quot;],&quot;noResultsText&quot;:[0,&quot;No results found&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;SearchBox&quot;,&quot;value&quot;:true}" await-children><div class="relative" data-v-2f7ddff8><div class="relative" data-v-2f7ddff8><input value="" type="text" placeholder="Search posts, tags, content..." class="w-64 pl-10 pr-4 py-2 text-sm bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors" data-v-2f7ddff8><div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none" data-v-2f7ddff8><svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-v-2f7ddff8><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" data-v-2f7ddff8></path></svg></div></div><!----></div><!--astro:end--></astro-island> </div> <div class="hidden lg:block"> <astro-island uid="1DYUh0" prefix="s3" component-url="/assets/LanguageSwitcher.BwuCexJ2.js" component-export="default" renderer-url="/assets/client.KU856bOs.js" props="{&quot;locales&quot;:[1,[[0,{&quot;code&quot;:[0,&quot;zh-CN&quot;],&quot;name&quot;:[0,&quot;中文&quot;]}],[0,{&quot;code&quot;:[0,&quot;en&quot;],&quot;name&quot;:[0,&quot;English&quot;]}]]],&quot;currentLocale&quot;:[0,&quot;en&quot;],&quot;currentPath&quot;:[0,&quot;/posts/blog_docs_zh/pte/speaking/rts_examples/&quot;],&quot;defaultLocale&quot;:[0,&quot;zh-CN&quot;],&quot;prefixDefaultLocale&quot;:[0,false],&quot;base&quot;:[0,&quot;/&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;LanguageSwitcher&quot;,&quot;value&quot;:true}" await-children><div class="relative"><button class="flex items-center gap-1.5 px-3 py-[9px] text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg transition-colors" aria-expanded="false" aria-haspopup="listbox" aria-label="Select language, current: English"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg><svg class="w-3 h-3 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><!----></div><!--astro:end--></astro-island> </div> <div class="hidden lg:block"> <astro-island uid="Z1wNOXd" prefix="s4" component-url="/assets/ThemeToggle.BPBFxuBf.js" component-export="default" renderer-url="/assets/client.KU856bOs.js" props="{}" ssr client="load" opts="{&quot;name&quot;:&quot;ThemeToggle&quot;,&quot;value&quot;:true}" await-children><button class="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors" aria-label="切换到深色模式" data-v-2bbb9268><svg class="w-5 h-5 text-slate-700 dark:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-v-2bbb9268><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" data-v-2bbb9268></path></svg></button><!--astro:end--></astro-island> </div> <!-- 移动端显示菜单按钮 --> <div class="lg:hidden"> <astro-island uid="JUFDE" prefix="s5" component-url="/assets/MobileMenu.C6e4kDfz.js" component-export="default" renderer-url="/assets/client.KU856bOs.js" props="{&quot;navigation&quot;:[1,[[0,{&quot;name&quot;:[0,&quot;Home&quot;],&quot;href&quot;:[0,&quot;/&quot;],&quot;icon&quot;:[0,&quot;home&quot;]}],[0,{&quot;name&quot;:[0,&quot;Posts&quot;],&quot;href&quot;:[0,&quot;/en/posts&quot;]}],[0,{&quot;name&quot;:[0,&quot;Tags&quot;],&quot;href&quot;:[0,&quot;/en/tags&quot;]}],[0,{&quot;name&quot;:[0,&quot;Categories&quot;],&quot;href&quot;:[0,&quot;/en/categories&quot;]}],[0,{&quot;name&quot;:[0,&quot;Archives&quot;],&quot;href&quot;:[0,&quot;/en/archives&quot;]}],[0,{&quot;name&quot;:[0,&quot;About&quot;],&quot;href&quot;:[0,&quot;/about&quot;],&quot;icon&quot;:[0,&quot;about&quot;]}]]],&quot;base&quot;:[0,&quot;/&quot;],&quot;locales&quot;:[1,[[0,{&quot;code&quot;:[0,&quot;zh-CN&quot;],&quot;name&quot;:[0,&quot;中文&quot;]}],[0,{&quot;code&quot;:[0,&quot;en&quot;],&quot;name&quot;:[0,&quot;English&quot;]}]]],&quot;currentLocale&quot;:[0,&quot;en&quot;],&quot;currentPath&quot;:[0,&quot;/posts/blog_docs_zh/pte/speaking/rts_examples/&quot;],&quot;defaultLocale&quot;:[0,&quot;zh-CN&quot;],&quot;prefixDefaultLocale&quot;:[0,false],&quot;showLanguageSwitcher&quot;:[0,true]}" ssr client="load" opts="{&quot;name&quot;:&quot;MobileMenu&quot;,&quot;value&quot;:true}" await-children><div data-v-1e242347><button class="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors" aria-label="菜单" data-v-1e242347><svg class="w-5 h-5 text-slate-700 dark:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-v-1e242347><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" data-v-1e242347></path></svg></button><!----></div><!--astro:end--></astro-island> </div> </div> </nav> </div> </header> <main class="flex-1 flex w-full min-w-0" data-astro-cid-tqtcbl4k> <aside class="hidden lg:block shrink-0 transition-all duration-300 relative" data-sidebar style="width: var(--sidebar-width, 256px);" data-astro-cid-tqtcbl4k> <div class="sticky top-20 h-[calc(100vh-5rem)] overflow-y-auto" data-astro-cid-tqtcbl4k> <div class="space-y-8 p-6" data-astro-cid-fiukrunh>          <section data-astro-cid-fiukrunh> <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-4 border-b border-slate-200 dark:border-slate-700 pb-2" data-astro-cid-fiukrunh> Friend Links </h3> <div class="space-y-2" data-astro-cid-fiukrunh> <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" data-astro-cid-fiukrunh>  <span class="text-sm text-slate-700 dark:text-slate-300 group-hover:text-primary-500" data-astro-cid-fiukrunh> Astro 官网 </span> </a><a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" data-astro-cid-fiukrunh>  <span class="text-sm text-slate-700 dark:text-slate-300 group-hover:text-primary-500" data-astro-cid-fiukrunh> Tailwind CSS </span> </a><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" data-astro-cid-fiukrunh>  <span class="text-sm text-slate-700 dark:text-slate-300 group-hover:text-primary-500" data-astro-cid-fiukrunh> Vue.js </span> </a> </div> </section> </div>  <script type="module">function c(){document.querySelectorAll(".tree-folder-toggle").forEach(e=>{e.addEventListener("click",()=>{const s=e.nextElementSibling,l=e.classList.toggle("expanded");s&&s.classList.contains("tree-children")&&s.classList.toggle("show",l)})});const o=window.location.pathname.replace(/\/$/,"");document.querySelectorAll(".tree-file").forEach(e=>{const s=e.getAttribute("href")?.replace(/\/$/,"");if(s&&o===s){e.classList.add("active");let l=e.closest(".tree-children");for(;l;){l.classList.add("show");const t=l.previousElementSibling;t&&t.classList.contains("tree-folder-toggle")&&t.classList.add("expanded"),l=l.parentElement?.closest(".tree-children")||null}}}),document.querySelectorAll(".doc-tree").forEach(e=>{const s=e.getAttribute("data-collapsed")==="true";e.querySelectorAll(".tree-folder-toggle").forEach(t=>{const r=t.getAttribute("data-default-collapsed")==="true",a=t.closest(".tree-children")===null||t.closest("ul")?.parentElement?.classList.contains("doc-tree");if(!t.classList.contains("expanded")&&!(s||r)&&a){const n=t.nextElementSibling;n&&n.classList.contains("tree-children")&&(n.classList.add("show"),t.classList.add("expanded"))}})})}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",c):c();document.addEventListener("astro:page-load",c);</script> </div> <div class="absolute top-0 right-0 w-1 h-full cursor-col-resize group z-10" data-sidebar-resizer data-astro-cid-tqtcbl4k> <div class="absolute top-0 right-0 w-4 h-full -mr-2 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity" data-astro-cid-tqtcbl4k> <div class="w-1 h-16 bg-primary-400 dark:bg-primary-500 rounded-full" data-astro-cid-tqtcbl4k></div> </div> </div> </aside> <div class="lg:hidden fixed inset-0 bg-black/50 z-40 hidden" data-sidebar-overlay onclick="this.classList.add('hidden'); document.querySelector('[data-mobile-sidebar]').classList.add('-translate-x-full');" data-astro-cid-tqtcbl4k></div> <aside class="lg:hidden fixed top-16 left-0 w-72 h-[calc(100vh-4rem)] bg-white dark:bg-slate-900 z-50 transform -translate-x-full transition-transform duration-300 shadow-xl overflow-y-auto" data-mobile-sidebar data-astro-cid-tqtcbl4k> <div class="p-4" data-astro-cid-tqtcbl4k> <div class="space-y-8 p-6" data-astro-cid-fiukrunh>          <section data-astro-cid-fiukrunh> <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-4 border-b border-slate-200 dark:border-slate-700 pb-2" data-astro-cid-fiukrunh> Friend Links </h3> <div class="space-y-2" data-astro-cid-fiukrunh> <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" data-astro-cid-fiukrunh>  <span class="text-sm text-slate-700 dark:text-slate-300 group-hover:text-primary-500" data-astro-cid-fiukrunh> Astro 官网 </span> </a><a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" data-astro-cid-fiukrunh>  <span class="text-sm text-slate-700 dark:text-slate-300 group-hover:text-primary-500" data-astro-cid-fiukrunh> Tailwind CSS </span> </a><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" data-astro-cid-fiukrunh>  <span class="text-sm text-slate-700 dark:text-slate-300 group-hover:text-primary-500" data-astro-cid-fiukrunh> Vue.js </span> </a> </div> </section> </div>   </div> </aside> <div class="flex-1 min-w-0 transition-all duration-300 lg:px-8  relative" data-main-content data-astro-cid-tqtcbl4k> <div class="hidden lg:block fixed top-20 left-1 z-40 transition-all duration-300" data-sidebar-toggle data-astro-cid-tqtcbl4k> <astro-island uid="Z1jvfRh" prefix="s1" component-url="/assets/SidebarToggle.DFbEkUuc.js" component-export="default" renderer-url="/assets/client.KU856bOs.js" props="{&quot;data-astro-cid-tqtcbl4k&quot;:[0,true]}" ssr client="load" opts="{&quot;name&quot;:&quot;SidebarToggle&quot;,&quot;value&quot;:true}" await-children><button title="隐藏侧边栏" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-600 hover:text-primary-500 dark:text-slate-400 dark:hover:text-primary-400" data-astro-cid-tqtcbl4k="true"><svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7"></path></svg></button><!--astro:end--></astro-island> </div> <button class="lg:hidden fixed bottom-20 left-4 z-40 p-3 bg-primary-500 hover:bg-primary-600 text-white rounded-full shadow-lg transition-colors" data-mobile-sidebar-toggle aria-label="Document Tree" onclick="document.querySelector('[data-sidebar-overlay]').classList.remove('hidden'); document.querySelector('[data-mobile-sidebar]').classList.remove('-translate-x-full');" data-astro-cid-tqtcbl4k> <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-tqtcbl4k> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" data-astro-cid-tqtcbl4k></path> </svg> </button> <div class="w-full min-w-0 px-4 py-8" style="max-width: var(--content-max-width, 100%); margin: 0 auto;" data-astro-cid-tqtcbl4k> <nav class="flex items-center flex-wrap gap-y-1 text-sm text-slate-600 dark:text-slate-400 mb-8"><a href="/en/" class="hover:text-primary-500 transition-colors">Home</a><svg class="w-4 h-4 mx-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><a href="/en/posts/blog_docs_zh" class="hover:text-primary-500 transition-colors">中文</a><svg class="w-4 h-4 mx-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><a href="/en/posts/blog_docs_zh/pte" class="hover:text-primary-500 transition-colors">PTE 备考指南</a><svg class="w-4 h-4 mx-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><a href="/en/posts/blog_docs_zh/pte/speaking" class="hover:text-primary-500 transition-colors">Speaking</a><svg class="w-4 h-4 mx-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="text-slate-900 dark:text-slate-100 truncate max-w-xs">RTS Questions</span></nav><astro-island uid="lOfLs" prefix="s0" component-url="/assets/FloatingToc.BCP3hR_P.js" component-export="default" renderer-url="/assets/client.KU856bOs.js" props="{&quot;tocTitle&quot;:[0,&quot;Table of Contents&quot;],&quot;progressTitle&quot;:[0,&quot;Reading Progress&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;FloatingToc&quot;,&quot;value&quot;:true}" await-children><div class="fixed top-24 right-4 z-40" data-v-bc4627c7><div class="relative" data-v-bc4627c7><button class="p-3 bg-white dark:bg-slate-800 rounded-full shadow-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" aria-label="Table of Contents" data-v-bc4627c7><svg class="w-5 h-5 text-slate-600 dark:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-v-bc4627c7><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" data-v-bc4627c7></path></svg></button><!----></div></div><!--astro:end--></astro-island><article class="prose prose-slate dark:prose-invert max-w-none"><!-- 标题区域 --><header class="not-prose mb-12"><div class="text-center"><h1 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100 mb-6 leading-tight">RTS Questions</h1><p class="text-xl text-slate-600 dark:text-slate-400 mb-8 max-w-3xl mx-auto"></p><!-- 文章元信息 --><div class="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-500 dark:text-slate-400"><div class="flex items-center space-x-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg><span>Haiyue</span></div><div class="flex items-center space-x-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><time datetime="2024-03-01T00:00:00.000Z">March 1, 2024</time></div><div class="flex items-center space-x-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>71min</span></div></div><!-- 标签 --><div class="flex flex-wrap justify-center gap-2 mt-6"><a href="/en/tags/rts" class="px-3 py-1 text-xs font-medium bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full hover:bg-primary-200 dark:hover:bg-primary-900/50 transition-colors">
+</style></head> <body class="min-h-screen w-full overflow-x-hidden"> <div id="app" class="flex flex-col min-h-screen w-full min-w-0">  <header class="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-700 w-full"> <div class="w-full px-4"> <nav class="relative flex items-center justify-between h-16"> <!-- 左侧：图标和标题 --> <div class="flex items-center space-x-4"> <a href="/en/" class="flex items-center space-x-3 hover:opacity-80 transition-opacity"> <img src="/images/avatar.png" alt="Vicky's Blog" class="w-8 h-8 rounded-full"> <div class="hidden sm:block"> <h1 class="text-xl font-bold text-slate-900 dark:text-slate-100"> Vicky&#39;s Blog </h1>  </div> </a> </div> <!-- 中间：导航菜单（桌面端显示） --> <div class="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"> <div class="flex items-center space-x-8"> <a href="/en/" class="text-sm font-medium transition-colors hover:text-primary-500 text-slate-700 dark:text-slate-300"> Home </a><a href="/en/posts" class="text-sm font-medium transition-colors hover:text-primary-500 text-primary-500"> Posts </a><a href="/en/tags" class="text-sm font-medium transition-colors hover:text-primary-500 text-slate-700 dark:text-slate-300"> Tags </a><a href="/en/categories" class="text-sm font-medium transition-colors hover:text-primary-500 text-slate-700 dark:text-slate-300"> Categories </a><a href="/en/archives" class="text-sm font-medium transition-colors hover:text-primary-500 text-slate-700 dark:text-slate-300"> Archives </a><a href="/en/about" class="text-sm font-medium transition-colors hover:text-primary-500 text-slate-700 dark:text-slate-300"> About </a> </div> </div> <!-- 右侧：搜索、语言切换、主题切换（桌面端）+ 菜单按钮（移动端） --> <div class="flex items-center space-x-2"> <!-- 桌面端显示 --> <div class="hidden lg:block"> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="2eYDpD" prefix="s2" component-url="/assets/SearchBox.Cmgrbz83.js" component-export="default" renderer-url="/assets/client.KU856bOs.js" props="{&quot;placeholder&quot;:[0,&quot;Search posts, tags, content...&quot;],&quot;searchLabel&quot;:[0,&quot;Search&quot;],&quot;noResultsText&quot;:[0,&quot;No results found&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;SearchBox&quot;,&quot;value&quot;:true}" await-children><div class="relative" data-v-2f7ddff8><div class="relative" data-v-2f7ddff8><input value="" type="text" placeholder="Search posts, tags, content..." class="w-64 pl-10 pr-4 py-2 text-sm bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors" data-v-2f7ddff8><div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none" data-v-2f7ddff8><svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-v-2f7ddff8><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" data-v-2f7ddff8></path></svg></div></div><!----></div><!--astro:end--></astro-island> </div> <div class="hidden lg:block"> <astro-island uid="1DYUh0" prefix="s3" component-url="/assets/LanguageSwitcher.BwuCexJ2.js" component-export="default" renderer-url="/assets/client.KU856bOs.js" props="{&quot;locales&quot;:[1,[[0,{&quot;code&quot;:[0,&quot;zh-CN&quot;],&quot;name&quot;:[0,&quot;中文&quot;]}],[0,{&quot;code&quot;:[0,&quot;en&quot;],&quot;name&quot;:[0,&quot;English&quot;]}]]],&quot;currentLocale&quot;:[0,&quot;en&quot;],&quot;currentPath&quot;:[0,&quot;/posts/blog_docs_zh/pte/speaking/rts_examples/&quot;],&quot;defaultLocale&quot;:[0,&quot;zh-CN&quot;],&quot;prefixDefaultLocale&quot;:[0,false],&quot;base&quot;:[0,&quot;/&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;LanguageSwitcher&quot;,&quot;value&quot;:true}" await-children><div class="relative"><button class="flex items-center gap-1.5 px-3 py-[9px] text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg transition-colors" aria-expanded="false" aria-haspopup="listbox" aria-label="Select language, current: English"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg><svg class="w-3 h-3 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button><!----></div><!--astro:end--></astro-island> </div> <div class="hidden lg:block"> <astro-island uid="Z1wNOXd" prefix="s4" component-url="/assets/ThemeToggle.BPBFxuBf.js" component-export="default" renderer-url="/assets/client.KU856bOs.js" props="{}" ssr client="load" opts="{&quot;name&quot;:&quot;ThemeToggle&quot;,&quot;value&quot;:true}" await-children><button class="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors" aria-label="切换到深色模式" data-v-2bbb9268><svg class="w-5 h-5 text-slate-700 dark:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-v-2bbb9268><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" data-v-2bbb9268></path></svg></button><!--astro:end--></astro-island> </div> <!-- 移动端显示菜单按钮 --> <div class="lg:hidden"> <astro-island uid="JUFDE" prefix="s5" component-url="/assets/MobileMenu.C6e4kDfz.js" component-export="default" renderer-url="/assets/client.KU856bOs.js" props="{&quot;navigation&quot;:[1,[[0,{&quot;name&quot;:[0,&quot;Home&quot;],&quot;href&quot;:[0,&quot;/&quot;],&quot;icon&quot;:[0,&quot;home&quot;]}],[0,{&quot;name&quot;:[0,&quot;Posts&quot;],&quot;href&quot;:[0,&quot;/en/posts&quot;]}],[0,{&quot;name&quot;:[0,&quot;Tags&quot;],&quot;href&quot;:[0,&quot;/en/tags&quot;]}],[0,{&quot;name&quot;:[0,&quot;Categories&quot;],&quot;href&quot;:[0,&quot;/en/categories&quot;]}],[0,{&quot;name&quot;:[0,&quot;Archives&quot;],&quot;href&quot;:[0,&quot;/en/archives&quot;]}],[0,{&quot;name&quot;:[0,&quot;About&quot;],&quot;href&quot;:[0,&quot;/about&quot;],&quot;icon&quot;:[0,&quot;about&quot;]}]]],&quot;base&quot;:[0,&quot;/&quot;],&quot;locales&quot;:[1,[[0,{&quot;code&quot;:[0,&quot;zh-CN&quot;],&quot;name&quot;:[0,&quot;中文&quot;]}],[0,{&quot;code&quot;:[0,&quot;en&quot;],&quot;name&quot;:[0,&quot;English&quot;]}]]],&quot;currentLocale&quot;:[0,&quot;en&quot;],&quot;currentPath&quot;:[0,&quot;/posts/blog_docs_zh/pte/speaking/rts_examples/&quot;],&quot;defaultLocale&quot;:[0,&quot;zh-CN&quot;],&quot;prefixDefaultLocale&quot;:[0,false],&quot;showLanguageSwitcher&quot;:[0,true]}" ssr client="load" opts="{&quot;name&quot;:&quot;MobileMenu&quot;,&quot;value&quot;:true}" await-children><div data-v-1e242347><button class="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors" aria-label="菜单" data-v-1e242347><svg class="w-5 h-5 text-slate-700 dark:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-v-1e242347><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" data-v-1e242347></path></svg></button><!----></div><!--astro:end--></astro-island> </div> </div> </nav> </div> </header> <main class="flex-1 flex w-full min-w-0" data-astro-cid-tqtcbl4k> <aside class="hidden lg:block shrink-0 transition-all duration-300 relative" data-sidebar style="width: var(--sidebar-width, 256px);" data-astro-cid-tqtcbl4k> <div class="sticky top-20 h-[calc(100vh-5rem)] overflow-y-auto" data-astro-cid-tqtcbl4k> <div class="space-y-8 p-6" data-astro-cid-fiukrunh>          <section data-astro-cid-fiukrunh> <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-4 border-b border-slate-200 dark:border-slate-700 pb-2" data-astro-cid-fiukrunh> Friend Links </h3> <div class="space-y-2" data-astro-cid-fiukrunh> <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" data-astro-cid-fiukrunh>  <span class="text-sm text-slate-700 dark:text-slate-300 group-hover:text-primary-500" data-astro-cid-fiukrunh> Astro 官网 </span> </a><a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" data-astro-cid-fiukrunh>  <span class="text-sm text-slate-700 dark:text-slate-300 group-hover:text-primary-500" data-astro-cid-fiukrunh> Tailwind CSS </span> </a><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" data-astro-cid-fiukrunh>  <span class="text-sm text-slate-700 dark:text-slate-300 group-hover:text-primary-500" data-astro-cid-fiukrunh> Vue.js </span> </a> </div> </section> </div>  <script type="module">function c(){document.querySelectorAll(".tree-folder-toggle").forEach(e=>{e.addEventListener("click",()=>{const s=e.nextElementSibling,l=e.classList.toggle("expanded");s&&s.classList.contains("tree-children")&&s.classList.toggle("show",l)})});const o=window.location.pathname.replace(/\/$/,"");document.querySelectorAll(".tree-file").forEach(e=>{const s=e.getAttribute("href")?.replace(/\/$/,"");if(s&&o===s){e.classList.add("active");let l=e.closest(".tree-children");for(;l;){l.classList.add("show");const t=l.previousElementSibling;t&&t.classList.contains("tree-folder-toggle")&&t.classList.add("expanded"),l=l.parentElement?.closest(".tree-children")||null}}}),document.querySelectorAll(".doc-tree").forEach(e=>{const s=e.getAttribute("data-collapsed")==="true";e.querySelectorAll(".tree-folder-toggle").forEach(t=>{const r=t.getAttribute("data-default-collapsed")==="true",a=t.closest(".tree-children")===null||t.closest("ul")?.parentElement?.classList.contains("doc-tree");if(!t.classList.contains("expanded")&&!(s||r)&&a){const n=t.nextElementSibling;n&&n.classList.contains("tree-children")&&(n.classList.add("show"),t.classList.add("expanded"))}})})}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",c):c();document.addEventListener("astro:page-load",c);</script> </div> <div class="absolute top-0 right-0 w-1 h-full cursor-col-resize group z-10" data-sidebar-resizer data-astro-cid-tqtcbl4k> <div class="absolute top-0 right-0 w-4 h-full -mr-2 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity" data-astro-cid-tqtcbl4k> <div class="w-1 h-16 bg-primary-400 dark:bg-primary-500 rounded-full" data-astro-cid-tqtcbl4k></div> </div> </div> </aside> <div class="lg:hidden fixed inset-0 bg-black/50 z-40 hidden" data-sidebar-overlay onclick="this.classList.add('hidden'); document.querySelector('[data-mobile-sidebar]').classList.add('-translate-x-full');" data-astro-cid-tqtcbl4k></div> <aside class="lg:hidden fixed top-16 left-0 w-72 h-[calc(100vh-4rem)] bg-white dark:bg-slate-900 z-50 transform -translate-x-full transition-transform duration-300 shadow-xl overflow-y-auto" data-mobile-sidebar data-astro-cid-tqtcbl4k> <div class="p-4" data-astro-cid-tqtcbl4k> <div class="space-y-8 p-6" data-astro-cid-fiukrunh>          <section data-astro-cid-fiukrunh> <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-4 border-b border-slate-200 dark:border-slate-700 pb-2" data-astro-cid-fiukrunh> Friend Links </h3> <div class="space-y-2" data-astro-cid-fiukrunh> <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" data-astro-cid-fiukrunh>  <span class="text-sm text-slate-700 dark:text-slate-300 group-hover:text-primary-500" data-astro-cid-fiukrunh> Astro 官网 </span> </a><a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" data-astro-cid-fiukrunh>  <span class="text-sm text-slate-700 dark:text-slate-300 group-hover:text-primary-500" data-astro-cid-fiukrunh> Tailwind CSS </span> </a><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors group" data-astro-cid-fiukrunh>  <span class="text-sm text-slate-700 dark:text-slate-300 group-hover:text-primary-500" data-astro-cid-fiukrunh> Vue.js </span> </a> </div> </section> </div>   </div> </aside> <div class="flex-1 min-w-0 transition-all duration-300 lg:px-8  relative" data-main-content data-astro-cid-tqtcbl4k> <div class="hidden lg:block fixed top-20 left-1 z-40 transition-all duration-300" data-sidebar-toggle data-astro-cid-tqtcbl4k> <astro-island uid="Z1jvfRh" prefix="s1" component-url="/assets/SidebarToggle.DFbEkUuc.js" component-export="default" renderer-url="/assets/client.KU856bOs.js" props="{&quot;data-astro-cid-tqtcbl4k&quot;:[0,true]}" ssr client="load" opts="{&quot;name&quot;:&quot;SidebarToggle&quot;,&quot;value&quot;:true}" await-children><button title="隐藏侧边栏" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-600 hover:text-primary-500 dark:text-slate-400 dark:hover:text-primary-400" data-astro-cid-tqtcbl4k="true"><svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7"></path></svg></button><!--astro:end--></astro-island> </div> <button class="lg:hidden fixed bottom-20 left-4 z-40 p-3 bg-primary-500 hover:bg-primary-600 text-white rounded-full shadow-lg transition-colors" data-mobile-sidebar-toggle aria-label="Document Tree" onclick="document.querySelector('[data-sidebar-overlay]').classList.remove('hidden'); document.querySelector('[data-mobile-sidebar]').classList.remove('-translate-x-full');" data-astro-cid-tqtcbl4k> <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-tqtcbl4k> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" data-astro-cid-tqtcbl4k></path> </svg> </button> <div class="w-full min-w-0 px-4 py-8" style="max-width: var(--content-max-width, 100%); margin: 0 auto;" data-astro-cid-tqtcbl4k> <nav class="flex items-center flex-wrap gap-y-1 text-sm text-slate-600 dark:text-slate-400 mb-8"><a href="/en/" class="hover:text-primary-500 transition-colors">Home</a><svg class="w-4 h-4 mx-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><a href="/en/posts/blog_docs_zh" class="hover:text-primary-500 transition-colors">中文</a><svg class="w-4 h-4 mx-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><a href="/en/posts/blog_docs_zh/pte" class="hover:text-primary-500 transition-colors">PTE 备考指南</a><svg class="w-4 h-4 mx-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><a href="/en/posts/blog_docs_zh/pte/speaking" class="hover:text-primary-500 transition-colors">Speaking</a><svg class="w-4 h-4 mx-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><span class="text-slate-900 dark:text-slate-100 truncate max-w-xs">RTS Questions</span></nav><astro-island uid="lOfLs" prefix="s0" component-url="/assets/FloatingToc.BCP3hR_P.js" component-export="default" renderer-url="/assets/client.KU856bOs.js" props="{&quot;tocTitle&quot;:[0,&quot;Table of Contents&quot;],&quot;progressTitle&quot;:[0,&quot;Reading Progress&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;FloatingToc&quot;,&quot;value&quot;:true}" await-children><div class="fixed top-24 right-4 z-40" data-v-bc4627c7><div class="relative" data-v-bc4627c7><button class="p-3 bg-white dark:bg-slate-800 rounded-full shadow-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors" aria-label="Table of Contents" data-v-bc4627c7><svg class="w-5 h-5 text-slate-600 dark:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-v-bc4627c7><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" data-v-bc4627c7></path></svg></button><!----></div></div><!--astro:end--></astro-island><article class="prose prose-slate dark:prose-invert max-w-none"><!-- 标题区域 --><header class="not-prose mb-12"><div class="text-center"><h1 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100 mb-6 leading-tight">RTS Questions</h1><p class="text-xl text-slate-600 dark:text-slate-400 mb-8 max-w-3xl mx-auto"></p><!-- 文章元信息 --><div class="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-500 dark:text-slate-400"><div class="flex items-center space-x-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg><span>Haiyue</span></div><div class="flex items-center space-x-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><time datetime="2024-03-01T00:00:00.000Z">March 1, 2024</time></div><div class="flex items-center space-x-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>82min</span></div></div><!-- 标签 --><div class="flex flex-wrap justify-center gap-2 mt-6"><a href="/en/tags/rts" class="px-3 py-1 text-xs font-medium bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full hover:bg-primary-200 dark:hover:bg-primary-900/50 transition-colors">
 #RTS</a></div></div><!-- 封面图片 --></header><!-- 文章内容 --><div class="prose prose-slate dark:prose-invert max-w-none prose-lg" data-prose-content data-locale-prefix="/en" data-base-url="/"><h3 id="1-asking-a-librarian-for-help-with-a-broken-photocopier-图书馆复印机坏了-221001-极高频-极限预测-简单">1. Asking a Librarian for Help with a Broken Photocopier 图书馆复印机坏了 #221001 极高频 极限预测 简单</h3>
 <p>You were trying to photocopy a document at the library, but you find the photocopier not working and there is a flashing light next to the photocopy icon. You want to ask the librarian to help you. What would you say?</p>
 <p>你当时正在图书馆里试图复印一份文件，但发现复印机无法正常工作，而且复印图标旁边还闪烁着指示灯。你想向图书馆管理员寻求帮助。你会怎么说？</p>
@@ -35,9 +35,9 @@
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">the photocopier at the library</span>.<br>
-The situation is that <span style="color:orange">I was trying to photocopy a document, but I found the photocopier not working and there is a flashing light next to the photocopy icon</span>.<br>
-This is important because <span style="color:orange">I need to photocopy this document urgently</span>.<br>
+I’d like to talk to you about <span style="color:orange">the <span style="color:red">photocopier</span> at the library</span>.<br>
+The situation is that <span style="color:orange">I was trying to <span style="color:red">photocopy</span> a <span style="color:red">document</span>, but I found the <span style="color:red">photocopier</span> not working and there is a <span style="color:red">flashing</span> light next to the <span style="color:red">photocopy</span> icon</span>.<br>
+This is important because <span style="color:orange">I need to <span style="color:red">photocopy</span> this <span style="color:red">document</span> <span style="color:red">urgently</span></span>.<br>
 I was wondering if you could <span style="color:orange">help me with it</span>.<br>
 I’d really appreciate it.</p>
 </div>
@@ -47,7 +47,9 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>photocopier /ˈfoʊtəˌkɑːpiər/ n. 复印机<br>
 document /ˈdɑːkjəmənt/ n. 文件<br>
-urgently /ˈɜːrdʒəntli/ adv. 紧急地</p>
+urgently /ˈɜːrdʒəntli/ adv. 紧急地<br>
+photocopy /ˈfoʊtəˌkɑːpi/ v. 复印<br>
+flashing /ˈflæʃɪŋ/ adj. 闪烁的</p>
 </div>
 </details>
 <h3 id="2-asking-someone-to-lower-noise-in-the-library-图书馆让人降低噪音-221002-极高频-简单">2. Asking Someone to Lower Noise in the Library 图书馆让人降低噪音 #221002 极高频 简单</h3>
@@ -64,9 +66,9 @@ urgently /ˈɜːrdʒəntli/ adv. 紧急地</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">the noise in the library</span>.<br>
-The situation is that <span style="color:orange">I have an assignment due next week, but you are playing a video without headphones, and I am too distracted to focus on my study</span>.<br>
-This is important because <span style="color:orange">I need a quiet place to concentrate on my assignment</span>.<br>
-I was wondering if you could <span style="color:orange">lower the volume or use headphones</span>.<br>
+The situation is that <span style="color:orange">I have an <span style="color:red">assignment</span> due next week, but you are playing a video without <span style="color:red">headphones</span>, and I am too <span style="color:red">distracted</span> to focus on my study</span>.<br>
+This is important because <span style="color:orange">I need a quiet place to <span style="color:red">concentrate</span> on my <span style="color:red">assignment</span></span>.<br>
+I was wondering if you could <span style="color:orange">lower the <span style="color:red">volume</span> or use <span style="color:red">headphones</span></span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -76,7 +78,8 @@ I’d really appreciate it.</p>
 <p>assignment /əˈsaɪnmənt/ n. 作业<br>
 distracted /dɪˈstræktɪd/ adj. 分心的<br>
 concentrate /ˈkɑːnsəntreɪt/ v. 集中注意力<br>
-volume /ˈvɑːljuːm/ n. 音量</p>
+volume /ˈvɑːljuːm/ n. 音量<br>
+headphones /ˈhedfoʊnz/ n. 耳机</p>
 </div>
 </details>
 <h3 id="3-expressing-interest-in-a-job-面试校园咖啡店-221003-极高频-普通">3. Expressing Interest in a Job 面试校园咖啡店 #221003 极高频 普通</h3>
@@ -93,9 +96,9 @@ volume /ˈvɑːljuːm/ n. 音量</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">the job in the school cafe</span>.<br>
-The situation is that <span style="color:orange">I am interested in applying for the job, and I know you are looking for someone with experience, which I am actually currently lacking</span>.<br>
-This is important because <span style="color:orange">I am eager to learn and determined to work hard</span>.<br>
-I was wondering if you could <span style="color:orange">give me the opportunity to prove myself</span>.<br>
+The situation is that <span style="color:orange">I am interested in <span style="color:red">applying</span> for the job, and I know you are looking for someone with <span style="color:red">experience</span>, which I am actually currently <span style="color:red">lacking</span></span>.<br>
+This is important because <span style="color:orange">I am <span style="color:red">eager</span> to learn and <span style="color:red">determined</span> to work hard</span>.<br>
+I was wondering if you could <span style="color:orange">give me the <span style="color:red">opportunity</span> to prove myself</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -104,7 +107,10 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>experience /ɪkˈspɪriəns/ n. 经验<br>
 determined /dɪˈtɜːrmɪnd/ adj. 坚定的<br>
-opportunity /ˌɑːpərˈtuːnəti/ n. 机会</p>
+opportunity /ˌɑːpərˈtuːnəti/ n. 机会<br>
+applying /əˈplaɪɪŋ/ v. 申请<br>
+lacking /ˈlækɪŋ/ v. 缺乏<br>
+eager /ˈiːɡər/ adj. 渴望的</p>
 </div>
 </details>
 <h3 id="4-roommates-friend-ate-your-food-室友的朋友吃了你的食物-221004-极高频-极限预测-普通">4. Roommate’s friend ate your food 室友的朋友吃了你的食物 #221004 极高频 极限预测 普通</h3>
@@ -121,8 +127,8 @@ opportunity /ˌɑːpərˈtuːnəti/ n. 机会</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">my food in the fridge</span>.<br>
-The situation is that <span style="color:orange">I find my food in the fridge disappearing, and I notice there may be a visitor of yours eating my food</span>.<br>
-This is important because <span style="color:orange">I feel that they don’t obey the rules we agreed on</span>.<br>
+The situation is that <span style="color:orange">I find my food in the fridge <span style="color:red">disappearing</span>, and I notice there may be a <span style="color:red">visitor</span> of yours eating my food</span>.<br>
+This is important because <span style="color:orange">I feel that they don’t <span style="color:red">obey</span> the rules we agreed on</span>.<br>
 I was wondering if you could <span style="color:orange">talk about this and find a way to make sure it doesn’t happen again</span>.<br>
 I’d really appreciate it.</p>
 </div>
@@ -130,7 +136,9 @@ I’d really appreciate it.</p>
 <details class="container-details custom-container" data-container-type="details">
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
-<p>disappearing /ˌdɪsəˈpɪrɪŋ/ v. 消失</p>
+<p>disappearing /ˌdɪsəˈpɪrɪŋ/ v. 消失<br>
+visitor /ˈvɪzɪtər/ n. 访客<br>
+obey /oʊˈbeɪ/ v. 遵守</p>
 </div>
 </details>
 <h3 id="5-inquiring-about-café-job-询问咖啡店工作内容-221005-极高频-极限预测-简单">5. Inquiring about café job 询问咖啡店工作内容 #221005 极高频 极限预测 简单</h3>
@@ -146,10 +154,10 @@ I’d really appreciate it.</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">the part-time job at the campus cafeteria</span>.<br>
-The situation is that <span style="color:orange">I noticed the advertisement for the part-time job, and I’m really interested, but I don’t know what is required for this job</span>.<br>
-This is important because <span style="color:orange">I want to know more about the job responsibilities and requirements</span>.<br>
-I was wondering if you could <span style="color:orange">tell me more about what the role involves and what skills you’re looking for</span>.<br>
+I’d like to talk to you about <span style="color:orange">the part-time job at the campus <span style="color:red">cafeteria</span></span>.<br>
+The situation is that <span style="color:orange">I noticed the <span style="color:red">advertisement</span> for the part-time job, and I’m really interested, but I don’t know what is <span style="color:red">required</span> for this job</span>.<br>
+This is important because <span style="color:orange">I want to know more about the job <span style="color:red">responsibilities</span> and <span style="color:red">requirements</span></span>.<br>
+I was wondering if you could <span style="color:orange">tell me more about what the role <span style="color:red">involves</span> and what skills you’re looking for</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -159,7 +167,9 @@ I’d really appreciate it.</p>
 <p>cafeteria /ˌkæfəˈtɪriə/ n. 自助餐厅<br>
 advertisement /ˌædvərˈtaɪzmənt/ n. 广告<br>
 responsibilities /rɪˌspɑːnsəˈbɪlətiz/ n. 职责<br>
-requirements /rɪˈkwaɪərmənts/ n. 要求</p>
+requirements /rɪˈkwaɪərmənts/ n. 要求<br>
+involves /ɪnˈvɑːlvz/ v. 涉及<br>
+required /rɪˈkwaɪərd/ adj. 必需的</p>
 </div>
 </details>
 <h3 id="6-returning-damaged-library-book-图书馆归还损坏的图书-221006-极高频-极限预测-普通">6. Returning damaged library book 图书馆归还损坏的图书 #221006 极高频 极限预测 普通</h3>
@@ -175,9 +185,9 @@ requirements /rɪˈkwaɪərmənts/ n. 要求</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">a book I borrowed from the library</span>.<br>
+I’d like to talk to you about <span style="color:orange">a book I <span style="color:red">borrowed</span> from the library</span>.<br>
 The situation is that <span style="color:orange">while I was reading it, I noticed that two pages have been torn out, but I didn’t do it</span>.<br>
-This is important because <span style="color:orange">I want to make sure it’s not recorded as my responsibility</span>.<br>
+This is important because <span style="color:orange">I want to make sure it’s not <span style="color:red">recorded</span> as my <span style="color:red">responsibility</span></span>.<br>
 I was wondering if you could <span style="color:orange">make a note of it</span>.<br>
 I’d really appreciate it.</p>
 </div>
@@ -185,7 +195,9 @@ I’d really appreciate it.</p>
 <details class="container-details custom-container" data-container-type="details">
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
-<p>responsibility /rɪˌspɑːnsəˈbɪləti/ n. 责任</p>
+<p>responsibility /rɪˌspɑːnsəˈbɪləti/ n. 责任<br>
+borrowed /ˈbɑːroʊd/ v. 借入<br>
+recorded /rɪˈkɔːrdɪd/ v. 记录</p>
 </div>
 </details>
 <h3 id="7-noisy-flatmates-明天考试室友太吵-221007-极高频-极限预测-简单">7. Noisy flatmates 明天考试，室友太吵 #221007 极高频 极限预测 简单</h3>
@@ -202,8 +214,8 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">the noise from your party</span>.<br>
-The situation is that <span style="color:orange">you are holding a party in your room at night, which is too noisy for me to sleep</span>.<br>
-This is important because <span style="color:orange">I have an important exam early tomorrow morning</span>.<br>
+The situation is that <span style="color:orange">you are holding a party in your room at night, which is too <span style="color:red">noisy</span> for me to sleep</span>.<br>
+This is <span style="color:red">important</span> because <span style="color:orange">I have an <span style="color:red">important</span> exam early tomorrow morning</span>.<br>
 I was wondering if you could <span style="color:orange">lower down your voice a little bit or finish the party early</span>.<br>
 I’d really appreciate it.</p>
 </div>
@@ -211,7 +223,8 @@ I’d really appreciate it.</p>
 <details class="container-details custom-container" data-container-type="details">
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
-<p>important /ɪmˈpɔːrtənt/ adj. 重要的</p>
+<p>important /ɪmˈpɔːrtənt/ adj. 重要的<br>
+noisy /ˈnɔɪzi/ adj. 吵闹的</p>
 </div>
 </details>
 <h3 id="8-neighbor-playing-loud-music-邻居音乐太吵-221008-极高频-简单">8. Neighbor playing loud music 邻居音乐太吵 #221008 极高频 简单</h3>
@@ -227,10 +240,10 @@ I’d really appreciate it.</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">the music volume</span>.<br>
-The situation is that <span style="color:orange">you are holding a party with loud music in the living room at night, which is too noisy and influences my sleep</span>.<br>
+I’d like to talk to you about <span style="color:orange">the music <span style="color:red">volume</span></span>.<br>
+The situation is that <span style="color:orange">you are holding a party with loud music in the living room at night, which is too <span style="color:red">noisy</span> and <span style="color:red">influences</span> my sleep</span>.<br>
 This is important because <span style="color:orange">I have an important exam early tomorrow morning</span>.<br>
-I was wondering if you could <span style="color:orange">lower down the volume a little bit</span>.<br>
+I was wondering if you could <span style="color:orange">lower down the <span style="color:red">volume</span> a little bit</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -238,7 +251,8 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>volume /ˈvɑːljuːm/ n. 音量<br>
-influences /ˈɪnfluənsɪz/ v. 影响</p>
+influences /ˈɪnfluənsɪz/ v. 影响<br>
+noisy /ˈnɔɪzi/ adj. 吵闹的</p>
 </div>
 </details>
 <h3 id="9-book-to-return-请朋友还书-221009-极高频-简单">9. Book to return 请朋友还书 #221009 极高频 简单</h3>
@@ -256,7 +270,7 @@ influences /ˈɪnfluənsɪz/ v. 影响</p>
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">the book I lent you three weeks ago</span>.<br>
 The situation is that <span style="color:orange">I lent you a book three weeks ago, and you haven’t returned it yet</span>.<br>
-This is important because <span style="color:orange">I need the book very much now for my upcoming exam preparation</span>.<br>
+This is important because <span style="color:orange">I need the book very much now for my <span style="color:red">upcoming</span> exam <span style="color:red">preparation</span></span>.<br>
 I was wondering if you could <span style="color:orange">return it by tomorrow</span>.<br>
 I’d really appreciate it.</p>
 </div>
@@ -264,7 +278,8 @@ I’d really appreciate it.</p>
 <details class="container-details custom-container" data-container-type="details">
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
-<p>preparation /ˌprepəˈreɪʃən/ n. 准备</p>
+<p>preparation /ˌprepəˈreɪʃən/ n. 准备<br>
+upcoming /ˈʌpkʌmɪŋ/ adj. 即将到来的</p>
 </div>
 </details>
 <h3 id="10-tutorial-and-competition-比赛和辅导课冲突-221010-极高频-普通">10. Tutorial and competition 比赛和辅导课冲突 #221010 极高频 普通</h3>
@@ -280,10 +295,10 @@ I’d really appreciate it.</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">the tutorial session this afternoon</span>.<br>
-The situation is that <span style="color:orange">you scheduled a tutorial session for this afternoon, but I have an important competition to attend at the same time</span>.<br>
-This is important because <span style="color:orange">I really value the session but the competition is also important</span>.<br>
-I was wondering if you could <span style="color:orange">arrange a make-up class or let me review the material one-on-one later</span>.<br>
+I’d like to talk to you about <span style="color:orange">the <span style="color:red">tutorial</span> <span style="color:red">session</span> this afternoon</span>.<br>
+The situation is that <span style="color:orange">you <span style="color:red">scheduled</span> a <span style="color:red">tutorial</span> <span style="color:red">session</span> for this afternoon, but I have an important <span style="color:red">competition</span> to attend at the same time</span>.<br>
+This is important because <span style="color:orange">I really value the <span style="color:red">session</span> but the <span style="color:red">competition</span> is also important</span>.<br>
+I was wondering if you could <span style="color:orange"><span style="color:red">arrange</span> a make-up class or let me review the <span style="color:red">material</span> one-on-one later</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -292,7 +307,10 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>tutorial /tuːˈtɔːriəl/ n. 辅导课<br>
 competition /ˌkɑːmpəˈtɪʃən/ n. 比赛<br>
-scheduled /ˈskedʒuːld/ adj. 安排的</p>
+scheduled /ˈskedʒuːld/ adj. 安排的<br>
+arrange /əˈreɪndʒ/ v. 安排<br>
+material /məˈtɪriəl/ n. 材料<br>
+session /ˈseʃən/ n. 课程</p>
 </div>
 </details>
 <h3 id="11-requesting-payment-assistant-寻求付款帮助-221011-极高频-普通">11. Requesting payment assistant 寻求付款帮助 #221011 极高频 普通</h3>
@@ -308,10 +326,10 @@ scheduled /ˈskedʒuːld/ adj. 安排的</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">my university accommodation fees</span>.<br>
-The situation is that <span style="color:orange">I’ve applied for a loan to pay for the fees, but there is a delay to receive the money, and my part-time job and savings are still not enough to pay the fees all at once</span>.<br>
-This is important because <span style="color:orange">the payment deadline is approaching</span>.<br>
-I was wondering if you could <span style="color:orange">arrange an alternative payment plan, like paying in installments, until the loan comes through</span>.<br>
+I’d like to talk to you about <span style="color:orange">my university <span style="color:red">accommodation</span> fees</span>.<br>
+The situation is that <span style="color:orange">I’ve applied for a <span style="color:red">loan</span> to pay for the fees, but there is a delay to receive the money, and my part-time job and savings are still not enough to pay the fees all at once</span>.<br>
+This is important because <span style="color:orange">the payment deadline is <span style="color:red">approaching</span></span>.<br>
+I was wondering if you could <span style="color:orange">arrange an <span style="color:red">alternative</span> payment plan, like paying in <span style="color:red">installments</span>, until the <span style="color:red">loan</span> comes through</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -320,7 +338,9 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>accommodation /əˌkɑːməˈdeɪʃən/ n. 住宿<br>
 alternative /ɔːlˈtɜːrnətɪv/ adj. 替代的<br>
-installments /ɪnˈstɔːlmənts/ n. 分期付款</p>
+installments /ɪnˈstɔːlmənts/ n. 分期付款<br>
+approaching /əˈproʊtʃɪŋ/ v. 接近<br>
+loan /loʊn/ n. 贷款</p>
 </div>
 </details>
 <h3 id="12-borrow-notes-from-your-friend-借笔记-221012-极高频-极限预测-简单">12. Borrow notes from your friend 借笔记 #221012 极高频 极限预测 简单</h3>
@@ -337,16 +357,17 @@ installments /ɪnˈstɔːlmənts/ n. 分期付款</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">the class notes</span>.<br>
-The situation is that <span style="color:orange">I can’t find my class notes, but I need them to finish my assignments</span>.<br>
+The situation is that <span style="color:orange">I can’t find my class notes, but I need them to finish my <span style="color:red">assignments</span></span>.<br>
 This is important because <span style="color:orange">your notes are very good and I really need them</span>.<br>
-I was wondering if you could <span style="color:orange">lend me yours for a day or two</span>.<br>
+I was wondering if you could <span style="color:orange"><span style="color:red">lend</span> me yours for a day or two</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
 <details class="container-details custom-container" data-container-type="details">
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
-<p>assignments /əˈsaɪnmənts/ n. 作业</p>
+<p>assignments /əˈsaɪnmənts/ n. 作业<br>
+lend /lend/ v. 借出</p>
 </div>
 </details>
 <h3 id="13-changing-classroom-换教室-221013-极高频-极限预测-简单">13. Changing classroom 换教室 #221013 极高频 极限预测 简单</h3>
@@ -362,8 +383,8 @@ I’d really appreciate it.</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">the new classroom location</span>.<br>
-The situation is that <span style="color:orange">I arrived at our usual classroom and saw a notice saying the computer is broken and we need to move to a different classroom, but because I was late today, everyone had already moved</span>.<br>
+I’d like to talk to you about <span style="color:orange">the new classroom <span style="color:red">location</span></span>.<br>
+The situation is that <span style="color:orange">I <span style="color:red">arrived</span> at our usual classroom and saw a <span style="color:red">notice</span> saying the computer is broken and we need to move to a different classroom, but because I was late today, everyone had already moved</span>.<br>
 This is important because <span style="color:orange">I’m here alone and I don’t know where to go</span>.<br>
 I was wondering if you could <span style="color:orange">tell me how to get to the new classroom</span>.<br>
 I’d really appreciate it.</p>
@@ -372,7 +393,9 @@ I’d really appreciate it.</p>
 <details class="container-details custom-container" data-container-type="details">
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
-<p>arrived /əˈraɪvd/ v. 到达</p>
+<p>arrived /əˈraɪvd/ v. 到达<br>
+location /loʊˈkeɪʃən/ n. 位置<br>
+notice /ˈnoʊtɪs/ n. 通知</p>
 </div>
 </details>
 <h3 id="14-heater-breakdown-加热器故障-221014-极高频-普通">14. Heater Breakdown 加热器故障 #221014 极高频 普通</h3>
@@ -388,17 +411,20 @@ I’d really appreciate it.</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">the heater in my room</span>.<br>
-The situation is that <span style="color:orange">the heater in my room has stopped working</span>.<br>
-This is important because <span style="color:orange">it’s the middle of winter and my room is uncomfortably cold, especially at night</span>.<br>
-I was wondering if you could <span style="color:orange">arrange for someone to check or fix it as soon as possible</span>.<br>
+I’d like to talk to you about <span style="color:orange">the <span style="color:red">heater</span> in my room</span>.<br>
+The situation is that <span style="color:orange">the <span style="color:red">heater</span> in my room has stopped working</span>.<br>
+This is important because <span style="color:orange">it’s the middle of winter and my room is <span style="color:red">uncomfortably</span> cold, <span style="color:red">especially</span> at night</span>.<br>
+I was wondering if you could <span style="color:orange"><span style="color:red">arrange</span> for someone to check or fix it as soon as possible</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
 <details class="container-details custom-container" data-container-type="details">
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
-<p>uncomfortably /ʌnˈkʌmftərbli/ adv. 不舒适地</p>
+<p>uncomfortably /ʌnˈkʌmftərbli/ adv. 不舒适地<br>
+heater /ˈhiːtər/ n. 加热器<br>
+especially /ɪˈspeʃəli/ adv. 尤其<br>
+arrange /əˈreɪndʒ/ v. 安排</p>
 </div>
 </details>
 <h3 id="15-roommates-室友-221015-极高频-简单">15. Roommates 室友 #221015 极高频 简单</h3>
@@ -414,9 +440,9 @@ I’d really appreciate it.</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">my desk and stationery</span>.<br>
-The situation is that <span style="color:orange">I’ve noticed you seem to use my desk and my stationery when I am not around</span>.<br>
-This is important because <span style="color:orange">I am very concerned about losing my things</span>.<br>
+I’d like to talk to you about <span style="color:orange">my desk and <span style="color:red">stationery</span></span>.<br>
+The situation is that <span style="color:orange">I’ve <span style="color:red">noticed</span> you seem to use my desk and my <span style="color:red">stationery</span> when I am not around</span>.<br>
+This is important because <span style="color:orange">I am very <span style="color:red">concerned</span> about losing my things</span>.<br>
 I was wondering if you could <span style="color:orange">ask me first next time</span>.<br>
 I’d really appreciate it.</p>
 </div>
@@ -425,7 +451,8 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>stationery /ˈsteɪʃəneri/ n. 文具<br>
-concerned /kənˈsɜːrnd/ adj. 担心的</p>
+concerned /kənˈsɜːrnd/ adj. 担心的<br>
+noticed /ˈnoʊtɪst/ v. 注意到</p>
 </div>
 </details>
 <h3 id="16-computer-failure-电脑故障-221016-极高频-简单">16. Computer Failure 电脑故障 #221016 极高频 简单</h3>
@@ -442,9 +469,9 @@ concerned /kənˈsɜːrnd/ adj. 担心的</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">my computer issue</span>.<br>
-The situation is that <span style="color:orange">I am working on an urgent assignment in the campus library, but my computer suddenly stopped working, and I tried restarting it, but nothing happens</span>.<br>
-This is important because <span style="color:orange">the assignment is urgent and I need to finish it</span>.<br>
-I was wondering if you could <span style="color:orange">help me, or direct me to the library technician</span>.<br>
+The situation is that <span style="color:orange">I am working on an <span style="color:red">urgent</span> assignment in the campus library, but my computer <span style="color:red">suddenly</span> stopped working, and I tried <span style="color:red">restarting</span> it, but nothing happens</span>.<br>
+This is important because <span style="color:orange">the assignment is <span style="color:red">urgent</span> and I need to finish it</span>.<br>
+I was wondering if you could <span style="color:orange">help me, or direct me to the library <span style="color:red">technician</span></span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -452,7 +479,9 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>technician /tekˈnɪʃən/ n. 技术人员<br>
-urgent /ˈɜːrdʒənt/ adj. 紧急的</p>
+urgent /ˈɜːrdʒənt/ adj. 紧急的<br>
+suddenly /ˈsʌdənli/ adv. 突然地<br>
+restarting /riːˈstɑːrtɪŋ/ v. 重启</p>
 </div>
 </details>
 <h3 id="17-forgotten-book-忘记带书-221017-极高频-简单">17. Forgotten Book 忘记带书 #221017 极高频 简单</h3>
@@ -468,8 +497,8 @@ urgent /ˈɜːrdʒənt/ adj. 紧急的</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">the book I borrowed from you</span>.<br>
-The situation is that <span style="color:orange">I have to return the book to you, but when I got to school I realized I have forgotten to bring it</span>.<br>
+I’d like to talk to you about <span style="color:orange">the book I <span style="color:red">borrowed</span> from you</span>.<br>
+The situation is that <span style="color:orange">I have to return the book to you, but when I got to school I <span style="color:red">realized</span> I have <span style="color:red">forgotten</span> to bring it</span>.<br>
 This is important because <span style="color:orange">I know you really need it today</span>.<br>
 I was wondering if you could <span style="color:orange">give me one hour so I could rush home to bring it to you</span>.<br>
 I’d really appreciate it.</p>
@@ -478,7 +507,9 @@ I’d really appreciate it.</p>
 <details class="container-details custom-container" data-container-type="details">
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
-<p>realized /ˈriːəlaɪzd/ v. 意识到</p>
+<p>realized /ˈriːəlaɪzd/ v. 意识到<br>
+borrowed /ˈbɑːroʊd/ v. 借入<br>
+forgotten /fərˈɡɑːtən/ v. 忘记</p>
 </div>
 </details>
 <h3 id="18-computer-broken-电脑故障-221018-极高频-极限预测-简单">18. Computer Broken 电脑故障 #221018 极高频 极限预测 简单</h3>
@@ -494,10 +525,10 @@ I’d really appreciate it.</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">the upcoming deadline for my paper</span>.<br>
-The situation is that <span style="color:orange">I have a deadline next week for a paper to submit, but my computer is broken, so I need more time to finish it</span>.<br>
-This is important because <span style="color:orange">I’ve been working hard, but I need a bit more time to ensure the quality of my work</span>.<br>
-I was wondering if you could <span style="color:orange">give me a one-week extension</span>.<br>
+I’d like to talk to you about <span style="color:orange">the upcoming <span style="color:red">deadline</span> for my paper</span>.<br>
+The situation is that <span style="color:orange">I have a <span style="color:red">deadline</span> next week for a paper to <span style="color:red">submit</span>, but my computer is broken, so I need more time to finish it</span>.<br>
+This is important because <span style="color:orange">I’ve been working hard, but I need a bit more time to <span style="color:red">ensure</span> the <span style="color:red">quality</span> of my work</span>.<br>
+I was wondering if you could <span style="color:orange">give me a one-week <span style="color:red">extension</span></span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -506,7 +537,9 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>extension /ɪkˈstenʃən/ n. 延期<br>
 quality /ˈkwɑːləti/ n. 质量<br>
-deadline /ˈdedlaɪn/ n. 截止日期</p>
+deadline /ˈdedlaɪn/ n. 截止日期<br>
+ensure /ɪnˈʃʊr/ v. 确保<br>
+submit /səbˈmɪt/ v. 提交</p>
 </div>
 </details>
 <h3 id="19-housework-家务-221019-极高频-简单">19. Housework 家务 #221019 极高频 简单</h3>
@@ -522,8 +555,8 @@ deadline /ˈdedlaɪn/ n. 截止日期</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">our housework schedule</span>.<br>
-The situation is that <span style="color:orange">it seems that you haven’t followed the schedule to complete housework</span>.<br>
+I’d like to talk to you about <span style="color:orange">our <span style="color:red">housework</span> <span style="color:red">schedule</span></span>.<br>
+The situation is that <span style="color:orange">it seems that you haven’t <span style="color:red">followed</span> the <span style="color:red">schedule</span> to complete <span style="color:red">housework</span></span>.<br>
 This is important because <span style="color:orange">we need to keep our flat clean and tidy</span>.<br>
 I was wondering if you could <span style="color:orange">stick to our cleaning plan</span>.<br>
 I’d really appreciate it.</p>
@@ -532,7 +565,9 @@ I’d really appreciate it.</p>
 <details class="container-details custom-container" data-container-type="details">
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
-<p>schedule /ˈskedʒuːl/ n. 日程表</p>
+<p>schedule /ˈskedʒuːl/ n. 日程表<br>
+housework /ˈhaʊswɜːrk/ n. 家务<br>
+followed /ˈfɑːloʊd/ v. 遵循</p>
 </div>
 </details>
 <h3 id="20-party-decline-拒绝派对邀请-221020-极高频-简单">20. Party Decline 拒绝派对邀请 #221020 极高频 简单</h3>
@@ -549,9 +584,9 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">your birthday party this weekend</span>.<br>
-The situation is that <span style="color:orange">I’m so happy that I have been invited, but I need to complete an essay this weekend</span>.<br>
-This is important because <span style="color:orange">the essay deadline is coming and I cannot attend your party</span>.<br>
-I was wondering if you could <span style="color:orange">understand my situation, and we could celebrate together another time</span>.<br>
+The <span style="color:red">situation</span> is that <span style="color:orange">I’m so happy that I have been <span style="color:red">invited</span>, but I need to complete an <span style="color:red">essay</span> this weekend</span>.<br>
+This is important because <span style="color:orange">the <span style="color:red">essay</span> <span style="color:red">deadline</span> is coming and I cannot attend your party</span>.<br>
+I was wondering if you could <span style="color:orange">understand my <span style="color:red">situation</span>, and we could <span style="color:red">celebrate</span> together another time</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -560,7 +595,9 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>celebrate /ˈselɪbreɪt/ v. 庆祝<br>
 essay /ˈeseɪ/ n. 论文<br>
-deadline /ˈdedlaɪn/ n. 截止日期</p>
+deadline /ˈdedlaɪn/ n. 截止日期<br>
+situation /ˌsɪtʃuˈeɪʃən/ n. 情况<br>
+invited /ɪnˈvaɪtɪd/ v. 邀请</p>
 </div>
 </details>
 <h3 id="21-an-interview-with-roommate-与室友的一次采访-221021-极高频-极限预测-普通">21. An Interview with Roommate 与室友的一次采访 #221021 极高频 极限预测 普通</h3>
@@ -576,10 +613,10 @@ deadline /ˈdedlaɪn/ n. 截止日期</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">the interview for my course assignment</span>.<br>
-The situation is that <span style="color:orange">you agreed to be interviewed by me for a course assignment, and I want to thank you for that</span>.<br>
-This is important because <span style="color:orange">the interview will take place on Wednesday afternoon and will last for about an hour</span>.<br>
-I was wondering if you could <span style="color:orange">get prepared before the interview</span>.<br>
+I’d like to talk to you about <span style="color:orange">the <span style="color:red">interview</span> for my course <span style="color:red">assignment</span></span>.<br>
+The situation is that <span style="color:orange">you <span style="color:red">agreed</span> to be <span style="color:red">interviewed</span> by me for a course <span style="color:red">assignment</span>, and I want to thank you for that</span>.<br>
+This is important because <span style="color:orange">the <span style="color:red">interview</span> will take place on Wednesday afternoon and will last for about an hour</span>.<br>
+I was wondering if you could <span style="color:orange">get <span style="color:red">prepared</span> before the <span style="color:red">interview</span></span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -588,7 +625,9 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>interview /ˈɪntərvjuː/ n. 采访<br>
 assignment /əˈsaɪnmənt/ n. 作业<br>
-prepared /prɪˈperd/ adj. 准备好的</p>
+prepared /prɪˈperd/ adj. 准备好的<br>
+agreed /əˈɡriːd/ v. 同意<br>
+interviewed /ˈɪntərvjuːd/ v. 采访</p>
 </div>
 </details>
 <h3 id="22-switching-from-library-to-café-从图书馆转至咖啡馆-221022-极高频-极限预测-简单">22. Switching from Library to Café 从图书馆转至咖啡馆 #221022 极高频 极限预测 简单</h3>
@@ -605,9 +644,9 @@ prepared /prɪˈperd/ adj. 准备好的</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">our study plan</span>.<br>
-The situation is that <span style="color:orange">I arranged to go to the library with you to use the study room, but I just found out that the study room is double booked</span>.<br>
+The situation is that <span style="color:orange">I <span style="color:red">arranged</span> to go to the <span style="color:red">library</span> with you to use the study room, but I just found out that the study room is double booked</span>.<br>
 This is important because <span style="color:orange">we still need a place to study</span>.<br>
-I was wondering if you could <span style="color:orange">switch to a nearby café instead</span>.<br>
+I was wondering if you could <span style="color:orange">switch to a <span style="color:red">nearby</span> café instead</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -615,7 +654,8 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>arranged /əˈreɪndʒd/ v. 安排<br>
-library /ˈlaɪbreri/ n. 图书馆</p>
+library /ˈlaɪbreri/ n. 图书馆<br>
+nearby /ˌnɪrˈbaɪ/ adj. 附近的</p>
 </div>
 </details>
 <h3 id="23-give-speech-advice-for-a-friend-为朋友提供演讲建议-221023-极高频-极限预测-简单">23. Give Speech Advice for a Friend 为朋友提供演讲建议 #221023 极高频 极限预测 简单</h3>
@@ -632,9 +672,9 @@ library /ˈlaɪbreri/ n. 图书馆</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">your upcoming speech</span>.<br>
-The situation is that <span style="color:orange">I’ve noticed that you are going to give a speech and you feel really nervous about it</span>.<br>
-This is important because <span style="color:orange">being too nervous might affect your performance</span>.<br>
-I was wondering if you could <span style="color:orange">just take a deep breath before you start and focus on the audience during the speech</span>.<br>
+The situation is that <span style="color:orange">I’ve noticed that you are going to give a speech and you feel really <span style="color:red">nervous</span> about it</span>.<br>
+This is important because <span style="color:orange">being too <span style="color:red">nervous</span> might <span style="color:red">affect</span> your <span style="color:red">performance</span></span>.<br>
+I was wondering if you could <span style="color:orange">just take a deep <span style="color:red">breath</span> before you start and focus on the <span style="color:red">audience</span> during the speech</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -643,7 +683,9 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>performance /pərˈfɔːrməns/ n. 表现<br>
 audience /ˈɔːdiəns/ n. 观众<br>
-nervous /ˈnɜːrvəs/ adj. 紧张的</p>
+nervous /ˈnɜːrvəs/ adj. 紧张的<br>
+breath /breθ/ n. 呼吸<br>
+affect /əˈfekt/ v. 影响</p>
 </div>
 </details>
 <h3 id="24-hiking-shoes-登山靴-221024-极高频-普通">24. Hiking Shoes 登山靴 #221024 极高频 普通</h3>
@@ -659,10 +701,10 @@ nervous /ˈnɜːrvəs/ adj. 紧张的</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">your hiking shoes</span>.<br>
-The situation is that <span style="color:orange">I’ve noticed you are not wearing proper shoes for the hiking trip</span>.<br>
-This is important because <span style="color:orange">it may lead to discomfort or injuries during the hike</span>.<br>
-I was wondering if you could <span style="color:orange">borrow a spare pair in the equipment store</span>.<br>
+I’d like to talk to you about <span style="color:orange">your <span style="color:red">hiking</span> shoes</span>.<br>
+The situation is that <span style="color:orange">I’ve noticed you are not wearing <span style="color:red">proper</span> shoes for the <span style="color:red">hiking</span> trip</span>.<br>
+This is important because <span style="color:orange">it may lead to <span style="color:red">discomfort</span> or <span style="color:red">injuries</span> during the hike</span>.<br>
+I was wondering if you could <span style="color:orange">borrow a spare pair in the <span style="color:red">equipment</span> store</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -671,7 +713,9 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>discomfort /dɪsˈkʌmfərt/ n. 不适<br>
 injuries /ˈɪndʒəriz/ n. 受伤<br>
-equipment /ɪˈkwɪpmənt/ n. 设备</p>
+equipment /ɪˈkwɪpmənt/ n. 设备<br>
+proper /ˈprɑːpər/ adj. 合适的<br>
+hiking /ˈhaɪkɪŋ/ n. 徒步旅行</p>
 </div>
 </details>
 <h3 id="25-gift-for-a-friend-who-is-leaving-for-university-送给即将上大学的朋友的礼物-221025-极高频-简单">25. Gift for a Friend Who is Leaving for University 送给即将上大学的朋友的礼物 #221025 极高频 简单</h3>
@@ -687,10 +731,10 @@ equipment /ɪˈkwɪpmənt/ n. 设备</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">a present for our friend who is leaving for university</span>.<br>
-The situation is that <span style="color:orange">one of our friends is going away to start university next week, and she’s excited but sad to say goodbye</span>.<br>
-This is important because <span style="color:orange">we want to cheer her up with a nice gift for her new apartment</span>.<br>
-I was wondering if you could <span style="color:orange">consider getting her a cute desk lamp, so she’ll use it for studying in her new apartment</span>.<br>
+I’d like to talk to you about <span style="color:orange">a present for our friend who is leaving for <span style="color:red">university</span></span>.<br>
+The situation is that <span style="color:orange">one of our friends is going away to start <span style="color:red">university</span> next week, and she’s <span style="color:red">excited</span> but sad to say goodbye</span>.<br>
+This is important because <span style="color:orange">we want to cheer her up with a nice gift for her new <span style="color:red">apartment</span></span>.<br>
+I was wondering if you could <span style="color:orange"><span style="color:red">consider</span> getting her a cute desk lamp, so she’ll use it for studying in her new <span style="color:red">apartment</span></span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -698,7 +742,9 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>university /ˌjuːnɪˈvɜːrsəti/ n. 大学<br>
-apartment /əˈpɑːrtmənt/ n. 公寓</p>
+apartment /əˈpɑːrtmənt/ n. 公寓<br>
+excited /ɪkˈsaɪtɪd/ adj. 兴奋的<br>
+consider /kənˈsɪdər/ v. 考虑</p>
 </div>
 </details>
 <h3 id="26-food-advice-for-school-cafeteria-学校食堂的饮食建议-221026-极高频-普通">26. Food Advice for School Cafeteria 学校食堂的饮食建议 #221026 极高频 普通</h3>
@@ -714,10 +760,10 @@ apartment /əˈpɑːrtmənt/ n. 公寓</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">the food in our school cafeteria</span>.<br>
-The situation is that <span style="color:orange">I think the food served in the school cafeteria is not healthy enough</span>.<br>
+I’d like to talk to you about <span style="color:orange">the food in our school <span style="color:red">cafeteria</span></span>.<br>
+The situation is that <span style="color:orange">I think the food served in the school <span style="color:red">cafeteria</span> is not <span style="color:red">healthy</span> enough</span>.<br>
 This is important because <span style="color:orange">it affects students’ health</span>.<br>
-I was wondering if you could <span style="color:orange">add more fresh vegetables and fruits, and reduce some hamburgers or fries</span>.<br>
+I was wondering if you could <span style="color:orange">add more fresh <span style="color:red">vegetables</span> and fruits, and <span style="color:red">reduce</span> some <span style="color:red">hamburgers</span> or fries</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -726,7 +772,9 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>cafeteria /ˌkæfəˈtɪriə/ n. 自助餐厅<br>
 vegetables /ˈvedʒtəbəlz/ n. 蔬菜<br>
-hamburgers /ˈhæmbɜːrɡərz/ n. 汉堡包</p>
+hamburgers /ˈhæmbɜːrɡərz/ n. 汉堡包<br>
+healthy /ˈhelθi/ adj. 健康的<br>
+reduce /rɪˈduːs/ v. 减少</p>
 </div>
 </details>
 <h3 id="27-help-an-injured-classmate-帮助受伤同学-221027-极高频-普通">27. Help an Injured Classmate 帮助受伤同学 #221027 极高频 普通</h3>
@@ -742,9 +790,9 @@ hamburgers /ˈhæmbɜːrɡərz/ n. 汉堡包</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">returning your library books</span>.<br>
-The situation is that <span style="color:orange">I’ve heard your leg got injured, so you cannot return those books back to the library</span>.<br>
-This is important because <span style="color:orange">the books need to be returned on time</span>.<br>
+I’d like to talk to you about <span style="color:orange"><span style="color:red">returning</span> your <span style="color:red">library</span> books</span>.<br>
+The situation is that <span style="color:orange">I’ve heard your leg got <span style="color:red">injured</span>, so you cannot return those books back to the <span style="color:red">library</span></span>.<br>
+This is important because <span style="color:orange">the books need to be <span style="color:red">returned</span> on time</span>.<br>
 I was wondering if you could <span style="color:orange">let me drop them off for you</span>.<br>
 I’d really appreciate it.</p>
 </div>
@@ -753,7 +801,9 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>injured /ˈɪndʒərd/ adj. 受伤的<br>
-library /ˈlaɪbreri/ n. 图书馆</p>
+library /ˈlaɪbreri/ n. 图书馆<br>
+returning /rɪˈtɜːrnɪŋ/ v. 归还<br>
+returned /rɪˈtɜːrnd/ v. 归还</p>
 </div>
 </details>
 <h3 id="28-a-difficult-course-一门困难的课程-221028-极高频-普通">28. A Difficult Course 一门困难的课程 #221028 极高频 普通</h3>
@@ -770,9 +820,9 @@ library /ˈlaɪbreri/ n. 图书馆</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">the course you want to take</span>.<br>
-The situation is that <span style="color:orange">I’ve taken the course for one semester, and I think it’s way too difficult</span>.<br>
-This is important because <span style="color:orange">the assignments are tough and the exams are super challenging</span>.<br>
-I was wondering if you could <span style="color:orange">consider other courses instead</span>.<br>
+The situation is that <span style="color:orange">I’ve taken the course for one <span style="color:red">semester</span>, and I think it’s way too <span style="color:red">difficult</span></span>.<br>
+This is important because <span style="color:orange">the <span style="color:red">assignments</span> are tough and the exams are super <span style="color:red">challenging</span></span>.<br>
+I was wondering if you could <span style="color:orange"><span style="color:red">consider</span> other courses instead</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -780,7 +830,10 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>challenging /ˈtʃælɪndʒɪŋ/ adj. 具有挑战性的<br>
-assignments /əˈsaɪnmənts/ n. 作业</p>
+assignments /əˈsaɪnmənts/ n. 作业<br>
+semester /sɪˈmestər/ n. 学期<br>
+difficult /ˈdɪfɪkəlt/ adj. 困难的<br>
+consider /kənˈsɪdər/ v. 考虑</p>
 </div>
 </details>
 <h3 id="29-ask-feedback-from-your-tutor-向导师寻求反馈-221029-极高频-普通">29. Ask Feedback from Your Tutor 向导师寻求反馈 #221029 极高频 普通</h3>
@@ -796,10 +849,10 @@ assignments /əˈsaɪnmənts/ n. 作业</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">my course assignment</span>.<br>
-The situation is that <span style="color:orange">I have just finished writing a course assignment and want to get some feedback on my work</span>.<br>
-This is important because <span style="color:orange">I want to know if there is any chance to improve</span>.<br>
-I was wondering if you could <span style="color:orange">give me some feedback on it</span>.<br>
+I’d like to talk to you about <span style="color:orange">my course <span style="color:red">assignment</span></span>.<br>
+The situation is that <span style="color:orange">I have just <span style="color:red">finished</span> writing a course <span style="color:red">assignment</span> and want to get some <span style="color:red">feedback</span> on my work</span>.<br>
+This is important because <span style="color:orange">I want to know if there is any chance to <span style="color:red">improve</span></span>.<br>
+I was wondering if you could <span style="color:orange">give me some <span style="color:red">feedback</span> on it</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -808,7 +861,8 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>assignment /əˈsaɪnmənt/ n. 作业<br>
 feedback /ˈfiːdbæk/ n. 反馈<br>
-improve /ɪmˈpruːv/ v. 改进</p>
+improve /ɪmˈpruːv/ v. 改进<br>
+finished /ˈfɪnɪʃt/ v. 完成</p>
 </div>
 </details>
 <h3 id="30-notebook-lost-笔记丢失-221030-极高频-普通">30. Notebook Lost 笔记丢失 #221030 极高频 普通</h3>
@@ -825,8 +879,8 @@ improve /ɪmˈpruːv/ v. 改进</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">the class notes</span>.<br>
-The situation is that <span style="color:orange">I attended a lecture earlier today, but later realized that I lost the notebook where I had written all my notes</span>.<br>
-This is important because <span style="color:orange">I need to catch up with the class, and you always keep very clear and detailed notes</span>.<br>
+The situation is that <span style="color:orange">I <span style="color:red">attended</span> a <span style="color:red">lecture</span> earlier today, but later <span style="color:red">realized</span> that I lost the <span style="color:red">notebook</span> where I had written all my notes</span>.<br>
+This is important because <span style="color:orange">I need to catch up with the class, and you always keep very clear and <span style="color:red">detailed</span> notes</span>.<br>
 I was wondering if you could <span style="color:orange">lend me your notes</span>.<br>
 I’d really appreciate it.</p>
 </div>
@@ -836,7 +890,9 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>realized /ˈriːəlaɪzd/ v. 意识到<br>
 detailed /ˈdiːteɪld/ adj. 详细的<br>
-notebook /ˈnoʊtbʊk/ n. 笔记本</p>
+notebook /ˈnoʊtbʊk/ n. 笔记本<br>
+attended /əˈtendɪd/ v. 参加<br>
+lecture /ˈlektʃər/ n. 讲座</p>
 </div>
 </details>
 <h3 id="31-advice-for-friend-给朋友建议-221031-极高频-普通">31. Advice for Friend 给朋友建议 #221031 极高频 普通</h3>
@@ -852,10 +908,10 @@ notebook /ˈnoʊtbʊk/ n. 笔记本</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">your class attendance and assignments</span>.<br>
-The situation is that <span style="color:orange">I’ve noticed you frequently skip classes, arrive late, leave early, and do not submit assignments on time</span>.<br>
-This is important because <span style="color:orange">it may affect your grades and academic performance</span>.<br>
-I was wondering if you could <span style="color:orange">set an alarm for everyday’s class and submit assignments on time</span>.<br>
+I’d like to talk to you about <span style="color:orange">your class <span style="color:red">attendance</span> and assignments</span>.<br>
+The situation is that <span style="color:orange">I’ve noticed you <span style="color:red">frequently</span> skip classes, arrive late, leave early, and do not <span style="color:red">submit</span> assignments on time</span>.<br>
+This is important because <span style="color:orange">it may affect your <span style="color:red">grades</span> and <span style="color:red">academic</span> <span style="color:red">performance</span></span>.<br>
+I was wondering if you could <span style="color:orange">set an alarm for everyday’s class and <span style="color:red">submit</span> assignments on time</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -865,7 +921,9 @@ I’d really appreciate it.</p>
 <p>attendance /əˈtendəns/ n. 出勤<br>
 academic /ˌækəˈdemɪk/ adj. 学术的<br>
 performance /pərˈfɔːrməns/ n. 表现<br>
-frequently /ˈfriːkwəntli/ adv. 频繁地</p>
+frequently /ˈfriːkwəntli/ adv. 频繁地<br>
+submit /səbˈmɪt/ v. 提交<br>
+grades /ɡreɪdz/ n. 成绩</p>
 </div>
 </details>
 <h3 id="32-boring-class-无聊的课堂-221032-极高频-简单">32. Boring Class 无聊的课堂 #221032 极高频 简单</h3>
@@ -882,9 +940,9 @@ frequently /ˈfriːkwəntli/ adv. 频繁地</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">leaving the class early</span>.<br>
-The situation is that <span style="color:orange">I know you find the class boring and want to leave early</span>.<br>
-This is important because <span style="color:orange">the class is really important and your attendance will be affected if you leave</span>.<br>
-I was wondering if you could <span style="color:orange">stay in class and pay more attention to it</span>.<br>
+The situation is that <span style="color:orange">I know you find the class <span style="color:red">boring</span> and want to leave early</span>.<br>
+This is important because <span style="color:orange">the class is really important and your <span style="color:red">attendance</span> will be <span style="color:red">affected</span> if you leave</span>.<br>
+I was wondering if you could <span style="color:orange">stay in class and pay more <span style="color:red">attention</span> to it</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -892,7 +950,9 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>attendance /əˈtendəns/ n. 出勤<br>
-affected /əˈfektɪd/ adj. 受影响的</p>
+affected /əˈfektɪd/ adj. 受影响的<br>
+attention /əˈtenʃən/ n. 注意力<br>
+boring /ˈbɔːrɪŋ/ adj. 无聊的</p>
 </div>
 </details>
 <h3 id="33-late-for-speech-演讲迟到-221033-极高频-简单">33. Late for Speech 演讲迟到 #221033 极高频 简单</h3>
@@ -909,8 +969,8 @@ affected /əˈfektɪd/ adj. 受影响的</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">a change to my speech time</span>.<br>
-The situation is that <span style="color:orange">I am supposed to give a speech in class, but I realize I have left my notebook at home, and I need to go back to get it</span>.<br>
-This is important because <span style="color:orange">my speech notes are all in that notebook, so the speech will start 20 minutes later than planned</span>.<br>
+The situation is that <span style="color:orange">I am <span style="color:red">supposed</span> to give a speech in class, but I realize I have left my <span style="color:red">notebook</span> at home, and I need to go back to get it</span>.<br>
+This is important because <span style="color:orange">my speech notes are all in that <span style="color:red">notebook</span>, so the speech will start 20 minutes later than <span style="color:red">planned</span></span>.<br>
 I was wondering if you could <span style="color:orange">wait for me</span>.<br>
 I’d really appreciate it.</p>
 </div>
@@ -919,7 +979,8 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>supposed /səˈpoʊzd/ adj. 应该的<br>
-notebook /ˈnoʊtbʊk/ n. 笔记本</p>
+notebook /ˈnoʊtbʊk/ n. 笔记本<br>
+planned /plænd/ adj. 计划的</p>
 </div>
 </details>
 <h3 id="34-group-member-not-finish-assignment-小组成员未完成任务-221034-极高频-简单">34. Group Member Not Finish Assignment 小组成员未完成任务 #221034 极高频 简单</h3>
@@ -936,9 +997,9 @@ notebook /ˈnoʊtbʊk/ n. 笔记本</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">our group assignment</span>.<br>
-The situation is that <span style="color:orange">the deadline is coming and I’ve already finished my part, but my group member has not finished his part of the work yet</span>.<br>
-This is important because <span style="color:orange">we need more time to complete it</span>.<br>
-I was wondering if you could <span style="color:orange">give our group a three-day extension</span>.<br>
+The situation is that <span style="color:orange">the <span style="color:red">deadline</span> is coming and I’ve already finished my part, but my group member has not finished his part of the work yet</span>.<br>
+This is important because <span style="color:orange">we need more time to <span style="color:red">complete</span> it</span>.<br>
+I was wondering if you could <span style="color:orange">give our group a three-day <span style="color:red">extension</span></span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -946,7 +1007,8 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>extension /ɪkˈstenʃən/ n. 延期<br>
-deadline /ˈdedlaɪn/ n. 截止日期</p>
+deadline /ˈdedlaɪn/ n. 截止日期<br>
+complete /kəmˈpliːt/ v. 完成</p>
 </div>
 </details>
 <h3 id="35-create-a-poster-海报制作-221035-极高频-普通">35. Create A Poster 海报制作 #221035 极高频 普通</h3>
@@ -962,9 +1024,9 @@ deadline /ˈdedlaɪn/ n. 截止日期</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">the poster volunteer position</span>.<br>
-The situation is that <span style="color:orange">I’ve noticed you’re looking for a volunteer to create a poster, and I’m really interested in this task</span>.<br>
-This is important because <span style="color:orange">I would like to work on it with one of my friends, and we both have design experience</span>.<br>
+I’d like to talk to you about <span style="color:orange">the poster <span style="color:red">volunteer</span> <span style="color:red">position</span></span>.<br>
+The situation is that <span style="color:orange">I’ve noticed you’re looking for a <span style="color:red">volunteer</span> to create a poster, and I’m really <span style="color:red">interested</span> in this task</span>.<br>
+This is important because <span style="color:orange">I would like to work on it with one of my friends, and we both have <span style="color:red">design</span> <span style="color:red">experience</span></span>.<br>
 I was wondering if you could <span style="color:orange">let me work on it with my friend</span>.<br>
 I’d really appreciate it.</p>
 </div>
@@ -973,7 +1035,10 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>volunteer /ˌvɑːlənˈtɪr/ n. 志愿者<br>
-experience /ɪkˈspɪriəns/ n. 经验</p>
+experience /ɪkˈspɪriəns/ n. 经验<br>
+position /pəˈzɪʃən/ n. 职位<br>
+design /dɪˈzaɪn/ n. 设计<br>
+interested /ˈɪntrəstɪd/ adj. 感兴趣的</p>
 </div>
 </details>
 <h3 id="36-wrong-exam-time-错误的考试时间-221036-极高频-简单">36. Wrong Exam Time 错误的考试时间 #221036 极高频 简单</h3>
@@ -990,7 +1055,7 @@ experience /ɪkˈspɪriəns/ n. 经验</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">the exam time I told you earlier</span>.<br>
-The situation is that <span style="color:orange">I just told you the exam is scheduled for 3 p.m. tomorrow afternoon, but I’ve just found out the exam is actually at 2 p.m. this afternoon</span>.<br>
+The situation is that <span style="color:orange">I just told you the exam is <span style="color:red">scheduled</span> for 3 p.m. tomorrow afternoon, but I’ve just found out the exam is <span style="color:red">actually</span> at 2 p.m. this afternoon</span>.<br>
 This is important because <span style="color:orange">you might miss the exam if you don’t hurry</span>.<br>
 I was wondering if you could <span style="color:orange">hurry to the exam hall right now</span>.<br>
 I’d really appreciate it.</p>
@@ -999,7 +1064,8 @@ I’d really appreciate it.</p>
 <details class="container-details custom-container" data-container-type="details">
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
-<p>scheduled /ˈskedʒuːld/ adj. 安排的</p>
+<p>scheduled /ˈskedʒuːld/ adj. 安排的<br>
+actually /ˈæktʃuəli/ adv. 实际上</p>
 </div>
 </details>
 <h3 id="37-dont-understand-the-class-either-也听不懂课-221037-极高频-普通">37. Don’t Understand the Class Either 也听不懂课 #221037 极高频 普通</h3>
@@ -1016,9 +1082,9 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">the course content</span>.<br>
-The situation is that <span style="color:orange">you came to ask me for help with some parts of the course, but unfortunately, I don’t understand those parts either</span>.<br>
-This is important because <span style="color:orange">we both need to understand it for the exam</span>.<br>
-I was wondering if you could <span style="color:orange">make an appointment with our tutor together with me</span>.<br>
+The situation is that <span style="color:orange">you came to ask me for help with some parts of the course, but <span style="color:red">unfortunately</span>, I don’t <span style="color:red">understand</span> those parts either</span>.<br>
+This is important because <span style="color:orange">we both need to <span style="color:red">understand</span> it for the exam</span>.<br>
+I was wondering if you could <span style="color:orange">make an <span style="color:red">appointment</span> with our tutor together with me</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -1026,7 +1092,8 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>unfortunately /ʌnˈfɔːrtʃənətli/ adv. 不幸地<br>
-appointment /əˈpɔɪntmənt/ n. 预约</p>
+appointment /əˈpɔɪntmənt/ n. 预约<br>
+understand /ˌʌndərˈstænd/ v. 理解</p>
 </div>
 </details>
 <h3 id="38-red-traffic-light-红灯坏了-221038-极高频-极限预测-普通">38. Red Traffic Light 红灯坏了 #221038 极高频 极限预测 普通</h3>
@@ -1042,10 +1109,10 @@ appointment /əˈpɔɪntmənt/ n. 预约</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">a broken red traffic light</span>.<br>
-The situation is that <span style="color:orange">I’m on my way to school, and I noticed that a red traffic light nearby is not working properly</span>.<br>
-This is important because <span style="color:orange">it might affect the traffic and cause accidents</span>.<br>
-I was wondering if you could <span style="color:orange">send a maintenance worker to fix it as soon as possible</span>.<br>
+I’d like to talk to you about <span style="color:orange">a broken red <span style="color:red">traffic</span> light</span>.<br>
+The situation is that <span style="color:orange">I’m on my way to school, and I noticed that a red <span style="color:red">traffic</span> light nearby is not working <span style="color:red">properly</span></span>.<br>
+This is important because <span style="color:orange">it might affect the <span style="color:red">traffic</span> and cause <span style="color:red">accidents</span></span>.<br>
+I was wondering if you could <span style="color:orange">send a <span style="color:red">maintenance</span> worker to fix it as soon as possible</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -1053,7 +1120,9 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>maintenance /ˈmeɪntənəns/ n. 维护<br>
-accidents /ˈæksɪdənts/ n. 事故</p>
+accidents /ˈæksɪdənts/ n. 事故<br>
+properly /ˈprɑːpərli/ adv. 正确地<br>
+traffic /ˈtræfɪk/ n. 交通</p>
 </div>
 </details>
 <h3 id="39-ask-for-advice-together-一起征求建议-221039-极高频-普通">39. Ask for Advice Together 一起征求建议 #221039 极高频 普通</h3>
@@ -1069,10 +1138,10 @@ accidents /ˈæksɪdənts/ n. 事故</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">your course enrollment</span>.<br>
-The situation is that <span style="color:orange">I heard you’re planning to drop the course you’ve already enrolled in</span>.<br>
-This is important because <span style="color:orange">it’s a big decision that might affect your study plan</span>.<br>
-I was wondering if you could <span style="color:orange">consult the tutor first before making the final decision, and I’d be happy to go with you</span>.<br>
+I’d like to talk to you about <span style="color:orange">your course <span style="color:red">enrollment</span></span>.<br>
+The situation is that <span style="color:orange">I heard you’re planning to drop the course you’ve already <span style="color:red">enrolled</span> in</span>.<br>
+This is important because <span style="color:orange">it’s a big <span style="color:red">decision</span> that might affect your study plan</span>.<br>
+I was wondering if you could <span style="color:orange"><span style="color:red">consult</span> the tutor first before making the final <span style="color:red">decision</span>, and I’d be happy to go with you</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -1080,7 +1149,9 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>enrollment /ɪnˈroʊlmənt/ n. 注册<br>
-decision /dɪˈsɪʒən/ n. 决定</p>
+decision /dɪˈsɪʒən/ n. 决定<br>
+enrolled /ɪnˈroʊld/ v. 注册<br>
+consult /kənˈsʌlt/ v. 咨询</p>
 </div>
 </details>
 <h3 id="40-attend-class-or-work-on-an-assignment-上课还是做作业-221040-极高频-简单">40. Attend Class or Work on An Assignment 上课还是做作业 #221040 极高频 简单</h3>
@@ -1101,16 +1172,16 @@ decision /dɪˈsɪʒən/ n. 决定</p>
 <p>如果是和最初要一起上课的朋友解释：<br></p>
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">our class plan</span>.<br>
-The situation is that <span style="color:orange">I have made plans to attend a class with you, but another friend has invited me to work on an assignment together at the same time</span>.<br>
-This is important because <span style="color:orange">the deadline of the assignment is coming</span>.<br>
-I was wondering if you could <span style="color:orange">understand my situation, and we could reschedule our plan to attend class together</span>.<br>
+The <span style="color:red">situation</span> is that <span style="color:orange">I have made plans to attend a class with you, but another friend has invited me to work on an <span style="color:red">assignment</span> together at the same time</span>.<br>
+This is important because <span style="color:orange">the <span style="color:red">deadline</span> of the <span style="color:red">assignment</span> is coming</span>.<br>
+I was wondering if you could <span style="color:orange">understand my <span style="color:red">situation</span>, and we could <span style="color:red">reschedule</span> our plan to attend class together</span>.<br>
 I’d really appreciate it.<br></p>
 <p>如果是和后面邀请一起做作业的朋友解释：<br></p>
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">your assignment invitation</span>.<br>
-The situation is that <span style="color:orange">I’ve already made plans to attend a class with another friend at the same time</span>.<br>
+I’d like to talk to you about <span style="color:orange">your <span style="color:red">assignment</span> <span style="color:red">invitation</span></span>.<br>
+The <span style="color:red">situation</span> is that <span style="color:orange">I’ve already made plans to attend a class with another friend at the same time</span>.<br>
 This is important because <span style="color:orange">the class is really important</span>.<br>
-I was wondering if you could <span style="color:orange">understand my situation, and we could reschedule the plan to work on the assignment together</span>.<br>
+I was wondering if you could <span style="color:orange">understand my <span style="color:red">situation</span>, and we could <span style="color:red">reschedule</span> the plan to work on the <span style="color:red">assignment</span> together</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -1119,7 +1190,9 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>reschedule /riːˈskedʒuːl/ v. 重新安排<br>
 assignment /əˈsaɪnmənt/ n. 作业<br>
-invitation /ˌɪnvɪˈteɪʃən/ n. 邀请</p>
+invitation /ˌɪnvɪˈteɪʃən/ n. 邀请<br>
+situation /ˌsɪtʃuˈeɪʃən/ n. 情况<br>
+deadline /ˈdedlaɪn/ n. 截止日期</p>
 </div>
 </details>
 <h3 id="41-holiday-research-project-假期研究项目-221041-极高频-普通">41. Holiday Research Project 假期研究项目 #221041 极高频 普通</h3>
@@ -1135,10 +1208,10 @@ invitation /ˌɪnvɪˈteɪʃən/ n. 邀请</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">the upcoming holiday research project</span>.<br>
-The situation is that <span style="color:orange">I know you are organizing a holiday research project, and I’m really interested in participating</span>.<br>
-This is important because <span style="color:orange">I need more information about the specific schedule and whether I need to relocate or travel for the research</span>.<br>
-I was wondering if you could <span style="color:orange">tell me the exact starting time and whether relocation or travel is required</span>.<br>
+I’d like to talk to you about <span style="color:orange">the upcoming holiday <span style="color:red">research</span> project</span>.<br>
+The situation is that <span style="color:orange">I know you are <span style="color:red">organizing</span> a holiday <span style="color:red">research</span> project, and I’m really interested in <span style="color:red">participating</span></span>.<br>
+This is important because <span style="color:orange">I need more information about the <span style="color:red">specific</span> schedule and whether I need to relocate or travel for the <span style="color:red">research</span></span>.<br>
+I was wondering if you could <span style="color:orange">tell me the exact starting time and whether <span style="color:red">relocation</span> or travel is <span style="color:red">required</span></span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -1147,7 +1220,10 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>participating /pɑːrˈtɪsɪpeɪtɪŋ/ v. 参与<br>
 relocation /ˌriːloʊˈkeɪʃən/ n. 搬迁<br>
-specific /spəˈsɪfɪk/ adj. 具体的</p>
+specific /spəˈsɪfɪk/ adj. 具体的<br>
+organizing /ˈɔːrɡənaɪzɪŋ/ v. 组织<br>
+research /rɪˈsɜːrtʃ/ n. 研究<br>
+required /rɪˈkwaɪərd/ adj. 必需的</p>
 </div>
 </details>
 <h3 id="42-switch-rooms-交换房间-221042-极高频-极限预测-普通">42. Switch Rooms 交换房间 #221042 极高频 极限预测 普通</h3>
@@ -1164,8 +1240,8 @@ specific /spəˈsɪfɪk/ adj. 具体的</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">switching rooms</span>.<br>
-The situation is that <span style="color:orange">I organized a meeting for my debating club and booked a room, but I find the room is too small for all the participants</span>.<br>
-This is important because <span style="color:orange">the room next to this is much larger and would be more suitable for our meeting</span>.<br>
+The situation is that <span style="color:orange">I <span style="color:red">organized</span> a meeting for my <span style="color:red">debating</span> club and booked a room, but I find the room is too small for all the <span style="color:red">participants</span></span>.<br>
+This is important because <span style="color:orange">the room next to this is much larger and would be more <span style="color:red">suitable</span> for our meeting</span>.<br>
 I was wondering if you could <span style="color:orange">switch rooms with us</span>.<br>
 I’d really appreciate it.</p>
 </div>
@@ -1175,7 +1251,8 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>debating /dɪˈbeɪtɪŋ/ adj. 辩论的<br>
 participants /pɑːrˈtɪsɪpənts/ n. 参与者<br>
-suitable /ˈsuːtəbəl/ adj. 合适的</p>
+suitable /ˈsuːtəbəl/ adj. 合适的<br>
+organized /ˈɔːrɡənaɪzd/ v. 组织</p>
 </div>
 </details>
 <h3 id="43-dinner-invitation-晚餐邀请-221043-极高频-极限预测-普通">43. Dinner Invitation 晚餐邀请 #221043 极高频 极限预测 普通</h3>
@@ -1193,8 +1270,8 @@ suitable /ˈsuːtəbəl/ adj. 合适的</p>
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">a dinner party</span>.<br>
 The situation is that <span style="color:orange">I’d like to invite you and your wife over for dinner</span>.<br>
-This is important because <span style="color:orange">I want to make sure the food is suitable for everyone before I plan the menu</span>.<br>
-I was wondering if you could <span style="color:orange">let me know if either of you needs to avoid certain foods or has any preference</span>.<br>
+This is important because <span style="color:orange">I want to make sure the food is <span style="color:red">suitable</span> for everyone before I plan the menu</span>.<br>
+I was wondering if you could <span style="color:orange">let me know if either of you needs to <span style="color:red">avoid</span> <span style="color:red">certain</span> foods or has any <span style="color:red">preference</span></span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -1202,7 +1279,9 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>preference /ˈprefərəns/ n. 偏好<br>
-suitable /ˈsuːtəbəl/ adj. 合适的</p>
+suitable /ˈsuːtəbəl/ adj. 合适的<br>
+certain /ˈsɜːrtən/ adj. 某些<br>
+avoid /əˈvɔɪd/ v. 避免</p>
 </div>
 </details>
 <h3 id="44-seek-help-from-a-classmate-向同学寻求帮助-221044-极高频-简单">44. Seek Help from a Classmate 向同学寻求帮助 #221044 极高频 简单</h3>
@@ -1218,9 +1297,9 @@ suitable /ˈsuːtəbəl/ adj. 合适的</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">today’s lecture</span>.<br>
-The situation is that <span style="color:orange">I just came out of the lecture, and I didn’t understand some of the main points the professor was making</span>.<br>
-This is important because <span style="color:orange">I noticed you were taking good notes and paid attention during class</span>.<br>
+I’d like to talk to you about <span style="color:orange">today’s <span style="color:red">lecture</span></span>.<br>
+The situation is that <span style="color:orange">I just came out of the <span style="color:red">lecture</span>, and I didn’t <span style="color:red">understand</span> some of the main points the <span style="color:red">professor</span> was making</span>.<br>
+This is important because <span style="color:orange">I noticed you were taking good notes and paid <span style="color:red">attention</span> during class</span>.<br>
 I was wondering if you could <span style="color:orange">help me go over a few things, or maybe share your notes</span>.<br>
 I’d really appreciate it.</p>
 </div>
@@ -1229,7 +1308,9 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>lecture /ˈlektʃər/ n. 讲座<br>
-professor /prəˈfesər/ n. 教授</p>
+professor /prəˈfesər/ n. 教授<br>
+attention /əˈtenʃən/ n. 注意力<br>
+understand /ˌʌndərˈstænd/ v. 理解</p>
 </div>
 </details>
 <h3 id="45-late-for-presentation-演讲迟到-221045-极高频-简单">45. Late for Presentation 演讲迟到 #221045 极高频 简单</h3>
@@ -1245,8 +1326,8 @@ professor /prəˈfesər/ n. 教授</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">my presentation</span>.<br>
-The situation is that <span style="color:orange">I was on my way to give the presentation, but a big tree has fallen onto the road and blocked my way, so I’m going to be late</span>.<br>
+I’d like to talk to you about <span style="color:orange">my <span style="color:red">presentation</span></span>.<br>
+The situation is that <span style="color:orange">I was on my way to give the <span style="color:red">presentation</span>, but a big tree has <span style="color:red">fallen</span> onto the road and <span style="color:red">blocked</span> my way, so I’m going to be late</span>.<br>
 This is important because <span style="color:orange">I don’t want to hold up the class</span>.<br>
 I was wondering if you could <span style="color:orange">let the other students present first</span>.<br>
 I’d really appreciate it.</p>
@@ -1255,7 +1336,9 @@ I’d really appreciate it.</p>
 <details class="container-details custom-container" data-container-type="details">
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
-<p>presentation /ˌprezənˈteɪʃən/ n. 演讲</p>
+<p>presentation /ˌprezənˈteɪʃən/ n. 演讲<br>
+blocked /blɑːkt/ v. 阻挡<br>
+fallen /ˈfɔːlən/ v. 倒下</p>
 </div>
 </details>
 <h3 id="46-ticket-booking-online-在线订票-221046-极高频-普通">46. Ticket Booking Online 在线订票 #221046 极高频 普通</h3>
@@ -1272,9 +1355,9 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">my e-tickets</span>.<br>
-The situation is that <span style="color:orange">I booked e-tickets for myself and my friend online, and they’re saved on my phone, but my phone just ran out of battery right at the check-in</span>.<br>
-This is important because <span style="color:orange">I need to show my tickets but I can’t access them right now</span>.<br>
-I was wondering if you could <span style="color:orange">find another way to verify my booking</span>.<br>
+The situation is that <span style="color:orange">I booked e-tickets for myself and my friend online, and they’re saved on my phone, but my phone just ran out of <span style="color:red">battery</span> right at the check-in</span>.<br>
+This is important because <span style="color:orange">I need to show my tickets but I can’t <span style="color:red">access</span> them right now</span>.<br>
+I was wondering if you could <span style="color:orange">find another way to <span style="color:red">verify</span> my <span style="color:red">booking</span></span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -1282,7 +1365,9 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>battery /ˈbætəri/ n. 电池<br>
-verify /ˈverɪfaɪ/ v. 验证</p>
+verify /ˈverɪfaɪ/ v. 验证<br>
+access /ˈækses/ v. 访问<br>
+booking /ˈbʊkɪŋ/ n. 预订</p>
 </div>
 </details>
 <h3 id="47-party-for-parents-父母的聚会-221047-极高频-极限预测-简单">47. Party for Parents 父母的聚会 #221047 极高频 极限预测 简单</h3>
@@ -1298,10 +1383,10 @@ verify /ˈverɪfaɪ/ v. 验证</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">my assignment submission</span>.<br>
-The situation is that <span style="color:orange">I had nearly finished my assignment, but my sister asked me to attend my parents’ party, and as a result I missed the deadline</span>.<br>
+I’d like to talk to you about <span style="color:orange">my <span style="color:red">assignment</span> <span style="color:red">submission</span></span>.<br>
+The situation is that <span style="color:orange">I had nearly finished my <span style="color:red">assignment</span>, but my sister asked me to <span style="color:red">attend</span> my parents’ party, and as a result I missed the <span style="color:red">deadline</span></span>.<br>
 This is important because <span style="color:orange">I had almost finished it and I just need a little more time</span>.<br>
-I was wondering if you could <span style="color:orange">give me a little more time to submit it</span>.<br>
+I was wondering if you could <span style="color:orange">give me a little more time to <span style="color:red">submit</span> it</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -1310,7 +1395,9 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>submission /səbˈmɪʃən/ n. 提交<br>
 assignment /əˈsaɪnmənt/ n. 作业<br>
-deadline /ˈdedlaɪn/ n. 截止日期</p>
+deadline /ˈdedlaɪn/ n. 截止日期<br>
+submit /səbˈmɪt/ v. 提交<br>
+attend /əˈtend/ v. 参加</p>
 </div>
 </details>
 <h3 id="48-friend-keeps-talking-to-you-同学一直说话-221048-极高频-新题-极限预测-简单">48. Friend Keeps Talking to You 同学一直说话 #221048 极高频 新题 极限预测 简单</h3>
@@ -1326,10 +1413,10 @@ deadline /ˈdedlaɪn/ n. 截止日期</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">our conversation during the lecture</span>.<br>
-The situation is that <span style="color:orange">you keep talking to me during the lecture, but I want to focus on the class</span>.<br>
-This is important because <span style="color:orange">the lecture is really important and I need to take notes carefully</span>.<br>
-I was wondering if you could <span style="color:orange">stop chatting for now, and we can talk after the class</span>.<br>
+I’d like to talk to you about <span style="color:orange">our <span style="color:red">conversation</span> during the <span style="color:red">lecture</span></span>.<br>
+The situation is that <span style="color:orange">you keep talking to me during the <span style="color:red">lecture</span>, but I want to focus on the class</span>.<br>
+This is important because <span style="color:orange">the <span style="color:red">lecture</span> is really important and I need to take notes <span style="color:red">carefully</span></span>.<br>
+I was wondering if you could <span style="color:orange">stop <span style="color:red">chatting</span> for now, and we can talk after the class</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -1337,7 +1424,9 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>conversation /ˌkɑːnvərˈseɪʃən/ n. 对话<br>
-lecture /ˈlektʃər/ n. 讲座</p>
+lecture /ˈlektʃər/ n. 讲座<br>
+carefully /ˈkerfəli/ adv. 仔细地<br>
+chatting /ˈtʃætɪŋ/ v. 聊天</p>
 </div>
 </details>
 <h3 id="49-volunteer-for-open-week-开放周志愿者-221049-极高频-新题-极限预测-简单">49. Volunteer for Open Week 开放周志愿者 #221049 极高频 新题 极限预测 简单</h3>
@@ -1353,9 +1442,9 @@ lecture /ˈlektʃər/ n. 讲座</p>
 <summary class="container-title">Template Answer</summary>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
-I’d like to talk to you about <span style="color:orange">the volunteer position for the school Open Week</span>.<br>
-The situation is that <span style="color:orange">I’m really interested in being a volunteer to help prepare for the Open Week</span>.<br>
-This is important because <span style="color:orange">I’m responsible and good at communicating with people, so I’m quite suitable for the task</span>.<br>
+I’d like to talk to you about <span style="color:orange">the <span style="color:red">volunteer</span> <span style="color:red">position</span> for the school Open Week</span>.<br>
+The situation is that <span style="color:orange">I’m really interested in being a <span style="color:red">volunteer</span> to help <span style="color:red">prepare</span> for the Open Week</span>.<br>
+This is important because <span style="color:orange">I’m <span style="color:red">responsible</span> and good at <span style="color:red">communicating</span> with people, so I’m quite <span style="color:red">suitable</span> for the task</span>.<br>
 I was wondering if you could <span style="color:orange">give me this chance</span>.<br>
 I’d really appreciate it.</p>
 </div>
@@ -1365,7 +1454,10 @@ I’d really appreciate it.</p>
 <div class="container-content">
 <p>volunteer /ˌvɑːlənˈtɪr/ n. 志愿者<br>
 communicating /kəˈmjuːnɪkeɪtɪŋ/ v. 沟通<br>
-responsible /rɪˈspɑːnsəbəl/ adj. 负责任的</p>
+responsible /rɪˈspɑːnsəbəl/ adj. 负责任的<br>
+suitable /ˈsuːtəbəl/ adj. 合适的<br>
+position /pəˈzɪʃən/ n. 职位<br>
+prepare /prɪˈper/ v. 准备</p>
 </div>
 </details>
 <h3 id="50-refusing-a-classmates-request-to-copy-assignment-拒绝同学要求代做作业的请求-221050-极高频-新题-极限预测-困难">50. Refusing a Classmate’s Request to Copy Assignment 拒绝同学要求代做作业的请求 #221050 极高频 新题 极限预测 困难</h3>
@@ -1382,9 +1474,9 @@ responsible /rɪˈspɑːnsəbəl/ adj. 负责任的</p>
 <div class="container-content">
 <p>Hi, do you have a moment?<br>
 I’d like to talk to you about <span style="color:orange">the assignment</span>.<br>
-The situation is that <span style="color:orange">I know you haven’t started the work and you want to copy my nearly completed assignment because you are out of time</span>.<br>
-This is important because <span style="color:orange">I think it’s important that we each submit our own work</span>.<br>
-I was wondering if you could <span style="color:orange">let me help explain how I approached some of the questions or point you to some resources instead</span>.<br>
+The situation is that <span style="color:orange">I know you haven’t started the work and you want to copy my nearly <span style="color:red">completed</span> assignment because you are out of time</span>.<br>
+This is important because <span style="color:orange">I think it’s important that we each <span style="color:red">submit</span> our own work</span>.<br>
+I was wondering if you could <span style="color:orange">let me help <span style="color:red">explain</span> how I <span style="color:red">approached</span> some of the questions or point you to some <span style="color:red">resources</span> instead</span>.<br>
 I’d really appreciate it.</p>
 </div>
 </details>
@@ -1392,7 +1484,10 @@ I’d really appreciate it.</p>
 <summary class="container-title">Difficult Words phonetic symbols</summary>
 <div class="container-content">
 <p>approached /əˈproʊtʃt/ v. 着手处理<br>
-resources /ˈriːsɔːrsɪz/ n. 资源</p>
+resources /ˈriːsɔːrsɪz/ n. 资源<br>
+submit /səbˈmɪt/ v. 提交<br>
+completed /kəmˈpliːtɪd/ adj. 完成的<br>
+explain /ɪkˈspleɪn/ v. 解释</p>
 </div>
 </details></div><!-- 修复文章内容中的链接，添加当前语言前缀 --><script>
       (function() {
