@@ -34,6 +34,14 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+photocopier /ˈfoʊtəˌkɑːpiər/ n. 复印机<br>
+document /ˈdɑːkjəmənt/ n. 文件<br>
+urgently /ˈɜːrdʒəntli/ adv. 紧急地
+
+:::
+
 ### 2. Asking Someone to Lower Noise in the Library 图书馆让人降低噪音 #221002 极高频 简单
 
 You have an assignment due next week. Now you are in the library, but someone next to you is playing a video without headphones. You are too distracted to focus on your study. You should have a conversation with him to make sure you have a quiet place. What would you say?
@@ -54,6 +62,15 @@ The situation is that <span style="color:orange">I have an assignment due next w
 This is important because <span style="color:orange">I need a quiet place to concentrate on my assignment</span>.<br>
 I was wondering if you could <span style="color:orange">lower the volume or use headphones</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+assignment /əˈsaɪnmənt/ n. 作业<br>
+distracted /dɪˈstræktɪd/ adj. 分心的<br>
+concentrate /ˈkɑːnsəntreɪt/ v. 集中注意力<br>
+volume /ˈvɑːljuːm/ n. 音量
 
 :::
 
@@ -80,6 +97,14 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+experience /ɪkˈspɪriəns/ n. 经验<br>
+determined /dɪˈtɜːrmɪnd/ adj. 坚定的<br>
+opportunity /ˌɑːpərˈtuːnəti/ n. 机会
+
+:::
+
 ### 4. Roommate's friend ate your food 室友的朋友吃了你的食物 #221004 极高频 极限预测 普通
 
 You share a flat with a roommate, but you find your food in fridge disappearing. You notice there may be a visitor of your roommate to eat your food. You feel that they don't obey the rules, how do you ask your roommate about this situation?
@@ -100,6 +125,12 @@ The situation is that <span style="color:orange">I find my food in the fridge di
 This is important because <span style="color:orange">I feel that they don't obey the rules we agreed on</span>.<br>
 I was wondering if you could <span style="color:orange">talk about this and find a way to make sure it doesn't happen again</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+disappearing /ˌdɪsəˈpɪrɪŋ/ v. 消失
 
 :::
 
@@ -126,6 +157,15 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+cafeteria /ˌkæfəˈtɪriə/ n. 自助餐厅<br>
+advertisement /ˌædvərˈtaɪzmənt/ n. 广告<br>
+responsibilities /rɪˌspɑːnsəˈbɪlətiz/ n. 职责<br>
+requirements /rɪˈkwaɪərmənts/ n. 要求
+
+:::
+
 ### 6. Returning damaged library book 图书馆归还损坏的图书 #221006 极高频 极限预测 普通
 
 You borrowed a book from the university library, but while reading it, you notice that two pages has been torn out, but you didn't do it. What do you say to the librarian when you return the book?
@@ -146,6 +186,12 @@ The situation is that <span style="color:orange">while I was reading it, I notic
 This is important because <span style="color:orange">I want to make sure it's not recorded as my responsibility</span>.<br>
 I was wondering if you could <span style="color:orange">make a note of it</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+responsibility /rɪˌspɑːnsəˈbɪləti/ n. 责任
 
 :::
 
@@ -172,6 +218,12 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+important /ɪmˈpɔːrtənt/ adj. 重要的
+
+:::
+
 ### 8. Neighbor playing loud music 邻居音乐太吵 #221008 极高频 简单
 
 Your neighbor is holding a party with loud music in the living room at night, which is too noisy and influences your sleep, but you have an important exam early tomorrow morning. What should you say to them without causing an argument?
@@ -192,6 +244,13 @@ The situation is that <span style="color:orange">you are holding a party with lo
 This is important because <span style="color:orange">I have an important exam early tomorrow morning</span>.<br>
 I was wondering if you could <span style="color:orange">lower down the volume a little bit</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+volume /ˈvɑːljuːm/ n. 音量<br>
+influences /ˈɪnfluənsɪz/ v. 影响
 
 :::
 
@@ -218,6 +277,12 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+preparation /ˌprepəˈreɪʃən/ n. 准备
+
+:::
+
 ### 10. Tutorial and competition 比赛和辅导课冲突 #221010 极高频 普通
 
 Your teacher scheduled a tutorial session for this afternoon, but you have an important competition to attend at the same time. How would you explain this to your teacher and request an alternative arrangement?
@@ -238,6 +303,14 @@ The situation is that <span style="color:orange">you scheduled a tutorial sessio
 This is important because <span style="color:orange">I really value the session but the competition is also important</span>.<br>
 I was wondering if you could <span style="color:orange">arrange a make-up class or let me review the material one-on-one later</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+tutorial /tuːˈtɔːriəl/ n. 辅导课<br>
+competition /ˌkɑːmpəˈtɪʃən/ n. 比赛<br>
+scheduled /ˈskedʒuːld/ adj. 安排的
 
 :::
 
@@ -264,6 +337,14 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+accommodation /əˌkɑːməˈdeɪʃən/ n. 住宿<br>
+alternative /ɔːlˈtɜːrnətɪv/ adj. 替代的<br>
+installments /ɪnˈstɔːlmənts/ n. 分期付款
+
+:::
+
 ### 12. Borrow notes from your friend 借笔记 #221012 极高频 极限预测 简单
 
 You can't find your class notes, but you need them to finish your assignments. Your friend's notes are very good. You want to borrow hers. How would you tell her?
@@ -284,6 +365,12 @@ The situation is that <span style="color:orange">I can't find my class notes, bu
 This is important because <span style="color:orange">your notes are very good and I really need them</span>.<br>
 I was wondering if you could <span style="color:orange">lend me yours for a day or two</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+assignments /əˈsaɪnmənts/ n. 作业
 
 :::
 
@@ -310,6 +397,12 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+arrived /əˈraɪvd/ v. 到达
+
+:::
+
 ### 14. Heater Breakdown 加热器故障 #221014 极高频 普通
 
 You are a student living in university accommodation, and the heater in your room has stopped working. It's the middle of winter and your room is uncomfortably cold, especially at night. You go to the accommodation manager's office to report the problem. What do you say to the accommodation manager?
@@ -330,6 +423,12 @@ The situation is that <span style="color:orange">the heater in my room has stopp
 This is important because <span style="color:orange">it's the middle of winter and my room is uncomfortably cold, especially at night</span>.<br>
 I was wondering if you could <span style="color:orange">arrange for someone to check or fix it as soon as possible</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+uncomfortably /ʌnˈkʌmftərbli/ adv. 不舒适地
 
 :::
 
@@ -356,6 +455,13 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+stationery /ˈsteɪʃəneri/ n. 文具<br>
+concerned /kənˈsɜːrnd/ adj. 担心的
+
+:::
+
 ### 16. Computer Failure 电脑故障 #221016 极高频 简单
 
 You are in the campus library working on an urgent assignment when your computer suddenly stops working. You try restarting it, but nothing happens. You see a staff member nearby who might be able to help or direct you to someone who can. What would you say?
@@ -376,6 +482,13 @@ The situation is that <span style="color:orange">I am working on an urgent assig
 This is important because <span style="color:orange">the assignment is urgent and I need to finish it</span>.<br>
 I was wondering if you could <span style="color:orange">help me, or direct me to the library technician</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+technician /tekˈnɪʃən/ n. 技术人员<br>
+urgent /ˈɜːrdʒənt/ adj. 紧急的
 
 :::
 
@@ -402,6 +515,12 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+realized /ˈriːəlaɪzd/ v. 意识到
+
+:::
+
 ### 18. Computer Broken 电脑故障 #221018 极高频 极限预测 简单
 
 You have a deadline next week for a paper to submit, but your computer is broken, so you need more time to finish the paper. What would you say to your professor if you want to ask for a week's extension?
@@ -422,6 +541,14 @@ The situation is that <span style="color:orange">I have a deadline next week for
 This is important because <span style="color:orange">I've been working hard, but I need a bit more time to ensure the quality of my work</span>.<br>
 I was wondering if you could <span style="color:orange">give me a one-week extension</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+extension /ɪkˈstenʃən/ n. 延期<br>
+quality /ˈkwɑːləti/ n. 质量<br>
+deadline /ˈdedlaɪn/ n. 截止日期
 
 :::
 
@@ -448,6 +575,12 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+schedule /ˈskedʒuːl/ n. 日程表
+
+:::
+
 ### 20. Party Decline 拒绝派对邀请 #221020 极高频 简单
 
 Your friend is having a birthday party this weekend, and you have been invited. However, you need to complete an essay this weekend. How would you communicate to your friend that you cannot attend, in a way that does not make them feel sad and is polite?
@@ -468,6 +601,14 @@ The situation is that <span style="color:orange">I'm so happy that I have been i
 This is important because <span style="color:orange">the essay deadline is coming and I cannot attend your party</span>.<br>
 I was wondering if you could <span style="color:orange">understand my situation, and we could celebrate together another time</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+celebrate /ˈselɪbreɪt/ v. 庆祝<br>
+essay /ˈeseɪ/ n. 论文<br>
+deadline /ˈdedlaɪn/ n. 截止日期
 
 :::
 
@@ -494,6 +635,14 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+interview /ˈɪntərvjuː/ n. 采访<br>
+assignment /əˈsaɪnmənt/ n. 作业<br>
+prepared /prɪˈperd/ adj. 准备好的
+
+:::
+
 ### 22. Switching from Library to Café 从图书馆转至咖啡馆 #221022 极高频 极限预测 简单
 
 You arranged to go to the library with your friend to use the study room, but you just found out that the study room is double booked. You want to suggest meeting at a café instead. What would you say to your friend?
@@ -514,6 +663,13 @@ The situation is that <span style="color:orange">I arranged to go to the library
 This is important because <span style="color:orange">we still need a place to study</span>.<br>
 I was wondering if you could <span style="color:orange">switch to a nearby café instead</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+arranged /əˈreɪndʒd/ v. 安排<br>
+library /ˈlaɪbreri/ n. 图书馆
 
 :::
 
@@ -540,6 +696,14 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+performance /pərˈfɔːrməns/ n. 表现<br>
+audience /ˈɔːdiəns/ n. 观众<br>
+nervous /ˈnɜːrvəs/ adj. 紧张的
+
+:::
+
 ### 24. Hiking Shoes 登山靴 #221024 极高频 普通
 
 You are doing a weekend hiking trip with your friends. However, you've noticed one of them are not wearing proper shoes that may lead to discomfort or injuries during the hike. What would you say to him?
@@ -560,6 +724,14 @@ The situation is that <span style="color:orange">I've noticed you are not wearin
 This is important because <span style="color:orange">it may lead to discomfort or injuries during the hike</span>.<br>
 I was wondering if you could <span style="color:orange">borrow a spare pair in the equipment store</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+discomfort /dɪsˈkʌmfərt/ n. 不适<br>
+injuries /ˈɪndʒəriz/ n. 受伤<br>
+equipment /ɪˈkwɪpmənt/ n. 设备
 
 :::
 
@@ -586,6 +758,13 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+university /ˌjuːnɪˈvɜːrsəti/ n. 大学<br>
+apartment /əˈpɑːrtmənt/ n. 公寓
+
+:::
+
 ### 26. Food Advice for School Cafeteria 学校食堂的饮食建议 #221026 极高频 普通
 
 You think the food served in the school cafeteria is not healthy enough. You want to put forward some suggestions to the staff to improve it. What would you say?
@@ -606,6 +785,14 @@ The situation is that <span style="color:orange">I think the food served in the 
 This is important because <span style="color:orange">it affects students' health</span>.<br>
 I was wondering if you could <span style="color:orange">add more fresh vegetables and fruits, and reduce some hamburgers or fries</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+cafeteria /ˌkæfəˈtɪriə/ n. 自助餐厅<br>
+vegetables /ˈvedʒtəbəlz/ n. 蔬菜<br>
+hamburgers /ˈhæmbɜːrɡərz/ n. 汉堡包
 
 :::
 
@@ -632,6 +819,13 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+injured /ˈɪndʒərd/ adj. 受伤的<br>
+library /ˈlaɪbreri/ n. 图书馆
+
+:::
+
 ### 28. A Difficult Course 一门困难的课程 #221028 极高频 普通
 
 You have taken a course for one semester. Now your friends tell you they also want to take this course and ask for your advice. Since the course is too difficult, you do not recommend it. What should you say?
@@ -652,6 +846,13 @@ The situation is that <span style="color:orange">I've taken the course for one s
 This is important because <span style="color:orange">the assignments are tough and the exams are super challenging</span>.<br>
 I was wondering if you could <span style="color:orange">consider other courses instead</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+challenging /ˈtʃælɪndʒɪŋ/ adj. 具有挑战性的<br>
+assignments /əˈsaɪnmənts/ n. 作业
 
 :::
 
@@ -678,6 +879,14 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+assignment /əˈsaɪnmənt/ n. 作业<br>
+feedback /ˈfiːdbæk/ n. 反馈<br>
+improve /ɪmˈpruːv/ v. 改进
+
+:::
+
 ### 30. Notebook Lost 笔记丢失 #221030 极高频 普通
 
 You attended a lecture earlier today, but later realized that you lost the notebook where you had written all your notes. Your friend, who also attended the lecture, took very clear and detailed notes. You decide to ask her if she would be willing to lend you her notes to help you catch up. What would you say?
@@ -698,6 +907,14 @@ The situation is that <span style="color:orange">I attended a lecture earlier to
 This is important because <span style="color:orange">I need to catch up with the class, and you always keep very clear and detailed notes</span>.<br>
 I was wondering if you could <span style="color:orange">lend me your notes</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+realized /ˈriːəlaɪzd/ v. 意识到<br>
+detailed /ˈdiːteɪld/ adj. 详细的<br>
+notebook /ˈnoʊtbʊk/ n. 笔记本
 
 :::
 
@@ -724,6 +941,15 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+attendance /əˈtendəns/ n. 出勤<br>
+academic /ˌækəˈdemɪk/ adj. 学术的<br>
+performance /pərˈfɔːrməns/ n. 表现<br>
+frequently /ˈfriːkwəntli/ adv. 频繁地
+
+:::
+
 ### 32. Boring Class 无聊的课堂 #221032 极高频 简单
 
 You are attending a class with a classmate. Your classmate soon finds the class is boring and wants to leave class early. What would you say to him?
@@ -744,6 +970,13 @@ The situation is that <span style="color:orange">I know you find the class borin
 This is important because <span style="color:orange">the class is really important and your attendance will be affected if you leave</span>.<br>
 I was wondering if you could <span style="color:orange">stay in class and pay more attention to it</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+attendance /əˈtendəns/ n. 出勤<br>
+affected /əˈfektɪd/ adj. 受影响的
 
 :::
 
@@ -770,6 +1003,13 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+supposed /səˈpoʊzd/ adj. 应该的<br>
+notebook /ˈnoʊtbʊk/ n. 笔记本
+
+:::
+
 ### 34. Group Member Not Finish Assignment 小组成员未完成任务 #221034 极高频 简单
 
 Your professor is urging students to submit the group assignment. However, your group member has not finished his part of the work yet. What would you say to your professor?
@@ -790,6 +1030,13 @@ The situation is that <span style="color:orange">the deadline is coming and I've
 This is important because <span style="color:orange">we need more time to complete it</span>.<br>
 I was wondering if you could <span style="color:orange">give our group a three-day extension</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+extension /ɪkˈstenʃən/ n. 延期<br>
+deadline /ˈdedlaɪn/ n. 截止日期
 
 :::
 
@@ -816,6 +1063,13 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+volunteer /ˌvɑːlənˈtɪr/ n. 志愿者<br>
+experience /ɪkˈspɪriəns/ n. 经验
+
+:::
+
 ### 36. Wrong Exam Time 错误的考试时间 #221036 极高频 简单
 
 You just told your friend that your exam is scheduled for 3 p.m. tomorrow afternoon. But you've just found out that you made a mistake—the exam is actually at 2 p.m. this afternoon. You need to call your friend immediately to correct this information. What would you say?
@@ -836,6 +1090,12 @@ The situation is that <span style="color:orange">I just told you the exam is sch
 This is important because <span style="color:orange">you might miss the exam if you don't hurry</span>.<br>
 I was wondering if you could <span style="color:orange">hurry to the exam hall right now</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+scheduled /ˈskedʒuːld/ adj. 安排的
 
 :::
 
@@ -862,6 +1122,13 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+unfortunately /ʌnˈfɔːrtʃənətli/ adv. 不幸地<br>
+appointment /əˈpɔɪntmənt/ n. 预约
+
+:::
+
 ### 38. Red Traffic Light 红灯坏了 #221038 极高频 极限预测 普通
 
 You are on your way to school when you notice that a red traffic light nearby is not working properly. You need to call the road maintenance team to report the issue and ask them to repair it. What would you say when making this call?
@@ -885,6 +1152,13 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+maintenance /ˈmeɪntənəns/ n. 维护<br>
+accidents /ˈæksɪdənts/ n. 事故
+
+:::
+
 ### 39. Ask for Advice Together 一起征求建议 #221039 极高频 普通
 
 Your classmate is planning to drop the course he has already enrolled in. However, you believe it's wise to seek the tutor's professional advice about this decision first—and you'd like to go with him to consult the tutor together. What would you say?
@@ -905,6 +1179,13 @@ The situation is that <span style="color:orange">I heard you're planning to drop
 This is important because <span style="color:orange">it's a big decision that might affect your study plan</span>.<br>
 I was wondering if you could <span style="color:orange">consult the tutor first before making the final decision, and I'd be happy to go with you</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+enrollment /ɪnˈroʊlmənt/ n. 注册<br>
+decision /dɪˈsɪʒən/ n. 决定
 
 :::
 
@@ -948,6 +1229,14 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+reschedule /riːˈskedʒuːl/ v. 重新安排<br>
+assignment /əˈsaɪnmənt/ n. 作业<br>
+invitation /ˌɪnvɪˈteɪʃən/ n. 邀请
+
+:::
+
 ### 41. Holiday Research Project 假期研究项目 #221041 极高频 普通
 
 You know your professor is organizing a holiday research project. You want to call the professor and leave a message to express your interest in participating in the project. Specifically, you need to ask about the exact starting time of the research and whether you are required to relocate or travel for it. What would you say?
@@ -968,6 +1257,14 @@ The situation is that <span style="color:orange">I know you are organizing a hol
 This is important because <span style="color:orange">I need more information about the specific schedule and whether I need to relocate or travel for the research</span>.<br>
 I was wondering if you could <span style="color:orange">tell me the exact starting time and whether relocation or travel is required</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+participating /pɑːrˈtɪsɪpeɪtɪŋ/ v. 参与<br>
+relocation /ˌriːloʊˈkeɪʃən/ n. 搬迁<br>
+specific /spəˈsɪfɪk/ adj. 具体的
 
 :::
 
@@ -994,6 +1291,14 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+debating /dɪˈbeɪtɪŋ/ adj. 辩论的<br>
+participants /pɑːrˈtɪsɪpənts/ n. 参与者<br>
+suitable /ˈsuːtəbəl/ adj. 合适的
+
+:::
+
 ### 43. Dinner Invitation 晚餐邀请 #221043 极高频 极限预测 普通
 
 You want to invite your friend and his wife to a dinner party. Before making the arrangements, you need to ask them if they need to avoid certain foods or have a preference. What would you say to your friend?
@@ -1014,6 +1319,13 @@ The situation is that <span style="color:orange">I'd like to invite you and your
 This is important because <span style="color:orange">I want to make sure the food is suitable for everyone before I plan the menu</span>.<br>
 I was wondering if you could <span style="color:orange">let me know if either of you needs to avoid certain foods or has any preference</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+preference /ˈprefərəns/ n. 偏好<br>
+suitable /ˈsuːtəbəl/ adj. 合适的
 
 :::
 
@@ -1040,6 +1352,13 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+lecture /ˈlektʃər/ n. 讲座<br>
+professor /prəˈfesər/ n. 教授
+
+:::
+
 ### 45. Late for Presentation 演讲迟到 #221045 极高频 简单
 
 You were on your way to give a presentation. Suddenly, a big tree has fallen onto the road and blocked your way. You will be late for it, so you need to call your tutor to explain the situation and ask if the following students can present first. What would you say?
@@ -1060,6 +1379,12 @@ The situation is that <span style="color:orange">I was on my way to give the pre
 This is important because <span style="color:orange">I don't want to hold up the class</span>.<br>
 I was wondering if you could <span style="color:orange">let the other students present first</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+presentation /ˌprezənˈteɪʃən/ n. 演讲
 
 :::
 
@@ -1086,6 +1411,13 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+battery /ˈbætəri/ n. 电池<br>
+verify /ˈverɪfaɪ/ v. 验证
+
+:::
+
 ### 47. Party for Parents 父母的聚会 #221047 极高频 极限预测 简单
 
 You had nearly finished your assignment, but your sister asked you to attend your parents' party, and as a result you missed the deadline. What would you say to your tutor?
@@ -1106,6 +1438,14 @@ The situation is that <span style="color:orange">I had nearly finished my assign
 This is important because <span style="color:orange">I had almost finished it and I just need a little more time</span>.<br>
 I was wondering if you could <span style="color:orange">give me a little more time to submit it</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+submission /səbˈmɪʃən/ n. 提交<br>
+assignment /əˈsaɪnmənt/ n. 作业<br>
+deadline /ˈdedlaɪn/ n. 截止日期
 
 :::
 
@@ -1132,6 +1472,13 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+conversation /ˌkɑːnvərˈseɪʃən/ n. 对话<br>
+lecture /ˈlektʃər/ n. 讲座
+
+:::
+
 ### 49. Volunteer for Open Week 开放周志愿者 #221049 极高频 新题 极限预测 简单
 
 Your teacher is looking for volunteers to help prepare for the school Open Week. You are interested in this volunteer position and want to tell the teacher why you are suitable for it. What would you say to the teacher?
@@ -1155,6 +1502,14 @@ I'd really appreciate it.
 
 :::
 
+::: details Difficult Words phonetic symbols
+
+volunteer /ˌvɑːlənˈtɪr/ n. 志愿者<br>
+communicating /kəˈmjuːnɪkeɪtɪŋ/ v. 沟通<br>
+responsible /rɪˈspɑːnsəbəl/ adj. 负责任的
+
+:::
+
 ### 50. Refusing a Classmate's Request to Copy Assignment 拒绝同学要求代做作业的请求 #221050 极高频 新题 极限预测 困难
 
 You are in the library working on a difficult assignment. A classmate, who you know hasn't started the work, approaches you and asks if he can copy your nearly completed assignment because he is out of time. You don't want to give him your work. What would you say?
@@ -1175,6 +1530,13 @@ The situation is that <span style="color:orange">I know you haven't started the 
 This is important because <span style="color:orange">I think it's important that we each submit our own work</span>.<br>
 I was wondering if you could <span style="color:orange">let me help explain how I approached some of the questions or point you to some resources instead</span>.<br>
 I'd really appreciate it.
+
+:::
+
+::: details Difficult Words phonetic symbols
+
+approached /əˈproʊtʃt/ v. 着手处理<br>
+resources /ˈriːsɔːrsɪz/ n. 资源
 
 :::
 
