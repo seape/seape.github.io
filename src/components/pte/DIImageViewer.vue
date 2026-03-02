@@ -57,11 +57,26 @@
         </svg>
       </button>
     </div>
+    <div v-if="currentImage.description" class="di-viewer-desc-wrapper">
+      <button class="di-desc-toggle" @click="showDesc = !showDesc">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+          <circle cx="12" cy="12" r="3" />
+        </svg>
+        {{ showDesc ? 'Hide' : 'Show' }} Answer
+        <svg :class="['di-desc-chevron', { open: showDesc }]" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </button>
+      <transition name="di-desc-slide">
+        <div v-show="showDesc" class="di-viewer-desc" v-html="currentImage.description"></div>
+      </transition>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue';
+import { ref, computed, watch, onMounted, onUnmounted } from 'vue';
 
 const props = defineProps({
   images: {
@@ -75,6 +90,11 @@ const currentDisplayIndex = ref(0);
 const container = ref(null);
 const isFullscreen = ref(false);
 const randomMode = ref(false);
+const showDesc = ref(false);
+
+watch(currentDisplayIndex, () => {
+  showDesc.value = false;
+});
 
 const CATEGORIES = [
   { value: 'all', label: 'All' },
@@ -340,6 +360,76 @@ onUnmounted(() => {
   right: 0;
 }
 
+/* Description panel */
+.di-viewer-desc-wrapper {
+  margin-top: 0.75rem;
+}
+
+.di-desc-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+  color: #4b5563;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.di-desc-toggle:hover {
+  border-color: #f59e0b;
+  color: #d97706;
+  background: #fffbeb;
+}
+
+.di-desc-chevron {
+  transition: transform 0.2s;
+}
+
+.di-desc-chevron.open {
+  transform: rotate(180deg);
+}
+
+.di-viewer-desc {
+  margin-top: 0.5rem;
+  padding: 1rem 1.25rem;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: #374151;
+}
+
+.di-viewer-desc :deep(.hi) {
+  color: #d97706;
+  font-weight: 600;
+}
+
+.di-desc-slide-enter-active,
+.di-desc-slide-leave-active {
+  transition: all 0.25s ease;
+  overflow: hidden;
+}
+
+.di-desc-slide-enter-from,
+.di-desc-slide-leave-to {
+  opacity: 0;
+  max-height: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.di-desc-slide-enter-to,
+.di-desc-slide-leave-from {
+  opacity: 1;
+  max-height: 500px;
+}
+
 /* Fullscreen mode */
 .di-viewer:fullscreen {
   background: #111827;
@@ -411,6 +501,24 @@ onUnmounted(() => {
   border-color: #4f46e5;
 }
 
+.di-viewer:fullscreen .di-desc-toggle {
+  background: #1f2937;
+  border-color: #4b5563;
+  color: #d1d5db;
+}
+
+.di-viewer:fullscreen .di-desc-toggle:hover {
+  border-color: #f59e0b;
+  color: #fbbf24;
+  background: #422006;
+}
+
+.di-viewer:fullscreen .di-viewer-desc {
+  background: #1f2937;
+  border-color: #374151;
+  color: #d1d5db;
+}
+
 @media (prefers-color-scheme: dark) {
   .di-viewer-stage {
     background: #1f2937;
@@ -450,6 +558,21 @@ onUnmounted(() => {
   .di-action-btn.active:hover {
     background: #4f46e5;
     border-color: #4f46e5;
+  }
+  .di-desc-toggle {
+    background: #1f2937;
+    border-color: #4b5563;
+    color: #d1d5db;
+  }
+  .di-desc-toggle:hover {
+    border-color: #f59e0b;
+    color: #fbbf24;
+    background: #422006;
+  }
+  .di-viewer-desc {
+    background: #1f2937;
+    border-color: #374151;
+    color: #d1d5db;
   }
 }
 </style>
