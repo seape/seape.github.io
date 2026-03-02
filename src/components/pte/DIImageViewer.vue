@@ -164,6 +164,9 @@ function handleKeydown(e) {
   } else if (e.key === 'ArrowRight') {
     e.preventDefault();
     next();
+  } else if (e.key === ' ' || e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+    e.preventDefault();
+    showDesc.value = !showDesc.value;
   } else if (e.key === 'Escape' && isFullscreen.value) {
     // browser handles Escape for exiting fullscreen, but we sync state via the listener
   }
