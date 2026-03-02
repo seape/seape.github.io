@@ -14,8 +14,9 @@ sticky: false
 ## Graphs
 1. The following graph shows information about <span style="color:orange;font-weight:bold">[TITLE]</span>, including|from <span style="color:orange;font-weight:bold">[ITEMS/DATE]</span>.
 2. According to the graph, we can see that <span style="color:orange;font-weight:bold">[ITEM A]</span> has the largest number, which is around <span style="color:orange;font-weight:bold">[VALUE of A]</span>.
-3. Following by that <span style="color:orange;font-weight:bold">[ITEM B]</span> has the second largest number, which is around <span style="color:orange;font-weight:bold">[VALUE of B]</span>.
-4. Based on the information we can get from the graph <span style="color:orange;font-weight:bold">[ITEM C]</span> has the smallest number, which is around <span style="color:orange;font-weight:bold">[VALUE of C]</span>. It’s clear that <span style="color:orange;font-weight:bold">[ITEM X]</span> has always been higher than <span style="color:orange;font-weight:bold">[ITEM Y]</span>.
+3. Following that, <span style="color:orange;font-weight:bold">[ITEM B]</span> has the second largest number, which is around <span style="color:orange;font-weight:bold">[VALUE of B]</span>.
+4. Based on the information we can get from the graph <span style="color:orange;font-weight:bold">[ITEM C]</span> has the smallest number, which is around <span style="color:orange;font-weight:bold">[VALUE of C]</span>.<br>
+    It’s clear that <span style="color:orange;font-weight:bold">[ITEM X]</span> has always been higher than <span style="color:orange;font-weight:bold">[ITEM Y]</span>.
 5. In general, this graph is about <span style="color:orange;font-weight:bold">[TITLE]</span>.
 
 <!-- ## Linechart
@@ -35,7 +36,7 @@ sticky: false
 ## Flowchart
 1. The following graph shows information about <span style="color:orange;font-weight:bold">[TITLE]</span>, including|from <span style="color:orange;font-weight:bold">[ITEMS/DATE]</span>
 2. According to the graph, we can see that the first step is <span style="color:orange;font-weight:bold">[Read Step1]</span>.
-3. Following that the seccond step is <span style="color:orange;font-weight:bold">[Read Step2]</span>
+3. Following that, the seccond step is <span style="color:orange;font-weight:bold">[Read Step2]</span>
 4. Based on the information we can get from the graph, the third step is <span style="color:orange;font-weight:bold">[Read Step3]</span>.
     * It’s clear that the Last steps are <span style="color:orange;font-weight:bold">[Remaining Steps]</span>
     * We can see that there is <span style="color:orange;font-weight:bold">[Something]</span> in the picture, which is <span style="color:orange;font-weight:bold">[adjective]</span>.
