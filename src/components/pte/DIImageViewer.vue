@@ -15,7 +15,7 @@
         >{{ f.label }} <span class="di-filter-count">{{ f.count }}</span></button>
       </div>
       <div class="di-viewer-actions">
-        <button :class="['di-action-btn', { active: randomMode }]" @click="toggleRandom" aria-label="Toggle random mode">
+        <button :class="['di-action-btn', { active: randomMode }]" @click="toggleRandom" aria-label="Toggle random mode" title="Toggle Random Mode">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="16 3 21 3 21 8" /><line x1="4" y1="20" x2="21" y2="3" />
             <polyline points="21 16 21 21 16 21" /><line x1="15" y1="15" x2="21" y2="21" />
@@ -23,7 +23,7 @@
           </svg>
           Random
         </button>
-        <button class="di-action-btn" @click="toggleFullscreen" aria-label="Toggle fullscreen">
+        <button class="di-action-btn" @click="toggleFullscreen" aria-label="Toggle fullscreen" title="Toggle Fullscreen">
           <svg v-if="!isFullscreen" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="15 3 21 3 21 9" /><line x1="14" y1="10" x2="21" y2="3" />
             <polyline points="9 21 3 21 3 15" /><line x1="10" y1="14" x2="3" y2="21" />
@@ -41,7 +41,7 @@
       <h3 class="di-viewer-title">{{ currentImage.title }}</h3>
     </div>
     <div class="di-viewer-stage" @click="handleStageClick">
-      <button class="di-viewer-nav di-viewer-nav--left" @click.stop="prev" aria-label="Previous image">
+      <button class="di-viewer-nav di-viewer-nav--left" @click.stop="prev" aria-label="Previous image" title="Previous (←)">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="15 18 9 12 15 6" />
         </svg>
@@ -51,14 +51,14 @@
         :alt="currentImage.title"
         class="di-viewer-img"
       />
-      <button class="di-viewer-nav di-viewer-nav--right" @click.stop="next" aria-label="Next image">
+      <button class="di-viewer-nav di-viewer-nav--right" @click.stop="next" aria-label="Next image" title="Next (→)">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="9 18 15 12 9 6" />
         </svg>
       </button>
     </div>
     <div v-if="currentImage.description" class="di-viewer-desc-wrapper">
-      <button class="di-desc-toggle" @click="showDesc = !showDesc">
+      <button class="di-desc-toggle" @click="showDesc = !showDesc" title="Toggle Answer (Space / ↑ / ↓)">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
           <circle cx="12" cy="12" r="3" />
