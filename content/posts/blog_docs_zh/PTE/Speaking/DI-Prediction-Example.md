@@ -192,7 +192,12 @@ sticky: false
 </div>
 <div class="di-col">
 
-<b>1.</b> The following graph shows information about <span class="hi">typing postures</span>, including <span class="hi">right and wrong postures</span>.<br> <b>2.</b> According to the graph we can see that on the left side of the picture, there is <span class="hi">the right typing posture from above</span>, which is <span class="hi">straight and aligned with the keyboard</span>.<br> <b>3.</b> Following that, in the middle of the picture, there is <span class="hi">a comparison between correct and incorrect hand positions</span>, which is <span class="hi">clearly illustrated</span>.<br> <b>4.</b> Based on the information we can get from the graph on the right side of the picture, there is <span class="hi">the wrong typing posture</span>, which is <span class="hi">bent and angled incorrectly</span>.<br> <b>5.</b> It's clear that at the bottom of the picture, there is <span class="hi">another comparison of side-view hand postures</span>, which is <span class="hi">also showing right and wrong positions</span>.<br> <b>6.</b> In general, this graph is very informative about <span class="hi">typing postures</span>.
+<b>1.</b> The following graph shows information about <span class="hi">typing postures</span>, including <span class="hi">right and wrong postures</span>.<br> 
+<b>2.</b> According to the graph we can see that on the left side of the picture, <span class="hi">the top left picture shows the correct typing posture in the top view.</span>, which is <span class="hi">straight and aligned with the keyboard</span>.<br> 
+<b>3.</b> Following that, in the middle of the picture, <span class="hi">the bottom left picture shows the correct typing posture in the side view.</span>, which is <span class="hi">clearly illustrated</span>.<br> 
+<b>4.</b> Based on the information we can get from the graph on the right side of the picture, <span class="hi">The top right picture shows the wrong typing posture in the top view.</span>, which is <span class="hi">bent and angled incorrectly</span>.<br> 
+<b>5.</b> It's clear that at the bottom of the picture, <span class="hi">the bottom right picture shows the wrong typing posture in the side view.</span>, which is <span class="hi">also showing right and wrong positions</span>.<br> 
+<b>6.</b> In general, this graph is very informative about <span class="hi">typing postures</span>.
 
 </div>
 </div>
