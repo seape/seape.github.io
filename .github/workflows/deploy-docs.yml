@@ -1,5 +1,5 @@
 
-name: Deploy Jet's Astro Blog
+name: Deploy Astro Blog
 
 on:
   push:
