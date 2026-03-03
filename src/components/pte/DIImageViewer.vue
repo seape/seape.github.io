@@ -34,6 +34,13 @@
           </svg>
           Random
         </button>
+        <button :class="['di-action-btn', { active: zoomed }]" @click="zoomed = !zoomed" aria-label="Toggle zoom" title="Toggle Zoom">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
+            <line v-if="!zoomed" x1="11" y1="8" x2="11" y2="14" /><line x1="8" y1="11" x2="14" y2="11" />
+          </svg>
+          {{ zoomed ? 'Shrink' : 'Zoom' }}
+        </button>
         <button class="di-action-btn" @click="toggleFullscreen" aria-label="Toggle fullscreen" title="Toggle Fullscreen">
           <svg v-if="!isFullscreen" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="15 3 21 3 21 9" /><line x1="14" y1="10" x2="21" y2="3" />
@@ -60,7 +67,7 @@
       <img
         :src="currentImage.src"
         :alt="currentImage.title"
-        class="di-viewer-img"
+        :class="['di-viewer-img', { zoomed }]"
       />
       <button class="di-viewer-nav di-viewer-nav--right" @click.stop="next" aria-label="Next image" title="Next (→)">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -102,6 +109,7 @@ const container = ref(null);
 const isFullscreen = ref(false);
 const randomMode = ref(false);
 const showDesc = ref(false);
+const zoomed = ref(false);
 
 watch(currentDisplayIndex, () => {
   showDesc.value = false;
@@ -352,12 +360,17 @@ onUnmounted(() => {
 }
 
 .di-viewer-img {
-  max-width: 100%;
+  max-width: 60%;
   max-height: 70vh;
   object-fit: contain;
   display: block;
   user-select: none;
   -webkit-user-drag: none;
+  transition: max-width 0.2s ease;
+}
+
+.di-viewer-img.zoomed {
+  max-width: 100%;
 }
 
 .di-viewer-nav {
