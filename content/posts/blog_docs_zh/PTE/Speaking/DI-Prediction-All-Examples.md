@@ -1,5 +1,5 @@
 ---
-title: DI Prediction All Examples
+title: DI Prediction (Our Templates)
 date: 2024-03-02
 icon: chart-line
 author: Haiyue
@@ -497,7 +497,7 @@ sticky: false
 </div>
 </div>
 
-### 33. Typing Postures #031142 极高频 困难
+<!-- ### 33. Typing Postures #031142 极高频 困难
 
 <div class="di-flex">
 <div class="di-col">
@@ -507,12 +507,23 @@ sticky: false
 </div>
 <div class="di-col">
 
-<b>1.</b> The following graph shows information about <span class="hi">typing postures</span>, including <span class="hi">right and wrong postures</span>.<br> 
-<b>2.</b> According to the graph we can see that on the left side of the picture, <span class="hi">the top left picture shows the correct typing posture in the top view.</span>, which is <span class="hi">straight and aligned with the keyboard</span>.<br> 
-<b>3.</b> Following that, in the middle of the picture, <span class="hi">the bottom left picture shows the correct typing posture in the side view.</span>, which is <span class="hi">clearly illustrated</span>.<br> 
-<b>4.</b> Based on the information we can get from the graph on the right side of the picture, <span class="hi">The top right picture shows the wrong typing posture in the top view.</span>, which is <span class="hi">bent and angled incorrectly</span>.<br> 
-<b>5.</b> It's clear that at the bottom of the picture, <span class="hi">the bottom right picture shows the wrong typing posture in the side view.</span>, which is <span class="hi">also showing right and wrong positions</span>.<br> 
-<b>6.</b> In general, this graph is very informative about <span class="hi">typing postures</span>.
+<b>1.</b> The following graph shows information about <span class="hi">typing postures</span>, including <span class="hi">right and wrong postures</span>.<br> <b>2.</b> According to the graph we can see that on the left side of the picture, there is <span class="hi">the correct typing posture from both the top view and the side view</span>, which is <span class="hi">the hands and wrists are straight and well-aligned with the keyboard</span>.<br> <b>3.</b> Following that, in the middle of the picture, there is <span class="hi">a clear comparison between the correct and incorrect postures</span>, which is <span class="hi">illustrated from two different angles</span>.<br> <b>4.</b> Based on the information we can get from the graph on the right side of the picture, there is <span class="hi">the wrong typing posture from both the top view and the side view</span>, which is <span class="hi">the wrists are bent and angled incorrectly</span>.<br> <b>5.</b> It's clear that at the bottom of the picture, there is <span class="hi">a side view comparison</span>, which is <span class="hi">the correct posture keeps the wrist level while the wrong posture has the wrist bent upward</span>.<br> <b>6.</b> In general, this graph is very informative about <span class="hi">typing postures</span>.
+
+</div>
+</div> -->
+
+
+### 33. (V2) Typing Postures #031142 极高频 困难
+
+<div class="di-flex">
+<div class="di-col">
+
+![Typing Postures](./DI.PREDICTION/33.typing_postures.png)
+
+</div>
+<div class="di-col">
+
+<b>1.</b> The following graph shows information about <span class="hi">typing postures</span>, including <span class="hi">right and wrong postures</span>.<br> <b>2.</b> According to the graph, the top left picture shows the correct typing posture in the top view.<br> <b>3.</b> Following that, <span class="hi">the bottom left picture shows the correct typing posture in the side view.</span>, <br> <b>4.</b> Based on the information we can get from the graph, <span class="hi">the top right picture shows the wrong typing posture in the top view.</span>.<br> <b>5.</b> It's clear that <span class="hi">the bottom right picture shows the wrong typing posture in the side view.</span>.<br> <b>6.</b> In general, this graph is very informative about <span class="hi">typing postures</span>.
 
 </div>
 </div>

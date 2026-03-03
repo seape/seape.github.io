@@ -1,5 +1,5 @@
 ---
-title: DI Prediction Questions(From Firefly)
+title: DI Prediction (From Firefly)
 date: 2024-03-02
 icon: chart-line
 author: Haiyue
