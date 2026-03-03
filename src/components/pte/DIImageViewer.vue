@@ -567,60 +567,61 @@ onUnmounted(() => {
   color: #d1d5db;
 }
 
-@media (prefers-color-scheme: dark) {
-  .di-viewer-stage {
-    background: #1f2937;
-  }
-  .di-viewer-counter {
-    background: #4b5563;
-  }
-  .di-filter-btn {
-    background: #1f2937;
-    border-color: #4b5563;
-    color: #d1d5db;
-  }
-  .di-filter-btn:hover {
-    border-color: #6b7280;
-    background: #374151;
-  }
-  .di-filter-btn.active {
-    background: #e5e7eb;
-    color: #1f2937;
-    border-color: #e5e7eb;
-  }
-  .di-action-btn {
-    background: #1f2937;
-    border-color: #4b5563;
-    color: #d1d5db;
-  }
-  .di-action-btn:hover {
-    border-color: #818cf8;
-    color: #a5b4fc;
-    background: #312e81;
-  }
-  .di-action-btn.active {
-    background: #6366f1;
-    color: #fff;
-    border-color: #6366f1;
-  }
-  .di-action-btn.active:hover {
-    background: #4f46e5;
-    border-color: #4f46e5;
-  }
-  .di-desc-toggle {
-    background: #1f2937;
-    border-color: #4b5563;
-    color: #d1d5db;
-  }
-  .di-desc-toggle:hover {
-    border-color: #f59e0b;
-    color: #fbbf24;
-    background: #422006;
-  }
-  .di-viewer-desc {
-    background: #1f2937;
-    border-color: #374151;
-    color: #d1d5db;
-  }
+:global(.dark) .di-viewer-title {
+  color: #e5e7eb;
+}
+:global(.dark) .di-viewer-stage {
+  background: #1f2937;
+}
+:global(.dark) .di-viewer-counter {
+  background: #4b5563;
+}
+:global(.dark) .di-filter-btn {
+  background: #1f2937;
+  border-color: #4b5563;
+  color: #d1d5db;
+}
+:global(.dark) .di-filter-btn:hover {
+  border-color: #6b7280;
+  background: #374151;
+}
+:global(.dark) .di-filter-btn.active {
+  background: #e5e7eb;
+  color: #1f2937;
+  border-color: #e5e7eb;
+}
+:global(.dark) .di-action-btn {
+  background: #1f2937;
+  border-color: #4b5563;
+  color: #d1d5db;
+}
+:global(.dark) .di-action-btn:hover {
+  border-color: #818cf8;
+  color: #a5b4fc;
+  background: #312e81;
+}
+:global(.dark) .di-action-btn.active {
+  background: #6366f1;
+  color: #fff;
+  border-color: #6366f1;
+}
+:global(.dark) .di-action-btn.active:hover {
+  background: #4f46e5;
+  border-color: #4f46e5;
+}
+:global(.dark) .di-desc-toggle {
+  background: #1f2937;
+  border-color: #4b5563;
+  color: #d1d5db;
+}
+:global(.dark) .di-desc-toggle:hover {
+  border-color: #f59e0b;
+  color: #fbbf24;
+  background: #422006;
+}
+:global(.dark) .di-viewer-desc {
+  background: #1f2937;
+  border-color: #374151;
+  color: #d1d5db;
 }
 </style>

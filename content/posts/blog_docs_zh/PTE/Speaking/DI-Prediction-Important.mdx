@@ -1,0 +1,43 @@
+---
+title: DI Prediction Important (Our Templates)
+date: 2024-03-02
+icon: chart-line
+author: Haiyue
+category:
+  - PTE
+tag:
+  - DI
+star: false
+sticky: false
+---
+
+import DIQuestionList from '@blog/components/pte/DIQuestionList.vue';
+import { diQuestions, importantNumbers } from './diPredictionData.js';
+
+export const imageModules = import.meta.glob('./DI.PREDICTION/*.{png,jpeg,jpg}', { eager: true });
+
+export const imageMap = Object.fromEntries(
+  Object.entries(imageModules).map(([path, mod]) => {
+    const filename = path.split('/').pop();
+    const match = filename.match(/^(\d+)\./);
+    const num = match ? parseInt(match[1]) : null;
+    const src = typeof mod.default === 'string' ? mod.default : mod.default?.src;
+    return [num, src];
+  }).filter(([num]) => num !== null)
+);
+
+export const questions = importantNumbers
+  .map(num => {
+    const v = diQuestions[num];
+    if (!v) return null;
+    return {
+      num,
+      title: v.title,
+      tags: v.tags,
+      description: v.description,
+      src: imageMap[num] || '',
+    };
+  })
+  .filter(Boolean);
+
+<DIQuestionList client:load questions={questions} />
