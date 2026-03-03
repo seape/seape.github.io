@@ -948,7 +948,7 @@ sticky: false
 </div>
 </div>
 
-### 62. Life Cycle of an Apple Tree #031209 极高频 普通
+<!-- ### 62. Life Cycle of an Apple Tree #031209 极高频 普通
 
 <div class="di-flex">
 <div class="di-col">
@@ -961,7 +961,7 @@ sticky: false
 <b>1.</b> The following graph shows information about <span class="hi">life cycle of an apple tree</span>, including <span class="hi">seeds, sprout, tree, flower and fruit</span>.<br> <b>2.</b> According to the graph, we can see that the first step is <span class="hi">seeds, which come from inside the apple fruit</span>.<br> <b>3.</b> Following that, the second step is <span class="hi">sprout, where the seeds grow into a small plant with roots</span>.<br> <b>4.</b> Based on the information we can get from the graph, the third step is <span class="hi">tree, where the sprout grows into a full-sized apple tree</span>.<br> <b>5.</b> It's clear that the last steps are <span class="hi">flower and fruit, where the tree blossoms and then produces apples</span>.<br> <b>6.</b> We can see that there is <span class="hi">a circular arrow pattern</span> in the picture, which is <span class="hi">continuous and cyclical</span>.<br> <b>7.</b> In general, this graph is very informative about <span class="hi">life cycle of an apple tree</span>.
 
 </div>
-</div>
+</div> -->
 
 ### 63. Tesco Extra Music Download #031214 极高频 普通
 
