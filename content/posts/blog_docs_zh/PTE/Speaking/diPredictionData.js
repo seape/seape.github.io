@@ -816,7 +816,6 @@ export const importantNumbers = [
 
 for (const [key, value] of Object.entries(diQuestions)) {
   if (importantNumbers.includes(parseInt(key))) {
-  console.log(key);
     value.categories.push("important");
   }
 }
