@@ -520,12 +520,12 @@ onUnmounted(() => {
   align-items: flex-start;
 }
 .di-viewer .di-viewer-body.side .di-viewer-stage {
-  flex: 6;
+  flex: 1;
   min-width: 0;
   min-height: 200px;
 }
 .di-viewer .di-viewer-body.side .di-viewer-desc-wrapper {
-  flex: 4;
+  flex: 1;
   min-width: 0;
   margin-top: 0;
 }
