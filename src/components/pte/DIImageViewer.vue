@@ -33,7 +33,6 @@
           <svg v-else width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
             <rect x="2" y="1" width="12" height="6" rx="1" /><rect x="2" y="9" width="12" height="6" rx="1" />
           </svg>
-          {{ layout === 'side' ? 'Stack' : 'Side' }}
         </button>
         <button :class="['di-action-btn', { active: randomMode }]" @click="toggleRandom" aria-label="Toggle random mode" title="Toggle Random Mode">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -41,14 +40,12 @@
             <polyline points="21 16 21 21 16 21" /><line x1="15" y1="15" x2="21" y2="21" />
             <line x1="4" y1="4" x2="9" y2="9" />
           </svg>
-          Random
         </button>
         <button :class="['di-action-btn', { active: zoomed }]" @click="zoomed = !zoomed" aria-label="Toggle zoom" title="Toggle Zoom">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
             <line v-if="!zoomed" x1="11" y1="8" x2="11" y2="14" /><line x1="8" y1="11" x2="14" y2="11" />
           </svg>
-          {{ zoomed ? 'Shrink' : 'Zoom' }}
         </button>
         <button :class="['di-action-btn', { active: isFullPage }]" @click="toggleFullPage" aria-label="Toggle full page" title="Toggle Full Page (F)">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -56,7 +53,6 @@
             <polyline v-if="!isFullPage" points="9 3 9 9 3 9" /><polyline v-if="!isFullPage" points="15 21 15 15 21 15" />
             <polyline v-if="isFullPage" points="9 9 9 3 3 3 3 9" /><polyline v-if="isFullPage" points="15 15 15 21 21 21 21 15" />
           </svg>
-          {{ isFullPage ? 'Exit Page' : 'Full Page' }}
         </button>
         <button class="di-action-btn" @click="toggleFullscreen" aria-label="Toggle fullscreen" title="Toggle Fullscreen">
           <svg v-if="!isFullscreen" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -67,7 +63,6 @@
             <polyline points="4 14 10 14 10 20" /><line x1="3" y1="21" x2="10" y2="14" />
             <polyline points="20 10 14 10 14 4" /><line x1="21" y1="3" x2="14" y2="10" />
           </svg>
-          {{ isFullscreen ? 'Exit' : 'Fullscreen' }}
         </button>
       </div>
     </div>
@@ -95,18 +90,14 @@
       </div>
       <div v-if="currentImage.description" class="di-viewer-desc-wrapper">
         <button class="di-desc-toggle" @click="showDesc = !showDesc" title="Toggle Answer (Space / ↑ / ↓)">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
             <circle cx="12" cy="12" r="3" />
           </svg>
-          {{ showDesc ? 'Hide' : 'Show' }} Answer
-          <svg :class="['di-desc-chevron', { open: showDesc }]" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="6 9 12 15 18 9" />
-          </svg>
+          {{ showDesc ? 'Hide' : 'Show' }}
         </button>
-        <transition name="di-desc-slide">
-          <div v-show="showDesc" class="di-viewer-desc" v-html="currentImage.description"></div>
-        </transition>
+        <div v-if="showDesc" class="di-viewer-desc" v-html="currentImage.description"></div>
+        <div v-else class="di-viewer-desc-placeholder"></div>
       </div>
     </div>
   </div>
@@ -330,8 +321,8 @@ onUnmounted(() => {
 .di-viewer .di-action-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.3rem 0.75rem;
+  justify-content: center;
+  padding: 0.4rem;
   border: 1px solid #d1d5db;
   border-radius: 6px;
   background: #fff;
@@ -445,21 +436,27 @@ onUnmounted(() => {
 
 /* Description panel */
 .di-viewer .di-viewer-desc-wrapper {
+  position: relative;
   margin-top: 0.75rem;
 }
 
 .di-viewer .di-desc-toggle {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 2;
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.35rem 0.85rem;
+  padding: 0.3rem 0.65rem;
   border: 1px solid #d1d5db;
   border-radius: 6px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
   color: #4b5563;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   cursor: pointer;
   transition: all 0.15s;
+  backdrop-filter: blur(4px);
 }
 
 .di-viewer .di-desc-toggle:hover {
@@ -477,14 +474,21 @@ onUnmounted(() => {
 }
 
 .di-viewer .di-viewer-desc {
-  margin-top: 0.5rem;
   padding: 1rem 1.25rem;
+  padding-top: 2.5rem;
   background: #f9fafb;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   font-size: 1.1rem;
   line-height: 1.8;
   color: #374151;
+}
+
+.di-viewer .di-viewer-desc-wrapper .di-viewer-desc-placeholder {
+  min-height: 3rem;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
 }
 
 .di-viewer .di-viewer-desc .hi {
@@ -602,7 +606,7 @@ onUnmounted(() => {
 }
 
 .di-viewer:fullscreen .di-desc-toggle {
-  background: #1f2937;
+  background: rgba(31, 41, 55, 0.9);
   border-color: #4b5563;
   color: #d1d5db;
 }
@@ -617,6 +621,10 @@ onUnmounted(() => {
   background: #1f2937;
   border-color: #374151;
   color: #d1d5db;
+}
+.di-viewer:fullscreen .di-viewer-desc-placeholder {
+  background: #1f2937;
+  border-color: #374151;
 }
 
 /* Full-page mode */
@@ -696,7 +704,7 @@ onUnmounted(() => {
   border-color: #4f46e5;
 }
 .dark .di-viewer .di-desc-toggle {
-  background: #1f2937;
+  background: rgba(31, 41, 55, 0.9);
   border-color: #4b5563;
   color: #d1d5db;
 }
@@ -709,5 +717,9 @@ onUnmounted(() => {
   background: #1f2937;
   border-color: #374151;
   color: #d1d5db;
+}
+.dark .di-viewer .di-viewer-desc-placeholder {
+  background: #1f2937;
+  border-color: #374151;
 }
 </style>
