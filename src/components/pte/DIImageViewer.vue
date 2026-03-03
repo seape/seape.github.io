@@ -395,7 +395,7 @@ onUnmounted(() => {
 }
 
 .di-viewer .di-viewer-img {
-  max-width: 60%;
+  max-width: 95%;
   max-height: 70vh;
   object-fit: contain;
   display: block;
