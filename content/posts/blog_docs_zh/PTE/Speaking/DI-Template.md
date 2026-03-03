@@ -1,5 +1,5 @@
 ---
-title: DI-Template
+title: DI-Templates
 date: 2024-06-17
 icon: circle-dot
 author: Haiyue
