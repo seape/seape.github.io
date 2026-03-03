@@ -8,11 +8,22 @@
     <div class="di-viewer-toolbar">
       <div class="di-viewer-filters">
         <button
+          :class="['di-filter-btn', { active: activeFilters.size === 0 }]"
+          @click="clearFilters"
+        >All <span class="di-filter-count">{{ images.length }}</span></button>
+        <label
           v-for="f in filters"
           :key="f.value"
-          :class="['di-filter-btn', { active: activeFilter === f.value }]"
-          @click="setFilter(f.value)"
-        >{{ f.label }} <span class="di-filter-count">{{ f.count }}</span></button>
+          :class="['di-filter-btn', { active: activeFilters.has(f.value) }]"
+        >
+          <input
+            type="checkbox"
+            :checked="activeFilters.has(f.value)"
+            @change="toggleFilter(f.value)"
+            class="di-filter-checkbox"
+          />
+          {{ f.label }} <span class="di-filter-count">{{ f.count }}</span>
+        </label>
       </div>
       <div class="di-viewer-actions">
         <button :class="['di-action-btn', { active: randomMode }]" @click="toggleRandom" aria-label="Toggle random mode" title="Toggle Random Mode">
@@ -85,7 +96,7 @@ const props = defineProps({
   },
 });
 
-const activeFilter = ref('all');
+const activeFilters = ref(new Set());
 const currentDisplayIndex = ref(0);
 const container = ref(null);
 const isFullscreen = ref(false);
@@ -97,7 +108,7 @@ watch(currentDisplayIndex, () => {
 });
 
 const CATEGORIES = [
-  { value: 'all', label: 'All' },
+  { value: 'important', label: 'Important' },
   { value: 'graph', label: 'Graph' },
   { value: 'flowchart', label: 'Flowchart' },
   { value: 'map', label: 'Map' },
@@ -105,21 +116,34 @@ const CATEGORIES = [
 ];
 
 const filteredImages = computed(() => {
-  if (activeFilter.value === 'all') return props.images;
-  return props.images.filter(img => img.category === activeFilter.value);
+  if (activeFilters.value.size === 0) return props.images;
+  return props.images.filter(img =>
+    img.categories.some(c => activeFilters.value.has(c))
+  );
 });
 
 const filters = computed(() =>
   CATEGORIES.map(c => ({
     ...c,
-    count: c.value === 'all' ? props.images.length : props.images.filter(img => img.category === c.value).length,
+    count: props.images.filter(img => img.categories.includes(c.value)).length,
   }))
 );
 
 const currentImage = computed(() => filteredImages.value[currentDisplayIndex.value]);
 
-function setFilter(value) {
-  activeFilter.value = value;
+function toggleFilter(value) {
+  const next = new Set(activeFilters.value);
+  if (next.has(value)) {
+    next.delete(value);
+  } else {
+    next.add(value);
+  }
+  activeFilters.value = next;
+  currentDisplayIndex.value = 0;
+}
+
+function clearFilters() {
+  activeFilters.value = new Set();
   currentDisplayIndex.value = 0;
 }
 
@@ -216,6 +240,14 @@ onUnmounted(() => {
   display: flex;
   gap: 0.35rem;
   flex-wrap: wrap;
+}
+
+.di-filter-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
 }
 
 .di-filter-btn {

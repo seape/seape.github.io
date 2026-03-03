@@ -14,20 +14,20 @@ sticky: false
 import DIImageViewer from '@blog/components/pte/DIImageViewer.vue';
 
 export const categoryMap = {
-  1:"graph",2:"graph",3:"graph",4:"graph",5:"graph",6:"graph",7:"graph",8:"graph",9:"graph",10:"graph",
-  11:"graph",12:"graph",13:"graph",14:"graph",15:"graph",16:"graph",17:"graph",18:"graph",19:"graph",20:"graph",
-  21:"graph",22:"graph",23:"graph",24:"graph",25:"flowchart",26:"graph",27:"graph",28:"graph",29:"graph",30:"graph",
-  31:"graph",32:"image",33:"image",34:"graph",35:"image",36:"map",37:"image",38:"map",39:"map",40:"flowchart",
-  41:"graph",42:"map",43:"graph",44:"image",45:"image",46:"image",47:"image",48:"image",49:"image",50:"image",
-  51:"image",52:"image",53:"image",54:"map",55:"map",56:"map",57:"map",58:"map",59:"map",60:"flowchart",
-  61:"flowchart",62:"flowchart",63:"flowchart",64:"flowchart",65:"flowchart",66:"flowchart",67:"graph",68:"graph",69:"image",70:"graph",
-  71:"graph",72:"flowchart",73:"flowchart",74:"flowchart",75:"image",76:"map",77:"graph",78:"graph",79:"map",80:"flowchart",
-  81:"flowchart",82:"map",83:"image",84:"flowchart",85:"flowchart",86:"graph",87:"graph",88:"graph",89:"map",90:"map",
-  91:"image",92:"graph",93:"graph",94:"image",95:"graph",96:"graph",97:"graph",98:"graph",99:"graph",100:"graph",
-  101:"image",102:"graph",103:"map",104:"graph",105:"graph",106:"graph",107:"graph",108:"graph",109:"graph",110:"graph",
-  111:"graph",112:"graph",113:"graph",114:"graph",115:"graph",116:"graph",117:"graph",118:"graph",119:"map",120:"map",
-  121:"graph",122:"map",123:"graph",124:"graph",125:"graph",126:"graph",127:"graph",128:"image",129:"graph",130:"graph",
-  131:"graph",132:"graph",133:"graph",134:"map",
+  1:["graph"],2:["graph"],3:["graph"],4:["graph"],5:["graph"],6:["graph"],7:["graph"],8:["graph"],9:["graph"],10:["graph"],
+  11:["graph"],12:["graph"],13:["graph"],14:["graph"],15:["graph"],16:["graph"],17:["graph"],18:["graph"],19:["graph"],20:["graph"],
+  21:["graph"],22:["graph","important"],23:["graph"],24:["graph"],25:["flowchart","important"],26:["graph"],27:["graph"],28:["graph"],29:["graph","important"],30:["graph"],
+  31:["graph"],32:["image","important"],33:["image","important"],34:["graph"],35:["image","important"],36:["map","important"],37:["image","important"],38:["map","important"],39:["map"],40:["flowchart","important"],
+  41:["graph"],42:["map"],43:["graph"],44:["image"],45:["image","important"],46:["image","important"],47:["image","important"],48:["image","important"],49:["image","important"],50:["image","important"],
+  51:["image","important"],52:["image","important"],53:["image","important"],54:["map"],55:["map"],56:["map"],57:["map","important"],58:["map","important"],59:["map"],60:["flowchart","important"],
+  61:["flowchart"],62:["flowchart"],63:["flowchart"],64:["flowchart","important"],65:["flowchart"],66:["flowchart"],67:["graph"],68:["graph"],69:["image","important"],70:["graph","important"],
+  71:["graph","important"],72:["flowchart"],73:["flowchart","important"],74:["flowchart"],75:["image","important"],76:["map"],77:["graph"],78:["graph","important"],79:["map","important"],80:["flowchart","important"],
+  81:["flowchart"],82:["map"],83:["image"],84:["flowchart","important"],85:["flowchart"],86:["graph","important"],87:["graph"],88:["graph","important"],89:["map","important"],90:["map","important"],
+  91:["image"],92:["graph"],93:["graph"],94:["image"],95:["graph","important"],96:["graph"],97:["graph"],98:["graph"],99:["graph"],100:["graph"],
+  101:["image","important"],102:["graph"],103:["map"],104:["graph"],105:["graph"],106:["graph"],107:["graph","important"],108:["graph","important"],109:["graph"],110:["graph"],
+  111:["graph"],112:["graph"],113:["graph"],114:["graph"],115:["graph","important"],116:["graph"],117:["graph"],118:["graph"],119:["map"],120:["map"],
+  121:["graph","important"],122:["map"],123:["graph"],124:["graph"],125:["graph"],126:["graph"],127:["graph"],128:["image","important"],129:["graph"],130:["graph"],
+  131:["graph"],132:["graph"],133:["graph"],134:["map"],
 };
 
 export const descriptionMap = {
@@ -177,9 +177,9 @@ export const images = Object.entries(imageModules)
     const num = parseInt(match[1]);
     const title = match[2].replace(/_/g, ' ');
     const src = typeof mod.default === 'string' ? mod.default : mod.default?.src;
-    const category = categoryMap[num] || 'image';
+    const categories = categoryMap[num] || ['image'];
     const description = descriptionMap[num] || '';
-    return { src, title: `${num}. ${title}`, num, category, description };
+    return { src, title: `${num}. ${title}`, num, categories, description };
   })
   .filter(Boolean)
   .sort((a, b) => a.num - b.num);
