@@ -131,7 +131,13 @@ export const diQuestions = {
     title: "Population of Major European Countries in 1996 and 2007",
     tags: "",
     categories: ["graph"],
-    description: `<b>1.</b> The following graph shows information about <span class="hi">population of major European countries in 1996 and 2007</span>, from <span class="hi">Germany, Spain, France, Italy, Poland, United Kingdom and Turkey</span>.<br> <b>2.</b> According to the graph, we can see that <span class="hi">Germany</span> has the largest number, which is around <span class="hi">83 million</span>.<br> <b>3.</b> Following that, <span class="hi">Turkey in 2007</span> has the second largest number, which is around <span class="hi">75 million</span>.<br> <b>4.</b> Based on the information we can get from the graph <span class="hi">Poland</span> has the smallest number, which is around <span class="hi">38 million</span>.<br> <b>5.</b> It's clear that <span class="hi">Germany</span> has always been higher than <span class="hi">all other countries</span>.<br> <b>6.</b> In general, this graph is very informative about <span class="hi">population of major European countries in 1996 and 2007</span>.`,
+    description: `
+    <b>1.</b> The following graph shows information about <span class="hi">population of major European countries in 1996 and 2007</span>, include <span class="hi">Germany, Spain, France, Italy, Poland, United Kingdom and Turkey</span>.<br> 
+    <b>2.</b> According to the graph, we can see that <span class="hi">Germany</span> has the largest number, which is around <span class="hi">80 million</span>.<br> 
+    <b>3.</b> Following that, <span class="hi">Turkey in 2007</span> has the second largest number, which is around <span class="hi">75 million</span>.<br> 
+    <b>4.</b> Based on the information we can get from the graph <span class="hi">Poland</span> has the smallest number, which is around <span class="hi">38 million</span>.<br> 
+    <b>5.</b> It's clear that <span class="hi">Germany</span> has always been higher than <span class="hi">all other countries</span>.<br> 
+    <b>6.</b> In general, this graph is very informative about <span class="hi">population of major European countries in 1996 and 2007</span>.`,
   },
   23: {
     title: "Transport Modes in a European City 1960-2000",
@@ -149,7 +155,14 @@ export const diQuestions = {
     title: "Beginning of flow chart for quiz",
     tags: "#031086 极高频 简单",
     categories: ["flowchart"],
-    description: `<b>1.</b> The following graph shows information about <span class="hi">beginning of flow chart for quiz</span>, including <span class="hi">Slide 1 to Slide 5</span>.<br> <b>2.</b> According to the graph, we can see that the first step is <span class="hi">Slide 1, click to start quiz</span>.<br> <b>3.</b> Following that, the second step is <span class="hi">Slide 2, Question 1</span>.<br> <b>4.</b> Based on the information we can get from the graph, the third step is <span class="hi">click true or click false</span>.<br> <b>5.</b> It's clear that the last steps are <span class="hi">Slide 3 correct or Slide 4 wrong, then click to go to Slide 5, Question 2</span>.<br> <b>6.</b> We can see that there is <span class="hi">a decision process</span> in the picture, which is <span class="hi">interactive and structured</span>.<br> <b>7.</b> In general, this graph is very informative about <span class="hi">beginning of flow chart for quiz</span>.`,
+    description: `
+    <b>1.</b> The following graph shows information about <span class="hi">beginning of flow chart for quiz</span>, including <span class="hi">Slide 1 to Slide 5</span>.<br> 
+    <b>2.</b> According to the graph, we can see that the first step is <span class="hi">click to start quiz in Slide 1</span>.<br> 
+    <b>3.</b> Following that, the second step is <span class="hi">Question 1 in Slide 2</span>.<br> 
+    <b>4.</b> Based on the information we can get from the graph, the third step is <span class="hi">click true or click false</span>.<br> 
+    <b>5.</b> It's clear that the following steps after clicking are<span class="hi">Slide 3 or Slide 4</span>.<br> 
+    <b>6.</b> We can see that there is <span class="hi"> the final slide 5</span> in the picture, which is <span class="hi">for the question 2</span>.<br> 
+    <b>7.</b> In general, this graph is very informative about <span class="hi">beginning of flow chart for quiz</span>.`,
   },
   26: {
     title: "Age Percentage by Gender",
@@ -209,31 +222,55 @@ export const diQuestions = {
     title: "How Solar Yard Lights Work",
     tags: "#031145 极高频 困难",
     categories: ["image"],
-    description: `<b>1.</b> The following graph shows information about <span class="hi">how solar yard lights work</span>, including <span class="hi">several components</span>.<br> <b>2.</b> According to the graph we can see that on the left side of the picture, there is <span class="hi">labels for each component</span>, which is <span class="hi">clearly marked</span>.<br> <b>3.</b> Following that, in the middle of the picture, there is <span class="hi">glass cover, solar cells and photoresistor</span>, which is <span class="hi">located at the top part of the light</span>.<br> <b>4.</b> Based on the information we can get from the graph on the right side of the picture, there is <span class="hi">battery, controller board and LED</span>, which is <span class="hi">the internal components in the middle part</span>.<br> <b>5.</b> It's clear that at the bottom of the picture, there is <span class="hi">lamp cover</span>, which is <span class="hi">the base of the solar yard light</span>.<br> <b>6.</b> In general, this graph is very informative about <span class="hi">how solar yard lights work</span>.`,
+    description: `
+    <b>1.</b> The following graph shows information about <span class="hi">how solar yard lights work</span>, including <span class="hi">several components</span>.<br> 
+    <b>2.</b> According to the graph we can see that on the left side of the picture, there is <span class="hi">labels for each component</span>, which is <span class="hi">clearly marked</span>.<br> 
+    <b>3.</b> Following that, on the right side of the picture, there are <span class="hi">seperate glass parts</span>, which is <span class="hi">listed orderly</span>.<br> 
+    <b>4.</b> Based on the information we can get from the graph on the right side of the picture, there is <span class="hi">battery, controller board and LED</span>, which is <span class="hi">the internal components in the middle part</span>.<br> 
+    <b>5.</b> It's clear that at the bottom of the picture, there is <span class="hi">lamp cover</span>, which is <span class="hi">the base of the solar yard light</span>.<br> 
+    <b>6.</b> In general, this graph is very informative about <span class="hi">how solar yard lights work</span>.`,
   },
   36: {
     title: "Student Accommodation of Southampton University",
     tags: "#031146 极高频 极限预测 困难",
     categories: ["map"],
-    description: `<b>1.</b> The following graph shows information about <span class="hi">student accommodation of Southampton University</span>, including <span class="hi">a floor plan of 5.40m by 6.80m</span>.<br> <b>2.</b> According to the graph we can see that on the left side of the picture, there is <span class="hi">a kitchen area and a single bed</span>, which is <span class="hi">located next to each other</span>.<br> <b>3.</b> Following that, in the middle of the picture, there is <span class="hi">a desk and a bathroom</span>, which is <span class="hi">in the central area of the room</span>.<br> <b>4.</b> Based on the information we can get from the graph on the right side of the picture, there is <span class="hi">a sofa and a wardrobe</span>, which is <span class="hi">placed along the right wall</span>.<br> <b>5.</b> It's clear that at the bottom of the picture, there is <span class="hi">another bed and a washing machine</span>, which is <span class="hi">in the lower section of the accommodation</span>.<br> <b>6.</b> In general, this graph is very informative about <span class="hi">student accommodation of Southampton University</span>.`,
+    description: `
+    <b>1.</b> The following graph shows information about <span class="hi">student accommodation of Southampton University</span>, including <span class="hi">a floor plan of 5.40m by 6.80m</span>.<br> 
+    <b>2.</b> According to the graph we can see that at the bottom left of the picture, there is <span class="hi">a kitchen area</span>.<br> 
+    <b>3.</b> Following that, on the top left of the picture, there is <span class="hi">a desk and a bed in a bedroom</span>.<br> 
+    <b>4.</b> Based on the information we can get from the graph on the top right of the picture, there is <span class="hi">a sofa and a wardrobe</span>, which is <span class="hi">placed along the right wall</span>.<br> 
+    <b>5.</b> It's clear that at the bottom right of the picture, there is <span class="hi">a bathroom</span>, which is <span class="hi">the smallest area</span>.<br> 
+    <b>6.</b> In general, this graph is very informative about <span class="hi">student accommodation of Southampton University</span>.`,
   },
   37: {
     title: "Food Pyramid",
     tags: "#031148 极高频 极限预测 困难",
     categories: ["image"],
-    description: `<b>1.</b> The following graph shows information about <span class="hi">food pyramid</span>, including <span class="hi">different food groups from top to bottom</span>.<br> <b>2.</b> According to the graph we can see that on the left side of the picture, there is <span class="hi">milk, cheese and eggs, and bread and cereals</span>, which is <span class="hi">in the middle and lower layers of the pyramid</span>.<br> <b>3.</b> Following that, in the middle of the picture, there is <span class="hi">junk food, sweets and sugar drinks at the top</span>, which is <span class="hi">the smallest portion we should eat the least</span>.<br> <b>4.</b> Based on the information we can get from the graph on the right side of the picture, there is <span class="hi">meat, poultry, sausage and fish, and fruits and vegetables</span>, which is <span class="hi">in the middle and lower layers</span>.<br> <b>5.</b> It's clear that at the bottom of the picture, there is <span class="hi">water</span>, which is <span class="hi">the most essential and largest portion at the base</span>.<br> <b>6.</b> In general, this graph is very informative about <span class="hi">food pyramid</span>.`,
+    description: `
+    <b>1.</b> The following graph shows information about <span class="hi">food pyramid</span>, including <span class="hi">different food groups from top to bottom</span>.<br> 
+    <b>2.</b> According to the graph we can see that the bottom layer is <span class="hi">water</span>.<br> 
+    <b>3.</b> Following that, the second layer from the bottom, there is <span class="hi">bread, creals, fruits and vegetables</span>.<br> 
+    <b>4.</b> Based on the information we can get from the graph on the second layer from top, there is <span class="hi">milk, cheese, eggs, meat, poultry, sausage and fish</span>.<br> 
+    <b>5.</b> It's clear that on the top layer of the picture, there is <span class="hi">junk food, sweets, sugar drinks</span>.<br> 
+    <b>6.</b> In general, this graph is very informative about <span class="hi">food pyramid</span>.`,
   },
   38: {
     title: "The Graduation Laboratory",
     tags: "",
     categories: ["map"],
-    description: `<b>1.</b> The following graph shows information about <span class="hi">the graduation laboratory</span>, including <span class="hi">offices, storage, toilets, animal sciences, plant sciences and computer station</span>.<br> <b>2.</b> According to the graph we can see that on the left side of the picture, there is <span class="hi">three offices, a storage room and toilets</span>, which is <span class="hi">located in the upper left area</span>.<br> <b>3.</b> Following that, in the middle of the picture, there is <span class="hi">a staircase and a corridor</span>, which is <span class="hi">connecting different sections of the laboratory</span>.<br> <b>4.</b> Based on the information we can get from the graph on the right side of the picture, there is <span class="hi">a computer station with multiple workstations</span>, which is <span class="hi">arranged around a central table</span>. It's clear that at the bottom of the picture, there is <span class="hi">animal sciences and plant sciences</span>, which is <span class="hi">two large rooms at the lower level</span>.<br> <b>5.</b> In general, this picture is very informative about <span class="hi">the graduation laboratory</span>.`,
+    description: `
+    <b>1.</b> The following graph shows information about <span class="hi">the graduation laboratory</span>, including <span class="hi">offices, storage, toilets, animal sciences, plant sciences and computer station</span>.<br> 
+    <b>2.</b> According to the graph we can see that on the left side of the picture, there are <span class="hi">three offices, a storage room and toilets</span>, which is <span class="hi">located in the upper left area</span>.<br> 
+    <b>3.</b> Following that, in the middle of the picture, there is <span class="hi"> a corridor</span>, which is <span class="hi">connecting different sections of the laboratory</span>.<br> 
+    <b>4.</b> Based on the information we can get from the graph on the right side of the picture, there is <span class="hi">a computer station</span>. It's clear that at the bottom of the picture, there is <span class="hi">animal sciences and plant sciences</span>, which is <span class="hi">two large rooms at the lower level</span>.<br> 
+    <b>5.</b> In general, this picture is very informative about <span class="hi">the graduation laboratory</span>.`,
   },
   39: {
     title: "Library Plan",
     tags: "#031151 极高频 困难",
     categories: ["map"],
-    description: `<b>1.</b> The following graph shows information about <span class="hi">library plan</span>, including <span class="hi">5 functional areas</span>.<br> <b>2.</b> According to the graph we can see that on the left side of the picture, there is <span class="hi">area 1 in pink and area 4 in yellow</span>, which is <span class="hi">on the upper and lower left</span>.<br> <b>3.</b> Following that, in the middle of the picture, there is <span class="hi">area 2 in blue and area 5 in brown with an entrance between them</span>, which is <span class="hi">in the central part of the library</span>.<br> <b>4.</b> Based on the information we can get from the graph on the right side of the picture, there is <span class="hi">area 3 in purple</span>, which is <span class="hi">the largest area on the upper right</span>.<br> <b>5.</b> It's clear that at the bottom of the picture, there is <span class="hi">toilet F, toilet M and an elevator</span>, which is <span class="hi">located near the walkthrough area</span>.<br> <b>6.</b> In general, this graph is very informative about <span class="hi">library plan</span>.`,
+    description: `<b>1.</b> The following graph shows information about <span class="hi">library plan</span>, including <span class="hi">5 functional areas</span>.<br> 
+    <b>2.</b> According to the graph we can see that on the left side of the picture, there is <span class="hi">area 1 in pink and area 4 in yellow</span>, which is <span class="hi">on the upper and lower left</span>.<br> <b>3.</b> Following that, in the middle of the picture, there is <span class="hi">area 2 in blue and area 5 in brown with an entrance between them</span>, which is <span class="hi">in the central part of the library</span>.<br> <b>4.</b> Based on the information we can get from the graph on the right side of the picture, there is <span class="hi">area 3 in purple</span>, which is <span class="hi">the largest area on the upper right</span>.<br> <b>5.</b> It's clear that at the bottom of the picture, there is <span class="hi">toilet F, toilet M and an elevator</span>, which is <span class="hi">located near the walkthrough area</span>.<br> <b>6.</b> In general, this graph is very informative about <span class="hi">library plan</span>.`,
   },
   40: {
     title: "Oxbow Lake Formation",
