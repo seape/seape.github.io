@@ -1,0 +1,34 @@
+---
+title: DI Image Viewer Normal
+date: 2024-03-02
+icon: images
+author: Haiyue
+category:
+  - PTE
+tag:
+  - DI
+star: false
+sticky: false
+---
+
+import DIImageViewer from '@blog/components/pte/DIImageViewer.vue';
+import { categoryMap, descriptionMap } from './diPredictionData.Normal.js';
+
+export const imageModules = import.meta.glob('./DI.PREDICTION/*.{png,jpeg,jpg}', { eager: true });
+
+export const images = Object.entries(imageModules)
+  .map(([path, mod]) => {
+    const filename = path.split('/').pop();
+    const match = filename.match(/^(\d+)\.(.+)\.\w+$/);
+    if (!match) return null;
+    const num = parseInt(match[1]);
+    const title = match[2].replace(/_/g, ' ');
+    const src = typeof mod.default === 'string' ? mod.default : mod.default?.src;
+    const categories = categoryMap[num] || ['image'];
+    const description = descriptionMap[num] || '';
+    return { src, title: `${num}. ${title}`, num, categories, description };
+  })
+  .filter(Boolean)
+  .sort((a, b) => a.num - b.num);
+
+<DIImageViewer client:load images={images} />
